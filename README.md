@@ -7,7 +7,7 @@ Incluye dos bases de datos: `interactions` (interacciones usuarios-negocios) y `
 
 ---
 
-## 📂 Estructura del proyecto
+## Estructura del proyecto
 
 ```
 
@@ -28,10 +28,9 @@ arquitectura_completa/
 
 ````
 
-
 ---
 
-## 🛠 Requisitos
+## Requisitos
 
 - Docker >= 24.0  
 - Docker Compose >= 2.0  
@@ -39,37 +38,7 @@ arquitectura_completa/
 
 ---
 
-## ⚡ Cómo desplegar
-
-1. Clonar el repositorio:
-
-```bash
-git clone <TU_REPOSITORIO>
-cd arquitectura_completa
-
-Perfecto, aquí tienes **el README completo listo para copiar y pegar tal cual en un fichero `README.md`**. Todo el contenido está unificado y formateado:
-
----
-
-```markdown
-# Sistema_recomendacion_xai_TFM_MUSII_CMN
-
-## Carga de datos en Neo4j para hoteles
-
-Este proyecto contiene una arquitectura completa para cargar y gestionar información de usuarios y hoteles en **Neo4j** utilizando **Docker Compose**.  
-Incluye dos bases de datos: `interactions` (interacciones usuarios-negocios) y `knowledge` (grafo de conocimiento de hoteles).
-
----
-
-## 🛠 Requisitos
-
-- Docker >= 24.0  
-- Docker Compose >= 2.0  
-- Python 3.11+ (para el loader, aunque se ejecuta dentro del contenedor)
-
----
-
-## ⚡ Cómo desplegar
+## Cómo desplegar
 
 1. Clonar el repositorio:
 
@@ -108,28 +77,60 @@ docker ps
 
 ---
 
-## 🔹 Uso de Neo4j
+## Uso de Neo4j
 
 * Usuario: `neo4j`
 * Contraseña: `test12345`
 
 Puedes acceder al **Neo4j Browser** en `http://localhost:7474` y ejecutar consultas Cypher.
 
-Ejemplos:
+Ejemplos para base 'interactions':
 
 ```cypher
 MATCH (u:User)-[r:RATED]->(b:Business)
-RETURN u.id, b.id, r.rating
+RETURN u.id AS user_id, COUNT(r) AS total_ratings
+ORDER BY total_ratings DESC
 LIMIT 10;
+```
+```cypher
+MATCH (u:User)-[r:RATED]->(b:Business)
+RETURN b.id AS business_id, COUNT(r) AS rating_count, AVG(r.rating) AS avg_rating
+ORDER BY rating_count DESC
+LIMIT 10;
+```
+```cypher
+MATCH (u:User)-[r:RATED]->(b:Business)
+WHERE r.rating > 4
+RETURN u.id AS user_id, b.id AS business_id, r.rating
+ORDER BY r.rating DESC
+LIMIT 20;
+```
 
+Ejemplos para base 'knowledge':
+
+```cypher
 MATCH (b:Business)-[r:RELATION {type:"located_in_city"}]->(c:Node)
-RETURN b.id, c.name
+RETURN c.name AS city, COUNT(b) AS business_count
+ORDER BY business_count DESC
+LIMIT 10;
+```
+```cypher
+MATCH (b:Business)-[r:RELATION {type:"has_category"}]->(cat:Node)
+RETURN cat.name AS category, COUNT(b) AS business_count
+ORDER BY business_count DESC
+LIMIT 10;
+```
+```cypher
+MATCH (b:Business)-[r:RELATION {type:"has_rating"}]->(n:Node)
+WITH b, toFloat(split(n.name,' ')[0]) AS stars
+RETURN b.id AS business_id, stars
+ORDER BY stars DESC
 LIMIT 10;
 ```
 
 ---
 
-## 📝 Descripción de cada fichero
+## Descripción de cada fichero
 
 | Fichero                                            | Descripción                                                                                        |
 | -------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -143,7 +144,7 @@ LIMIT 10;
 
 ---
 
-## 🔧 Notas adicionales
+## Notas adicionales
 
 * Los volúmenes Docker aseguran que los datos no se pierdan al detener el contenedor.
 * El script `load_databases.py` espera unos segundos para que Neo4j esté listo antes de cargar los datos.
