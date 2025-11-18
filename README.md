@@ -9,20 +9,24 @@ Incluye dos bases de datos: `interactions` (interacciones usuarios-negocios) y `
 
 ## 📂 Estructura del proyecto
 
+```
+
 arquitectura_completa/
 │
-├─ docker-compose.yml # Configuración de los servicios Docker: Neo4j y loader
+├─ docker-compose.yml         # Configuración de los servicios Docker: Neo4j y loader
 │
-├─ loader/ # Servicio para cargar datos en Neo4j
-│ ├─ Dockerfile # Imagen para el loader de datos
-│ ├─ requirements.txt # Dependencias Python
-│ ├─ load_databases.py # Script que crea bases de datos y carga CSVs en Neo4j
-│ └─ data/ # Carpeta con los CSVs a cargar
-│     ├─ grafo_conocimiento_datos_hoteles.csv
-│     └─ grafo_interaccion_datos_train.csv
+├─ loader/                    # Servicio para cargar datos en Neo4j
+│   ├─ Dockerfile             # Imagen para el loader de datos
+│   ├─ requirements.txt       # Dependencias Python
+│   ├─ load_databases.py      # Script que crea bases de datos y carga CSVs en Neo4j
+│   └─ data/                  # Carpeta con los CSVs a cargar
+│       ├─ grafo_conocimiento_datos_hoteles.csv
+│       └─ grafo_interaccion_datos_train.csv
 │
 └─ volumes/
-└─ neo4j_data # Volumen persistente para Neo4j
+└─ neo4j_data             # Volumen persistente para Neo4j
+
+````
 
 
 ---
@@ -54,29 +58,6 @@ Perfecto, aquí tienes **el README completo listo para copiar y pegar tal cual e
 
 Este proyecto contiene una arquitectura completa para cargar y gestionar información de usuarios y hoteles en **Neo4j** utilizando **Docker Compose**.  
 Incluye dos bases de datos: `interactions` (interacciones usuarios-negocios) y `knowledge` (grafo de conocimiento de hoteles).
-
----
-
-## 📂 Estructura del proyecto
-
-```
-
-arquitectura_completa/
-│
-├─ docker-compose.yml         # Configuración de los servicios Docker: Neo4j y loader
-│
-├─ loader/                    # Servicio para cargar datos en Neo4j
-│   ├─ Dockerfile             # Imagen para el loader de datos
-│   ├─ requirements.txt       # Dependencias Python
-│   ├─ load_databases.py      # Script que crea bases de datos y carga CSVs en Neo4j
-│   └─ data/                  # Carpeta con los CSVs a cargar
-│       ├─ grafo_conocimiento_datos_hoteles.csv
-│       └─ grafo_interaccion_datos_train.csv
-│
-└─ volumes/
-└─ neo4j_data             # Volumen persistente para Neo4j
-
-````
 
 ---
 
