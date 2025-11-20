@@ -39,17 +39,16 @@ def extract_user_subgraph(user_id: int, recommended_hotel: int):
     return save_path
 
 
-if __name__ == "__main__":
-    # Ruta a tu CSV
-    csv_path = r"C:\Users\cris\Desktop\MUSII\TFM\Sistema_recomendacion_xai_TFM_MUSII_CMN\data_recommender\relacion_usuario_rating_recomendador.csv"
-    
-    # Leer CSV
-    df = pd.read_csv(csv_path)
-    
-    # Recorrer cada fila y extraer el subgrafo
-    for idx, row in df.iterrows():
-        user_id = int(row['usuario'])
-        recommended_hotel = int(row['negocio'])
-        print(f"\nProcesando fila {idx}: usuario={user_id}, hotel={recommended_hotel}")
-        extract_user_subgraph(user_id, recommended_hotel)
+# SI QUEREMOS SACAR UN USUARIO Y HOTEL CONCRETO
+# if __name__ == "__main__": 
+#     extract_user_subgraph(user_id=3, recommended_hotel=2963)
+
+# SI QUEREMOS SACAR TODOS LOS USUARIOS Y HOTELES. PERO CADA SUBGRAFO ES UNA COMBINACION DE UN USUARIO Y UN HOTEL
+# if __name__ == "__main__":
+#     csv_path = r"C:\Users\cris\Desktop\MUSII\TFM\Sistema_recomendacion_xai_TFM_MUSII_CMN\data_recommender\relacion_usuario_rating_recomendador.csv"
+#     df = pd.read_csv(csv_path)
+#     for idx, row in df.iterrows():
+#         user_id = int(row['usuario'])
+#         recommended_hotel = int(row['negocio'])
+#         extract_user_subgraph(user_id, recommended_hotel)
 
