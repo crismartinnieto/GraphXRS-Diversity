@@ -27,29 +27,54 @@ def get_related_nodes_for_hotels(hotel_ids):
 
 def get_subgraph_for_hotels(hotel_ids):
     """
-    Devuelve nodos y relaciones del subgrafo de conocimiento que contiene a esos hoteles.
+    Devuelve nodos y relaciones del subgrafo de conocimiento
+    directamente conectado a cada hotel, usando IDs únicos
+    para cada nodo y referencias correctas en las relaciones.
     """
     graph = get_knowledge_graph()
-
-    # Asegurarse de que todos los IDs sean strings 
     hotel_ids = [str(h) for h in hotel_ids]
 
     query = """
-    MATCH path = (h:Business)-[*1..2]-(n)
-    WHERE h.id IN $hotel_ids
-    RETURN DISTINCT path
+    MATCH (h:Business {id: $hotel_id})-[r]-(n)
+    RETURN h, r, n
     """
 
-    result = graph.run(query, hotel_ids=hotel_ids)
+    nodes = {}
+    rels = []
 
-    nodes = set()
-    rels = set()
+    for h in hotel_ids:
+        result = graph.run(query, hotel_id=h)
+        for record in result:
+            hnode = record["h"]
+            rel = record["r"]
+            nnode = record["n"]
 
-    for record in result:
-        path = record["path"]
-        for node in path.nodes:
-            nodes.add(node)
-        for rel in path.relationships:
-            rels.add(rel)
+            # Usar el identity de Neo4j como ID único
+            h_id = str(hnode.identity)
+            n_id = str(nnode.identity)
 
-    return list(nodes), list(rels)
+            # Guardar nodos (si no existen ya)
+            if h_id not in nodes:
+                nodes[h_id] = {
+                    "id": h_id,
+                    "labels": list(hnode.labels),
+                    "properties": dict(hnode)
+                }
+            if n_id not in nodes:
+                nodes[n_id] = {
+                    "id": n_id,
+                    "labels": list(nnode.labels),
+                    "properties": dict(nnode)
+                }
+
+            # Guardar relación apuntando a los IDs únicos
+            rels.append({
+                "id": str(rel.identity),
+                "type": rel.__class__.__name__,  # o rel.type si usas py2neo
+                "start_node_id": h_id,
+                "end_node_id": n_id,
+                "properties": dict(rel)
+            })
+
+    return list(nodes.values()), rels
+
