@@ -1,0 +1,1167 @@
+{
+    "nodes": [
+        {
+            "id": "2704",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": "4464"
+            }
+        },
+        {
+            "id": "43",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "4.5 stars"
+            }
+        },
+        {
+            "id": "109",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "GoodForKids=True"
+            }
+        },
+        {
+            "id": "21",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "Event Planning & Services"
+            }
+        },
+        {
+            "id": "115",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "RestaurantsAttire=casual"
+            }
+        },
+        {
+            "id": "2712",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "214 reviews"
+            }
+        },
+        {
+            "id": "65",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "RestaurantsTakeOut=False"
+            }
+        },
+        {
+            "id": "2710",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "46222"
+            }
+        },
+        {
+            "id": "261",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "RestaurantsDelivery=False"
+            }
+        },
+        {
+            "id": "2709",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "Indianapolis Motor Speedway"
+            }
+        },
+        {
+            "id": "126",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "DogsAllowed=False"
+            }
+        },
+        {
+            "id": "1725",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "Stadiums & Arenas"
+            }
+        },
+        {
+            "id": "351",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "IN"
+            }
+        },
+        {
+            "id": "350",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "Indianapolis"
+            }
+        },
+        {
+            "id": "31",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "WiFi=free"
+            }
+        },
+        {
+            "id": "112",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "HasTV=True"
+            }
+        },
+        {
+            "id": "114",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "NoiseLevel=very_loud"
+            }
+        },
+        {
+            "id": "101",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "Restaurants"
+            }
+        },
+        {
+            "id": "2713",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "Race Tracks"
+            }
+        },
+        {
+            "id": "12",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "Automotive"
+            }
+        },
+        {
+            "id": "11",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "open"
+            }
+        },
+        {
+            "id": "68",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "ByAppointmentOnly=True"
+            }
+        },
+        {
+            "id": "830",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "Ambience={romantic: False, intimate: False, touristy: False, hipster: False, divey: False, classy: False, trendy: False, upscale: False, casual: False}"
+            }
+        },
+        {
+            "id": "110",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "OutdoorSeating=True"
+            }
+        },
+        {
+            "id": "2711",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "(39.7905, -86.2337)"
+            }
+        },
+        {
+            "id": "22",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "BusinessAcceptsCreditCards=True"
+            }
+        },
+        {
+            "id": "97",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "Arts & Entertainment"
+            }
+        },
+        {
+            "id": "6419",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": "4088"
+            }
+        },
+        {
+            "id": "2598",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "63102"
+            }
+        },
+        {
+            "id": "448",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "Public Services & Government"
+            }
+        },
+        {
+            "id": "36",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "Tours"
+            }
+        },
+        {
+            "id": "161",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "Active Life"
+            }
+        },
+        {
+            "id": "6426",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "The Gateway Arch"
+            }
+        },
+        {
+            "id": "278",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "ByAppointmentOnly=False"
+            }
+        },
+        {
+            "id": "6428",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "568 reviews"
+            }
+        },
+        {
+            "id": "6427",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "(38.6257, -90.1893)"
+            }
+        },
+        {
+            "id": "34",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "4.0 stars"
+            }
+        },
+        {
+            "id": "102",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "Museums"
+            }
+        },
+        {
+            "id": "788",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "Landmarks & Historical Buildings"
+            }
+        },
+        {
+            "id": "51",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "Saint Louis"
+            }
+        },
+        {
+            "id": "319",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "Parks"
+            }
+        },
+        {
+            "id": "52",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "MO"
+            }
+        },
+        {
+            "id": "7388",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": "837"
+            }
+        },
+        {
+            "id": "487",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "Airports"
+            }
+        },
+        {
+            "id": "152",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "Santa Barbara"
+            }
+        },
+        {
+            "id": "7391",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "Santa Barbara Airport"
+            }
+        },
+        {
+            "id": "579",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "93117"
+            }
+        },
+        {
+            "id": "7392",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "(34.4251, -119.8365)"
+            }
+        },
+        {
+            "id": "153",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "CA"
+            }
+        },
+        {
+            "id": "24",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "RestaurantsPriceRange2=2"
+            }
+        },
+        {
+            "id": "4384",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "192 reviews"
+            }
+        },
+        {
+            "id": "588",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": "5654"
+            }
+        },
+        {
+            "id": "589",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "Lambert International Airport Cell Phone Lot Terminal 2"
+            }
+        },
+        {
+            "id": "593",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "BusinessAcceptsCreditCards=False"
+            }
+        },
+        {
+            "id": "212",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "13 reviews"
+            }
+        },
+        {
+            "id": "591",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "63134"
+            }
+        },
+        {
+            "id": "592",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "(38.7343, -90.3489)"
+            }
+        },
+        {
+            "id": "590",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "Berkeley"
+            }
+        },
+        {
+            "id": "594",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "Parking"
+            }
+        },
+        {
+            "id": "23",
+            "labels": [
+                "Node"
+            ],
+            "properties": {
+                "name": "WiFi=no"
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "id": "8674",
+            "start_node": "2704",
+            "end_node": "43",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_rating"
+            }
+        },
+        {
+            "id": "8685",
+            "start_node": "2704",
+            "end_node": "109",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_attribute"
+            }
+        },
+        {
+            "id": "8680",
+            "start_node": "2704",
+            "end_node": "21",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_category"
+            }
+        },
+        {
+            "id": "8694",
+            "start_node": "2704",
+            "end_node": "115",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_attribute"
+            }
+        },
+        {
+            "id": "8675",
+            "start_node": "2704",
+            "end_node": "2712",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_review_count"
+            }
+        },
+        {
+            "id": "8688",
+            "start_node": "2704",
+            "end_node": "65",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_attribute"
+            }
+        },
+        {
+            "id": "8672",
+            "start_node": "2704",
+            "end_node": "2710",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_postal_code"
+            }
+        },
+        {
+            "id": "8684",
+            "start_node": "2704",
+            "end_node": "261",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_attribute"
+            }
+        },
+        {
+            "id": "8669",
+            "start_node": "2704",
+            "end_node": "2709",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_name"
+            }
+        },
+        {
+            "id": "8693",
+            "start_node": "2704",
+            "end_node": "126",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_attribute"
+            }
+        },
+        {
+            "id": "8682",
+            "start_node": "2704",
+            "end_node": "1725",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_category"
+            }
+        },
+        {
+            "id": "8671",
+            "start_node": "2704",
+            "end_node": "351",
+            "type": "RELATION",
+            "properties": {
+                "type": "in_state"
+            }
+        },
+        {
+            "id": "8670",
+            "start_node": "2704",
+            "end_node": "350",
+            "type": "RELATION",
+            "properties": {
+                "type": "located_in_city"
+            }
+        },
+        {
+            "id": "8692",
+            "start_node": "2704",
+            "end_node": "31",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_attribute"
+            }
+        },
+        {
+            "id": "8690",
+            "start_node": "2704",
+            "end_node": "112",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_attribute"
+            }
+        },
+        {
+            "id": "8686",
+            "start_node": "2704",
+            "end_node": "114",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_attribute"
+            }
+        },
+        {
+            "id": "8683",
+            "start_node": "2704",
+            "end_node": "101",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_category"
+            }
+        },
+        {
+            "id": "8681",
+            "start_node": "2704",
+            "end_node": "2713",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_category"
+            }
+        },
+        {
+            "id": "8677",
+            "start_node": "2704",
+            "end_node": "12",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_category"
+            }
+        },
+        {
+            "id": "8676",
+            "start_node": "2704",
+            "end_node": "11",
+            "type": "RELATION",
+            "properties": {
+                "type": "status"
+            }
+        },
+        {
+            "id": "8691",
+            "start_node": "2704",
+            "end_node": "68",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_attribute"
+            }
+        },
+        {
+            "id": "8687",
+            "start_node": "2704",
+            "end_node": "830",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_attribute"
+            }
+        },
+        {
+            "id": "8678",
+            "start_node": "2704",
+            "end_node": "110",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_attribute"
+            }
+        },
+        {
+            "id": "8673",
+            "start_node": "2704",
+            "end_node": "2711",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_coordinates"
+            }
+        },
+        {
+            "id": "8689",
+            "start_node": "2704",
+            "end_node": "22",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_attribute"
+            }
+        },
+        {
+            "id": "8679",
+            "start_node": "2704",
+            "end_node": "97",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_category"
+            }
+        },
+        {
+            "id": "24403",
+            "start_node": "6419",
+            "end_node": "2598",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_postal_code"
+            }
+        },
+        {
+            "id": "24412",
+            "start_node": "6419",
+            "end_node": "448",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_category"
+            }
+        },
+        {
+            "id": "24410",
+            "start_node": "6419",
+            "end_node": "36",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_category"
+            }
+        },
+        {
+            "id": "24407",
+            "start_node": "6419",
+            "end_node": "11",
+            "type": "RELATION",
+            "properties": {
+                "type": "status"
+            }
+        },
+        {
+            "id": "24408",
+            "start_node": "6419",
+            "end_node": "161",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_category"
+            }
+        },
+        {
+            "id": "24400",
+            "start_node": "6419",
+            "end_node": "6426",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_name"
+            }
+        },
+        {
+            "id": "24409",
+            "start_node": "6419",
+            "end_node": "109",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_attribute"
+            }
+        },
+        {
+            "id": "24414",
+            "start_node": "6419",
+            "end_node": "97",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_category"
+            }
+        },
+        {
+            "id": "24416",
+            "start_node": "6419",
+            "end_node": "278",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_attribute"
+            }
+        },
+        {
+            "id": "24406",
+            "start_node": "6419",
+            "end_node": "6428",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_review_count"
+            }
+        },
+        {
+            "id": "24404",
+            "start_node": "6419",
+            "end_node": "6427",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_coordinates"
+            }
+        },
+        {
+            "id": "24405",
+            "start_node": "6419",
+            "end_node": "34",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_rating"
+            }
+        },
+        {
+            "id": "24413",
+            "start_node": "6419",
+            "end_node": "102",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_category"
+            }
+        },
+        {
+            "id": "24415",
+            "start_node": "6419",
+            "end_node": "788",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_category"
+            }
+        },
+        {
+            "id": "24401",
+            "start_node": "6419",
+            "end_node": "51",
+            "type": "RELATION",
+            "properties": {
+                "type": "located_in_city"
+            }
+        },
+        {
+            "id": "24411",
+            "start_node": "6419",
+            "end_node": "319",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_category"
+            }
+        },
+        {
+            "id": "24402",
+            "start_node": "6419",
+            "end_node": "52",
+            "type": "RELATION",
+            "properties": {
+                "type": "in_state"
+            }
+        },
+        {
+            "id": "28913",
+            "start_node": "7388",
+            "end_node": "487",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_category"
+            }
+        },
+        {
+            "id": "28906",
+            "start_node": "7388",
+            "end_node": "152",
+            "type": "RELATION",
+            "properties": {
+                "type": "located_in_city"
+            }
+        },
+        {
+            "id": "28915",
+            "start_node": "7388",
+            "end_node": "278",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_attribute"
+            }
+        },
+        {
+            "id": "28905",
+            "start_node": "7388",
+            "end_node": "7391",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_name"
+            }
+        },
+        {
+            "id": "28908",
+            "start_node": "7388",
+            "end_node": "579",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_postal_code"
+            }
+        },
+        {
+            "id": "28910",
+            "start_node": "7388",
+            "end_node": "34",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_rating"
+            }
+        },
+        {
+            "id": "28914",
+            "start_node": "7388",
+            "end_node": "22",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_attribute"
+            }
+        },
+        {
+            "id": "28912",
+            "start_node": "7388",
+            "end_node": "11",
+            "type": "RELATION",
+            "properties": {
+                "type": "status"
+            }
+        },
+        {
+            "id": "28909",
+            "start_node": "7388",
+            "end_node": "7392",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_coordinates"
+            }
+        },
+        {
+            "id": "28917",
+            "start_node": "7388",
+            "end_node": "31",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_attribute"
+            }
+        },
+        {
+            "id": "28907",
+            "start_node": "7388",
+            "end_node": "153",
+            "type": "RELATION",
+            "properties": {
+                "type": "in_state"
+            }
+        },
+        {
+            "id": "28916",
+            "start_node": "7388",
+            "end_node": "24",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_attribute"
+            }
+        },
+        {
+            "id": "28911",
+            "start_node": "7388",
+            "end_node": "4384",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_review_count"
+            }
+        },
+        {
+            "id": "1231",
+            "start_node": "588",
+            "end_node": "12",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_category"
+            }
+        },
+        {
+            "id": "1223",
+            "start_node": "588",
+            "end_node": "589",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_name"
+            }
+        },
+        {
+            "id": "1230",
+            "start_node": "588",
+            "end_node": "11",
+            "type": "RELATION",
+            "properties": {
+                "type": "status"
+            }
+        },
+        {
+            "id": "1232",
+            "start_node": "588",
+            "end_node": "593",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_attribute"
+            }
+        },
+        {
+            "id": "1229",
+            "start_node": "588",
+            "end_node": "212",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_review_count"
+            }
+        },
+        {
+            "id": "1226",
+            "start_node": "588",
+            "end_node": "591",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_postal_code"
+            }
+        },
+        {
+            "id": "1227",
+            "start_node": "588",
+            "end_node": "592",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_coordinates"
+            }
+        },
+        {
+            "id": "1228",
+            "start_node": "588",
+            "end_node": "34",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_rating"
+            }
+        },
+        {
+            "id": "1234",
+            "start_node": "588",
+            "end_node": "487",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_category"
+            }
+        },
+        {
+            "id": "1224",
+            "start_node": "588",
+            "end_node": "590",
+            "type": "RELATION",
+            "properties": {
+                "type": "located_in_city"
+            }
+        },
+        {
+            "id": "1225",
+            "start_node": "588",
+            "end_node": "52",
+            "type": "RELATION",
+            "properties": {
+                "type": "in_state"
+            }
+        },
+        {
+            "id": "1233",
+            "start_node": "588",
+            "end_node": "594",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_category"
+            }
+        },
+        {
+            "id": "1235",
+            "start_node": "588",
+            "end_node": "23",
+            "type": "RELATION",
+            "properties": {
+                "type": "has_attribute"
+            }
+        }
+    ]
+}

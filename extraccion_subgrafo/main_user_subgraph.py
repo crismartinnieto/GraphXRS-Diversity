@@ -3,6 +3,7 @@ from utils_interactions import get_user_interacted_hotels
 from utils_knowledge import get_subgraph_for_hotels
 from save_graph import save_subgraph_to_json  
 import time
+import pandas as pd
 
 def extract_user_subgraph(user_id: int, recommended_hotel: int):
     """
@@ -39,5 +40,16 @@ def extract_user_subgraph(user_id: int, recommended_hotel: int):
 
 
 if __name__ == "__main__":
-    # Ejemplo:
-    extract_user_subgraph(user_id=3, recommended_hotel=2963)
+    # Ruta a tu CSV
+    csv_path = r"C:\Users\cris\Desktop\MUSII\TFM\Sistema_recomendacion_xai_TFM_MUSII_CMN\data_recommender\relacion_usuario_rating_recomendador.csv"
+    
+    # Leer CSV
+    df = pd.read_csv(csv_path)
+    
+    # Recorrer cada fila y extraer el subgrafo
+    for idx, row in df.iterrows():
+        user_id = int(row['usuario'])
+        recommended_hotel = int(row['negocio'])
+        print(f"\nProcesando fila {idx}: usuario={user_id}, hotel={recommended_hotel}")
+        extract_user_subgraph(user_id, recommended_hotel)
+
