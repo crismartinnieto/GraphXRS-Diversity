@@ -30,7 +30,7 @@ Cantidad de saltos que hay entre el hotel consumido y el hotel recomendado.
 
 Las explicaciones más cortas suelen ser más fáciles de entender.
 
-### **2. Path Count / Path Multiplicity**
+### **2. Path Count**
 
 Número total de caminos distintos que justifican la recomendación.
 
@@ -39,11 +39,13 @@ Más caminos = mayor robustez en la explicación.
 ### **3. Shared-Property Weight Score**
 
 Se asigna un peso a cada tipo de propiedad compartida (ejemplo: ubicación, categoría, amenidades).
+
 La puntuación final es la suma de los pesos de todas las propiedades comunes.
 
 ### **4. Path Type Variety**
 
 Número de tipos de relaciones diferentes que aparecen entre ambos hoteles (ej.: `has_category`, `located_in_city`, `has_attribute`).
+
 Más variedad = explicaciones más completas.
 
 ### **5. Path Type Frequency**
@@ -67,32 +69,36 @@ Evalúan si una explicación se basa en propiedades que realmente son relevantes
 ### **1. Degree Centrality**
 
 Número de hoteles conectados a un atributo.
-Atributos populares → explicaciones más universales.
+
+Atributos populares = explicaciones más universales.
 
 ### **2. Normalized Degree Centrality**
 
 El grado se normaliza entre 0 y 1.
+
 Permite comparar atributos en grafos de distinto tamaño.
 
 ### **3. Betweenness Centrality**
 
-Mide cuántas veces un atributo actúa como “puente” en caminos mínimos.
+Mide cuántas veces un atributo actúa como “puente” entre hoteles.
+
 Útil para detectar atributos clave, aunque en grafos pequeños suele ser baja.
 
 ### **4. Closeness Centrality**
 
 Evalúa qué tan cerca está un atributo del resto del grafo.
+
 Atributos más cercanos → más relevantes para el sistema.
 
 ### **5. Eigenvector Centrality**
 
-Mide si un atributo está conectado con otros atributos también importantes.
+Mide si un atributo está conectado con otros atributos también importantes. Es decir, qué tan conectado está el atributo con otros atributos centrales.
+
 Indica influencia estructural.
 
 ### **6. PageRank**
 
 Versión más estable de centralidad basada en enlaces.
-Muy usada en sistemas explicables basados en grafos.
 
 ### **7. Harmonic Centrality**
 
@@ -110,106 +116,114 @@ Mide cuánta influencia real tiene una propiedad al explicar recomendaciones.
 
 Estas métricas analizan directamente los **atributos** del hotel recomendado y cómo se relacionan con los atributos de los hoteles consumidos por el usuario.
 
-### **9. Attribute Match Frequency (AMF)**
+### **1. Attribute Match Frequency (AMF)**
 
-Indica qué proporción de los hoteles consumidos tiene un atributo presente en el recomendado.
+Indica qué proporción de los hoteles consumidos tiene un atributo presente en el recomendado. 
+
 Mide afinidad directa entre gustos del usuario y atributos del ítem.
 
-### **10. Attribute Frequency (TF_user)**
+### **2. Attribute Frequency (TF_user)**
 
-Frecuencia absoluta de un atributo dentro de los hoteles consumidos.
+Número de veces que el usuario ha consumido un atributo específico.  
+
 Atributos frecuentes → representan bien el perfil del usuario.
+    
+### **3. Attribute TF-IDF (Discriminative Feature Score)**
 
-### **11. Attribute TF-IDF (Discriminative Feature Score)**
+Destaca atributos frecuentes en los consumidos por el usuario pero raros en el catálogo general.  
 
-Destaca atributos muy frecuentes para el usuario pero poco comunes en el catálogo.
 Sirve para identificar preferencias “únicas”.
 
-### **12. Attribute Contribution Score**
+### **4. Attribute Contribution Score**
 
 Cuantifica cuánto contribuye un atributo específico a justificar la recomendación.
 Es la combinación entre frecuencia del atributo en los consumos y presencia en el recomendado.
 
-### **13. Attribute Presence Ratio (APR)**
+### **5. Attribute Presence Ratio (APR)**
 
 Proporción de atributos del recomendado que el usuario ya ha consumido antes.
 
-### **14. Attribute Overlap Count**
+### **6. Attribute Overlap Count**
 
 Número total de atributos compartidos entre hotel recomendado y consumidos.
 
-### **15. Attribute Novelty**
+### **7. Attribute Novelty**
 
 Detecta si un atributo es nuevo para el usuario.
+
 1 = nuevo, 0 = ya conocido.
 
-### **16. Attribute Specificity (Inverse Popularity)**
+### **8. Attribute Specificity (Inverse Popularity)**
 
-Da más importancia a atributos raros en el catálogo.
-Atributos poco comunes → más informativos.
+Qué tan raro es un atributo en el catálogo.
 
-### **17. Attribute Stability**
+Menos popular = más explicativo. 
 
-Normaliza la frecuencia del atributo dentro del historial del usuario.
+### **9. Attribute Stability**
+
+Qué tan constante es un atributo en el histórico del usuario.
+
 Atributos estables = preferencias firmes.
 
-### **18. Attribute Variability**
+### **10. Attribute Variability**
 
-Variabilidad (varianza/desviación estándar) de un atributo entre consumidos.
-Baja variabilidad → atributo representativo del usuario.
+Qué tan variable es un atributo en los consumidos; baja variabilidad indica gusto representativo del usuario.
+
+Baja variabilidad = atributo representativo del usuario.
 
 ---
 
 # Métricas Basadas en Ejemplos (`metrics_examples.py`)
 
-Estas métricas comparan el recomendado con los **hoteles consumidos** para generar explicaciones basadas en ejemplos.
+Estas métricas comparan el recomendado con los hoteles consumidos para generar explicaciones basadas en ejemplos.
 
-### **19. Example Similarity Score**
+### **1. Example Similarity Score**
 
-Similitud entre el recomendado y un hotel consumido usando Jaccard o atributos.
+Similitud entre el recomendado y un hotel consumido.
 
-### **20. Most Similar Consumed Example**
+### **2. Most Similar Consumed Example**
 
-Selecciona el ejemplo (hotel consumido) más similar al recomendado.
+Hotel consumido más parecido al recomendado. 
 
-### **21. Least Similar Consumed Example (Contrastive)**
+### **3. Least Similar Consumed Example (Contrastive)**
 
-El hotel consumido menos similar.
-Útil para explicaciones tipo “por qué este y no aquel”.
+Hotel consumido menos parecido.  
 
-### **22. Mean Example Similarity**
+Útil para explicaciones contrastivas, tipo “por qué este y no aquel”.
 
-Similitud promedio del recomendado con todos los hoteles consumidos.
+### **4. Mean Example Similarity**
 
-### **23. k-Nearest Example Strength**
+Similitud promedio entre el recomendado y todos los consumidos. 
 
-Suma de similitudes de los k consumidos más parecidos.
+### **5. k-Nearest Example Strength**
 
-### **24. Example Support Score (por atributo)**
+Suma de similitudes de los k consumidos más parecidos.  
 
-Cuántos consumidos tienen un atributo del recomendado.
+### **6. Example Support Score (por atributo)**
 
-### **25. Relative Example Strength**
+Número de consumidos que tienen un atributo del recomendado.
 
-Support normalizado por el total de consumidos.
+### **7. Relative Example Strength**
 
-### **26. Example Density**
+Normalización del soporte por el total de consumidos.
 
-Frecuencia del atributo dentro del total de atributos consumidos.
+### **8. Example Density**
 
-### **27. Example Coverage**
+Frecuencia de un atributo entre todos los atributos consumidos. 
 
-Porcentaje de consumidos que comparten al menos un atributo con el recomendado.
+### **9. Example Coverage**
 
-### **28. Example Consensus Score**
+Porcentaje de consumidos que comparten al menos un atributo con el recomendado.  
 
-Promedio del número de atributos compartidos → mide homogeneidad de la explicación.
+### **10. Example Consensus Score**
 
-### **29. Example Disagreement Score**
+Homogeneidad de los ejemplos que respaldan la recomendación.
+
+### **11. Example Disagreement Score**
 
 Variabilidad en la similitud entre consumidos y recomendado.
 
-### **30. Prototype Example Score**
+### **12. Prototype Example Score**
 
 Selecciona el ejemplo más representativo del usuario (centroide).
 Luego compara su similitud con el recomendado.
@@ -220,43 +234,43 @@ Luego compara su similitud con el recomendado.
 
 Evaluan la similitud entre consumidos y recomendado a nivel de atributos o vectores.
 
-### **31. Jaccard Similarity**
+### **1. Jaccard Similarity**
 
-Similitud de conjuntos basada en atributos compartidos.
+Similitud binaria entre los atributos de consumido y recomendado.  
 
-### **32. Cosine Similarity**
+### **2. Cosine Similarity**
 
 Similitud vectorial entre representaciones de atributos.
 
-### **33. Shared Attribute Count**
+### **3. Shared Attribute Count**
 
-Número total de atributos compartidos.
+Conteo absoluto de atributos compartidos. 
 
-### **34. Weighted Shared Attribute Score**
+### **4. Weighted Shared Attribute Score**
 
-Versión ponderada usando pesos por atributo.
+Conteo ponderado según la importancia de cada atributo.  
 
-### **35. Shared Category Count**
+### **5. Shared Category Count**
 
 Conteo específico de categorías compartidas.
 
-### **36. Shared Location Count**
+### **6. Shared Location Count**
 
 Coincidencias de ubicación (ciudad, país, región…).
 
-### **37. Category Alignment Score**
+### **7. Category Alignment Score**
 
 Proporción de categorías del recomendado que coinciden con las del usuario.
 
-### **38. Path Count (Graph)**
+### **8. Path Count (Graph)**
 
 Cantidad de caminos en el KG entre consumido y recomendado.
 
-### **39. Path Length (Graph)**
+### **9. Path Length (Graph)**
 
 Distancia más corta o promedio en el KG.
 
-### **40. Weighted Knowledge Path Score (KPS)**
+### **10. Weighted Knowledge Path Score (KPS)**
 
 Suma de pesos de todos los caminos relevantes.
 
@@ -266,19 +280,19 @@ Suma de pesos de todos los caminos relevantes.
 
 Evalúan lo comunes o raros que son los atributos.
 
-### **41. Attribute Popularity**
+### **1. Attribute Popularity**
 
 Número de hoteles conectados al atributo.
 
-### **42. Attribute Popularity Rank**
+### **2. Attribute Popularity Rank**
 
 Percentil del atributo respecto al catálogo.
 
-### **43. Inverse Popularity**
+### **3. Inverse Popularity**
 
 Atributos menos populares → más interesantes.
 
-### **44. Commonality Score**
+### **4. Commonality Score**
 
 Cuántos usuarios han consumido ese atributo.
 Requiere histórico de interacción.
@@ -287,15 +301,15 @@ Requiere histórico de interacción.
 
 # Métricas de Diversidad (`metrics_diversity.py`)
 
-### **45. Explanation Type Diversity**
+### **1. Explanation Type Diversity**
 
 Número de tipos de relación usados en las explicaciones.
 
-### **46. Attribute Diversity del recomendado**
+### **2. Attribute Diversity del recomendado**
 
 Número de tipos de atributos presentes en el ítem recomendado.
 
-### **47. Cross-Explanation Diversity**
+### **3. Cross-Explanation Diversity**
 
 Diversidad entre explicaciones generadas para un mismo usuario.
 
@@ -303,11 +317,11 @@ Diversidad entre explicaciones generadas para un mismo usuario.
 
 # Métricas de Recencia (`metrics_recency.py`)
 
-### **48. Recency Score**
+### **1. Recency Score**
 
 Da más peso a interacciones recientes.
 
-### **49. Normalized Recency Rank**
+### **2. Normalized Recency Rank**
 
 Normaliza la recencia respecto al historial completo.
 
@@ -315,15 +329,15 @@ Normaliza la recencia respecto al historial completo.
 
 # Métricas de Novedad/Serendipia (`metrics_novelty.py`)
 
-### **50. Novelty Count**
+### **1. Novelty Count**
 
 Número de atributos nuevos del recomendado.
 
-### **51. Novelty Ratio**
+### **2. Novelty Ratio**
 
 Porcentaje de atributos nuevos del recomendado.
 
-### **52. Surprise Score**
+### **3. Surprise Score**
 
 Novedad × rareza (inversa de popularidad).
 Modelo típico de “sorpresa”.
@@ -332,11 +346,11 @@ Modelo típico de “sorpresa”.
 
 # Métricas de Cobertura de Preferencias (`metrics_coverage.py`)
 
-### **53. Preference Coverage**
+### **1. Preference Coverage**
 
 Proporción de preferencias del usuario cubiertas por el recomendado.
 
-### **54. Blind-Spot Coverage**
+### **2. Blind-Spot Coverage**
 
 Información nueva aportada:
 1 – Coverage.
@@ -345,7 +359,7 @@ Información nueva aportada:
 
 # Métricas por Tipo de Relación (`metrics_type_relationship.py`)
 
-### **55. Type-Specific Match Frequency**
+### **1. Type-Specific Match Frequency**
 
 Coincidencias específicas según tipo:
 
@@ -353,7 +367,7 @@ Coincidencias específicas según tipo:
 * CategoryMatch
 * AmenityMatch
 
-### **56. Weighted Type Match Score**
+### **2. Weighted Type Match Score**
 
 Combina los tipos anteriores con pesos.
 
