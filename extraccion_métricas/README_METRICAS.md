@@ -27,11 +27,13 @@ Estas métricas analizan los **caminos** que conectan el hotel consumido por el 
 ### **1. Path Length**
 
 Cantidad de saltos que hay entre el hotel consumido y el hotel recomendado.
+
 Las explicaciones más cortas suelen ser más fáciles de entender.
 
 ### **2. Path Count / Path Multiplicity**
 
 Número total de caminos distintos que justifican la recomendación.
+
 Más caminos = mayor robustez en la explicación.
 
 ### **3. Shared-Property Weight Score**
