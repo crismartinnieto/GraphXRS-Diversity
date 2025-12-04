@@ -360,29 +360,72 @@ Combina los tipos anteriores con pesos.
 
 # 📘 Tabla Resumen de Métricas
 
-| Métrica                          | Tipo        | Descripción breve                                                   | Archivo                        |
-| -------------------------------- | ----------- | ------------------------------------------------------------------  | -----------------------------  |
-| **Path Length**                  | Camino      | Saltos entre hotel consumido y recomendado.                         | `metrics_path.py`              |
-| **Path Count**                   | Camino      | Número de caminos explicativos.                                     | `metrics_path.py`              |
-| **Shared-Property Weight Score** | Camino      | Suma de pesos de propiedades compartidas.                           | `metrics_path.py`              |
-| **Path Type Variety**            | Camino      | Número de tipos de relación compartidos.                            | `metrics_path.py`              |
-| **Path Type Frequency**          | Camino      | Frecuencia de cada tipo de relación entre hoteles.                  | `metrics_path.py`              |
-| **Path Confidence Score**        | Camino      | Suma de pesos de tipos de relación.                                 | `metrics_path.py`              |
-| **Degree Centrality**            | Centralidad | Cantidad de conexiones del atributo.                                | `metrics_centrality.py`        |
-| **Normalized Degree Centrality** | Centralidad | Grado normalizado entre 0 y 1.                                      | `metrics_centrality.py`        |
-| **Betweenness Centrality**       | Centralidad | Atributo como puente en el grafo.                                   | `metrics_centrality.py`        |
-| **Closeness Centrality**         | Centralidad | Proximidad del atributo al resto.                                   | `metrics_centrality.py`        |
-| **Eigenvector Centrality**       | Centralidad | Importancia según conexiones con otros nodos importantes.           | `metrics_centrality.py`        |
-| **PageRank**                     | Centralidad | Popularidad del atributo según enlaces.                             | `metrics_centrality.py`        |
-| **Harmonic Centrality**          | Centralidad | Suma de 1/distancia con otros nodos.                                | `metrics_centrality.py`        |
-| **Attribute Influence Score**    | Centralidad | Influencia combinada: centralidad × AMF.                            | `metrics_centrality.py`        |
-| Métricas de Contenido            | Contenido   | Atributos compartidos, frecuencia, TF-IDF, estabilidad, novedad     | `metrics_content.py`           |
-| Métricas basadas en Ejemplos     | Ejemplos    | Similitud con consumidores, ejemplos más/menos parecidos, consensus | `metrics_examples.py`          |
-| Métricas de Similitud            | Similitud   | Jaccard, cosine, atributos compartidos, KPS, paths en KG            | `metrics_similarity.py`        |
-| Popularidad                      | Popularidad | Qué tan común es un atributo                                        | `metrics_popularity.py`        |
-| Diversidad                       | Diversidad  | Diversidad de explicaciones y atributos                             | `metrics_diversity.py`         |
-| Recencia                         | Tiempo      | Peso a interacciones recientes                                      | `metrics_recency.py`           |
-| Novedad/Serendipia               | Novedad     | Atributos nuevos, inesperados, sorpresa                             | `metrics_novelty.py`           |
-| Cobertura                        | Cobertura   | Qué parte del perfil cubre el recomendado                           | `metrics_coverage.py`          |
-| Tipo de Relación                 | Relaciones  | Coincidencias por tipo y versión ponderada                          | `metrics_type_relationship.py` |
+| Métrica (función Python)                     | Tipo        | Descripción breve                                                   | Archivo                        |
+| ------------------------------------------   | ----------- | ------------------------------------------------------------------  | -----------------------------  |
+| **path_length**                              | Camino      | Saltos entre hotel consumido y recomendado.                         | `metrics_path.py`              |
+| **path_count**                               | Camino      | Número de caminos explicativos.                                     | `metrics_path.py`              |
+| **shared_property_weight_score**             | Camino      | Suma de pesos de propiedades compartidas.                           | `metrics_path.py`              |
+| **path_type_variety**                        | Camino      | Número de tipos de relación compartidos.                            | `metrics_path.py`              |
+| **path_type_frequency**                      | Camino      | Frecuencia de cada tipo de relación entre hoteles.                  | `metrics_path.py`              |
+| **path_confidence_score**                    | Camino      | Suma de pesos de tipos de relación.                                 | `metrics_path.py`              |
+| **weighted_knowledge_path_score**            | Camino      | Suma de pesos de todos los caminos relevantes.                      | `metrics_path.py`              |
+| **compute_degree_centrality**                | Centralidad | Cantidad de conexiones del atributo.                                | `metrics_centrality.py`        |
+| **compute_normalized_degree_centrality**     | Centralidad | Grado normalizado entre 0 y 1.                                      | `metrics_centrality.py`        |
+| **compute_betweenness_centrality**           | Centralidad | Atributo como puente en el grafo.                                   | `metrics_centrality.py`        |
+| **compute_closeness_centrality**             | Centralidad | Proximidad del atributo al resto.                                   | `metrics_centrality.py`        |
+| **compute_eigenvector_centrality**           | Centralidad | Importancia según conexiones con otros nodos importantes.           | `metrics_centrality.py`        |
+| **compute_pagerank**                         | Centralidad | Popularidad del atributo según enlaces.                             | `metrics_centrality.py`        |
+| **compute_harmonic_centrality**              | Centralidad | Suma de 1/distancia con otros nodos.                                | `metrics_centrality.py`        |
+| **compute_attribute_influence_score**        | Centralidad | Influencia combinada: centralidad × AMF.                            | `metrics_centrality.py`        |
+| **preference_coverage**                      | Cobertura   | Cobertura del perfil del usuario                                    | `metrics_coverage.py`          |
+| **blind_spot_coverage**                      | Cobertura   | Información nueva aportada                                          | `metrics_coverage.py`          |
+| **attribute_match_frequency**                | Contenido   | Proporción de consumidos que tienen el atributo recomendado         | `metrics_content.py`           |
+| **attribute_frequency**                      | Contenido   | Frecuencia absoluta del atributo en consumidos                      | `metrics_content.py`           |
+| **attribute_tfidf**                          | Contenido   | Destaca atributos frecuentes en el usuario y raros en catálogo      | `metrics_content.py`           |
+| **attribute_contribution_score**             | Contenido   | Relevancia del atributo para justificar la recomendación            | `metrics_content.py`           |
+| **attribute_presence_ratio**                 | Contenido   | Proporción de atributos del recomendado que el usuario ya consumió  | `metrics_content.py`           |
+| **attribute_overlap_count**                  | Contenido   | Número de atributos compartidos                                     | `metrics_content.py`           |
+| **attribute_novelty**                        | Contenido   | Indica si un atributo es nuevo para el usuario                      | `metrics_content.py`           |
+| **attribute_specificity**                    | Contenido   | Qué tan raro es el atributo en el catálogo                          | `metrics_content.py`           |
+| **attribute_stability**                      | Contenido   | Constancia del atributo en el histórico del usuario                 | `metrics_content.py`           |
+| **attribute_variability**                    | Contenido   | Qué tan variable es un atributo en los consumidos                   | `metrics_content.py`           |
+| **explanation_type_diversity**               | Diversidad  | Variedad de tipos de relación en la explicación                     | `metrics_diversity.py`         |
+| **attribute_diversity_recommended**          | Diversidad  | Variedad de atributos del hotel recomendado                         | `metrics_diversity.py`         |
+| **cross_explanation_diversity**              | Diversidad  | Variedad de explicaciones generadas                                 | `metrics_diversity.py`         |
+| **example_similarity_score**                 | Ejemplos    | Similitud recomendado-consumido                                     | `metrics_examples.py`          |
+| **most_similar_consumed_example**            | Ejemplos    | Consumido más parecido al recomendado                               | `metrics_examples.py`          |
+| **least_similar_consumed_example**           | Ejemplos    | Consumido menos parecido                                            | `metrics_examples.py`          |
+| **mean_example_similarity**                  | Ejemplos    | Promedio de similitud                                               | `metrics_examples.py`          |
+| **k_nearest_example_strength**               | Ejemplos    | Suma de similitudes de los k consumidos más cercanos                | `metrics_examples.py`          |
+| **example_support_score**                    | Ejemplos    | Número de consumidos que tienen un atributo                         | `metrics_examples.py`          |
+| **relative_example_strength**                | Ejemplos    | Soporte normalizado por total de consumidos                         | `metrics_examples.py`          |
+| **example_density**                          | Ejemplos    | Frecuencia del atributo entre todos los consumidos                  | `metrics_examples.py`          |
+| **example_coverage**                         | Ejemplos    | Porcentaje de consumidos que comparten atributos                    | `metrics_examples.py`          |
+| **example_consensus_score**                  | Ejemplos    | Homogeneidad de los ejemplos de soporte                             | `metrics_examples.py`          |
+| **example_disagreement_score**               | Ejemplos    | Variabilidad en similitud de ejemplos                               | `metrics_examples.py`          |
+| **prototype_example_score**                  | Ejemplos    | Ejemplo más representativo y similitud con recomendado              | `metrics_examples.py`          |
+| **novelty_count**                            | Novedad     | Número de atributos nuevos                                          | `metrics_novelty.py`           |
+| **novelty_ratio**                            | Novedad     | Proporción de atributos nuevos                                      | `metrics_novelty.py`           |
+| **surprise_score**                           | Novedad     | Novedad × InversePopularity                                         | `metrics_novelty.py`           |
+| **attribute_popularity**                     | Popularidad | Número de hoteles conectados al atributo                            | `metrics_popularity.py`        |
+| **attribute_popularity_rank**                | Popularidad | Percentil del atributo                                              | `metrics_popularity.py`        |
+| **inverse_popularity**                       | Popularidad | Rareza / Unexpectedness del atributo                                | `metrics_popularity.py`        |
+| **commonality_score**                        | Popularidad | Número de usuarios que consumieron el atributo                      | `metrics_popularity.py`        |
+| **recency_score**                            | Recencia    | 1 / (1 + Δt)                                                        | `metrics_recency.py`           |
+| **normalized_recency_rank**                  | Recencia    | Δt normalizado por el máximo                                        | `metrics_recency.py`           |
+| **type_specific_match_frequency**            | Relaciones  | Coincidencias por tipo de relación                                  | `metrics_type_match.py`        |
+| **weighted_type_match_score**                | Relaciones  | Suma ponderada de coincidencias                                     | `metrics_type_match.py`        |
+| **jaccard_similarity_metric**                | Similitud   | Similitud binaria de atributos                                      | `metrics_similarity.py`        |
+| **cosine_similarity_metric**                 | Similitud   | Similitud vectorizada de atributos                                  | `metrics_similarity.py`        |
+| **shared_attribute_count**                   | Similitud   | Conteo absoluto de atributos compartidos                            | `metrics_similarity.py`        |
+| **weighted_shared_attribute_score**          | Similitud   | Conteo ponderado por importancia                                    | `metrics_similarity.py`        |
+| **shared_category_count**                    | Similitud   | Categorías compartidas                                              | `metrics_similarity.py`        |
+| **shared_location_count**                    | Similitud   | Ubicaciones compartidas                                             | `metrics_similarity.py`        |
+| **category_alignment_score**                 | Similitud   | Alineación de categorías con el usuario                             | `metrics_similarity.py`        |
+| **path_count_graph**                         | Similitud   | Número de caminos en grafo                                          | `metrics_similarity.py`        |
+| **path_length_graph**                        | Similitud   | Longitud de caminos                                                 | `metrics_similarity.py`        |
+| **weighted_knowledge_path_score_similarity** | Similitud   | Suma ponderada de caminos en grafo                                  | `metrics_similarity.py`        |
+
+
+
 
