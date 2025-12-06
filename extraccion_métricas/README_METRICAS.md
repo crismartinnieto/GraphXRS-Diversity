@@ -285,6 +285,25 @@ Variabilidad en la similitud entre consumidos y recomendado.
 Selecciona el ejemplo más representativo del usuario (centroide).
 Luego compara su similitud con el recomendado.
 
+### CSV OBTENIDO
+| Columna                        | Tipo                 | Descripción                                                                     | Interpretación del valor                                                                 |
+| ------------------------------ | -------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| **usuario**                    | Identificador        | ID del usuario al que pertenece la explicación.                                 | No es métrica. Solo identifica al usuario.                                               |
+| **hotel_recomendado**          | Identificador        | ID del hotel recomendado.                                                       | No es métrica.                                                                           |
+| **hotel_consumido**            | Identificador        | ID del hotel consumido por el usuario.                                          | No es métrica, pero sirve para comparar con el recomendado.                              |
+| **propiedad**                  | Propiedad compartida | Propiedad específica (si aplica) del recomendado que se compara con consumidos. | Puede ser `None` si la métrica no es por propiedad.                                      |
+| **example_similarity_score**   | Métrica              | Similitud Jaccard entre un hotel consumido y el recomendado.                    | **Mayor es mejor.** 1 = idénticos, 0 = sin coincidencias.                                |
+| **shared_attribute_count**     | Métrica              | Número de atributos compartidos entre el consumido y el recomendado.            | **Mayor es mejor.** Indica soporte directo de la recomendación.                          |
+| **mean_example_similarity**    | Métrica global       | Promedio de similitud entre el recomendado y todos los consumidos.              | **Mayor es mejor.** Refleja afinidad general del recomendado con el perfil del usuario.  |
+| **k_nearest_example_strength** | Métrica global       | Suma de similitudes de los k consumidos más parecidos.                          | **Mayor es mejor.** Indica fuerza de los ejemplos más cercanos.                          |
+| **example_coverage**           | Métrica global       | Porcentaje de consumidos que comparten al menos un atributo con el recomendado. | **Mayor es mejor.** 1 = todos los consumidos tienen al menos un atributo común.          |
+| **example_consensus_score**    | Métrica global       | Promedio de atributos compartidos por cada ejemplo consumido.                   | **Mayor es mejor.** Indica consistencia de los ejemplos que respaldan la recomendación.  |
+| **example_disagreement_score** | Métrica global       | Varianza de similitudes entre consumidos y recomendado.                         | **Menor es mejor.** Valores altos indican variabilidad; bajo = consenso fuerte.          |
+| **is_most_similar**            | Flag                 | Indica si el consumido es el más similar al recomendado.                        | 1 = sí, 0 = no.                                                                          |
+| **is_least_similar**           | Flag                 | Indica si el consumido es el menos similar (para explicaciones contrastivas).   | 1 = sí, 0 = no.                                                                          |
+| **is_prototype**               | Flag                 | Indica si el consumido es el prototipo representativo del usuario.              | 1 = sí, 0 = no.                                                                          |
+| **prototype_similarity**       | Métrica              | Similitud del prototipo del usuario con el recomendado.                         | **Mayor es mejor.** Refleja cuán representativo es el prototipo respecto al recomendado. |
+
 ---
 
 # Métricas de Similitud (`metrics_similarity.py`)
@@ -331,6 +350,24 @@ Distancia más corta o promedio en el KG.
 
 Suma de pesos de todos los caminos relevantes.
 
+### **CSV OBTENIDO**
+| Columna                             | Tipo                 | Descripción                                                                 | Interpretación del valor                                                |
+| ----------------------------------- | -------------------- | --------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| **usuario**                         | Identificador        | ID del usuario al que pertenece la explicación.                             | No es métrica. Solo identifica al usuario.                              |
+| **hotel_recomendado**               | Identificador        | ID del hotel recomendado.                                                   | No es métrica.                                                          |
+| **hotel_consumido**                 | Identificador        | ID del hotel consumido por el usuario.                                      | No es métrica.                                                          |
+| **propiedad**                       | Propiedad compartida | Propiedad asociada a la métrica (opcional, normalmente `None`).             | Puede usarse para vincular métricas a un atributo específico.           |
+| **jaccard_similarity**              | Métrica              | Similitud binaria entre los atributos del consumido y el recomendado.       | **Mayor es mejor.** 1 = idénticos; 0 = sin atributos compartidos.       |
+| **cosine_similarity**               | Métrica              | Similitud vectorial (coseno) entre representaciones de atributos.           | **Mayor es mejor.** 1 = idénticos; 0 = ortogonales.                     |
+| **shared_attribute_count**          | Métrica              | Número absoluto de atributos compartidos.                                   | **Mayor es mejor.** Más atributos compartidos → más parecido.           |
+| **weighted_shared_attribute_score** | Métrica              | Conteo ponderado de atributos compartidos según importancia.                | **Mayor es mejor.** Refleja relevancia de atributos compartidos.        |
+| **shared_category_count**           | Métrica              | Número de categorías compartidas (`has_category`).                          | **Mayor es mejor.** Indica alineación semántica.                        |
+| **shared_location_count**           | Métrica              | Número de coincidencias de ubicación (ciudad, estado, postal).              | **Mayor es mejor.** Localización geográfica común.                      |
+| **category_alignment_score**        | Métrica              | Proporción de categorías del recomendado que coinciden con las del usuario. | **Mayor es mejor.** 1 = todas las categorías alineadas; 0 = ninguna.    |
+| **path_count**                      | Métrica              | Número de caminos entre consumido y recomendado en el KG.                   | **Mayor es mejor.** Más caminos = más relaciones compartidas.           |
+| **path_length**                     | Métrica              | Longitud del camino más corto en el KG.                                     | **Menor es mejor.** 2 = comparten atributo; ∞ = sin conexión.           |
+| **weighted_kps**                    | Métrica              | Suma ponderada de todos los caminos relevantes (Knowledge Path Score).      | **Mayor es mejor.** Refleja fuerza total de las conexiones en el grafo. |
+
 ---
 
 # Métricas de Popularidad (`metrics_popularity.py`)
@@ -354,6 +391,18 @@ Atributos menos populares → más interesantes.
 Cuántos usuarios han consumido ese atributo.
 Requiere histórico de interacción.
 
+### **CSV OBTENIDO**
+| Columna                       | Tipo                | Descripción                                                                                        | Interpretación del valor                                              |
+| ----------------------------- | ------------------- | -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| **usuario**                   | Identificador       | ID del usuario al que pertenece la recomendación.                                                  | No es métrica. Solo identifica al usuario.                            |
+| **hotel_recomendado**         | Identificador       | ID del hotel recomendado.                                                                          | No es métrica.                                                        |
+| **propiedad**                 | Propiedad del hotel | Atributo específico del hotel recomendado (ej.: `has_attribute:GoodForKids=True`).                 | Cada fila corresponde a una propiedad concreta del recomendado.       |
+| **hotel_consumido**           | Identificador       | Siempre `NaN` en estas métricas (no dependen de un hotel consumido).                               | No es métrica.                                                        |
+| **attribute_popularity**      | Métrica             | Número de hoteles del catálogo que poseen este atributo.                                           | **Menor es mejor** si se busca rareza; mayor = atributo común.        |
+| **attribute_popularity_rank** | Métrica             | Percentil del atributo respecto a todos los atributos del catálogo.                                | **Mayor = más raro** (atributo más exclusivo), **menor = más común**. |
+| **inverse_popularity**        | Métrica             | 1 / Popularidad, destaca atributos raros.                                                          | **Mayor = más raro/interesante**, **menor = más común**.              |
+| **commonality_score**         | Métrica             | Número de usuarios que han consumido este atributo (requiere historial completo; placeholder = 0). | **Mayor = más usado**, **menor = menos usado**.                       |
+
 ---
 
 # Métricas de Diversidad (`metrics_diversity.py`)
@@ -370,17 +419,16 @@ Número de tipos de atributos presentes en el ítem recomendado.
 
 Diversidad entre explicaciones generadas para un mismo usuario.
 
----
-
-# Métricas de Recencia (`metrics_recency.py`)
-
-### **1. Recency Score**
-
-Da más peso a interacciones recientes.
-
-### **2. Normalized Recency Rank**
-
-Normaliza la recencia respecto al historial completo.
+### **CSV OBTENIDO**
+| Columna                             | Tipo                | Descripción                                                                                 | Interpretación del valor                                                       |
+| ----------------------------------- | ------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| **usuario**                         | Identificador       | ID del usuario al que pertenece la recomendación.                                           | No es métrica. Solo identifica al usuario.                                     |
+| **hotel_recomendado**               | Identificador       | ID del hotel recomendado.                                                                   | No es métrica.                                                                 |
+| **hotel_consumido**                 | Identificador       | ID del hotel previamente consumido por el usuario.                                          | Se usa para calcular explicaciones y diversidad respecto al recomendado.       |
+| **propiedad**                       | Propiedad del hotel | Atributo específico del hotel recomendado (ej.: `has_attribute:GoodForKids=True`).          | Actualmente `NaN` porque tus métricas no dependen de propiedades individuales. |
+| **explanation_type_diversity**      | Métrica             | Número de tipos de relaciones compartidas entre el hotel consumido y el recomendado.        | **Mayor = más diversa la explicación**, más tipos de relaciones usadas.        |
+| **attribute_diversity_recommended** | Métrica             | Número de tipos de atributos presentes en el hotel recomendado.                             | **Mayor = hotel recomendado más diverso en atributos**.                        |
+| **cross_explanation_diversity**     | Métrica             | Promedio de `explanation_type_diversity` entre todos los hoteles consumidos por el usuario. | **Mayor = usuario recibe explicaciones más variadas para sus consumos**.       |
 
 ---
 
@@ -399,6 +447,17 @@ Porcentaje de atributos nuevos del recomendado.
 Novedad × rareza (inversa de popularidad).
 Modelo típico de “sorpresa”.
 
+### **CSV OBTENIDO**
+| Columna               | Tipo                | Descripción                                                                          | Interpretación del valor                                                    |
+| --------------------- | ------------------- | ------------------------------------------------------------------------------------ | --------------------------------------------------------------------------- |
+| **usuario**           | Identificador       | ID del usuario al que pertenece la recomendación.                                    | No es métrica. Solo identifica al usuario.                                  |
+| **hotel_recomendado** | Identificador       | ID del hotel recomendado.                                                            | No es métrica.                                                              |
+| **hotel_consumido**   | Identificador       | Siempre `NaN` en estas métricas (no dependen de un hotel consumido).                 | No es métrica.                                                              |
+| **propiedad**         | Propiedad del hotel | Siempre `NaN` en estas métricas (no dependen de propiedades individuales).           | No es métrica.                                                              |
+| **novelty_count**     | Métrica             | Número de atributos del hotel recomendado que el usuario **no ha visto antes**.      | **Mayor = más atributos nuevos**, más novedoso para el usuario.             |
+| **novelty_ratio**     | Métrica             | Proporción de atributos nuevos respecto al total de atributos del hotel recomendado. | Normaliza `novelty_count` según tamaño del hotel. **Mayor = más novedoso**. |
+| **surprise_score**    | Métrica             | Combina novedad con rareza (inversa de popularidad). Modelo de “sorpresa”.           | **Mayor = hotel sorprendente**: atributos nuevos y poco comunes.            |
+
 ---
 
 # Métricas de Cobertura de Preferencias (`metrics_coverage.py`)
@@ -411,6 +470,16 @@ Proporción de preferencias del usuario cubiertas por el recomendado.
 
 Información nueva aportada:
 1 – Coverage.
+
+### **CSV OBTENIDO**
+| Columna                 | Tipo                | Descripción                                                                                          | Interpretación del valor                                                    |
+| ----------------------- | ------------------- | ---------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| **usuario**             | Identificador       | ID del usuario al que pertenece la recomendación.                                                    | No es métrica. Solo identifica al usuario.                                  |
+| **hotel_recomendado**   | Identificador       | ID del hotel recomendado.                                                                            | No es métrica.                                                              |
+| **hotel_consumido**     | Identificador       | Siempre `NaN` en estas métricas.                                                                     | No es métrica.                                                              |
+| **propiedad**           | Propiedad del hotel | Siempre `NaN` en estas métricas.                                                                     | No es métrica.                                                              |
+| **preference_coverage** | Métrica             | Proporción de atributos previamente consumidos por el usuario que están presentes en el recomendado. | **Mayor = el hotel satisface mejor las preferencias conocidas del usuario** |
+| **blind_spot_coverage** | Métrica             | Complemento de `preference_coverage`. Indica la información nueva aportada por el recomendado.       | **Mayor = más información nueva**, el hotel es más exploratorio.            |
 
 ---
 
