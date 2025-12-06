@@ -59,6 +59,27 @@ Cada tipo de relación tiene un peso (ej.: ubicación=3, categoría=2, atributos
 La puntuación es la suma de los pesos de los tipos compartidos.
 Mide qué tan “fuerte” es la explicación basada en propiedades relevantes.
 
+### **7. Weighted Knowledge Path Score**
+
+Definición: peso × cantidad de valores por cada tipo de relación.
+Mide la fuerza total acumulada de todos los caminos explicativos entre dos hoteles, ponderada por la importancia de cada tipo de relación.
+
+### CSV OBTENIDO
+
+| Columna | Tipo | Descripción | Interpretación del valor |
+|--------|------|-------------|---------------------------|
+| **usuario** | Identificador | ID del usuario al que pertenece la explicación. | No es métrica. Solo identifica al usuario. |
+| **hotel_recomendado** | Identificador | ID del hotel recomendado. | No es métrica. |
+| **hotel_consumido** | Identificador | ID de un hotel consumido por el usuario. | No es métrica. |
+| **propiedad** | Propiedad compartida | Propiedad específica compartida entre el consumido y el recomendado (ej.: `has_category:Tours`). | Cada fila corresponde a una propiedad concreta que justifica la recomendación. |
+| **path_length** | Métrica | Longitud del camino más corto entre ambos hoteles. | **Menor es mejor.** 2 = comparten propiedad; ∞ = no hay conexión. |
+| **path_count** | Métrica | Número total de propiedades compartidas entre los hoteles. | **Mayor es mejor.** Más conexiones ⇒ mayor robustez. |
+| **path_type_variety** | Métrica | Número de tipos de relación distintos compartidos. | **Mayor es mejor.** Más variedad ⇒ explicación más completa. |
+| **shared_property_weight_score** | Métrica | Suma de los pesos de todas las propiedades compartidas, considerando cantidad. | **Mayor es mejor.** Captura fuerza total basada en cantidad + importancia. |
+| **path_confidence_score** | Métrica | Suma de pesos de los tipos de relación compartidos (sin contar cantidad). | **Mayor es mejor.** Evalúa relevancia de tipos compartidos. |
+| **weighted_kps** | Métrica | Weighted Knowledge Path Score: suma total de (peso × cantidad) por cada tipo de relación. | **Mayor es mejor.** Refleja la fuerza explicativa global. |
+| **path_type_frequency** | Métrica descriptiva | Número de hoteles consumidos que comparten el tipo de relación de esta fila con el recomendado. | No es “mejor/peor”. Alto = tipo común; bajo = tipo más específico/personalizado. |
+
 ---
 
 ## Métricas Basadas en Centralidad (`metrics_centrality.py`)
