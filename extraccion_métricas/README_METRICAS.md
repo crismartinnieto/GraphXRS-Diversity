@@ -78,7 +78,7 @@ Mide la fuerza total acumulada de todos los caminos explicativos entre dos hotel
 | **shared_property_weight_score** | Métrica | Suma de los pesos de todas las propiedades compartidas, considerando cantidad. | **Mayor es mejor.** Captura fuerza total basada en cantidad + importancia. |
 | **path_confidence_score** | Métrica | Suma de pesos de los tipos de relación compartidos (sin contar cantidad). | **Mayor es mejor.** Evalúa relevancia de tipos compartidos. |
 | **weighted_kps** | Métrica | Weighted Knowledge Path Score: suma total de (peso × cantidad) por cada tipo de relación. | **Mayor es mejor.** Refleja la fuerza explicativa global. |
-| **path_type_frequency** | Métrica descriptiva | Número de hoteles consumidos que comparten el tipo de relación de esta fila con el recomendado. | No es “mejor/peor”. Alto = tipo común; bajo = tipo más específico/personalizado. |
+| **path_type_frequency** | Métrica descriptiva | Número de hoteles consumidos que comparten el tipo de relación de esta fila con el recomendado. | **No es “mejor/peor”**. Alto = tipo común; bajo = tipo más específico/personalizado. |
 
 ---
 
@@ -130,6 +130,23 @@ Suma los inversos de las distancias.
 
 Combina la centralidad con su capacidad de diferenciación (AMF).
 Mide cuánta influencia real tiene una propiedad al explicar recomendaciones.
+
+### CSV OBTENIDO
+
+| Columna | Tipo | Descripción | Interpretación del valor |
+|--------|------|-------------|---------------------------|
+| **usuario** | Identificador | ID del usuario al que pertenece la explicación. | No es métrica. Solo identifica al usuario. |
+| **hotel_recomendado** | Identificador | ID del hotel recomendado. | No es métrica. |
+| **propiedad** | Propiedad del recomendado | Atributo del hotel recomendado que se está evaluando (ej.: `has_attribute:GoodForKids=True`). | No es métrica; describe la propiedad analizada. |
+| **hotel_consumido** | Identificador | Hotel consumido que comparte esta propiedad (si existe). | No es métrica. `NaN` = ningún hotel consumido comparte este atributo. |
+| **degree_centrality** | Métrica estructural | Número de nodos conectados a esta propiedad. Mide popularidad del atributo. | **Mayor es mejor.** Indica atributo común en el grafo. |
+| **normalized_degree_centrality** | Métrica estructural | Versión normalizada del grado (0–1). | **Mayor es mejor.** Atributo más frecuente en proporción al tamaño del grafo. |
+| **betweenness_centrality** | Métrica estructural | Mide si la propiedad actúa como puente entre comunidades del grafo. | **Mayor es mejor.** Atributo estructuralmente más relevante. |
+| **closeness_centrality** | Métrica estructural | Indica la cercanía del atributo al resto del grafo según distancias. | **Mayor es mejor.** Atributo más “accesible” en la red. |
+| **eigenvector_centrality** | Métrica estructural | Mide importancia del atributo considerando la importancia de sus vecinos. | **Mayor es mejor.** Atributo conectado con nodos influyentes. |
+| **pagerank** | Métrica estructural | Mide relevancia basándose en flujos de probabilidad (PageRank). | **Mayor es mejor.** Atributo estructuralmente destacado. |
+| **harmonic_centrality** | Métrica estructural | Variante del closeness que suma inversos de distancias. | **Mayor es mejor.** Evita problemas en grafos desconectados. |
+| **attribute_influence_score** | Métrica | Score final que mide la influencia de la propiedad (Degree × factor de coincidencia). | **Mayor es mejor.** Indica cuánto aporta esta propiedad a justificar la recomendación. |
 
 ---
 
