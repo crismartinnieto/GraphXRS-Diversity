@@ -138,7 +138,7 @@ Mide cuánta influencia real tiene una propiedad al explicar recomendaciones.
 | **usuario** | Identificador | ID del usuario al que pertenece la explicación. | No es métrica. Solo identifica al usuario. |
 | **hotel_recomendado** | Identificador | ID del hotel recomendado. | No es métrica. |
 | **propiedad** | Propiedad del recomendado | Atributo del hotel recomendado que se está evaluando (ej.: `has_attribute:GoodForKids=True`). | No es métrica; describe la propiedad analizada. |
-| **hotel_consumido** | Identificador | Hotel consumido que comparte esta propiedad (si existe). | No es métrica. `NaN` = ningún hotel consumido comparte este atributo. |
+| **hotel_consumido** | Identificador | Hotel consumido que comparte esta propiedad (si existe). | No es métrica. `NaN` = ningún hotel consumido comparte este atributo porque estas métricas NO dependen de las comparaciones entre un hotel consumido y uno recomendado. Las centralidades se calculan solo sobre el grafo completo, NO sobre pares consumido–recomendado |
 | **degree_centrality** | Métrica estructural | Número de nodos conectados a esta propiedad. Mide popularidad del atributo. | **Mayor es mejor.** Indica atributo común en el grafo. |
 | **normalized_degree_centrality** | Métrica estructural | Versión normalizada del grado (0–1). | **Mayor es mejor.** Atributo más frecuente en proporción al tamaño del grafo. |
 | **betweenness_centrality** | Métrica estructural | Mide si la propiedad actúa como puente entre comunidades del grafo. | **Mayor es mejor.** Atributo estructuralmente más relevante. |
