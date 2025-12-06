@@ -185,25 +185,29 @@ Proporción de atributos del recomendado que el usuario ya ha consumido antes.
 
 Número total de atributos compartidos entre hotel recomendado y consumidos.
 
-### **7. Attribute Novelty**
+### **7. Attribute Overlap Ratio**
+
+Overlap/Jaccard entre atributos del usuario y del recomendado.
+
+### **8. Attribute Novelty**
 
 Detecta si un atributo es nuevo para el usuario.
 
 1 = nuevo, 0 = ya conocido.
 
-### **8. Attribute Specificity (Inverse Popularity)**
+### **9. Attribute Specificity (Inverse Popularity)**
 
 Qué tan raro es un atributo en el catálogo.
 
 Menos popular = más explicativo. 
 
-### **9. Attribute Stability**
+### **10. Attribute Stability**
 
 Qué tan constante es un atributo en el histórico del usuario.
 
 Atributos estables = preferencias firmes.
 
-### **10. Attribute Variability**
+### **11. Attribute Variability**
 
 Qué tan variable es un atributo en los consumidos; baja variabilidad indica gusto representativo del usuario.
 
