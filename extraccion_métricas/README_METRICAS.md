@@ -322,31 +322,27 @@ Similitud vectorial entre representaciones de atributos.
 
 Conteo absoluto de atributos compartidos. 
 
-### **4. Weighted Shared Attribute Score**
-
-Conteo ponderado según la importancia de cada atributo.  
-
-### **5. Shared Category Count**
+### **4. Shared Category Count**
 
 Conteo específico de categorías compartidas.
 
-### **6. Shared Location Count**
+### **5. Shared Location Count**
 
 Coincidencias de ubicación (ciudad, país, región…).
 
-### **7. Category Alignment Score**
+### **6. Category Alignment Score**
 
 Proporción de categorías del recomendado que coinciden con las del usuario.
 
-### **8. Path Count (Graph)**
+### **7. Path Count (Graph)**
 
 Cantidad de caminos en el KG entre consumido y recomendado.
 
-### **9. Path Length (Graph)**
+### **8. Path Length (Graph)**
 
 Distancia más corta o promedio en el KG.
 
-### **10. Weighted Knowledge Path Score (KPS)**
+### **9. Weighted Knowledge Path Score (KPS)**
 
 Suma de pesos de todos los caminos relevantes.
 
@@ -360,7 +356,6 @@ Suma de pesos de todos los caminos relevantes.
 | **jaccard_similarity**              | Métrica              | Similitud binaria entre los atributos del consumido y el recomendado.       | **Mayor es mejor.** 1 = idénticos; 0 = sin atributos compartidos.       |
 | **cosine_similarity**               | Métrica              | Similitud vectorial (coseno) entre representaciones de atributos.           | **Mayor es mejor.** 1 = idénticos; 0 = ortogonales.                     |
 | **shared_attribute_count**          | Métrica              | Número absoluto de atributos compartidos.                                   | **Mayor es mejor.** Más atributos compartidos → más parecido.           |
-| **weighted_shared_attribute_score** | Métrica              | Conteo ponderado de atributos compartidos según importancia.                | **Mayor es mejor.** Refleja relevancia de atributos compartidos.        |
 | **shared_category_count**           | Métrica              | Número de categorías compartidas (`has_category`).                          | **Mayor es mejor.** Indica alineación semántica.                        |
 | **shared_location_count**           | Métrica              | Número de coincidencias de ubicación (ciudad, estado, postal).              | **Mayor es mejor.** Localización geográfica común.                      |
 | **category_alignment_score**        | Métrica              | Proporción de categorías del recomendado que coinciden con las del usuario. | **Mayor es mejor.** 1 = todas las categorías alineadas; 0 = ninguna.    |
