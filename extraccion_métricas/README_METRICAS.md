@@ -310,39 +310,35 @@ Luego compara su similitud con el recomendado.
 
 Evaluan la similitud entre consumidos y recomendado a nivel de atributos o vectores.
 
-### **1. Jaccard Similarity**
-
-Similitud binaria entre los atributos de consumido y recomendado.  
-
-### **2. Cosine Similarity**
+### **1. Cosine Similarity**
 
 Similitud vectorial entre representaciones de atributos.
 
-### **3. Shared Attribute Count**
+### **2. Shared Attribute Count**
 
 Conteo absoluto de atributos compartidos. 
 
-### **4. Shared Category Count**
+### **3. Shared Category Count**
 
 Conteo específico de categorías compartidas.
 
-### **5. Shared Location Count**
+### **4. Shared Location Count**
 
 Coincidencias de ubicación (ciudad, país, región…).
 
-### **6. Category Alignment Score**
+### **5. Category Alignment Score**
 
 Proporción de categorías del recomendado que coinciden con las del usuario.
 
-### **7. Path Count (Graph)**
+### **6. Path Count (Graph)**
 
 Cantidad de caminos en el KG entre consumido y recomendado.
 
-### **8. Path Length (Graph)**
+### **7. Path Length (Graph)**
 
 Distancia más corta o promedio en el KG.
 
-### **9. Weighted Knowledge Path Score (KPS)**
+### **8. Weighted Knowledge Path Score (KPS)**
 
 Suma de pesos de todos los caminos relevantes.
 
@@ -353,7 +349,6 @@ Suma de pesos de todos los caminos relevantes.
 | **hotel_recomendado**               | Identificador        | ID del hotel recomendado.                                                   | No es métrica.                                                          |
 | **hotel_consumido**                 | Identificador        | ID del hotel consumido por el usuario.                                      | No es métrica.                                                          |
 | **propiedad**                       | Propiedad compartida | Propiedad asociada a la métrica (opcional, normalmente `None`).             | Puede usarse para vincular métricas a un atributo específico.           |
-| **jaccard_similarity**              | Métrica              | Similitud binaria entre los atributos del consumido y el recomendado.       | **Mayor es mejor.** 1 = idénticos; 0 = sin atributos compartidos.       |
 | **cosine_similarity**               | Métrica              | Similitud vectorial (coseno) entre representaciones de atributos.           | **Mayor es mejor.** 1 = idénticos; 0 = ortogonales.                     |
 | **shared_attribute_count**          | Métrica              | Número absoluto de atributos compartidos.                                   | **Mayor es mejor.** Más atributos compartidos → más parecido.           |
 | **shared_category_count**           | Métrica              | Número de categorías compartidas (`has_category`).                          | **Mayor es mejor.** Indica alineación semántica.                        |
