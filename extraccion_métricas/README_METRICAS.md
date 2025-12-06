@@ -497,6 +497,18 @@ Coincidencias específicas según tipo:
 
 Combina los tipos anteriores con pesos.
 
+### CSV OBTENIDO
+| Columna                           | Tipo                | Descripción                                                                                 | Interpretación del valor                                                                                                            |
+| --------------------------------- | ------------------- | ------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| **usuario**                       | Identificador       | ID del usuario al que pertenece la recomendación.                                           | No es métrica. Solo identifica al usuario.                                                                                          |
+| **hotel_recomendado**             | Identificador       | ID del hotel recomendado.                                                                   | No es métrica.                                                                                                                      |
+| **hotel_consumido**               | Identificador       | Siempre `NaN` en estas métricas.                                                            | No es métrica.                                                                                                                      |
+| **propiedad**                     | Propiedad del hotel | Siempre `NaN` en estas métricas.                                                            | No es métrica.                                                                                                                      |
+| **relation_type**                 | Tipo de relación    | Tipo específico de relación analizada (ej.: `CityMatch`, `CategoryMatch`, `AmenityMatch`).  | Se usa para calcular la frecuencia de coincidencia y el score ponderado.                                                            |
+| **semantic_group**                | Grupo semántico     | Categoría semántica a la que pertenece el tipo de relación (ej.: `identity`, `attribute`).  | Ayuda a agrupar tipos similares.                                                                                                    |
+| **type_specific_match_frequency** | Métrica             | Frecuencia de coincidencia para el tipo de relación entre hoteles consumidos y recomendado. | **Mayor = más coincidencias** entre el recomendado y el historial del usuario.                                                      |
+| **relation_weight**               | Peso                | Peso asignado a este tipo de relación según importancia semántica.                          | Usado para calcular el score ponderado global.                                                                                      |
+| **weighted_type_match_score**     | Métrica             | Suma ponderada de todos los matches por tipo de relación.                                   | **Mayor = el hotel recomendado coincide mejor con el historial del usuario**, considerando la importancia de cada tipo de relación. |
 
 ---
 
@@ -552,9 +564,7 @@ Combina los tipos anteriores con pesos.
 | **attribute_popularity**                     | Popularidad | Número de hoteles conectados al atributo                            | `metrics_popularity.py`        |
 | **attribute_popularity_rank**                | Popularidad | Percentil del atributo                                              | `metrics_popularity.py`        |
 | **inverse_popularity**                       | Popularidad | Rareza / Unexpectedness del atributo                                | `metrics_popularity.py`        |
-| **commonality_score**                        | Popularidad | Número de usuarios que consumieron el atributo                      | `metrics_popularity.py`        |
-| **recency_score**                            | Recencia    | 1 / (1 + Δt)                                                        | `metrics_recency.py`           |
-| **normalized_recency_rank**                  | Recencia    | Δt normalizado por el máximo                                        | `metrics_recency.py`           |
+| **commonality_score**                        | Popularidad | Número de usuarios que consumieron el atributo                      | `metrics_popularity.py`        |          
 | **type_specific_match_frequency**            | Relaciones  | Coincidencias por tipo de relación                                  | `metrics_type_match.py`        |
 | **weighted_type_match_score**                | Relaciones  | Suma ponderada de coincidencias                                     | `metrics_type_match.py`        |
 | **jaccard_similarity_metric**                | Similitud   | Similitud binaria de atributos                                      | `metrics_similarity.py`        |
