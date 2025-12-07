@@ -12,7 +12,6 @@ Para evaluar la calidad de estas explicaciones, se implementan métricas:
 * **Métricas basadas en novedad** → archivo: `metrics_novelty.py`
 * **Métricas basadas en cobertura** → archivo: `metrics_coverage.py`
 * **Métricas basadas en centralidad** → archivo: `metrics_centrality.py`
-* **Métricas basadas en recency** → archivo: `metrics_recency.py`
 * **Métricas basadas en tipo de relación** → archivo: `metrics_type_relationship.py`
 
 
@@ -240,15 +239,15 @@ Estas métricas comparan el recomendado con los hoteles consumidos para generar 
 
 ### **1. Example Similarity Score**
 
-Similitud entre el recomendado y un hotel consumido.
+Similitud Jaccard entre el consumido y el recomendado.
 
 ### **2. Most Similar Consumed Example**
 
-Hotel consumido más parecido al recomendado. 
+Flag que indica si este consumido es el más similar 
 
 ### **3. Least Similar Consumed Example (Contrastive)**
 
-Hotel consumido menos parecido.  
+Flag que indica si este consumido es el menos similar.
 
 Útil para explicaciones contrastivas, tipo “por qué este y no aquel”.
 
@@ -260,31 +259,23 @@ Similitud promedio entre el recomendado y todos los consumidos.
 
 Suma de similitudes de los k consumidos más parecidos.  
 
-### **6. Example Support Score (por atributo)**
-
-Número de consumidos que tienen un atributo del recomendado.
-
-### **7. Relative Example Strength**
-
-Normalización del soporte por el total de consumidos.
-
-### **8. Example Density**
+### **6. Example Density**
 
 Frecuencia de un atributo entre todos los atributos consumidos. 
 
-### **9. Example Coverage**
+### **7. Example Coverage**
 
 Porcentaje de consumidos que comparten al menos un atributo con el recomendado.  
 
-### **10. Example Consensus Score**
+### **8. Example Consensus Score**
 
 Homogeneidad de los ejemplos que respaldan la recomendación.
 
-### **11. Example Disagreement Score**
+### **9. Example Disagreement Score**
 
 Variabilidad en la similitud entre consumidos y recomendado.
 
-### **12. Prototype Example Score**
+### **10. Prototype Example Score**
 
 Selecciona el ejemplo más representativo del usuario (centroide).
 Luego compara su similitud con el recomendado.
@@ -297,7 +288,6 @@ Luego compara su similitud con el recomendado.
 | **hotel_consumido**            | Identificador        | ID del hotel consumido por el usuario.                                          | No es métrica, pero sirve para comparar con el recomendado.                              |
 | **propiedad**                  | Propiedad compartida | Propiedad específica (si aplica) del recomendado que se compara con consumidos. | Puede ser `None` si la métrica no es por propiedad.                                      |
 | **example_similarity_score**   | Métrica              | Similitud Jaccard entre un hotel consumido y el recomendado.                    | **Mayor es mejor.** 1 = idénticos, 0 = sin coincidencias.                                |
-| **shared_attribute_count**     | Métrica              | Número de atributos compartidos entre el consumido y el recomendado.            | **Mayor es mejor.** Indica soporte directo de la recomendación.                          |
 | **mean_example_similarity**    | Métrica global       | Promedio de similitud entre el recomendado y todos los consumidos.              | **Mayor es mejor.** Refleja afinidad general del recomendado con el perfil del usuario.  |
 | **k_nearest_example_strength** | Métrica global       | Suma de similitudes de los k consumidos más parecidos.                          | **Mayor es mejor.** Indica fuerza de los ejemplos más cercanos.                          |
 | **example_coverage**           | Métrica global       | Porcentaje de consumidos que comparten al menos un atributo con el recomendado. | **Mayor es mejor.** 1 = todos los consumidos tienen al menos un atributo común.          |
@@ -305,7 +295,6 @@ Luego compara su similitud con el recomendado.
 | **example_disagreement_score** | Métrica global       | Varianza de similitudes entre consumidos y recomendado.                         | **Menor es mejor.** Valores altos indican variabilidad; bajo = consenso fuerte.          |
 | **is_most_similar**            | Flag                 | Indica si el consumido es el más similar al recomendado.                        | 1 = sí, 0 = no.                                                                          |
 | **is_least_similar**           | Flag                 | Indica si el consumido es el menos similar (para explicaciones contrastivas).   | 1 = sí, 0 = no.                                                                          |
-| **is_prototype**               | Flag                 | Indica si el consumido es el prototipo representativo del usuario.              | 1 = sí, 0 = no.                                                                          |
 | **prototype_similarity**       | Métrica              | Similitud del prototipo del usuario con el recomendado.                         | **Mayor es mejor.** Refleja cuán representativo es el prototipo respecto al recomendado. |
 
 ---
