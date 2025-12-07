@@ -561,6 +561,10 @@ Combina los tipos anteriores con pesos.
 | **path_length_graph**                        | Similitud   | Longitud de caminos                                                 | `metrics_similarity.py`        |
 | **weighted_knowledge_path_score_similarity** | Similitud   | Suma ponderada de caminos en grafo                                  | `metrics_similarity.py`        |
 
+---
 
+# REFERENCIAS
 
+[1] Balloccu, G., Boratto, L., Fenu, G., & Marras, M. (2022). Post-processing recommender systems with knowledge graphs for recency, popularity, and diversity of explanations. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval (pp. 646–656). ACM. https://doi.org/10.1145/3477495.3532041
 
+[2]Faccin, M., & Tintarev, N. (2021). Personalized explanations for recommender systems using centrality measures. In A. Holzinger, P. Kieseberg, A. M. Tjoa, & E. Weippl (Eds.), Machine Learning and Knowledge Extraction (pp. 343–356). Springer. https://doi.org/10.1007/978-1-0716-2197-4_19
