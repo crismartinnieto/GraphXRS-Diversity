@@ -523,6 +523,7 @@ Combina los tipos anteriores con pesos.
 | **attribute_contribution_score**             | Contenido   | Relevancia del atributo para justificar la recomendación            | `metrics_content.py`           |
 | **attribute_presence_ratio**                 | Contenido   | Proporción de atributos del recomendado que el usuario ya consumió  | `metrics_content.py`           |
 | **attribute_overlap_count**                  | Contenido   | Número de atributos compartidos                                     | `metrics_content.py`           |
+| **attribute_overlap_ratio**                  | Contenido   | Jaccard entre atributos del usuario y del recomendado.              | `metrics_content.py`           |
 | **attribute_novelty**                        | Contenido   | Indica si un atributo es nuevo para el usuario                      | `metrics_content.py`           |
 | **attribute_specificity**                    | Contenido   | Qué tan raro es el atributo en el catálogo                          | `metrics_content.py`           |
 | **attribute_stability**                      | Contenido   | Constancia del atributo en el histórico del usuario                 | `metrics_content.py`           |
@@ -531,16 +532,15 @@ Combina los tipos anteriores con pesos.
 | **attribute_diversity_recommended**          | Diversidad  | Variedad de atributos del hotel recomendado                         | `metrics_diversity.py`         |
 | **cross_explanation_diversity**              | Diversidad  | Variedad de explicaciones generadas                                 | `metrics_diversity.py`         |
 | **example_similarity_score**                 | Ejemplos    | Similitud recomendado-consumido                                     | `metrics_examples.py`          |
-| **most_similar_consumed_example**            | Ejemplos    | Consumido más parecido al recomendado                               | `metrics_examples.py`          |
-| **least_similar_consumed_example**           | Ejemplos    | Consumido menos parecido                                            | `metrics_examples.py`          |
+| **is_most_similar**                          | Ejemplos    | Consumido más parecido al recomendado                               | `metrics_examples.py`          |
+| **is_least_similar**                         | Ejemplos    | Consumido menos parecido                                            | `metrics_examples.py`          |
 | **mean_example_similarity**                  | Ejemplos    | Promedio de similitud                                               | `metrics_examples.py`          |
 | **k_nearest_example_strength**               | Ejemplos    | Suma de similitudes de los k consumidos más cercanos                | `metrics_examples.py`          |
-| **example_support_score**                    | Ejemplos    | Número de consumidos que tienen un atributo                         | `metrics_examples.py`          |
-| **relative_example_strength**                | Ejemplos    | Soporte normalizado por total de consumidos                         | `metrics_examples.py`          |
-| **example_density**                          | Ejemplos    | Frecuencia del atributo entre todos los consumidos                  | `metrics_examples.py`          |
 | **example_coverage**                         | Ejemplos    | Porcentaje de consumidos que comparten atributos                    | `metrics_examples.py`          |
 | **example_consensus_score**                  | Ejemplos    | Homogeneidad de los ejemplos de soporte                             | `metrics_examples.py`          |
 | **example_disagreement_score**               | Ejemplos    | Variabilidad en similitud de ejemplos                               | `metrics_examples.py`          |
+| **example_density**                          | Ejemplos    | Frecuencia del atributo entre todos los consumidos                  | `metrics_examples.py`          |
+| **example_support_score**                    | Ejemplos    | Número de consumidos que tienen un atributo                         | `metrics_examples.py`          |
 | **prototype_example_score**                  | Ejemplos    | Ejemplo más representativo y similitud con recomendado              | `metrics_examples.py`          |
 | **novelty_count**                            | Novedad     | Número de atributos nuevos                                          | `metrics_novelty.py`           |
 | **novelty_ratio**                            | Novedad     | Proporción de atributos nuevos                                      | `metrics_novelty.py`           |
@@ -551,7 +551,6 @@ Combina los tipos anteriores con pesos.
 | **commonality_score**                        | Popularidad | Número de usuarios que consumieron el atributo                      | `metrics_popularity.py`        |          
 | **type_specific_match_frequency**            | Relaciones  | Coincidencias por tipo de relación                                  | `metrics_type_match.py`        |
 | **weighted_type_match_score**                | Relaciones  | Suma ponderada de coincidencias                                     | `metrics_type_match.py`        |
-| **jaccard_similarity_metric**                | Similitud   | Similitud binaria de atributos                                      | `metrics_similarity.py`        |
 | **cosine_similarity_metric**                 | Similitud   | Similitud vectorizada de atributos                                  | `metrics_similarity.py`        |
 | **shared_attribute_count**                   | Similitud   | Conteo absoluto de atributos compartidos                            | `metrics_similarity.py`        |
 | **weighted_shared_attribute_score**          | Similitud   | Conteo ponderado por importancia                                    | `metrics_similarity.py`        |
