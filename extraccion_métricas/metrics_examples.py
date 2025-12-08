@@ -189,8 +189,8 @@ def compute_all_example_metrics(subgraph: Dict, user_id: int, hotel_rec_id: str,
     Calcula todas las métricas basadas en ejemplos para un usuario y un hotel recomendado.
     Ahora INCLUYE Example Density como métrica global agregada.
     """
-
-    from utils import get_hotel_properties
+    # FIXED: Changed get_hotel_properties to get_connected_properties
+    from utils import get_connected_properties
     from metrics_examples import example_density
 
     results = []
@@ -209,7 +209,8 @@ def compute_all_example_metrics(subgraph: Dict, user_id: int, hotel_rec_id: str,
 
     # ----- NEW: DENSIDAD DEL HOTEL RECOMENDADO -----
     # Promedio de densidad de TODOS los atributos del recomendado
-    rec_props = get_hotel_properties(subgraph, hotel_rec_id)  # dict: {prop_type: [values]}
+    # FIXED: Use get_connected_properties instead of get_hotel_properties
+    rec_props = get_connected_properties(subgraph, hotel_rec_id)  # dict: {prop_type: [values]}
     
     density_values = []
     for p_type, values in rec_props.items():
