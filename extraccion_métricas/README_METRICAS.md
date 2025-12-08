@@ -12,8 +12,6 @@ Para evaluar la calidad de estas explicaciones, se implementan métricas:
 * **Métricas basadas en novedad** → archivo: `metrics_novelty.py`
 * **Métricas basadas en cobertura** → archivo: `metrics_coverage.py`
 * **Métricas basadas en centralidad** → archivo: `metrics_centrality.py`
-* **Métricas basadas en tipo de relación** → archivo: `metrics_type_relationship.py`
-
 
 A continuación se describen de forma sencilla todas las métricas implementadas.
 
