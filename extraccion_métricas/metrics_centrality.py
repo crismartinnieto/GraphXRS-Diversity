@@ -1,53 +1,113 @@
-# metrics_centrality.py
-# Calcula medidas de centralidad sobre el bipartito Business-Attribute que construiremos en runner.
-
+"""
+Métricas basadas en centralidad de nodos en el grafo
+"""
 import networkx as nx
-import numpy as np
+from typing import Dict, List
+from utils import build_networkx_graph, get_connected_properties
+from config import CENTRALITY_CONFIG
 
-def degree_centrality_raw(B_global, attr_key):
-    node = f"ATTR_{attr_key}"
-    return B_global.degree(node) if node in B_global else 0
+def compute_degree_centrality(G: nx.Graph) -> Dict[str, float]:
+    """Degree centrality: cuántos nodos están conectados a cada nodo"""
+    return dict(G.degree())
 
-def degree_centrality_normalized(B_global, attr_key):
-    node = f"ATTR_{attr_key}"
-    if node not in B_global:
-        return 0.0
-    N = len([n for n in B_global.nodes() if isinstance(n, str) and n.startswith("BUS_")])
-    return B_global.degree(node) / max(1, N-1)
+def compute_normalized_degree_centrality(G: nx.Graph) -> Dict[str, float]:
+    """Degree centrality normalizado por (N-1)"""
+    return nx.degree_centrality(G)
 
-def pagerank_attr(pagerank_dict, attr_key):
-    return pagerank_dict.get(f"ATTR_{attr_key}", 0.0)
+def compute_betweenness_centrality(G: nx.Graph) -> Dict[str, float]:
+    """Betweenness centrality: nodos que actúan como puentes"""
+    return nx.betweenness_centrality(G, normalized=CENTRALITY_CONFIG['betweenness_normalized'])
 
-def eigenvector_attr(eigen_dict, attr_key):
-    return eigen_dict.get(f"ATTR_{attr_key}", 0.0)
+def compute_closeness_centrality(G: nx.Graph) -> Dict[str, float]:
+    """Closeness centrality: qué tan cerca está un nodo de todos los demás"""
+    return nx.closeness_centrality(G)
 
-def betweenness_attr(bet_dict, attr_key):
-    return bet_dict.get(f"ATTR_{attr_key}", 0.0)
-
-def harmonic_centrality(B_global, attr_key):
-    node = f"ATTR_{attr_key}"
-    if node not in B_global:
-        return 0.0
-    # harmonic centrality as sum(1/dist)
-    lengths = nx.single_source_shortest_path_length(B_global, node)
-    s = 0.0
-    for n, d in lengths.items():
-        if d>0:
-            s += 1.0/d
-    return s
-
-def clustering_coefficient_on_projection(B_global, attr_key):
-    # proyectar atributos: construir proyección de atributos vía negocios comunes
+def compute_eigenvector_centrality(G: nx.Graph) -> Dict[str, float]:
+    """Eigenvector centrality: qué tan conectado está con nodos importantes"""
     try:
-        attrs = [n for n in B_global.nodes() if isinstance(n, str) and n.startswith("ATTR_")]
-        # proyect attributes via bipartite projection
-        A = nx.bipartite.weighted_projected_graph(B_global, [n for n in B_global.nodes() if n.startswith("BUS_")])
-        node = f"ATTR_{attr_key}"
-        if node not in A:
-            return 0.0
-        return nx.clustering(A, node)
-    except Exception:
-        return 0.0
+        return nx.eigenvector_centrality(G, max_iter=1000)
+    except:
+        # Si el grafo no converge, retorna zeros
+        return {node: 0.0 for node in G.nodes()}
 
-def attribute_influence_score(degree, amf):
-    return degree * amf
+def compute_pagerank(G: nx.Graph) -> Dict[str, float]:
+    """PageRank: métrica muy popular en graph-XAI"""
+    return nx.pagerank(G, alpha=CENTRALITY_CONFIG['pagerank_alpha'])
+
+def compute_harmonic_centrality(G: nx.Graph) -> Dict[str, float]:
+    """Harmonic centrality: suma de inversos de distancias"""
+    return nx.harmonic_centrality(G)
+
+def compute_attribute_influence_score(G: nx.Graph, amf_scores: Dict[str, float]) -> Dict[str, float]:
+    """
+    Attribute Influence = Degree(p) × AMF(p)
+    Combina centralidad con frecuencia de match del atributo
+    
+    Args:
+        amf_scores: Dict con AMF pre-calculado para cada propiedad
+    """
+    degree = compute_degree_centrality(G)
+    
+    influence = {}
+    for node, deg in degree.items():
+        influence[node] = deg * amf_scores.get(node, 0.0)
+    
+    return influence
+
+def compute_all_centrality_metrics(subgraph: Dict, user_id: int, hotel_rec_id: str, 
+                                   consumed_hotels: List[str], amf_scores: Dict[str, float] = None) -> List[Dict]:
+    """
+    Calcula todas las métricas de centralidad para cada propiedad del grafo.
+    
+    Returns:
+        Lista de dicts con métricas de centralidad por cada propiedad/nodo
+    """
+    G = build_networkx_graph(subgraph)
+    
+    # Calcular todas las centralidades
+    degree_cent = compute_degree_centrality(G)
+    norm_degree_cent = compute_normalized_degree_centrality(G)
+    betweenness_cent = compute_betweenness_centrality(G)
+    closeness_cent = compute_closeness_centrality(G)
+    eigenvector_cent = compute_eigenvector_centrality(G)
+    pagerank_cent = compute_pagerank(G)
+    harmonic_cent = compute_harmonic_centrality(G)
+    
+    # Attribute influence (requiere AMF pre-calculado)
+    if amf_scores is None:
+        amf_scores = {}
+    influence_score = compute_attribute_influence_score(G, amf_scores)
+    
+    results = []
+    
+    # Obtener propiedades del hotel recomendado
+    rec_props = get_connected_properties(subgraph, hotel_rec_id)
+    
+    # Iterar sobre cada propiedad del hotel recomendado
+    for rel_type, values in rec_props.items():
+        for prop_value in values:
+            # Buscar el node_id que representa esta propiedad
+            prop_node_id = None
+            for node in subgraph['nodes']:
+                if node.get('properties', {}).get('name') == prop_value:
+                    prop_node_id = node['id']
+                    break
+            
+            if prop_node_id and prop_node_id in G.nodes():
+                result = {
+                    'usuario': user_id,
+                    'hotel_recomendado': hotel_rec_id,
+                    'propiedad': f"{rel_type}:{prop_value}",
+                    'hotel_consumido': None,  # Métricas de centralidad son globales
+                    'degree_centrality': degree_cent.get(prop_node_id, 0),
+                    'normalized_degree_centrality': norm_degree_cent.get(prop_node_id, 0.0),
+                    'betweenness_centrality': betweenness_cent.get(prop_node_id, 0.0),
+                    'closeness_centrality': closeness_cent.get(prop_node_id, 0.0),
+                    'eigenvector_centrality': eigenvector_cent.get(prop_node_id, 0.0),
+                    'pagerank': pagerank_cent.get(prop_node_id, 0.0),
+                    'harmonic_centrality': harmonic_cent.get(prop_node_id, 0.0),
+                    'attribute_influence_score': influence_score.get(prop_node_id, 0.0)
+                }
+                results.append(result)
+    
+    return results
