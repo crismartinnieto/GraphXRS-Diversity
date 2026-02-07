@@ -1,0 +1,201 @@
+user,hotel_recomendado,hotel_ejemplo_id,numero_propiedades,lista_propiedades
+3,104,457,1,category:Tours
+3,104,2513,1,category:Tours
+3,104,1941,2,attribute:RestaurantsPriceRange2=2 | attribute:BusinessAcceptsCreditCards=True
+3,104,1783,3,attribute:BusinessAcceptsCreditCards=True | attribute:GoodForKids=True | attribute:ByAppointmentOnly=False
+3,1054,457,2,city:Philadelphia | state:PA
+3,1054,2513,3,city:Philadelphia | state:PA | rating:4.0 stars
+3,1054,1941,4,state:PA | category:Event Planning & Services | attribute:BusinessAcceptsCreditCards=True | attribute:WiFi=free
+3,1054,1783,4,city:Philadelphia | state:PA | attribute:BusinessAcceptsCreditCards=True | attribute:WiFi=free
+3,1093,457,0,Ninguna
+3,1093,2513,1,rating:4.0 stars
+3,1093,1941,2,attribute:RestaurantsPriceRange2=2 | attribute:WiFi=free
+3,1093,1783,2,attribute:WiFi=free | attribute:ByAppointmentOnly=False
+3,1164,457,1,category:Tours
+3,1164,2513,2,rating:4.0 stars | category:Tours
+3,1164,1941,2,category:Event Planning & Services | attribute:BusinessAcceptsCreditCards=True
+3,1164,1783,5,category:Local Flavor | category:Arts & Entertainment | category:Museums | attribute:BusinessAcceptsCreditCards=True | attribute:GoodForKids=True
+3,1442,457,0,Ninguna
+3,1442,2513,0,Ninguna
+3,1442,1941,3,rating:3.0 stars | attribute:RestaurantsPriceRange2=2 | attribute:WiFi=free
+3,1442,1783,4,attribute:OutdoorSeating=False | attribute:WiFi=free | attribute:RestaurantsDelivery=False | attribute:ByAppointmentOnly=False
+3,1487,457,4,city:Philadelphia | state:PA | postal_code:19106 | category:Tours
+3,1487,2513,4,city:Philadelphia | state:PA | postal_code:19106 | category:Tours
+3,1487,1941,1,state:PA
+3,1487,1783,4,city:Philadelphia | state:PA | postal_code:19106 | category:Local Flavor
+3,1608,457,2,rating:4.5 stars | category:Tours
+3,1608,2513,1,category:Tours
+3,1608,1941,1,attribute:WiFi=free
+3,1608,1783,3,rating:4.5 stars | category:Arts & Entertainment | attribute:WiFi=free
+3,163,457,3,city:Philadelphia | state:PA | postal_code:19106
+3,163,2513,4,city:Philadelphia | state:PA | postal_code:19106 | rating:4.0 stars
+3,163,1941,4,state:PA | category:Event Planning & Services | attribute:BusinessAcceptsCreditCards=True | attribute:WiFi=free
+3,163,1783,7,city:Philadelphia | state:PA | postal_code:19106 | category:Restaurants | attribute:RestaurantsReservations=True | attribute:BusinessAcceptsCreditCards=True | attribute:WiFi=free
+3,1693,457,1,state:PA
+3,1693,2513,2,state:PA | rating:4.0 stars
+3,1693,1941,3,state:PA | category:Event Planning & Services | attribute:BusinessAcceptsCreditCards=True
+3,1693,1783,8,state:PA | category:Restaurants | category:Breakfast & Brunch | attribute:RestaurantsReservations=True | attribute:OutdoorSeating=False | attribute:GoodForKids=True | attribute:BusinessAcceptsCreditCards=True | attribute:RestaurantsDelivery=False
+3,1729,457,2,rating:4.5 stars | category:Tours
+3,1729,2513,2,category:Historical Tours | category:Tours
+3,1729,1941,1,attribute:BusinessAcceptsCreditCards=True
+3,1729,1783,6,rating:4.5 stars | category:Museums | category:Arts & Entertainment | attribute:BusinessAcceptsCreditCards=True | attribute:GoodForKids=True | attribute:ByAppointmentOnly=False
+3,2085,457,2,rating:4.5 stars | category:Tours
+3,2085,2513,1,category:Tours
+3,2085,1941,2,attribute:BusinessAcceptsCreditCards=True | attribute:WiFi=free
+3,2085,1783,9,rating:4.5 stars | category:Museums | category:Arts & Entertainment | attribute:RestaurantsTakeOut=False | attribute:GoodForKids=True | attribute:BusinessAcceptsCreditCards=True | attribute:WiFi=free | attribute:RestaurantsDelivery=False | attribute:ByAppointmentOnly=False
+3,2101,457,2,rating:4.5 stars | category:Tours
+3,2101,2513,2,category:Historical Tours | category:Tours
+3,2101,1941,1,attribute:WiFi=free
+3,2101,1783,7,rating:4.5 stars | category:Local Flavor | category:Arts & Entertainment | category:Museums | attribute:GoodForKids=True | attribute:WiFi=free | attribute:ByAppointmentOnly=False
+3,2109,457,0,Ninguna
+3,2109,2513,0,Ninguna
+3,2109,1941,3,category:Event Planning & Services | attribute:BusinessAcceptsCreditCards=True | attribute:WiFi=free
+3,2109,1783,2,attribute:BusinessAcceptsCreditCards=True | attribute:WiFi=free
+3,2290,457,0,Ninguna
+3,2290,2513,0,Ninguna
+3,2290,1941,1,rating:3.0 stars
+3,2290,1783,0,Ninguna
+3,2344,457,0,Ninguna
+3,2344,2513,0,Ninguna
+3,2344,1941,3,rating:3.0 stars | category:Event Planning & Services | attribute:BusinessAcceptsCreditCards=True
+3,2344,1783,6,category:Museums | category:Arts & Entertainment | category:Restaurants | attribute:RestaurantsReservations=True | attribute:BusinessAcceptsCreditCards=True | attribute:GoodForKids=True
+3,25,457,4,rating:4.5 stars | category:Public Services & Government | category:Tours | category:Landmarks & Historical Buildings
+3,25,2513,3,category:Public Services & Government | category:Tours | category:Landmarks & Historical Buildings
+3,25,1941,0,Ninguna
+3,25,1783,4,rating:4.5 stars | category:Public Services & Government | category:Landmarks & Historical Buildings | attribute:ByAppointmentOnly=False
+3,2557,457,0,Ninguna
+3,2557,2513,1,rating:4.0 stars
+3,2557,1941,1,attribute:WiFi=free
+3,2557,1783,2,attribute:WiFi=free | attribute:ByAppointmentOnly=False
+3,2617,457,0,Ninguna
+3,2617,2513,1,rating:4.0 stars
+3,2617,1941,4,category:Event Planning & Services | attribute:RestaurantsPriceRange2=2 | attribute:BusinessAcceptsCreditCards=True | attribute:WiFi=free
+3,2617,1783,2,attribute:BusinessAcceptsCreditCards=True | attribute:WiFi=free
+3,2963,457,5,city:Philadelphia | state:PA | category:Public Services & Government | category:Tours | category:Landmarks & Historical Buildings
+3,2963,2513,6,city:Philadelphia | state:PA | rating:4.0 stars | category:Public Services & Government | category:Tours | category:Landmarks & Historical Buildings
+3,2963,1941,4,state:PA | category:Event Planning & Services | attribute:BusinessAcceptsCreditCards=True | attribute:WiFi=free
+3,2963,1783,10,city:Philadelphia | state:PA | category:Local Flavor | category:Arts & Entertainment | category:Public Services & Government | category:Landmarks & Historical Buildings | attribute:BusinessAcceptsCreditCards=True | attribute:GoodForKids=True | attribute:WiFi=free | attribute:ByAppointmentOnly=False
+3,2972,457,3,category:Public Services & Government | category:Tours | category:Landmarks & Historical Buildings
+3,2972,2513,4,rating:4.0 stars | category:Public Services & Government | category:Tours | category:Landmarks & Historical Buildings
+3,2972,1941,0,Ninguna
+3,2972,1783,5,category:Local Flavor | category:Restaurants | category:Landmarks & Historical Buildings | category:Public Services & Government | attribute:GoodForKids=True
+3,3069,457,0,Ninguna
+3,3069,2513,0,Ninguna
+3,3069,1941,0,Ninguna
+3,3069,1783,0,Ninguna
+3,3119,457,0,Ninguna
+3,3119,2513,1,rating:4.0 stars
+3,3119,1941,3,category:Event Planning & Services | attribute:BusinessAcceptsCreditCards=True | attribute:WiFi=free
+3,3119,1783,2,attribute:BusinessAcceptsCreditCards=True | attribute:WiFi=free
+3,3136,457,0,Ninguna
+3,3136,2513,1,rating:4.0 stars
+3,3136,1941,0,Ninguna
+3,3136,1783,4,category:Local Flavor | category:Arts & Entertainment | attribute:GoodForKids=True | attribute:ByAppointmentOnly=False
+3,3165,457,0,Ninguna
+3,3165,2513,0,Ninguna
+3,3165,1941,4,category:Event Planning & Services | attribute:RestaurantsPriceRange2=2 | attribute:BusinessAcceptsCreditCards=True | attribute:WiFi=free
+3,3165,1783,4,category:Arts & Entertainment | attribute:BusinessAcceptsCreditCards=True | attribute:WiFi=free | attribute:ByAppointmentOnly=False
+3,3178,457,2,city:Philadelphia | state:PA
+3,3178,2513,2,city:Philadelphia | state:PA
+3,3178,1941,1,state:PA
+3,3178,1783,2,city:Philadelphia | state:PA
+3,3209,457,3,city:Philadelphia | state:PA | category:Public Services & Government
+3,3209,2513,4,city:Philadelphia | state:PA | rating:4.0 stars | category:Public Services & Government
+3,3209,1941,2,state:PA | attribute:WiFi=free
+3,3209,1783,5,city:Philadelphia | state:PA | category:Public Services & Government | attribute:WiFi=free | attribute:ByAppointmentOnly=False
+3,3237,457,4,city:Philadelphia | state:PA | postal_code:19106 | category:Tours
+3,3237,2513,4,city:Philadelphia | state:PA | postal_code:19106 | category:Tours
+3,3237,1941,3,state:PA | category:Event Planning & Services | attribute:BusinessAcceptsCreditCards=True
+3,3237,1783,4,city:Philadelphia | state:PA | postal_code:19106 | attribute:BusinessAcceptsCreditCards=True
+3,3484,457,3,city:Philadelphia | state:PA | postal_code:19106
+3,3484,2513,3,city:Philadelphia | state:PA | postal_code:19106
+3,3484,1941,1,state:PA
+3,3484,1783,3,city:Philadelphia | state:PA | postal_code:19106
+3,3732,457,0,Ninguna
+3,3732,2513,1,rating:4.0 stars
+3,3732,1941,3,attribute:RestaurantsPriceRange2=2 | attribute:BusinessAcceptsCreditCards=True | attribute:WiFi=free
+3,3732,1783,4,attribute:BusinessAcceptsCreditCards=True | attribute:WiFi=free | attribute:RestaurantsDelivery=False | attribute:ByAppointmentOnly=False
+3,3737,457,2,city:Philadelphia | state:PA
+3,3737,2513,2,city:Philadelphia | state:PA
+3,3737,1941,1,state:PA
+3,3737,1783,2,city:Philadelphia | state:PA
+3,393,457,2,state:PA | category:Tours
+3,393,2513,2,state:PA | category:Tours
+3,393,1941,3,state:PA | attribute:RestaurantsPriceRange2=2 | attribute:BusinessAcceptsCreditCards=True
+3,393,1783,4,state:PA | category:Arts & Entertainment | attribute:BusinessAcceptsCreditCards=True | attribute:GoodForKids=True
+3,4088,457,3,category:Public Services & Government | category:Tours | category:Landmarks & Historical Buildings
+3,4088,2513,4,rating:4.0 stars | category:Public Services & Government | category:Tours | category:Landmarks & Historical Buildings
+3,4088,1941,0,Ninguna
+3,4088,1783,6,category:Museums | category:Arts & Entertainment | category:Public Services & Government | category:Landmarks & Historical Buildings | attribute:GoodForKids=True | attribute:ByAppointmentOnly=False
+3,4122,457,0,Ninguna
+3,4122,2513,1,rating:4.0 stars
+3,4122,1941,3,category:Event Planning & Services | attribute:BusinessAcceptsCreditCards=True | attribute:WiFi=free
+3,4122,1783,2,attribute:BusinessAcceptsCreditCards=True | attribute:WiFi=free
+3,4183,457,0,Ninguna
+3,4183,2513,0,Ninguna
+3,4183,1941,3,category:Event Planning & Services | attribute:BusinessAcceptsCreditCards=True | attribute:WiFi=free
+3,4183,1783,8,category:Restaurants | attribute:RestaurantsReservations=True | attribute:RestaurantsTakeOut=False | attribute:OutdoorSeating=False | attribute:GoodForKids=True | attribute:BusinessAcceptsCreditCards=True | attribute:WiFi=free | attribute:RestaurantsDelivery=False
+3,4359,457,0,Ninguna
+3,4359,2513,1,rating:4.0 stars
+3,4359,1941,2,category:Event Planning & Services | attribute:BusinessAcceptsCreditCards=True
+3,4359,1783,7,category:Travel Services | category:Arts & Entertainment | category:Restaurants | category:Museums | attribute:BusinessAcceptsCreditCards=True | attribute:GoodForKids=True | attribute:ByAppointmentOnly=False
+3,4464,457,1,rating:4.5 stars
+3,4464,2513,0,Ninguna
+3,4464,1941,3,category:Event Planning & Services | attribute:BusinessAcceptsCreditCards=True | attribute:WiFi=free
+3,4464,1783,8,rating:4.5 stars | category:Arts & Entertainment | category:Restaurants | attribute:RestaurantsTakeOut=False | attribute:GoodForKids=True | attribute:BusinessAcceptsCreditCards=True | attribute:WiFi=free | attribute:RestaurantsDelivery=False
+3,45,457,2,city:Philadelphia | state:PA
+3,45,2513,2,city:Philadelphia | state:PA
+3,45,1941,3,state:PA | attribute:BusinessAcceptsCreditCards=True | attribute:WiFi=free
+3,45,1783,5,city:Philadelphia | state:PA | attribute:BusinessAcceptsCreditCards=True | attribute:WiFi=free | attribute:ByAppointmentOnly=False
+3,473,457,2,rating:4.5 stars | category:Tours
+3,473,2513,2,category:Historical Tours | category:Tours
+3,473,1941,2,attribute:RestaurantsPriceRange2=2 | attribute:BusinessAcceptsCreditCards=True
+3,473,1783,8,rating:4.5 stars | category:Local Flavor | category:Arts & Entertainment | category:Restaurants | category:Museums | attribute:OutdoorSeating=False | attribute:BusinessAcceptsCreditCards=True | attribute:GoodForKids=True
+3,4825,457,2,city:Philadelphia | state:PA
+3,4825,2513,2,city:Philadelphia | state:PA
+3,4825,1941,6,state:PA | rating:3.0 stars | category:Event Planning & Services | attribute:RestaurantsPriceRange2=2 | attribute:BusinessAcceptsCreditCards=True | attribute:WiFi=free
+3,4825,1783,4,city:Philadelphia | state:PA | attribute:BusinessAcceptsCreditCards=True | attribute:WiFi=free
+3,4830,457,2,city:Philadelphia | state:PA
+3,4830,2513,2,city:Philadelphia | state:PA
+3,4830,1941,2,state:PA | attribute:WiFi=free
+3,4830,1783,4,city:Philadelphia | state:PA | attribute:WiFi=free | attribute:ByAppointmentOnly=False
+3,4942,457,4,city:Philadelphia | state:PA | postal_code:19106 | category:Tours
+3,4942,2513,4,city:Philadelphia | state:PA | postal_code:19106 | category:Tours
+3,4942,1941,4,state:PA | rating:3.0 stars | category:Event Planning & Services | attribute:BusinessAcceptsCreditCards=True
+3,4942,1783,4,city:Philadelphia | state:PA | postal_code:19106 | attribute:BusinessAcceptsCreditCards=True
+3,4990,457,1,state:PA
+3,4990,2513,2,state:PA | rating:4.0 stars
+3,4990,1941,3,state:PA | attribute:RestaurantsPriceRange2=2 | attribute:BusinessAcceptsCreditCards=True
+3,4990,1783,7,state:PA | category:Local Flavor | category:Restaurants | attribute:RestaurantsReservations=True | attribute:BusinessAcceptsCreditCards=True | attribute:GoodForKids=True | attribute:ByAppointmentOnly=False
+3,5061,457,1,category:Tours
+3,5061,2513,2,rating:4.0 stars | category:Tours
+3,5061,1941,0,Ninguna
+3,5061,1783,2,"attribute:GoodForKids=True | attribute:BusinessParking={garage: True, street: False, validated: False, lot: False, valet: False}"
+3,522,457,0,Ninguna
+3,522,2513,0,Ninguna
+3,522,1941,2,attribute:BusinessAcceptsCreditCards=True | attribute:WiFi=free
+3,522,1783,4,attribute:OutdoorSeating=False | attribute:BusinessAcceptsCreditCards=True | attribute:WiFi=free | attribute:ByAppointmentOnly=False
+3,5605,457,1,category:Tours
+3,5605,2513,1,category:Tours
+3,5605,1941,2,category:Event Planning & Services | attribute:BusinessAcceptsCreditCards=True
+3,5605,1783,4,category:Arts & Entertainment | attribute:BusinessAcceptsCreditCards=True | attribute:GoodForKids=True | attribute:ByAppointmentOnly=False
+3,5855,457,1,category:Tours
+3,5855,2513,1,category:Tours
+3,5855,1941,0,Ninguna
+3,5855,1783,0,Ninguna
+3,774,457,4,rating:4.5 stars | category:Public Services & Government | category:Tours | category:Landmarks & Historical Buildings
+3,774,2513,3,category:Public Services & Government | category:Tours | category:Landmarks & Historical Buildings
+3,774,1941,0,Ninguna
+3,774,1783,7,rating:4.5 stars | category:Museums | category:Arts & Entertainment | category:Public Services & Government | category:Landmarks & Historical Buildings | attribute:GoodForKids=True | attribute:ByAppointmentOnly=False
+3,888,457,0,Ninguna
+3,888,2513,0,Ninguna
+3,888,1941,3,category:Event Planning & Services | attribute:RestaurantsPriceRange2=2 | attribute:BusinessAcceptsCreditCards=True
+3,888,1783,8,category:Restaurants | attribute:RestaurantsReservations=True | attribute:RestaurantsTakeOut=False | attribute:OutdoorSeating=False | attribute:GoodForKids=True | attribute:BusinessAcceptsCreditCards=True | attribute:RestaurantsDelivery=False | attribute:ByAppointmentOnly=False
+3,901,457,3,city:Philadelphia | state:PA | postal_code:19106
+3,901,2513,3,city:Philadelphia | state:PA | postal_code:19106
+3,901,1941,5,state:PA | rating:3.0 stars | category:Event Planning & Services | attribute:BusinessAcceptsCreditCards=True | attribute:WiFi=free
+3,901,1783,5,city:Philadelphia | state:PA | postal_code:19106 | attribute:BusinessAcceptsCreditCards=True | attribute:WiFi=free
+3,907,457,4,city:Philadelphia | state:PA | postal_code:19106 | category:Tours
+3,907,2513,5,city:Philadelphia | state:PA | postal_code:19106 | rating:4.0 stars | category:Tours
+3,907,1941,4,state:PA | category:Event Planning & Services | attribute:BusinessAcceptsCreditCards=True | attribute:WiFi=free
+3,907,1783,9,city:Philadelphia | state:PA | postal_code:19106 | category:Museums | category:Arts & Entertainment | attribute:BusinessAcceptsCreditCards=True | attribute:GoodForKids=True | attribute:WiFi=free | attribute:ByAppointmentOnly=False
