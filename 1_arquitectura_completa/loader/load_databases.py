@@ -145,6 +145,70 @@ graph_knowledge.run(query_knowledge, rows=records_knowledge)
 logger.info(f"✅ 'knowledge': {len(records_knowledge)} relaciones insertadas")
 
 # ==========================================
+# CARGAR BASE 'expanded-recommendations'
+# ==========================================
+logger.info("\n📦 === CARGANDO BASE 'expanded-recommendations' ===")
+
+# Crear base si no existe
+try:
+    system_graph.run("CREATE DATABASE `expanded-recommendations` IF NOT EXISTS")
+    logger.info("✅ Base 'expanded-recommendations' creada/verificada")
+except Exception as e:
+    logger.warning(f"⚠️ No se pudo crear 'expanded-recommendations': {e}")
+
+time.sleep(5)
+
+graph_expanded = Graph(uri, auth=(user, password), name="expanded-recommendations")
+
+logger.info("🧹 Limpiando base 'expanded-recommendations'...")
+graph_expanded.run("MATCH (n) DETACH DELETE n")
+
+logger.info("📂 Cargando grafo expandido con recomendaciones...")
+df_expanded = pd.read_csv("/data/grafo_interaccion_con_recomendaciones.csv")
+
+logger.info(f"🔹 Filas cargadas: {len(df_expanded)}")
+
+# Crear constraints
+graph_expanded.run("""
+CREATE CONSTRAINT user_id IF NOT EXISTS
+FOR (u:User) REQUIRE u.id IS UNIQUE;
+""")
+
+graph_expanded.run("""
+CREATE CONSTRAINT business_id IF NOT EXISTS
+FOR (b:Business) REQUIRE b.id IS UNIQUE;
+""")
+
+# Preparar registros
+records_expanded = [
+    {
+        "user_id": int(row["user_id"]),
+        "business_id": int(row["business_id"]),
+        "rating": float(row["rating"])
+    }
+    for _, row in df_expanded.iterrows()
+]
+
+query_expanded = """
+UNWIND $rows AS row
+MERGE (u:User {id: row.user_id})
+MERGE (b:Business {id: row.business_id})
+MERGE (u)-[r:RATED]->(b)
+SET r.rating = row.rating
+"""
+
+logger.info("🚀 Insertando relaciones expandidas...")
+graph_expanded.run(query_expanded, rows=records_expanded)
+
+logger.info(f"✅ 'expanded-recommendations': {len(records_expanded)} relaciones insertadas")
+
+# Actualizar resumen final
+logger.info("\n🔹 Base 'expanded-recommendations':")
+result_exp = graph_expanded.run("MATCH (n) RETURN labels(n)[0] AS tipo, count(*) AS cantidad").data()
+for row in result_exp:
+    logger.info(f"  {row['tipo']}: {row['cantidad']}")
+
+# ==========================================
 # RESUMEN FINAL
 # ==========================================
 logger.info("\n📊 === RESUMEN FINAL ===")

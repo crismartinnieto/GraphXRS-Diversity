@@ -1,0 +1,3606 @@
+{
+    "nodes": [
+        {
+            "id": "3639",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 26005,
+                "type": "objetivo"
+            }
+        },
+        {
+            "id": "4625",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 4652,
+                "type": "recomendado"
+            }
+        },
+        {
+            "id": "4273",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 31178,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "4628",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 66430,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "4629",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 162110,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "1438",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 186621,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "4434",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 37984,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "4627",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 244590,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "3001",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 234875,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "2203",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 82329,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "4205",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 125126,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "4825",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 235836,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "4122",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 127068,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "3640",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 27613,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "3773",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 103874,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "4208",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 165112,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "1564",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 155056,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "1906",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 40512,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "4272",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 220762,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "4612",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 156234,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "4209",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 188234,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "4211",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 210931,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "4274",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 72955,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "4613",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 65344,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "4202",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 13421,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "4210",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 210015,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "4275",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 166367,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "972",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 170735,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "101",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 62149,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "4276",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 232495,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "4207",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 126399,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "4203",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 18347,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "4141",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 114333,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "4611",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 119045,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "4204",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 111879,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "4206",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 125551,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "1933",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 182350,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "112",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 69864,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "4277",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 245196,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "4212",
+            "labels": [
+                "User"
+            ],
+            "properties": {
+                "id": 232580,
+                "type": "intermedio"
+            }
+        },
+        {
+            "id": "128",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 45,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "1952",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 1093,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "461",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 1442,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "3405",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 4241,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "3910",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 4590,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "3454",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 2010,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "4036",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 369,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "1317",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 522,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "2429",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 4143,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "2941",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 5168,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "1998",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 4464,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "864",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 3732,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "4334",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 2182,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "4152",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 2656,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "4439",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 4896,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "3768",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 2403,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "3045",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 4543,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "4046",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 3241,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "3417",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 4364,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "4517",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 2654,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "4446",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 4406,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "4679",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 3527,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "3645",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 4550,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "4581",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 4435,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "1838",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 2344,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "1188",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 104,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "2577",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 3999,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "3416",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 1819,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "3682",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 3647,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "3594",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 5450,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "3701",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 3586,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "3628",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 44,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "3681",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 5697,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "4146",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 1683,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "3907",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 3939,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "3664",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 5819,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "3706",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 3455,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "3596",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 5585,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "3307",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 2463,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "3901",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 465,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "4543",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 4227,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "3673",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 5037,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "3909",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 3598,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "3899",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 2245,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "3900",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 3622,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "3595",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 1189,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "4259",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 3279,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "4073",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 1652,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "3705",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 1870,
+                "type": "compartido"
+            }
+        },
+        {
+            "id": "2555",
+            "labels": [
+                "Business"
+            ],
+            "properties": {
+                "id": 798,
+                "type": "compartido"
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "id": "rel_0",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "128",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_1",
+            "type": "RATED",
+            "start_node_id": "4273",
+            "end_node_id": "128",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_2",
+            "type": "RATED",
+            "start_node_id": "4273",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_3",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "1952",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_4",
+            "type": "RATED",
+            "start_node_id": "4273",
+            "end_node_id": "1952",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_5",
+            "type": "RATED",
+            "start_node_id": "4273",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_6",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "461",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_7",
+            "type": "RATED",
+            "start_node_id": "4273",
+            "end_node_id": "461",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_8",
+            "type": "RATED",
+            "start_node_id": "4273",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_9",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3405",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_10",
+            "type": "RATED",
+            "start_node_id": "4628",
+            "end_node_id": "3405",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_11",
+            "type": "RATED",
+            "start_node_id": "4628",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_12",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "1952",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_13",
+            "type": "RATED",
+            "start_node_id": "4628",
+            "end_node_id": "1952",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_14",
+            "type": "RATED",
+            "start_node_id": "4628",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_15",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3910",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_16",
+            "type": "RATED",
+            "start_node_id": "4628",
+            "end_node_id": "3910",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_17",
+            "type": "RATED",
+            "start_node_id": "4628",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_18",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3454",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_19",
+            "type": "RATED",
+            "start_node_id": "4629",
+            "end_node_id": "3454",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_20",
+            "type": "RATED",
+            "start_node_id": "4629",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_21",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "4036",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_22",
+            "type": "RATED",
+            "start_node_id": "1438",
+            "end_node_id": "4036",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_23",
+            "type": "RATED",
+            "start_node_id": "1438",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_24",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "1317",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_25",
+            "type": "RATED",
+            "start_node_id": "1438",
+            "end_node_id": "1317",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_26",
+            "type": "RATED",
+            "start_node_id": "1438",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_27",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "1952",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_28",
+            "type": "RATED",
+            "start_node_id": "1438",
+            "end_node_id": "1952",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_29",
+            "type": "RATED",
+            "start_node_id": "1438",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_30",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "2429",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_31",
+            "type": "RATED",
+            "start_node_id": "1438",
+            "end_node_id": "2429",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_32",
+            "type": "RATED",
+            "start_node_id": "1438",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_33",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "2941",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_34",
+            "type": "RATED",
+            "start_node_id": "1438",
+            "end_node_id": "2941",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_35",
+            "type": "RATED",
+            "start_node_id": "1438",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_36",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "461",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_37",
+            "type": "RATED",
+            "start_node_id": "1438",
+            "end_node_id": "461",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_38",
+            "type": "RATED",
+            "start_node_id": "1438",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_39",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "1998",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_40",
+            "type": "RATED",
+            "start_node_id": "1438",
+            "end_node_id": "1998",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_41",
+            "type": "RATED",
+            "start_node_id": "1438",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_42",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "128",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_43",
+            "type": "RATED",
+            "start_node_id": "1438",
+            "end_node_id": "128",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_44",
+            "type": "RATED",
+            "start_node_id": "1438",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_45",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "864",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_46",
+            "type": "RATED",
+            "start_node_id": "1438",
+            "end_node_id": "864",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_47",
+            "type": "RATED",
+            "start_node_id": "1438",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_48",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "4334",
+            "properties": {
+                "rating": 2.0
+            }
+        },
+        {
+            "id": "rel_49",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "4334",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_50",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_51",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "4152",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_52",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "4152",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_53",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_54",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "4439",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_55",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "4439",
+            "properties": {
+                "rating": 3.0
+            }
+        },
+        {
+            "id": "rel_56",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_57",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "864",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_58",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "864",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_59",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_60",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3768",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_61",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "3768",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_62",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_63",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3045",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_64",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "3045",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_65",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_66",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "4046",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_67",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "4046",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_68",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_69",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3417",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_70",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "3417",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_71",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_72",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "461",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_73",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "461",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_74",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_75",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "1317",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_76",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "1317",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_77",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_78",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "4517",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_79",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "4517",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_80",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_81",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "128",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_82",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "128",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_83",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_84",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "4446",
+            "properties": {
+                "rating": 1.0
+            }
+        },
+        {
+            "id": "rel_85",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "4446",
+            "properties": {
+                "rating": 2.0
+            }
+        },
+        {
+            "id": "rel_86",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_87",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "4679",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_88",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "4679",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_89",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_90",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3645",
+            "properties": {
+                "rating": 2.0
+            }
+        },
+        {
+            "id": "rel_91",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "3645",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_92",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_93",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "4581",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_94",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "4581",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_95",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_96",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "1838",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_97",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "1838",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_98",
+            "type": "RATED",
+            "start_node_id": "4434",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_99",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3454",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_100",
+            "type": "RATED",
+            "start_node_id": "4627",
+            "end_node_id": "3454",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_101",
+            "type": "RATED",
+            "start_node_id": "4627",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_102",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "1188",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_103",
+            "type": "RATED",
+            "start_node_id": "3001",
+            "end_node_id": "1188",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_104",
+            "type": "RATED",
+            "start_node_id": "3001",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_105",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "2577",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_106",
+            "type": "RATED",
+            "start_node_id": "3001",
+            "end_node_id": "2577",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_107",
+            "type": "RATED",
+            "start_node_id": "3001",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_108",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "1838",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_109",
+            "type": "RATED",
+            "start_node_id": "3001",
+            "end_node_id": "1838",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_110",
+            "type": "RATED",
+            "start_node_id": "3001",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_111",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "461",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_112",
+            "type": "RATED",
+            "start_node_id": "3001",
+            "end_node_id": "461",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_113",
+            "type": "RATED",
+            "start_node_id": "3001",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_114",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3416",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_115",
+            "type": "RATED",
+            "start_node_id": "3001",
+            "end_node_id": "3416",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_116",
+            "type": "RATED",
+            "start_node_id": "3001",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_117",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "4581",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_118",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "4581",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_119",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_120",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "4679",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_121",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "4679",
+            "properties": {
+                "rating": 3.0
+            }
+        },
+        {
+            "id": "rel_122",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_123",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3045",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_124",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "3045",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_125",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_126",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3768",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_127",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "3768",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_128",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_129",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "4334",
+            "properties": {
+                "rating": 2.0
+            }
+        },
+        {
+            "id": "rel_130",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "4334",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_131",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_132",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "128",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_133",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "128",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_134",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_135",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "1952",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_136",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "1952",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_137",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_138",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3416",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_139",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "3416",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_140",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_141",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "864",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_142",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "864",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_143",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_144",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "4439",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_145",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "4439",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_146",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_147",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "1838",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_148",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "1838",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_149",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_150",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3645",
+            "properties": {
+                "rating": 2.0
+            }
+        },
+        {
+            "id": "rel_151",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "3645",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_152",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_153",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3417",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_154",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "3417",
+            "properties": {
+                "rating": 3.0
+            }
+        },
+        {
+            "id": "rel_155",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_156",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "4446",
+            "properties": {
+                "rating": 1.0
+            }
+        },
+        {
+            "id": "rel_157",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "4446",
+            "properties": {
+                "rating": 3.0
+            }
+        },
+        {
+            "id": "rel_158",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_159",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "461",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_160",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "461",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_161",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_162",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "2429",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_163",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "2429",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_164",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_165",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "1317",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_166",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "1317",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_167",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_168",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3405",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_169",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "3405",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_170",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_171",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "4046",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_172",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "4046",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_173",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_174",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "4152",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_175",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "4152",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_176",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_177",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "4517",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_178",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "4517",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_179",
+            "type": "RATED",
+            "start_node_id": "2203",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_180",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3682",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_181",
+            "type": "RATED",
+            "start_node_id": "4205",
+            "end_node_id": "3682",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_182",
+            "type": "RATED",
+            "start_node_id": "4205",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_183",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3594",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_184",
+            "type": "RATED",
+            "start_node_id": "4205",
+            "end_node_id": "3594",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_185",
+            "type": "RATED",
+            "start_node_id": "4205",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_186",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3645",
+            "properties": {
+                "rating": 2.0
+            }
+        },
+        {
+            "id": "rel_187",
+            "type": "RATED",
+            "start_node_id": "4205",
+            "end_node_id": "3645",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_188",
+            "type": "RATED",
+            "start_node_id": "4205",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_189",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3701",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_190",
+            "type": "RATED",
+            "start_node_id": "4205",
+            "end_node_id": "3701",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_191",
+            "type": "RATED",
+            "start_node_id": "4205",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_192",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "1952",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_193",
+            "type": "RATED",
+            "start_node_id": "4205",
+            "end_node_id": "1952",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_194",
+            "type": "RATED",
+            "start_node_id": "4205",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_195",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "128",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_196",
+            "type": "RATED",
+            "start_node_id": "4205",
+            "end_node_id": "128",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_197",
+            "type": "RATED",
+            "start_node_id": "4205",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_198",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3628",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_199",
+            "type": "RATED",
+            "start_node_id": "4205",
+            "end_node_id": "3628",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_200",
+            "type": "RATED",
+            "start_node_id": "4205",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_201",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3681",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_202",
+            "type": "RATED",
+            "start_node_id": "4205",
+            "end_node_id": "3681",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_203",
+            "type": "RATED",
+            "start_node_id": "4205",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_204",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "2429",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_205",
+            "type": "RATED",
+            "start_node_id": "4205",
+            "end_node_id": "2429",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_206",
+            "type": "RATED",
+            "start_node_id": "4205",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_207",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3454",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_208",
+            "type": "RATED",
+            "start_node_id": "4825",
+            "end_node_id": "3454",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_209",
+            "type": "RATED",
+            "start_node_id": "4825",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_210",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "2429",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_211",
+            "type": "RATED",
+            "start_node_id": "4122",
+            "end_node_id": "2429",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_212",
+            "type": "RATED",
+            "start_node_id": "4122",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 2.0
+            }
+        },
+        {
+            "id": "rel_213",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "461",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_214",
+            "type": "RATED",
+            "start_node_id": "4122",
+            "end_node_id": "461",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_215",
+            "type": "RATED",
+            "start_node_id": "4122",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 2.0
+            }
+        },
+        {
+            "id": "rel_216",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "4146",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_217",
+            "type": "RATED",
+            "start_node_id": "4122",
+            "end_node_id": "4146",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_218",
+            "type": "RATED",
+            "start_node_id": "4122",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 2.0
+            }
+        },
+        {
+            "id": "rel_219",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "1952",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_220",
+            "type": "RATED",
+            "start_node_id": "4122",
+            "end_node_id": "1952",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_221",
+            "type": "RATED",
+            "start_node_id": "4122",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 2.0
+            }
+        },
+        {
+            "id": "rel_222",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3045",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_223",
+            "type": "RATED",
+            "start_node_id": "4122",
+            "end_node_id": "3045",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_224",
+            "type": "RATED",
+            "start_node_id": "4122",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 2.0
+            }
+        },
+        {
+            "id": "rel_225",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "1317",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_226",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "1317",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_227",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_228",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3682",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_229",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "3682",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_230",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_231",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3907",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_232",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "3907",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_233",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_234",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3664",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_235",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "3664",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_236",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_237",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3645",
+            "properties": {
+                "rating": 2.0
+            }
+        },
+        {
+            "id": "rel_238",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "3645",
+            "properties": {
+                "rating": 3.0
+            }
+        },
+        {
+            "id": "rel_239",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_240",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "2429",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_241",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "2429",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_242",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_243",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3706",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_244",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "3706",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_245",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_246",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3417",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_247",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "3417",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_248",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_249",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3405",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_250",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "3405",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_251",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_252",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3596",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_253",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "3596",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_254",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_255",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3910",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_256",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "3910",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_257",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_258",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3307",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_259",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "3307",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_260",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_261",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "4446",
+            "properties": {
+                "rating": 1.0
+            }
+        },
+        {
+            "id": "rel_262",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "4446",
+            "properties": {
+                "rating": 3.0
+            }
+        },
+        {
+            "id": "rel_263",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_264",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "128",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_265",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "128",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_266",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_267",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3594",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_268",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "3594",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_269",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_270",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3901",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_271",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "3901",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_272",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_273",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3701",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_274",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "3701",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_275",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_276",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3681",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_277",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "3681",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_278",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_279",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "461",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_280",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "461",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_281",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_282",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "4036",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_283",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "4036",
+            "properties": {
+                "rating": 3.0
+            }
+        },
+        {
+            "id": "rel_284",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_285",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3768",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_286",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "3768",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_287",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_288",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "4046",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_289",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "4046",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_290",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_291",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "3454",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_292",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "3454",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_293",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_294",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "4543",
+            "properties": {
+                "rating": 3.0
+            }
+        },
+        {
+            "id": "rel_295",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "4543",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_296",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        },
+        {
+            "id": "rel_297",
+            "type": "RATED",
+            "start_node_id": "3639",
+            "end_node_id": "4334",
+            "properties": {
+                "rating": 2.0
+            }
+        },
+        {
+            "id": "rel_298",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "4334",
+            "properties": {
+                "rating": 4.0
+            }
+        },
+        {
+            "id": "rel_299",
+            "type": "RATED",
+            "start_node_id": "3640",
+            "end_node_id": "4625",
+            "properties": {
+                "rating": 10.0
+            }
+        }
+    ]
+}
