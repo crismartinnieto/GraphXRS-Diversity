@@ -1,0 +1,1 @@
+creación carpeta metricas_grafo_interaccion_completo
