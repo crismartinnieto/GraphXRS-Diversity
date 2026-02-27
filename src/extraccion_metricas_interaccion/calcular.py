@@ -28,7 +28,7 @@ for parent in current_file.parents:
         break
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from config import (
+from config_mode import (
     SUBGRAFOS_INTERACCIONES,
     CSV_USUARIO_RATING_RECOMEND,
     METRICAS_INTERACCION,

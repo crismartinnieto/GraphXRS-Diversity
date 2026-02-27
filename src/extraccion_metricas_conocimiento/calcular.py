@@ -27,7 +27,7 @@ for parent in current_file.parents:
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from config import (
+from config_mode import (
     CSV_USUARIO_RATING_RECOMEND,
     EXPLICACIONES_HISTORICO,
     EXPLICACIONES_HISTORICO_Y_REC,

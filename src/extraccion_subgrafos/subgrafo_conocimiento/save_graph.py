@@ -6,9 +6,26 @@ import json
 import sys
 from pathlib import Path
 
-# Añadir src/ al path para importar config
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from config import SUBGRAFOS_CONOCIMIENTO
+# ============================================================
+# MODE: 'muestra' o 'completo'
+# ============================================================
+MODE = "muestra"  # Cambiar a "completo" para procesar todos los usuarios
+
+# ============================================================
+# DEFINICIÓN DE RUTAS RELATIVAS (desde la ubicación de este script)
+# ============================================================
+# Este script está en: src/extraccion_subgrafos/subgrafo_conocimiento/save_graph.py
+SCRIPT_DIR = Path(__file__).resolve().parent  # .../subgrafo_conocimiento/
+
+# Subir niveles hasta llegar a la raíz
+# ../  → extraccion_subgrafos/
+# ../../  → src/
+# ../../../  → raíz del proyecto
+PROJECT_ROOT = SCRIPT_DIR.parent.parent.parent
+
+# Definir rutas relativas desde la raíz
+DATA_DIR = PROJECT_ROOT / "data"
+SUBGRAFOS_CONOCIMIENTO = DATA_DIR / f"subgrafos_conocimiento_{MODE}"
 
 
 def save_subgraph_to_json(nodes, relationships, filename):

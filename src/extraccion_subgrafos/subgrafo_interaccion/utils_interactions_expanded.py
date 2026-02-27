@@ -5,10 +5,16 @@ Consultas al grafo 'expanded-recommendations' en Neo4j.
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
-from config import NEO4J_URI, NEO4J_USER, NEO4J_PASSWORD
-
+import os
+from pathlib import Path
 from py2neo import Graph
+
+# ============================================================
+# CONFIGURACIÓN NEO4J
+# ============================================================
+NEO4J_URI      = os.getenv("NEO4J_URI", "bolt://localhost:7687")
+NEO4J_USER     = os.getenv("NEO4J_USER", "neo4j")
+NEO4J_PASSWORD = os.getenv("NEO4J_PASSWORD", "test12345")
 
 
 def get_expanded_graph():

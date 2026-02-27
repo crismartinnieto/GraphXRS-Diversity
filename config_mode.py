@@ -23,10 +23,25 @@ def cambiar_modo(nuevo_modo):
     # Definir rutas de los scripts (relativas a este archivo)
     raiz = Path(__file__).parent
     scripts = [
+        # Scripts principales
         raiz / "src/extraccion_explicaciones_conocimiento/crear_explicaciones.py",
         raiz / "src/extraccion_subgrafos/subgrafo_conocimiento/main_user_subgraph.py",
         raiz / "src/extraccion_subgrafos/subgrafo_interaccion/extract_interaction_subgraphs.py",
-        raiz / "src/extraccion_metricas_conjunto/xaigraph.py"
+        raiz / "src/extraccion_metricas_conjunto/xaigraph.py",
+        
+        # Módulos de métricas
+        raiz / "src/extraccion_metricas_conocimiento/métricas.py",
+        raiz / "src/extraccion_metricas_interaccion/métricas.py",
+        
+        # Utilidades de conocimiento
+        raiz / "src/extraccion_subgrafos/subgrafo_conocimiento/save_graph.py",
+        raiz / "src/extraccion_subgrafos/subgrafo_conocimiento/utils_interactions.py",
+        raiz / "src/extraccion_subgrafos/subgrafo_conocimiento/utils_knowledge.py",
+        
+        # Utilidades de interacción
+        raiz / "src/extraccion_subgrafos/subgrafo_interaccion/save_graph.py",
+        raiz / "src/extraccion_subgrafos/subgrafo_interaccion/utils_interaction_patterns.py",
+        raiz / "src/extraccion_subgrafos/subgrafo_interaccion/utils_interactions_expanded.py"
     ]
     
     print("="*70)
@@ -92,10 +107,25 @@ def mostrar_modo_actual():
     """Muestra el MODE actual en cada archivo."""
     raiz = Path(__file__).parent
     scripts = [
+        # Scripts principales
         raiz / "src/extraccion_explicaciones_conocimiento/crear_explicaciones.py",
         raiz / "src/extraccion_subgrafos/subgrafo_conocimiento/main_user_subgraph.py",
         raiz / "src/extraccion_subgrafos/subgrafo_interaccion/extract_interaction_subgraphs.py",
-        raiz / "src/extraccion_metricas_conjunto/xaigraph.py"
+        raiz / "src/extraccion_metricas_conjunto/xaigraph.py",
+        
+        # Módulos de métricas
+        raiz / "src/extraccion_metricas_conocimiento/métricas.py",
+        raiz / "src/extraccion_metricas_interaccion/métricas.py",
+        
+        # Utilidades de conocimiento
+        raiz / "src/extraccion_subgrafos/subgrafo_conocimiento/save_graph.py",
+        raiz / "src/extraccion_subgrafos/subgrafo_conocimiento/utils_interactions.py",
+        raiz / "src/extraccion_subgrafos/subgrafo_conocimiento/utils_knowledge.py",
+        
+        # Utilidades de interacción
+        raiz / "src/extraccion_subgrafos/subgrafo_interaccion/save_graph.py",
+        raiz / "src/extraccion_subgrafos/subgrafo_interaccion/utils_interaction_patterns.py",
+        raiz / "src/extraccion_subgrafos/subgrafo_interaccion/utils_interactions_expanded.py"
     ]
     
     print("="*70)

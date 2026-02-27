@@ -23,14 +23,24 @@ from pathlib import Path
 import sys
 
 # ============================================================
-# IMPORTS DE CONFIG
+# MODE: 'muestra' o 'completo'
 # ============================================================
-try:
-    from config import SUBGRAFOS_INTERACCIONES
-except ImportError:
-    # Si estamos en subdirectorio
-    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-    from config import SUBGRAFOS_INTERACCIONES
+MODE = "muestra"  # Cambiar a "completo" para procesar todos los usuarios
+
+# ============================================================
+# DEFINICIÓN DE RUTAS RELATIVAS (desde la ubicación de este script)
+# ============================================================
+# Este script está en: src/extraccion_metricas_interaccion/métricas.py
+SCRIPT_DIR = Path(__file__).resolve().parent  # .../extraccion_metricas_interaccion/
+
+# Subir niveles hasta llegar a la raíz
+# ../  → src/
+# ../../  → raíz del proyecto
+PROJECT_ROOT = SCRIPT_DIR.parent.parent
+
+# Definir rutas relativas desde la raíz
+DATA_DIR = PROJECT_ROOT / "data"
+SUBGRAFOS_INTERACCIONES = DATA_DIR / f"subgrafos_interacciones_{MODE}"
 
 
 # ============================================================
