@@ -11,22 +11,35 @@ from pathlib import Path
 from pathlib import Path
 import sys
 
-# Obtener raíz del proyecto (nueva_estructura)
-PROJECT_ROOT = Path(__file__).resolve().parents[3]
+# ============================================================
+# MODE: 'muestra' o 'completo'
+# ============================================================
+MODE = "muestra"  # Cambiar a "completo" para procesar todos los usuarios
+USUARIOS_MUESTRA = [3, 35, 276, 339, 376]  # Usuarios para modo muestra
 
-# Añadirla al sys.path
-sys.path.insert(0, str(PROJECT_ROOT))
+# ============================================================
+# DEFINICIÓN DE RUTAS RELATIVAS (desde la ubicación de este script)
+# ============================================================
+# Este script está en: src/extraccion_subgrafos/subgrafo_conocimiento/main_user_subgraph.py
+SCRIPT_DIR = Path(__file__).resolve().parent  # .../subgrafo_conocimiento/
 
-# Añadir src/ al path para importar config y utils del mismo módulo
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-sys.path.insert(0, str(Path(__file__).resolve().parent))
+# Subir niveles hasta llegar a la raíz
+# ../  → extraccion_subgrafos/
+# ../../  → src/
+# ../../../  → raíz del proyecto
+PROJECT_ROOT = SCRIPT_DIR.parent.parent.parent
 
-from config import (
-    CSV_USUARIO_RATING_RECOMEND,
-    LOGS_DIR,
-    MODE,
-    USUARIOS_MUESTRA
-)
+# Definir rutas relativas desde la raíz
+DATA_DIR = PROJECT_ROOT / "data"
+RAW_DIR  = DATA_DIR / "raw"
+CSV_USUARIO_RATING_RECOMEND = RAW_DIR / "relacion_usuario_rating_recomendador.csv"
+LOGS_DIR = PROJECT_ROOT / "logs"
+
+# Crear carpetas si no existen
+LOGS_DIR.mkdir(parents=True, exist_ok=True)
+
+# Añadir directorio actual al path para importar utils locales (mismo directorio)
+sys.path.insert(0, str(SCRIPT_DIR))
 
 import pandas as pd
 from utils_interactions import get_user_interacted_hotels

@@ -25,20 +25,43 @@ from typing import List, Literal
 import pandas as pd
 
 # ============================================================
-# AÑADIR RAÍZ DEL PROYECTO AL PYTHONPATH
+# MODE: 'muestra' o 'completo'
 # ============================================================
-current_file = Path(__file__).resolve()
+MODE = "muestra"  # Cambiar a "completo" para procesar todos los usuarios
+USUARIOS_MUESTRA = [3, 35, 276, 339, 376]  # Usuarios para modo muestra
 
-for parent in current_file.parents:
-    if (parent / "config.py").exists():
-        sys.path.insert(0, str(parent))
-        break
+# ============================================================
+# DEFINICIÓN DE RUTAS RELATIVAS (desde la ubicación de este script)
+# ============================================================
+# Este script está en: src/extraccion_metricas_conjunto/xaigraph.py
+SCRIPT_DIR = Path(__file__).resolve().parent  # .../extraccion_metricas_conjunto/
+
+# Subir niveles hasta llegar a la raíz
+# ../  → src/
+# ../../  → raíz del proyecto
+PROJECT_ROOT = SCRIPT_DIR.parent.parent
+
+# Definir rutas relativas desde la raíz
+DATA_DIR = PROJECT_ROOT / "data"
+RAW_DIR  = DATA_DIR / "raw"
+OUTPUT_DIR = PROJECT_ROOT / "output"
+LOGS_DIR   = PROJECT_ROOT / "logs"
+
+CSV_USUARIO_RATING_RECOMEND     = RAW_DIR / "relacion_usuario_rating_recomendador.csv"
+EXPLICACIONES_HISTORICO_Y_REC   = DATA_DIR / f"explicaciones_historico_y_recomendacion_{MODE}"
+SUBGRAFOS_INTERACCIONES         = DATA_DIR / f"subgrafos_interacciones_{MODE}"
+METRICAS_CONOCIMIENTO           = OUTPUT_DIR / f"metricas_grafo_conocimiento_{MODE}"
+METRICAS_INTERACCION            = OUTPUT_DIR / f"metricas_grafo_interaccion_{MODE}"
+
+# Crear carpetas si no existen
+for _dir in [METRICAS_CONOCIMIENTO, METRICAS_INTERACCION, LOGS_DIR]:
+    _dir.mkdir(parents=True, exist_ok=True)
 
 # ============================================================
 # IMPORTS DE CONFIG
 # ============================================================
 try:
-    from config import (
+    from config_mode import (
         CSV_USUARIO_RATING_RECOMEND,
         EXPLICACIONES_HISTORICO_Y_REC,
         METRICAS_CONOCIMIENTO,
@@ -50,7 +73,7 @@ try:
     )
 except ImportError:
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-    from config import (
+    from config_mode import (
         CSV_USUARIO_RATING_RECOMEND,
         EXPLICACIONES_HISTORICO_Y_REC,
         METRICAS_CONOCIMIENTO,

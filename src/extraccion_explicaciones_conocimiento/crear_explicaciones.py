@@ -16,24 +16,31 @@ import sys
 from pathlib import Path
 
 # ============================================================
-# AÑADIR RAÍZ DEL PROYECTO AL PYTHONPATH
+# MODE: 'muestra' o 'completo'
 # ============================================================
-current_file = Path(__file__).resolve()
+MODE = "muestra"  # Cambiar a "completo" para procesar todos los usuarios
 
-for parent in current_file.parents:
-    if (parent / "config.py").exists():
-        sys.path.insert(0, str(parent))
-        break
+# ============================================================
+# DEFINICIÓN DE RUTAS RELATIVAS (desde la ubicación de este script)
+# ============================================================
+# Este script está en: src/extraccion_explicaciones_conocimiento/crear_explicaciones.py
+SCRIPT_DIR = Path(__file__).resolve().parent  # .../extraccion_explicaciones_conocimiento/
 
-# Añadir src/ al path para importar config
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from config import (
-    SUBGRAFOS_CONOCIMIENTO,
-    EXPLICACIONES_HISTORICO,
-    EXPLICACIONES_HISTORICO_Y_REC,
-    LOGS_DIR,
-    MODE
-)
+# Subir niveles hasta llegar a la raíz
+# ../  → src/
+# ../../  → raíz del proyecto
+PROJECT_ROOT = SCRIPT_DIR.parent.parent
+
+# Definir rutas relativas desde la raíz
+DATA_DIR = PROJECT_ROOT / "data"
+SUBGRAFOS_CONOCIMIENTO        = DATA_DIR / f"subgrafos_conocimiento_{MODE}"
+EXPLICACIONES_HISTORICO       = DATA_DIR / f"explicaciones_historico_{MODE}"
+EXPLICACIONES_HISTORICO_Y_REC = DATA_DIR / f"explicaciones_historico_y_recomendacion_{MODE}"
+LOGS_DIR                      = PROJECT_ROOT / "logs"
+
+# Crear carpetas si no existen
+for _dir in [EXPLICACIONES_HISTORICO, EXPLICACIONES_HISTORICO_Y_REC, LOGS_DIR]:
+    _dir.mkdir(parents=True, exist_ok=True)
 
 # ============================================================
 # LOGGING
