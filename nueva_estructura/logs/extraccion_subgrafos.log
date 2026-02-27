@@ -1,0 +1,1508 @@
+2026-02-22 18:12:20,743 [INFO] ======================================================================
+2026-02-22 18:12:20,743 [INFO] EXTRACCIÓN DE SUBGRAFOS — MODE=muestra
+2026-02-22 18:12:20,744 [INFO] ======================================================================
+2026-02-22 18:12:20,797 [INFO] 📂 CSV cargado: 179200 filas
+2026-02-22 18:12:20,801 [INFO] 🔍 Modo MUESTRA: 250 filas para usuarios [3, 35, 276, 339, 376]
+2026-02-22 18:12:20,801 [INFO] ▶️  Procesando user=3, hotel_recomendado=45
+2026-02-22 18:12:21,069 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:21,069 [INFO]    Hoteles en subgrafo: [457, 45, 2513, 1941, 1783]
+2026-02-22 18:12:22,528 [INFO]    Nodos: 58, Relaciones: 77
+2026-02-22 18:12:22,531 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_45.json (1.73s)
+
+2026-02-22 18:12:22,531 [INFO] ▶️  Procesando user=3, hotel_recomendado=3209
+2026-02-22 18:12:22,539 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:22,539 [INFO]    Hoteles en subgrafo: [3209, 457, 2513, 1941, 1783]
+2026-02-22 18:12:23,454 [INFO]    Nodos: 57, Relaciones: 77
+2026-02-22 18:12:23,457 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_3209.json (0.93s)
+
+2026-02-22 18:12:23,457 [INFO] ▶️  Procesando user=3, hotel_recomendado=1442
+2026-02-22 18:12:23,468 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:23,468 [INFO]    Hoteles en subgrafo: [1442, 457, 2513, 1941, 1783]
+2026-02-22 18:12:24,378 [INFO]    Nodos: 60, Relaciones: 80
+2026-02-22 18:12:24,381 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_1442.json (0.92s)
+
+2026-02-22 18:12:24,381 [INFO] ▶️  Procesando user=3, hotel_recomendado=907
+2026-02-22 18:12:24,387 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:24,388 [INFO]    Hoteles en subgrafo: [457, 907, 2513, 1941, 1783]
+2026-02-22 18:12:25,287 [INFO]    Nodos: 55, Relaciones: 81
+2026-02-22 18:12:25,290 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_907.json (0.91s)
+
+2026-02-22 18:12:25,290 [INFO] ▶️  Procesando user=3, hotel_recomendado=2963
+2026-02-22 18:12:25,297 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:25,297 [INFO]    Hoteles en subgrafo: [457, 2513, 2963, 1941, 1783]
+2026-02-22 18:12:26,243 [INFO]    Nodos: 58, Relaciones: 84
+2026-02-22 18:12:26,246 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_2963.json (0.96s)
+
+2026-02-22 18:12:26,246 [INFO] ▶️  Procesando user=3, hotel_recomendado=3732
+2026-02-22 18:12:26,252 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:26,253 [INFO]    Hoteles en subgrafo: [457, 2513, 3732, 1941, 1783]
+2026-02-22 18:12:27,152 [INFO]    Nodos: 63, Relaciones: 83
+2026-02-22 18:12:27,159 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_3732.json (0.91s)
+
+2026-02-22 18:12:27,160 [INFO] ▶️  Procesando user=3, hotel_recomendado=774
+2026-02-22 18:12:27,166 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:27,166 [INFO]    Hoteles en subgrafo: [774, 457, 2513, 1941, 1783]
+2026-02-22 18:12:28,035 [INFO]    Nodos: 58, Relaciones: 80
+2026-02-22 18:12:28,038 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_774.json (0.88s)
+
+2026-02-22 18:12:28,038 [INFO] ▶️  Procesando user=3, hotel_recomendado=104
+2026-02-22 18:12:28,045 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:28,045 [INFO]    Hoteles en subgrafo: [104, 457, 2513, 1941, 1783]
+2026-02-22 18:12:29,099 [INFO]    Nodos: 77, Relaciones: 96
+2026-02-22 18:12:29,103 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_104.json (1.06s)
+
+2026-02-22 18:12:29,103 [INFO] ▶️  Procesando user=3, hotel_recomendado=522
+2026-02-22 18:12:29,110 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:29,110 [INFO]    Hoteles en subgrafo: [457, 522, 2513, 1941, 1783]
+2026-02-22 18:12:29,899 [INFO]    Nodos: 62, Relaciones: 80
+2026-02-22 18:12:29,902 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_522.json (0.80s)
+
+2026-02-22 18:12:29,903 [INFO] ▶️  Procesando user=3, hotel_recomendado=2557
+2026-02-22 18:12:29,909 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:29,909 [INFO]    Hoteles en subgrafo: [457, 2513, 1941, 1783, 2557]
+2026-02-22 18:12:30,731 [INFO]    Nodos: 61, Relaciones: 78
+2026-02-22 18:12:30,740 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_2557.json (0.84s)
+
+2026-02-22 18:12:30,740 [INFO] ▶️  Procesando user=3, hotel_recomendado=3165
+2026-02-22 18:12:30,758 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:30,758 [INFO]    Hoteles en subgrafo: [457, 2513, 1941, 1783, 3165]
+2026-02-22 18:12:31,605 [INFO]    Nodos: 63, Relaciones: 83
+2026-02-22 18:12:31,608 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_3165.json (0.87s)
+
+2026-02-22 18:12:31,608 [INFO] ▶️  Procesando user=3, hotel_recomendado=4088
+2026-02-22 18:12:31,615 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:31,615 [INFO]    Hoteles en subgrafo: [457, 2513, 1941, 1783, 4088]
+2026-02-22 18:12:32,376 [INFO]    Nodos: 58, Relaciones: 80
+2026-02-22 18:12:32,378 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_4088.json (0.77s)
+
+2026-02-22 18:12:32,379 [INFO] ▶️  Procesando user=3, hotel_recomendado=3237
+2026-02-22 18:12:32,385 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:32,386 [INFO]    Hoteles en subgrafo: [3237, 457, 2513, 1941, 1783]
+2026-02-22 18:12:33,143 [INFO]    Nodos: 58, Relaciones: 78
+2026-02-22 18:12:33,147 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_3237.json (0.77s)
+
+2026-02-22 18:12:33,147 [INFO] ▶️  Procesando user=3, hotel_recomendado=3737
+2026-02-22 18:12:33,154 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:33,154 [INFO]    Hoteles en subgrafo: [457, 2513, 1941, 1783, 3737]
+2026-02-22 18:12:33,847 [INFO]    Nodos: 57, Relaciones: 73
+2026-02-22 18:12:33,854 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_3737.json (0.71s)
+
+2026-02-22 18:12:33,854 [INFO] ▶️  Procesando user=3, hotel_recomendado=25
+2026-02-22 18:12:33,860 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:33,860 [INFO]    Hoteles en subgrafo: [457, 2513, 1941, 1783, 25]
+2026-02-22 18:12:34,594 [INFO]    Nodos: 58, Relaciones: 77
+2026-02-22 18:12:34,601 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_25.json (0.75s)
+
+2026-02-22 18:12:34,601 [INFO] ▶️  Procesando user=3, hotel_recomendado=4830
+2026-02-22 18:12:34,607 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:34,608 [INFO]    Hoteles en subgrafo: [457, 2513, 1941, 1783, 4830]
+2026-02-22 18:12:35,362 [INFO]    Nodos: 57, Relaciones: 75
+2026-02-22 18:12:35,370 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_4830.json (0.77s)
+
+2026-02-22 18:12:35,370 [INFO] ▶️  Procesando user=3, hotel_recomendado=4359
+2026-02-22 18:12:35,376 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:35,376 [INFO]    Hoteles en subgrafo: [4359, 457, 2513, 1941, 1783]
+2026-02-22 18:12:36,232 [INFO]    Nodos: 63, Relaciones: 86
+2026-02-22 18:12:36,243 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_4359.json (0.87s)
+
+2026-02-22 18:12:36,243 [INFO] ▶️  Procesando user=3, hotel_recomendado=473
+2026-02-22 18:12:36,249 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:36,249 [INFO]    Hoteles en subgrafo: [457, 2513, 1941, 1783, 473]
+2026-02-22 18:12:37,156 [INFO]    Nodos: 77, Relaciones: 102
+2026-02-22 18:12:37,163 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_473.json (0.92s)
+
+2026-02-22 18:12:37,164 [INFO] ▶️  Procesando user=3, hotel_recomendado=1164
+2026-02-22 18:12:37,171 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:37,171 [INFO]    Hoteles en subgrafo: [457, 1164, 2513, 1941, 1783]
+2026-02-22 18:12:38,083 [INFO]    Nodos: 60, Relaciones: 82
+2026-02-22 18:12:38,087 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_1164.json (0.92s)
+
+2026-02-22 18:12:38,087 [INFO] ▶️  Procesando user=3, hotel_recomendado=3484
+2026-02-22 18:12:38,093 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:38,094 [INFO]    Hoteles en subgrafo: [457, 2513, 1941, 1783, 3484]
+2026-02-22 18:12:38,980 [INFO]    Nodos: 56, Relaciones: 73
+2026-02-22 18:12:38,984 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_3484.json (0.90s)
+
+2026-02-22 18:12:38,984 [INFO] ▶️  Procesando user=3, hotel_recomendado=1693
+2026-02-22 18:12:38,990 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:38,990 [INFO]    Hoteles en subgrafo: [457, 2513, 1941, 1783, 1693]
+2026-02-22 18:12:39,937 [INFO]    Nodos: 75, Relaciones: 99
+2026-02-22 18:12:39,941 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_1693.json (0.96s)
+
+2026-02-22 18:12:39,941 [INFO] ▶️  Procesando user=3, hotel_recomendado=4825
+2026-02-22 18:12:39,948 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:39,948 [INFO]    Hoteles en subgrafo: [457, 2513, 1941, 1783, 4825]
+2026-02-22 18:12:40,684 [INFO]    Nodos: 54, Relaciones: 75
+2026-02-22 18:12:40,692 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_4825.json (0.75s)
+
+2026-02-22 18:12:40,692 [INFO] ▶️  Procesando user=3, hotel_recomendado=3178
+2026-02-22 18:12:40,699 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:40,699 [INFO]    Hoteles en subgrafo: [457, 3178, 2513, 1941, 1783]
+2026-02-22 18:12:41,453 [INFO]    Nodos: 56, Relaciones: 72
+2026-02-22 18:12:41,456 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_3178.json (0.76s)
+
+2026-02-22 18:12:41,457 [INFO] ▶️  Procesando user=3, hotel_recomendado=2344
+2026-02-22 18:12:41,463 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:41,463 [INFO]    Hoteles en subgrafo: [2344, 457, 2513, 1941, 1783]
+2026-02-22 18:12:42,768 [INFO]    Nodos: 92, Relaciones: 114
+2026-02-22 18:12:42,772 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_2344.json (1.32s)
+
+2026-02-22 18:12:42,772 [INFO] ▶️  Procesando user=3, hotel_recomendado=1729
+2026-02-22 18:12:42,780 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:42,780 [INFO]    Hoteles en subgrafo: [1729, 457, 2513, 1941, 1783]
+2026-02-22 18:12:43,632 [INFO]    Nodos: 60, Relaciones: 82
+2026-02-22 18:12:43,635 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_1729.json (0.86s)
+
+2026-02-22 18:12:43,635 [INFO] ▶️  Procesando user=3, hotel_recomendado=3119
+2026-02-22 18:12:43,642 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:43,642 [INFO]    Hoteles en subgrafo: [457, 3119, 2513, 1941, 1783]
+2026-02-22 18:12:44,641 [INFO]    Nodos: 74, Relaciones: 92
+2026-02-22 18:12:44,646 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_3119.json (1.01s)
+
+2026-02-22 18:12:44,646 [INFO] ▶️  Procesando user=3, hotel_recomendado=1093
+2026-02-22 18:12:44,653 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:44,653 [INFO]    Hoteles en subgrafo: [1093, 457, 2513, 1941, 1783]
+2026-02-22 18:12:45,531 [INFO]    Nodos: 63, Relaciones: 81
+2026-02-22 18:12:45,535 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_1093.json (0.89s)
+
+2026-02-22 18:12:45,535 [INFO] ▶️  Procesando user=3, hotel_recomendado=4122
+2026-02-22 18:12:45,543 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:45,544 [INFO]    Hoteles en subgrafo: [457, 2513, 1941, 1783, 4122]
+2026-02-22 18:12:46,362 [INFO]    Nodos: 57, Relaciones: 75
+2026-02-22 18:12:46,365 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_4122.json (0.83s)
+
+2026-02-22 18:12:46,366 [INFO] ▶️  Procesando user=3, hotel_recomendado=5061
+2026-02-22 18:12:46,372 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:46,372 [INFO]    Hoteles en subgrafo: [5061, 457, 2513, 1941, 1783]
+2026-02-22 18:12:47,192 [INFO]    Nodos: 61, Relaciones: 79
+2026-02-22 18:12:47,197 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_5061.json (0.83s)
+
+2026-02-22 18:12:47,198 [INFO] ▶️  Procesando user=3, hotel_recomendado=4942
+2026-02-22 18:12:47,206 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:47,206 [INFO]    Hoteles en subgrafo: [457, 4942, 2513, 1941, 1783]
+2026-02-22 18:12:48,013 [INFO]    Nodos: 57, Relaciones: 78
+2026-02-22 18:12:48,017 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_4942.json (0.82s)
+
+2026-02-22 18:12:48,017 [INFO] ▶️  Procesando user=3, hotel_recomendado=4183
+2026-02-22 18:12:48,024 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:48,024 [INFO]    Hoteles en subgrafo: [457, 2513, 1941, 4183, 1783]
+2026-02-22 18:12:49,249 [INFO]    Nodos: 67, Relaciones: 90
+2026-02-22 18:12:49,253 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_4183.json (1.24s)
+
+2026-02-22 18:12:49,253 [INFO] ▶️  Procesando user=3, hotel_recomendado=4464
+2026-02-22 18:12:49,261 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:49,261 [INFO]    Hoteles en subgrafo: [457, 4464, 2513, 1941, 1783]
+2026-02-22 18:12:50,663 [INFO]    Nodos: 66, Relaciones: 89
+2026-02-22 18:12:50,667 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_4464.json (1.41s)
+
+2026-02-22 18:12:50,668 [INFO] ▶️  Procesando user=3, hotel_recomendado=5855
+2026-02-22 18:12:50,678 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:50,678 [INFO]    Hoteles en subgrafo: [457, 2513, 1941, 1783, 5855]
+2026-02-22 18:12:51,562 [INFO]    Nodos: 59, Relaciones: 74
+2026-02-22 18:12:51,566 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_5855.json (0.90s)
+
+2026-02-22 18:12:51,567 [INFO] ▶️  Procesando user=3, hotel_recomendado=2972
+2026-02-22 18:12:51,575 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:51,575 [INFO]    Hoteles en subgrafo: [457, 2513, 1941, 1783, 2972]
+2026-02-22 18:12:52,588 [INFO]    Nodos: 60, Relaciones: 81
+2026-02-22 18:12:52,593 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_2972.json (1.03s)
+
+2026-02-22 18:12:52,593 [INFO] ▶️  Procesando user=3, hotel_recomendado=1054
+2026-02-22 18:12:52,600 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:52,600 [INFO]    Hoteles en subgrafo: [457, 2513, 1941, 1783, 1054]
+2026-02-22 18:12:53,457 [INFO]    Nodos: 58, Relaciones: 78
+2026-02-22 18:12:53,462 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_1054.json (0.87s)
+
+2026-02-22 18:12:53,463 [INFO] ▶️  Procesando user=3, hotel_recomendado=2085
+2026-02-22 18:12:53,469 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:53,469 [INFO]    Hoteles en subgrafo: [2085, 457, 2513, 1941, 1783]
+2026-02-22 18:12:54,501 [INFO]    Nodos: 80, Relaciones: 104
+2026-02-22 18:12:54,505 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_2085.json (1.04s)
+
+2026-02-22 18:12:54,505 [INFO] ▶️  Procesando user=3, hotel_recomendado=2617
+2026-02-22 18:12:54,512 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:54,512 [INFO]    Hoteles en subgrafo: [457, 2513, 1941, 1783, 2617]
+2026-02-22 18:12:55,336 [INFO]    Nodos: 57, Relaciones: 76
+2026-02-22 18:12:55,339 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_2617.json (0.83s)
+
+2026-02-22 18:12:55,340 [INFO] ▶️  Procesando user=3, hotel_recomendado=163
+2026-02-22 18:12:55,345 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:55,346 [INFO]    Hoteles en subgrafo: [163, 457, 2513, 1941, 1783]
+2026-02-22 18:12:56,399 [INFO]    Nodos: 85, Relaciones: 108
+2026-02-22 18:12:56,408 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_163.json (1.07s)
+
+2026-02-22 18:12:56,408 [INFO] ▶️  Procesando user=3, hotel_recomendado=5605
+2026-02-22 18:12:56,414 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:56,414 [INFO]    Hoteles en subgrafo: [5605, 457, 2513, 1941, 1783]
+2026-02-22 18:12:57,290 [INFO]    Nodos: 64, Relaciones: 84
+2026-02-22 18:12:57,294 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_5605.json (0.89s)
+
+2026-02-22 18:12:57,294 [INFO] ▶️  Procesando user=3, hotel_recomendado=1608
+2026-02-22 18:12:57,300 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:57,300 [INFO]    Hoteles en subgrafo: [1608, 457, 2513, 1941, 1783]
+2026-02-22 18:12:58,081 [INFO]    Nodos: 57, Relaciones: 75
+2026-02-22 18:12:58,084 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_1608.json (0.79s)
+
+2026-02-22 18:12:58,085 [INFO] ▶️  Procesando user=3, hotel_recomendado=1487
+2026-02-22 18:12:58,091 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:58,091 [INFO]    Hoteles en subgrafo: [457, 1487, 2513, 1941, 1783]
+2026-02-22 18:12:58,789 [INFO]    Nodos: 55, Relaciones: 73
+2026-02-22 18:12:58,793 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_1487.json (0.71s)
+
+2026-02-22 18:12:58,793 [INFO] ▶️  Procesando user=3, hotel_recomendado=901
+2026-02-22 18:12:58,799 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:58,800 [INFO]    Hoteles en subgrafo: [901, 457, 2513, 1941, 1783]
+2026-02-22 18:12:59,598 [INFO]    Nodos: 58, Relaciones: 79
+2026-02-22 18:12:59,607 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_901.json (0.81s)
+
+2026-02-22 18:12:59,607 [INFO] ▶️  Procesando user=3, hotel_recomendado=3069
+2026-02-22 18:12:59,613 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:12:59,613 [INFO]    Hoteles en subgrafo: [457, 2513, 1941, 1783, 3069]
+2026-02-22 18:13:00,349 [INFO]    Nodos: 59, Relaciones: 73
+2026-02-22 18:13:00,357 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_3069.json (0.75s)
+
+2026-02-22 18:13:00,358 [INFO] ▶️  Procesando user=3, hotel_recomendado=2101
+2026-02-22 18:13:00,364 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:13:00,364 [INFO]    Hoteles en subgrafo: [457, 2513, 2101, 1941, 1783]
+2026-02-22 18:13:01,150 [INFO]    Nodos: 58, Relaciones: 81
+2026-02-22 18:13:01,158 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_2101.json (0.80s)
+
+2026-02-22 18:13:01,158 [INFO] ▶️  Procesando user=3, hotel_recomendado=3136
+2026-02-22 18:13:01,164 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:13:01,164 [INFO]    Hoteles en subgrafo: [3136, 457, 2513, 1941, 1783]
+2026-02-22 18:13:01,881 [INFO]    Nodos: 59, Relaciones: 78
+2026-02-22 18:13:01,886 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_3136.json (0.73s)
+
+2026-02-22 18:13:01,886 [INFO] ▶️  Procesando user=3, hotel_recomendado=4990
+2026-02-22 18:13:01,893 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:13:01,893 [INFO]    Hoteles en subgrafo: [457, 2513, 1941, 1783, 4990]
+2026-02-22 18:13:02,788 [INFO]    Nodos: 70, Relaciones: 93
+2026-02-22 18:13:02,792 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_4990.json (0.91s)
+
+2026-02-22 18:13:02,792 [INFO] ▶️  Procesando user=3, hotel_recomendado=2109
+2026-02-22 18:13:02,799 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:13:02,799 [INFO]    Hoteles en subgrafo: [457, 2513, 1941, 1783, 2109]
+2026-02-22 18:13:03,544 [INFO]    Nodos: 62, Relaciones: 79
+2026-02-22 18:13:03,547 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_2109.json (0.76s)
+
+2026-02-22 18:13:03,547 [INFO] ▶️  Procesando user=3, hotel_recomendado=2290
+2026-02-22 18:13:03,555 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:13:03,556 [INFO]    Hoteles en subgrafo: [457, 2513, 2290, 1941, 1783]
+2026-02-22 18:13:04,260 [INFO]    Nodos: 58, Relaciones: 73
+2026-02-22 18:13:04,263 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_2290.json (0.72s)
+
+2026-02-22 18:13:04,263 [INFO] ▶️  Procesando user=3, hotel_recomendado=393
+2026-02-22 18:13:04,270 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:13:04,270 [INFO]    Hoteles en subgrafo: [393, 457, 2513, 1941, 1783]
+2026-02-22 18:13:05,166 [INFO]    Nodos: 70, Relaciones: 90
+2026-02-22 18:13:05,170 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_393.json (0.91s)
+
+2026-02-22 18:13:05,170 [INFO] ▶️  Procesando user=3, hotel_recomendado=888
+2026-02-22 18:13:05,176 [INFO]    Hoteles previos: [2513, 457, 1783, 1941]
+2026-02-22 18:13:05,176 [INFO]    Hoteles en subgrafo: [457, 2513, 1941, 1783, 888]
+2026-02-22 18:13:06,027 [INFO]    Nodos: 68, Relaciones: 92
+2026-02-22 18:13:06,035 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_3_hotel_888.json (0.87s)
+
+2026-02-22 18:13:06,035 [INFO] ▶️  Procesando user=35, hotel_recomendado=24
+2026-02-22 18:13:06,041 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:06,041 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 2989, 24]
+2026-02-22 18:13:07,246 [INFO]    Nodos: 101, Relaciones: 131
+2026-02-22 18:13:07,250 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_24.json (1.21s)
+
+2026-02-22 18:13:07,250 [INFO] ▶️  Procesando user=35, hotel_recomendado=1489
+2026-02-22 18:13:07,256 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:07,256 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 2989, 1489]
+2026-02-22 18:13:08,320 [INFO]    Nodos: 90, Relaciones: 110
+2026-02-22 18:13:08,324 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_1489.json (1.07s)
+
+2026-02-22 18:13:08,324 [INFO] ▶️  Procesando user=35, hotel_recomendado=473
+2026-02-22 18:13:08,330 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:08,331 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 2989, 473]
+2026-02-22 18:13:09,652 [INFO]    Nodos: 101, Relaciones: 132
+2026-02-22 18:13:09,656 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_473.json (1.33s)
+
+2026-02-22 18:13:09,656 [INFO] ▶️  Procesando user=35, hotel_recomendado=5176
+2026-02-22 18:13:09,666 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:09,666 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 2989, 5176]
+2026-02-22 18:13:11,004 [INFO]    Nodos: 94, Relaciones: 124
+2026-02-22 18:13:11,008 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_5176.json (1.35s)
+
+2026-02-22 18:13:11,009 [INFO] ▶️  Procesando user=35, hotel_recomendado=4610
+2026-02-22 18:13:11,017 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:11,017 [INFO]    Hoteles en subgrafo: [4610, 4326, 5767, 2344, 2989]
+2026-02-22 18:13:12,249 [INFO]    Nodos: 87, Relaciones: 114
+2026-02-22 18:13:12,257 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_4610.json (1.25s)
+
+2026-02-22 18:13:12,258 [INFO] ▶️  Procesando user=35, hotel_recomendado=1093
+2026-02-22 18:13:12,266 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:12,266 [INFO]    Hoteles en subgrafo: [1093, 4326, 5767, 2344, 2989]
+2026-02-22 18:13:13,484 [INFO]    Nodos: 92, Relaciones: 111
+2026-02-22 18:13:13,488 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_1093.json (1.23s)
+
+2026-02-22 18:13:13,488 [INFO] ▶️  Procesando user=35, hotel_recomendado=774
+2026-02-22 18:13:13,497 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:13,498 [INFO]    Hoteles en subgrafo: [4326, 774, 2344, 5767, 2989]
+2026-02-22 18:13:14,696 [INFO]    Nodos: 89, Relaciones: 110
+2026-02-22 18:13:14,701 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_774.json (1.21s)
+
+2026-02-22 18:13:14,702 [INFO] ▶️  Procesando user=35, hotel_recomendado=5747
+2026-02-22 18:13:14,711 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:14,711 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 2989, 5747]
+2026-02-22 18:13:15,873 [INFO]    Nodos: 92, Relaciones: 111
+2026-02-22 18:13:15,882 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_5747.json (1.18s)
+
+2026-02-22 18:13:15,883 [INFO] ▶️  Procesando user=35, hotel_recomendado=5623
+2026-02-22 18:13:15,889 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:15,889 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 2989, 5623]
+2026-02-22 18:13:17,086 [INFO]    Nodos: 84, Relaciones: 110
+2026-02-22 18:13:17,095 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_5623.json (1.21s)
+
+2026-02-22 18:13:17,095 [INFO] ▶️  Procesando user=35, hotel_recomendado=1436
+2026-02-22 18:13:17,102 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:17,102 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 2989, 1436]
+2026-02-22 18:13:18,227 [INFO]    Nodos: 86, Relaciones: 114
+2026-02-22 18:13:18,231 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_1436.json (1.14s)
+
+2026-02-22 18:13:18,231 [INFO] ▶️  Procesando user=35, hotel_recomendado=3136
+2026-02-22 18:13:18,237 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:18,237 [INFO]    Hoteles en subgrafo: [3136, 4326, 5767, 2344, 2989]
+2026-02-22 18:13:19,291 [INFO]    Nodos: 87, Relaciones: 108
+2026-02-22 18:13:19,296 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_3136.json (1.06s)
+
+2026-02-22 18:13:19,296 [INFO] ▶️  Procesando user=35, hotel_recomendado=5175
+2026-02-22 18:13:19,302 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:19,302 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 2989, 5175]
+2026-02-22 18:13:20,381 [INFO]    Nodos: 84, Relaciones: 107
+2026-02-22 18:13:20,385 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_5175.json (1.09s)
+
+2026-02-22 18:13:20,385 [INFO] ▶️  Procesando user=35, hotel_recomendado=880
+2026-02-22 18:13:20,392 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:20,392 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 2989, 880]
+2026-02-22 18:13:21,404 [INFO]    Nodos: 88, Relaciones: 104
+2026-02-22 18:13:21,412 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_880.json (1.03s)
+
+2026-02-22 18:13:21,412 [INFO] ▶️  Procesando user=35, hotel_recomendado=4143
+2026-02-22 18:13:21,417 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:21,418 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 2989, 4143]
+2026-02-22 18:13:22,485 [INFO]    Nodos: 89, Relaciones: 106
+2026-02-22 18:13:22,488 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_4143.json (1.08s)
+
+2026-02-22 18:13:22,489 [INFO] ▶️  Procesando user=35, hotel_recomendado=3398
+2026-02-22 18:13:22,495 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:22,496 [INFO]    Hoteles en subgrafo: [4326, 3398, 2344, 5767, 2989]
+2026-02-22 18:13:23,764 [INFO]    Nodos: 107, Relaciones: 137
+2026-02-22 18:13:23,768 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_3398.json (1.28s)
+
+2026-02-22 18:13:23,768 [INFO] ▶️  Procesando user=35, hotel_recomendado=3474
+2026-02-22 18:13:23,779 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:23,779 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 2989, 3474]
+2026-02-22 18:13:24,766 [INFO]    Nodos: 88, Relaciones: 106
+2026-02-22 18:13:24,770 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_3474.json (1.00s)
+
+2026-02-22 18:13:24,770 [INFO] ▶️  Procesando user=35, hotel_recomendado=4251
+2026-02-22 18:13:24,776 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:24,776 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 2989, 4251]
+2026-02-22 18:13:25,983 [INFO]    Nodos: 97, Relaciones: 128
+2026-02-22 18:13:25,987 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_4251.json (1.22s)
+
+2026-02-22 18:13:25,987 [INFO] ▶️  Procesando user=35, hotel_recomendado=1404
+2026-02-22 18:13:25,994 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:25,994 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 2989, 1404]
+2026-02-22 18:13:26,970 [INFO]    Nodos: 91, Relaciones: 108
+2026-02-22 18:13:26,979 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_1404.json (0.99s)
+
+2026-02-22 18:13:26,979 [INFO] ▶️  Procesando user=35, hotel_recomendado=1361
+2026-02-22 18:13:26,986 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:26,986 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 2989, 1361]
+2026-02-22 18:13:28,056 [INFO]    Nodos: 88, Relaciones: 121
+2026-02-22 18:13:28,060 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_1361.json (1.08s)
+
+2026-02-22 18:13:28,060 [INFO] ▶️  Procesando user=35, hotel_recomendado=4073
+2026-02-22 18:13:28,066 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:28,066 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 4073, 2989]
+2026-02-22 18:13:29,164 [INFO]    Nodos: 92, Relaciones: 124
+2026-02-22 18:13:29,168 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_4073.json (1.11s)
+
+2026-02-22 18:13:29,168 [INFO] ▶️  Procesando user=35, hotel_recomendado=4088
+2026-02-22 18:13:29,174 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:29,174 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 2989, 4088]
+2026-02-22 18:13:30,172 [INFO]    Nodos: 92, Relaciones: 110
+2026-02-22 18:13:30,177 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_4088.json (1.01s)
+
+2026-02-22 18:13:30,177 [INFO] ▶️  Procesando user=35, hotel_recomendado=1152
+2026-02-22 18:13:30,184 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:30,184 [INFO]    Hoteles en subgrafo: [1152, 4326, 5767, 2344, 2989]
+2026-02-22 18:13:31,321 [INFO]    Nodos: 93, Relaciones: 128
+2026-02-22 18:13:31,324 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_1152.json (1.15s)
+
+2026-02-22 18:13:31,325 [INFO] ▶️  Procesando user=35, hotel_recomendado=1442
+2026-02-22 18:13:31,330 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:31,330 [INFO]    Hoteles en subgrafo: [1442, 4326, 5767, 2344, 2989]
+2026-02-22 18:13:32,308 [INFO]    Nodos: 90, Relaciones: 110
+2026-02-22 18:13:32,316 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_1442.json (0.99s)
+
+2026-02-22 18:13:32,317 [INFO] ▶️  Procesando user=35, hotel_recomendado=5083
+2026-02-22 18:13:32,322 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:32,322 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 2989, 5083]
+2026-02-22 18:13:33,344 [INFO]    Nodos: 93, Relaciones: 115
+2026-02-22 18:13:33,353 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_5083.json (1.04s)
+
+2026-02-22 18:13:33,353 [INFO] ▶️  Procesando user=35, hotel_recomendado=798
+2026-02-22 18:13:33,359 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:33,359 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 2989, 798]
+2026-02-22 18:13:34,517 [INFO]    Nodos: 96, Relaciones: 128
+2026-02-22 18:13:34,525 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_798.json (1.17s)
+
+2026-02-22 18:13:34,526 [INFO] ▶️  Procesando user=35, hotel_recomendado=4634
+2026-02-22 18:13:34,532 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:34,533 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 2989, 4634]
+2026-02-22 18:13:35,797 [INFO]    Nodos: 105, Relaciones: 139
+2026-02-22 18:13:35,801 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_4634.json (1.28s)
+
+2026-02-22 18:13:35,802 [INFO] ▶️  Procesando user=35, hotel_recomendado=104
+2026-02-22 18:13:35,808 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:35,808 [INFO]    Hoteles en subgrafo: [4326, 5767, 104, 2344, 2989]
+2026-02-22 18:13:36,987 [INFO]    Nodos: 104, Relaciones: 126
+2026-02-22 18:13:36,991 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_104.json (1.19s)
+
+2026-02-22 18:13:36,991 [INFO] ▶️  Procesando user=35, hotel_recomendado=3086
+2026-02-22 18:13:36,999 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:36,999 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 2989, 3086]
+2026-02-22 18:13:37,989 [INFO]    Nodos: 89, Relaciones: 108
+2026-02-22 18:13:37,993 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_3086.json (1.00s)
+
+2026-02-22 18:13:37,993 [INFO] ▶️  Procesando user=35, hotel_recomendado=3999
+2026-02-22 18:13:38,003 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:38,003 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 2989, 3999]
+2026-02-22 18:13:39,017 [INFO]    Nodos: 84, Relaciones: 107
+2026-02-22 18:13:39,020 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_3999.json (1.03s)
+
+2026-02-22 18:13:39,021 [INFO] ▶️  Procesando user=35, hotel_recomendado=4463
+2026-02-22 18:13:39,026 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:39,027 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 2989, 4463]
+2026-02-22 18:13:40,189 [INFO]    Nodos: 91, Relaciones: 126
+2026-02-22 18:13:40,193 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_4463.json (1.17s)
+
+2026-02-22 18:13:40,194 [INFO] ▶️  Procesando user=35, hotel_recomendado=1963
+2026-02-22 18:13:40,200 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:40,200 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 1963, 2989]
+2026-02-22 18:13:41,412 [INFO]    Nodos: 99, Relaciones: 132
+2026-02-22 18:13:41,421 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_1963.json (1.23s)
+
+2026-02-22 18:13:41,421 [INFO] ▶️  Procesando user=35, hotel_recomendado=2612
+2026-02-22 18:13:41,428 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:41,428 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 2989, 2612]
+2026-02-22 18:13:42,425 [INFO]    Nodos: 87, Relaciones: 105
+2026-02-22 18:13:42,429 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_2612.json (1.01s)
+
+2026-02-22 18:13:42,429 [INFO] ▶️  Procesando user=35, hotel_recomendado=2933
+2026-02-22 18:13:42,436 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:42,437 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 2989, 2933]
+2026-02-22 18:13:43,518 [INFO]    Nodos: 90, Relaciones: 108
+2026-02-22 18:13:43,522 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_2933.json (1.09s)
+
+2026-02-22 18:13:43,523 [INFO] ▶️  Procesando user=35, hotel_recomendado=5226
+2026-02-22 18:13:43,530 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:43,530 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 5226, 2989]
+2026-02-22 18:13:44,588 [INFO]    Nodos: 87, Relaciones: 108
+2026-02-22 18:13:44,593 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_5226.json (1.07s)
+
+2026-02-22 18:13:44,593 [INFO] ▶️  Procesando user=35, hotel_recomendado=4683
+2026-02-22 18:13:44,600 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:44,600 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 4683, 2989]
+2026-02-22 18:13:45,689 [INFO]    Nodos: 84, Relaciones: 109
+2026-02-22 18:13:45,693 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_4683.json (1.10s)
+
+2026-02-22 18:13:45,694 [INFO] ▶️  Procesando user=35, hotel_recomendado=522
+2026-02-22 18:13:45,700 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:45,700 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 522, 2989]
+2026-02-22 18:13:46,758 [INFO]    Nodos: 89, Relaciones: 110
+2026-02-22 18:13:46,762 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_522.json (1.07s)
+
+2026-02-22 18:13:46,763 [INFO] ▶️  Procesando user=35, hotel_recomendado=1702
+2026-02-22 18:13:46,769 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:46,769 [INFO]    Hoteles en subgrafo: [4326, 1702, 2344, 5767, 2989]
+2026-02-22 18:13:47,909 [INFO]    Nodos: 92, Relaciones: 123
+2026-02-22 18:13:47,917 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_1702.json (1.15s)
+
+2026-02-22 18:13:47,918 [INFO] ▶️  Procesando user=35, hotel_recomendado=3081
+2026-02-22 18:13:47,925 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:47,925 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 3081, 2989]
+2026-02-22 18:13:49,267 [INFO]    Nodos: 98, Relaciones: 132
+2026-02-22 18:13:49,271 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_3081.json (1.35s)
+
+2026-02-22 18:13:49,272 [INFO] ▶️  Procesando user=35, hotel_recomendado=5292
+2026-02-22 18:13:49,278 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:49,278 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 5292, 2989]
+2026-02-22 18:13:50,522 [INFO]    Nodos: 91, Relaciones: 122
+2026-02-22 18:13:50,525 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_5292.json (1.25s)
+
+2026-02-22 18:13:50,526 [INFO] ▶️  Procesando user=35, hotel_recomendado=558
+2026-02-22 18:13:50,532 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:50,532 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 2989, 558]
+2026-02-22 18:13:51,593 [INFO]    Nodos: 87, Relaciones: 105
+2026-02-22 18:13:51,597 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_558.json (1.07s)
+
+2026-02-22 18:13:51,597 [INFO] ▶️  Procesando user=35, hotel_recomendado=4432
+2026-02-22 18:13:51,603 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:51,603 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 2989, 4432]
+2026-02-22 18:13:52,745 [INFO]    Nodos: 90, Relaciones: 122
+2026-02-22 18:13:52,754 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_4432.json (1.16s)
+
+2026-02-22 18:13:52,755 [INFO] ▶️  Procesando user=35, hotel_recomendado=958
+2026-02-22 18:13:52,760 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:52,761 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 2989, 958]
+2026-02-22 18:13:53,880 [INFO]    Nodos: 88, Relaciones: 122
+2026-02-22 18:13:53,884 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_958.json (1.13s)
+
+2026-02-22 18:13:53,885 [INFO] ▶️  Procesando user=35, hotel_recomendado=1940
+2026-02-22 18:13:53,893 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:53,893 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 2989, 1940]
+2026-02-22 18:13:55,154 [INFO]    Nodos: 98, Relaciones: 130
+2026-02-22 18:13:55,158 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_1940.json (1.27s)
+
+2026-02-22 18:13:55,159 [INFO] ▶️  Procesando user=35, hotel_recomendado=2557
+2026-02-22 18:13:55,164 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:55,165 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 2989, 2557]
+2026-02-22 18:13:56,119 [INFO]    Nodos: 91, Relaciones: 108
+2026-02-22 18:13:56,123 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_2557.json (0.96s)
+
+2026-02-22 18:13:56,123 [INFO] ▶️  Procesando user=35, hotel_recomendado=2723
+2026-02-22 18:13:56,129 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:56,129 [INFO]    Hoteles en subgrafo: [2723, 4326, 5767, 2344, 2989]
+2026-02-22 18:13:57,225 [INFO]    Nodos: 103, Relaciones: 127
+2026-02-22 18:13:57,229 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_2723.json (1.11s)
+
+2026-02-22 18:13:57,230 [INFO] ▶️  Procesando user=35, hotel_recomendado=817
+2026-02-22 18:13:57,237 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:57,237 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 2989, 817]
+2026-02-22 18:13:58,222 [INFO]    Nodos: 95, Relaciones: 114
+2026-02-22 18:13:58,226 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_817.json (1.00s)
+
+2026-02-22 18:13:58,227 [INFO] ▶️  Procesando user=35, hotel_recomendado=1411
+2026-02-22 18:13:58,233 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:58,233 [INFO]    Hoteles en subgrafo: [1411, 4326, 5767, 2344, 2989]
+2026-02-22 18:13:59,221 [INFO]    Nodos: 92, Relaciones: 109
+2026-02-22 18:13:59,229 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_1411.json (1.00s)
+
+2026-02-22 18:13:59,230 [INFO] ▶️  Procesando user=35, hotel_recomendado=837
+2026-02-22 18:13:59,236 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:13:59,236 [INFO]    Hoteles en subgrafo: [837, 4326, 5767, 2344, 2989]
+2026-02-22 18:14:00,170 [INFO]    Nodos: 88, Relaciones: 106
+2026-02-22 18:14:00,174 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_837.json (0.94s)
+
+2026-02-22 18:14:00,174 [INFO] ▶️  Procesando user=35, hotel_recomendado=1960
+2026-02-22 18:14:00,180 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:14:00,180 [INFO]    Hoteles en subgrafo: [4326, 5767, 1960, 2344, 2989]
+2026-02-22 18:14:01,210 [INFO]    Nodos: 84, Relaciones: 110
+2026-02-22 18:14:01,218 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_1960.json (1.04s)
+
+2026-02-22 18:14:01,218 [INFO] ▶️  Procesando user=35, hotel_recomendado=5499
+2026-02-22 18:14:01,224 [INFO]    Hoteles previos: [2344, 2989, 5767, 4326]
+2026-02-22 18:14:01,225 [INFO]    Hoteles en subgrafo: [4326, 5767, 2344, 2989, 5499]
+2026-02-22 18:14:02,399 [INFO]    Nodos: 97, Relaciones: 132
+2026-02-22 18:14:02,403 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_35_hotel_5499.json (1.19s)
+
+2026-02-22 18:14:02,404 [INFO] ▶️  Procesando user=276, hotel_recomendado=904
+2026-02-22 18:14:02,409 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:14:02,410 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 904, 104, 1356, 3438, 558, 5360, 592, 4656, 880, 4088]
+2026-02-22 18:14:04,757 [INFO]    Nodos: 156, Relaciones: 262
+2026-02-22 18:14:04,769 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_904.json (2.37s)
+
+2026-02-22 18:14:04,769 [INFO] ▶️  Procesando user=276, hotel_recomendado=2085
+2026-02-22 18:14:04,775 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:14:04,776 [INFO]    Hoteles en subgrafo: [1442, 2085, 4326, 3143, 104, 1356, 3438, 558, 5360, 592, 4656, 880, 4088]
+2026-02-22 18:14:07,284 [INFO]    Nodos: 164, Relaciones: 278
+2026-02-22 18:14:07,296 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_2085.json (2.53s)
+
+2026-02-22 18:14:07,297 [INFO] ▶️  Procesando user=276, hotel_recomendado=5111
+2026-02-22 18:14:07,303 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:14:07,303 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 1356, 3438, 558, 5360, 592, 4656, 880, 5111, 4088]
+2026-02-22 18:14:09,589 [INFO]    Nodos: 163, Relaciones: 260
+2026-02-22 18:14:09,596 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_5111.json (2.30s)
+
+2026-02-22 18:14:09,596 [INFO] ▶️  Procesando user=276, hotel_recomendado=2781
+2026-02-22 18:14:09,601 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:14:09,602 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 1356, 3438, 558, 5360, 592, 4656, 880, 4088, 2781]
+2026-02-22 18:14:11,979 [INFO]    Nodos: 155, Relaciones: 254
+2026-02-22 18:14:11,989 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_2781.json (2.39s)
+
+2026-02-22 18:14:11,990 [INFO] ▶️  Procesando user=276, hotel_recomendado=25
+2026-02-22 18:14:11,998 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:14:11,998 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 1356, 3438, 558, 5360, 592, 4656, 880, 4088, 25]
+2026-02-22 18:14:14,278 [INFO]    Nodos: 155, Relaciones: 251
+2026-02-22 18:14:14,290 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_25.json (2.30s)
+
+2026-02-22 18:14:14,291 [INFO] ▶️  Procesando user=276, hotel_recomendado=566
+2026-02-22 18:14:14,298 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:14:14,298 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 1356, 3438, 558, 5360, 592, 4656, 880, 566, 4088]
+2026-02-22 18:14:16,553 [INFO]    Nodos: 154, Relaciones: 250
+2026-02-22 18:14:16,564 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_566.json (2.27s)
+
+2026-02-22 18:14:16,564 [INFO] ▶️  Procesando user=276, hotel_recomendado=774
+2026-02-22 18:14:16,570 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:14:16,570 [INFO]    Hoteles en subgrafo: [1442, 4326, 774, 104, 3143, 1356, 3438, 558, 5360, 592, 4656, 880, 4088]
+2026-02-22 18:14:19,152 [INFO]    Nodos: 154, Relaciones: 254
+2026-02-22 18:14:19,158 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_774.json (2.59s)
+
+2026-02-22 18:14:19,159 [INFO] ▶️  Procesando user=276, hotel_recomendado=3620
+2026-02-22 18:14:19,165 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:14:19,165 [INFO]    Hoteles en subgrafo: [1442, 3620, 4326, 3143, 104, 1356, 3438, 558, 5360, 592, 4656, 880, 4088]
+2026-02-22 18:14:21,701 [INFO]    Nodos: 165, Relaciones: 270
+2026-02-22 18:14:21,708 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_3620.json (2.55s)
+
+2026-02-22 18:14:21,708 [INFO] ▶️  Procesando user=276, hotel_recomendado=45
+2026-02-22 18:14:21,715 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:14:21,715 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 1356, 45, 3438, 558, 5360, 592, 4656, 880, 4088]
+2026-02-22 18:14:24,040 [INFO]    Nodos: 158, Relaciones: 251
+2026-02-22 18:14:24,047 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_45.json (2.34s)
+
+2026-02-22 18:14:24,047 [INFO] ▶️  Procesando user=276, hotel_recomendado=5201
+2026-02-22 18:14:24,054 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:14:24,054 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 1356, 3438, 558, 5360, 5201, 592, 4656, 880, 4088]
+2026-02-22 18:14:26,305 [INFO]    Nodos: 157, Relaciones: 257
+2026-02-22 18:14:26,312 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_5201.json (2.26s)
+
+2026-02-22 18:14:26,312 [INFO] ▶️  Procesando user=276, hotel_recomendado=3705
+2026-02-22 18:14:26,318 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:14:26,319 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 1356, 3438, 558, 5360, 592, 4656, 880, 4088, 3705]
+2026-02-22 18:14:28,545 [INFO]    Nodos: 154, Relaciones: 250
+2026-02-22 18:14:28,552 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_3705.json (2.24s)
+
+2026-02-22 18:14:28,553 [INFO] ▶️  Procesando user=276, hotel_recomendado=2109
+2026-02-22 18:14:28,559 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:14:28,559 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 1356, 3438, 558, 5360, 592, 4656, 880, 4088, 2109]
+2026-02-22 18:14:30,960 [INFO]    Nodos: 153, Relaciones: 253
+2026-02-22 18:14:30,967 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_2109.json (2.41s)
+
+2026-02-22 18:14:30,967 [INFO] ▶️  Procesando user=276, hotel_recomendado=4673
+2026-02-22 18:14:30,974 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:14:30,974 [INFO]    Hoteles en subgrafo: [4673, 1442, 4326, 3143, 104, 1356, 3438, 558, 5360, 592, 4656, 880, 4088]
+2026-02-22 18:14:33,323 [INFO]    Nodos: 160, Relaciones: 266
+2026-02-22 18:14:33,334 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_4673.json (2.37s)
+
+2026-02-22 18:14:33,334 [INFO] ▶️  Procesando user=276, hotel_recomendado=1195
+2026-02-22 18:14:33,340 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:14:33,340 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 1195, 1356, 3438, 558, 5360, 592, 4656, 880, 4088]
+2026-02-22 18:14:35,749 [INFO]    Nodos: 162, Relaciones: 259
+2026-02-22 18:14:35,760 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_1195.json (2.43s)
+
+2026-02-22 18:14:35,761 [INFO] ▶️  Procesando user=276, hotel_recomendado=9
+2026-02-22 18:14:35,768 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:14:35,768 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 9, 1356, 3438, 558, 5360, 592, 4656, 880, 4088]
+2026-02-22 18:14:38,137 [INFO]    Nodos: 154, Relaciones: 250
+2026-02-22 18:14:38,144 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_9.json (2.38s)
+
+2026-02-22 18:14:38,145 [INFO] ▶️  Procesando user=276, hotel_recomendado=1144
+2026-02-22 18:14:38,152 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:14:38,152 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 1356, 3438, 558, 5360, 592, 4656, 880, 1144, 4088]
+2026-02-22 18:14:40,629 [INFO]    Nodos: 159, Relaciones: 257
+2026-02-22 18:14:40,635 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_1144.json (2.49s)
+
+2026-02-22 18:14:40,636 [INFO] ▶️  Procesando user=276, hotel_recomendado=4254
+2026-02-22 18:14:40,644 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:14:40,644 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 1356, 3438, 558, 5360, 592, 4656, 880, 4088, 4254]
+2026-02-22 18:14:43,094 [INFO]    Nodos: 166, Relaciones: 276
+2026-02-22 18:14:43,100 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_4254.json (2.46s)
+
+2026-02-22 18:14:43,100 [INFO] ▶️  Procesando user=276, hotel_recomendado=4314
+2026-02-22 18:14:43,107 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:14:43,107 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 1356, 3438, 558, 5360, 592, 4656, 880, 4088, 4314]
+2026-02-22 18:14:45,303 [INFO]    Nodos: 157, Relaciones: 249
+2026-02-22 18:14:45,314 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_4314.json (2.21s)
+
+2026-02-22 18:14:45,314 [INFO] ▶️  Procesando user=276, hotel_recomendado=5605
+2026-02-22 18:14:45,322 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:14:45,322 [INFO]    Hoteles en subgrafo: [1442, 5605, 4326, 3143, 104, 1356, 3438, 558, 5360, 592, 4656, 880, 4088]
+2026-02-22 18:14:47,524 [INFO]    Nodos: 157, Relaciones: 258
+2026-02-22 18:14:47,535 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_5605.json (2.22s)
+
+2026-02-22 18:14:47,535 [INFO] ▶️  Procesando user=276, hotel_recomendado=4783
+2026-02-22 18:14:47,541 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:14:47,541 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 1356, 3438, 4783, 5360, 592, 558, 4656, 880, 4088]
+2026-02-22 18:14:49,807 [INFO]    Nodos: 153, Relaciones: 254
+2026-02-22 18:14:49,817 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_4783.json (2.28s)
+
+2026-02-22 18:14:49,818 [INFO] ▶️  Procesando user=276, hotel_recomendado=1298
+2026-02-22 18:14:49,826 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:14:49,826 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 1356, 3438, 558, 5360, 592, 1298, 4656, 880, 4088]
+2026-02-22 18:14:52,293 [INFO]    Nodos: 161, Relaciones: 273
+2026-02-22 18:14:52,299 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_1298.json (2.48s)
+
+2026-02-22 18:14:52,300 [INFO] ▶️  Procesando user=276, hotel_recomendado=5571
+2026-02-22 18:14:52,305 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:14:52,305 [INFO]    Hoteles en subgrafo: [1442, 5571, 4326, 3143, 104, 1356, 3438, 558, 5360, 592, 4656, 880, 4088]
+2026-02-22 18:14:54,646 [INFO]    Nodos: 156, Relaciones: 267
+2026-02-22 18:14:54,652 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_5571.json (2.35s)
+
+2026-02-22 18:14:54,653 [INFO] ▶️  Procesando user=276, hotel_recomendado=3136
+2026-02-22 18:14:54,659 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:14:54,659 [INFO]    Hoteles en subgrafo: [3136, 1442, 4326, 3143, 104, 1356, 3438, 558, 5360, 592, 4656, 880, 4088]
+2026-02-22 18:14:56,903 [INFO]    Nodos: 156, Relaciones: 252
+2026-02-22 18:14:56,913 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_3136.json (2.26s)
+
+2026-02-22 18:14:56,914 [INFO] ▶️  Procesando user=276, hotel_recomendado=2417
+2026-02-22 18:14:56,921 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:14:56,921 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 1356, 3438, 558, 5360, 2417, 592, 4656, 880, 4088]
+2026-02-22 18:14:59,166 [INFO]    Nodos: 153, Relaciones: 249
+2026-02-22 18:14:59,172 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_2417.json (2.26s)
+
+2026-02-22 18:14:59,173 [INFO] ▶️  Procesando user=276, hotel_recomendado=686
+2026-02-22 18:14:59,179 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:14:59,180 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 1356, 686, 3438, 5360, 592, 558, 4656, 880, 4088]
+2026-02-22 18:15:01,645 [INFO]    Nodos: 154, Relaciones: 251
+2026-02-22 18:15:01,654 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_686.json (2.48s)
+
+2026-02-22 18:15:01,655 [INFO] ▶️  Procesando user=276, hotel_recomendado=3165
+2026-02-22 18:15:01,662 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:15:01,662 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 1356, 3438, 558, 5360, 592, 4656, 880, 4088, 3165]
+2026-02-22 18:15:04,366 [INFO]    Nodos: 157, Relaciones: 257
+2026-02-22 18:15:04,371 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_3165.json (2.72s)
+
+2026-02-22 18:15:04,372 [INFO] ▶️  Procesando user=276, hotel_recomendado=3732
+2026-02-22 18:15:04,378 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:15:04,378 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 1356, 3438, 558, 5360, 592, 4656, 880, 3732, 4088]
+2026-02-22 18:15:06,838 [INFO]    Nodos: 159, Relaciones: 257
+2026-02-22 18:15:06,847 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_3732.json (2.47s)
+
+2026-02-22 18:15:06,847 [INFO] ▶️  Procesando user=276, hotel_recomendado=725
+2026-02-22 18:15:06,854 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:15:06,854 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 1356, 3438, 558, 5360, 592, 4656, 880, 725, 4088]
+2026-02-22 18:15:09,232 [INFO]    Nodos: 158, Relaciones: 257
+2026-02-22 18:15:09,243 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_725.json (2.40s)
+
+2026-02-22 18:15:09,243 [INFO] ▶️  Procesando user=276, hotel_recomendado=5241
+2026-02-22 18:15:09,250 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:15:09,250 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 1356, 3438, 558, 5360, 592, 4656, 880, 4088, 5241]
+2026-02-22 18:15:11,471 [INFO]    Nodos: 154, Relaciones: 247
+2026-02-22 18:15:11,477 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_5241.json (2.23s)
+
+2026-02-22 18:15:11,477 [INFO] ▶️  Procesando user=276, hotel_recomendado=4184
+2026-02-22 18:15:11,483 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:15:11,483 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 1356, 3438, 558, 5360, 592, 4656, 880, 4184, 4088]
+2026-02-22 18:15:13,942 [INFO]    Nodos: 158, Relaciones: 259
+2026-02-22 18:15:13,950 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_4184.json (2.47s)
+
+2026-02-22 18:15:13,950 [INFO] ▶️  Procesando user=276, hotel_recomendado=1164
+2026-02-22 18:15:13,958 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:15:13,958 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 1164, 1356, 3438, 558, 5360, 592, 4656, 880, 4088]
+2026-02-22 18:15:16,252 [INFO]    Nodos: 157, Relaciones: 256
+2026-02-22 18:15:16,262 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_1164.json (2.31s)
+
+2026-02-22 18:15:16,263 [INFO] ▶️  Procesando user=276, hotel_recomendado=4143
+2026-02-22 18:15:16,269 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:15:16,269 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 1356, 3438, 4143, 5360, 592, 558, 4656, 880, 4088]
+2026-02-22 18:15:18,430 [INFO]    Nodos: 157, Relaciones: 250
+2026-02-22 18:15:18,452 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_4143.json (2.19s)
+
+2026-02-22 18:15:18,453 [INFO] ▶️  Procesando user=276, hotel_recomendado=4749
+2026-02-22 18:15:18,459 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:15:18,459 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 1356, 4749, 3438, 558, 5360, 592, 4656, 880, 4088]
+2026-02-22 18:15:20,839 [INFO]    Nodos: 167, Relaciones: 276
+2026-02-22 18:15:20,845 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_4749.json (2.39s)
+
+2026-02-22 18:15:20,845 [INFO] ▶️  Procesando user=276, hotel_recomendado=1093
+2026-02-22 18:15:20,852 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:15:20,852 [INFO]    Hoteles en subgrafo: [1442, 1093, 4326, 3143, 104, 1356, 3438, 558, 5360, 592, 4656, 880, 4088]
+2026-02-22 18:15:23,084 [INFO]    Nodos: 157, Relaciones: 255
+2026-02-22 18:15:23,090 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_1093.json (2.24s)
+
+2026-02-22 18:15:23,090 [INFO] ▶️  Procesando user=276, hotel_recomendado=1840
+2026-02-22 18:15:23,096 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:15:23,096 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 1356, 3438, 558, 1840, 5360, 592, 4656, 880, 4088]
+2026-02-22 18:15:25,307 [INFO]    Nodos: 155, Relaciones: 250
+2026-02-22 18:15:25,314 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_1840.json (2.22s)
+
+2026-02-22 18:15:25,314 [INFO] ▶️  Procesando user=276, hotel_recomendado=1542
+2026-02-22 18:15:25,320 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:15:25,320 [INFO]    Hoteles en subgrafo: [1442, 4326, 1542, 104, 3143, 1356, 3438, 558, 5360, 592, 4656, 880, 4088]
+2026-02-22 18:15:27,680 [INFO]    Nodos: 155, Relaciones: 255
+2026-02-22 18:15:27,692 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_1542.json (2.38s)
+
+2026-02-22 18:15:27,692 [INFO] ▶️  Procesando user=276, hotel_recomendado=4427
+2026-02-22 18:15:27,700 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:15:27,700 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 4427, 1356, 3438, 558, 5360, 592, 4656, 880, 4088]
+2026-02-22 18:15:30,072 [INFO]    Nodos: 154, Relaciones: 247
+2026-02-22 18:15:30,079 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_4427.json (2.39s)
+
+2026-02-22 18:15:30,079 [INFO] ▶️  Procesando user=276, hotel_recomendado=4294
+2026-02-22 18:15:30,086 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:15:30,086 [INFO]    Hoteles en subgrafo: [1442, 4326, 4294, 104, 3143, 1356, 3438, 558, 5360, 592, 4656, 880, 4088]
+2026-02-22 18:15:32,385 [INFO]    Nodos: 160, Relaciones: 263
+2026-02-22 18:15:32,391 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_4294.json (2.31s)
+
+2026-02-22 18:15:32,392 [INFO] ▶️  Procesando user=276, hotel_recomendado=41
+2026-02-22 18:15:32,398 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:15:32,398 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 41, 1356, 3438, 558, 5360, 592, 4656, 880, 4088]
+2026-02-22 18:15:34,641 [INFO]    Nodos: 154, Relaciones: 254
+2026-02-22 18:15:34,648 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_41.json (2.26s)
+
+2026-02-22 18:15:34,648 [INFO] ▶️  Procesando user=276, hotel_recomendado=4031
+2026-02-22 18:15:34,654 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:15:34,654 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 1356, 3438, 558, 5360, 592, 4656, 880, 4088, 4031]
+2026-02-22 18:15:36,874 [INFO]    Nodos: 154, Relaciones: 249
+2026-02-22 18:15:36,882 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_4031.json (2.23s)
+
+2026-02-22 18:15:36,882 [INFO] ▶️  Procesando user=276, hotel_recomendado=4525
+2026-02-22 18:15:36,888 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:15:36,889 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 1356, 4525, 3438, 558, 5360, 592, 4656, 880, 4088]
+2026-02-22 18:15:39,293 [INFO]    Nodos: 166, Relaciones: 268
+2026-02-22 18:15:39,299 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_4525.json (2.42s)
+
+2026-02-22 18:15:39,300 [INFO] ▶️  Procesando user=276, hotel_recomendado=2557
+2026-02-22 18:15:39,310 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:15:39,311 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 1356, 3438, 558, 5360, 592, 4656, 880, 4088, 2557]
+2026-02-22 18:15:41,671 [INFO]    Nodos: 159, Relaciones: 252
+2026-02-22 18:15:41,683 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_2557.json (2.38s)
+
+2026-02-22 18:15:41,683 [INFO] ▶️  Procesando user=276, hotel_recomendado=5176
+2026-02-22 18:15:41,690 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:15:41,691 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 1356, 3438, 558, 5360, 592, 4656, 880, 5176, 4088]
+2026-02-22 18:15:44,069 [INFO]    Nodos: 160, Relaciones: 268
+2026-02-22 18:15:44,075 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_5176.json (2.39s)
+
+2026-02-22 18:15:44,075 [INFO] ▶️  Procesando user=276, hotel_recomendado=522
+2026-02-22 18:15:44,081 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:15:44,081 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 522, 1356, 3438, 558, 5360, 592, 4656, 880, 4088]
+2026-02-22 18:15:46,267 [INFO]    Nodos: 158, Relaciones: 254
+2026-02-22 18:15:46,273 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_522.json (2.20s)
+
+2026-02-22 18:15:46,273 [INFO] ▶️  Procesando user=276, hotel_recomendado=5068
+2026-02-22 18:15:46,279 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:15:46,279 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 5068, 1356, 3438, 558, 5360, 592, 4656, 880, 4088]
+2026-02-22 18:15:48,405 [INFO]    Nodos: 154, Relaciones: 256
+2026-02-22 18:15:48,411 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_5068.json (2.14s)
+
+2026-02-22 18:15:48,411 [INFO] ▶️  Procesando user=276, hotel_recomendado=150
+2026-02-22 18:15:48,418 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:15:48,418 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 1356, 3438, 558, 5360, 592, 4656, 880, 150, 4088]
+2026-02-22 18:15:50,809 [INFO]    Nodos: 160, Relaciones: 260
+2026-02-22 18:15:50,818 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_150.json (2.41s)
+
+2026-02-22 18:15:50,818 [INFO] ▶️  Procesando user=276, hotel_recomendado=345
+2026-02-22 18:15:50,825 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:15:50,825 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 1356, 3438, 558, 5360, 592, 4656, 880, 4088, 345]
+2026-02-22 18:15:53,060 [INFO]    Nodos: 154, Relaciones: 251
+2026-02-22 18:15:53,072 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_345.json (2.25s)
+
+2026-02-22 18:15:53,073 [INFO] ▶️  Procesando user=276, hotel_recomendado=5746
+2026-02-22 18:15:53,079 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:15:53,079 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 1356, 3438, 558, 5360, 592, 5746, 4656, 880, 4088]
+2026-02-22 18:15:55,385 [INFO]    Nodos: 157, Relaciones: 260
+2026-02-22 18:15:55,392 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_5746.json (2.32s)
+
+2026-02-22 18:15:55,392 [INFO] ▶️  Procesando user=276, hotel_recomendado=581
+2026-02-22 18:15:55,399 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:15:55,399 [INFO]    Hoteles en subgrafo: [1442, 581, 4326, 3143, 104, 1356, 3438, 558, 5360, 592, 4656, 880, 4088]
+2026-02-22 18:15:57,686 [INFO]    Nodos: 160, Relaciones: 260
+2026-02-22 18:15:57,697 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_581.json (2.30s)
+
+2026-02-22 18:15:57,698 [INFO] ▶️  Procesando user=276, hotel_recomendado=5341
+2026-02-22 18:15:57,703 [INFO]    Hoteles previos: [1442, 104, 1356, 4326, 3143, 5360, 4088, 592, 3438, 558, 4656, 880]
+2026-02-22 18:15:57,704 [INFO]    Hoteles en subgrafo: [1442, 4326, 3143, 104, 1356, 3438, 558, 5360, 592, 4656, 880, 4088, 5341]
+2026-02-22 18:15:59,912 [INFO]    Nodos: 155, Relaciones: 249
+2026-02-22 18:15:59,918 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_276_hotel_5341.json (2.22s)
+
+2026-02-22 18:15:59,918 [INFO] ▶️  Procesando user=339, hotel_recomendado=3143
+2026-02-22 18:15:59,928 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:15:59,928 [INFO]    Hoteles en subgrafo: [3620, 3143, 880, 5360, 2109]
+2026-02-22 18:16:00,994 [INFO]    Nodos: 83, Relaciones: 117
+2026-02-22 18:16:00,999 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_3143.json (1.08s)
+
+2026-02-22 18:16:00,999 [INFO] ▶️  Procesando user=339, hotel_recomendado=2085
+2026-02-22 18:16:01,004 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:01,005 [INFO]    Hoteles en subgrafo: [3620, 2085, 880, 5360, 2109]
+2026-02-22 18:16:02,217 [INFO]    Nodos: 97, Relaciones: 134
+2026-02-22 18:16:02,222 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_2085.json (1.22s)
+
+2026-02-22 18:16:02,222 [INFO] ▶️  Procesando user=339, hotel_recomendado=904
+2026-02-22 18:16:02,229 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:02,230 [INFO]    Hoteles en subgrafo: [3620, 904, 880, 5360, 2109]
+2026-02-22 18:16:03,293 [INFO]    Nodos: 81, Relaciones: 118
+2026-02-22 18:16:03,297 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_904.json (1.07s)
+
+2026-02-22 18:16:03,297 [INFO] ▶️  Procesando user=339, hotel_recomendado=2781
+2026-02-22 18:16:03,302 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:03,302 [INFO]    Hoteles en subgrafo: [3620, 2781, 880, 5360, 2109]
+2026-02-22 18:16:04,280 [INFO]    Nodos: 79, Relaciones: 110
+2026-02-22 18:16:04,284 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_2781.json (0.99s)
+
+2026-02-22 18:16:04,284 [INFO] ▶️  Procesando user=339, hotel_recomendado=5111
+2026-02-22 18:16:04,290 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:04,290 [INFO]    Hoteles en subgrafo: [3620, 880, 5360, 5111, 2109]
+2026-02-22 18:16:05,309 [INFO]    Nodos: 87, Relaciones: 116
+2026-02-22 18:16:05,318 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_5111.json (1.03s)
+
+2026-02-22 18:16:05,318 [INFO] ▶️  Procesando user=339, hotel_recomendado=4088
+2026-02-22 18:16:05,323 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:05,323 [INFO]    Hoteles en subgrafo: [3620, 880, 5360, 4088, 2109]
+2026-02-22 18:16:06,303 [INFO]    Nodos: 81, Relaciones: 110
+2026-02-22 18:16:06,312 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_4088.json (0.99s)
+
+2026-02-22 18:16:06,312 [INFO] ▶️  Procesando user=339, hotel_recomendado=4673
+2026-02-22 18:16:06,317 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:06,317 [INFO]    Hoteles en subgrafo: [4673, 3620, 880, 5360, 2109]
+2026-02-22 18:16:07,438 [INFO]    Nodos: 82, Relaciones: 122
+2026-02-22 18:16:07,442 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_4673.json (1.13s)
+
+2026-02-22 18:16:07,442 [INFO] ▶️  Procesando user=339, hotel_recomendado=4749
+2026-02-22 18:16:07,447 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:07,448 [INFO]    Hoteles en subgrafo: [3620, 4749, 880, 5360, 2109]
+2026-02-22 18:16:08,712 [INFO]    Nodos: 90, Relaciones: 132
+2026-02-22 18:16:08,722 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_4749.json (1.28s)
+
+2026-02-22 18:16:08,723 [INFO] ▶️  Procesando user=339, hotel_recomendado=45
+2026-02-22 18:16:08,729 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:08,730 [INFO]    Hoteles en subgrafo: [3620, 45, 880, 5360, 2109]
+2026-02-22 18:16:09,687 [INFO]    Nodos: 81, Relaciones: 107
+2026-02-22 18:16:09,696 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_45.json (0.97s)
+
+2026-02-22 18:16:09,697 [INFO] ▶️  Procesando user=339, hotel_recomendado=1195
+2026-02-22 18:16:09,703 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:09,703 [INFO]    Hoteles en subgrafo: [3620, 1195, 880, 5360, 2109]
+2026-02-22 18:16:10,729 [INFO]    Nodos: 87, Relaciones: 115
+2026-02-22 18:16:10,741 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_1195.json (1.04s)
+
+2026-02-22 18:16:10,741 [INFO] ▶️  Procesando user=339, hotel_recomendado=3705
+2026-02-22 18:16:10,747 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:10,747 [INFO]    Hoteles en subgrafo: [3620, 880, 5360, 3705, 2109]
+2026-02-22 18:16:11,659 [INFO]    Nodos: 78, Relaciones: 106
+2026-02-22 18:16:11,668 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_3705.json (0.93s)
+
+2026-02-22 18:16:11,668 [INFO] ▶️  Procesando user=339, hotel_recomendado=566
+2026-02-22 18:16:11,674 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:11,674 [INFO]    Hoteles en subgrafo: [3620, 880, 5360, 566, 2109]
+2026-02-22 18:16:12,599 [INFO]    Nodos: 77, Relaciones: 106
+2026-02-22 18:16:12,608 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_566.json (0.94s)
+
+2026-02-22 18:16:12,608 [INFO] ▶️  Procesando user=339, hotel_recomendado=4314
+2026-02-22 18:16:12,613 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:12,613 [INFO]    Hoteles en subgrafo: [3620, 880, 5360, 4314, 2109]
+2026-02-22 18:16:13,628 [INFO]    Nodos: 80, Relaciones: 105
+2026-02-22 18:16:13,632 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_4314.json (1.02s)
+
+2026-02-22 18:16:13,632 [INFO] ▶️  Procesando user=339, hotel_recomendado=4783
+2026-02-22 18:16:13,638 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:13,639 [INFO]    Hoteles en subgrafo: [3620, 4783, 880, 5360, 2109]
+2026-02-22 18:16:14,598 [INFO]    Nodos: 78, Relaciones: 110
+2026-02-22 18:16:14,607 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_4783.json (0.97s)
+
+2026-02-22 18:16:14,608 [INFO] ▶️  Procesando user=339, hotel_recomendado=725
+2026-02-22 18:16:14,613 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:14,613 [INFO]    Hoteles en subgrafo: [3620, 880, 5360, 725, 2109]
+2026-02-22 18:16:15,630 [INFO]    Nodos: 80, Relaciones: 113
+2026-02-22 18:16:15,639 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_725.json (1.03s)
+
+2026-02-22 18:16:15,639 [INFO] ▶️  Procesando user=339, hotel_recomendado=1298
+2026-02-22 18:16:15,645 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:15,645 [INFO]    Hoteles en subgrafo: [3620, 880, 5360, 1298, 2109]
+2026-02-22 18:16:16,831 [INFO]    Nodos: 88, Relaciones: 129
+2026-02-22 18:16:16,845 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_1298.json (1.21s)
+
+2026-02-22 18:16:16,845 [INFO] ▶️  Procesando user=339, hotel_recomendado=2557
+2026-02-22 18:16:16,853 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:16,853 [INFO]    Hoteles en subgrafo: [2557, 3620, 880, 5360, 2109]
+2026-02-22 18:16:17,878 [INFO]    Nodos: 83, Relaciones: 108
+2026-02-22 18:16:17,886 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_2557.json (1.04s)
+
+2026-02-22 18:16:17,887 [INFO] ▶️  Procesando user=339, hotel_recomendado=5201
+2026-02-22 18:16:17,893 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:17,893 [INFO]    Hoteles en subgrafo: [3620, 880, 5201, 5360, 2109]
+2026-02-22 18:16:18,927 [INFO]    Nodos: 82, Relaciones: 113
+2026-02-22 18:16:18,933 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_5201.json (1.05s)
+
+2026-02-22 18:16:18,934 [INFO] ▶️  Procesando user=339, hotel_recomendado=150
+2026-02-22 18:16:18,940 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:18,940 [INFO]    Hoteles en subgrafo: [3620, 880, 5360, 150, 2109]
+2026-02-22 18:16:20,106 [INFO]    Nodos: 81, Relaciones: 116
+2026-02-22 18:16:20,116 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_150.json (1.18s)
+
+2026-02-22 18:16:20,117 [INFO] ▶️  Procesando user=339, hotel_recomendado=1356
+2026-02-22 18:16:20,123 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:20,123 [INFO]    Hoteles en subgrafo: [3620, 1356, 880, 5360, 2109]
+2026-02-22 18:16:21,153 [INFO]    Nodos: 78, Relaciones: 108
+2026-02-22 18:16:21,162 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_1356.json (1.05s)
+
+2026-02-22 18:16:21,163 [INFO] ▶️  Procesando user=339, hotel_recomendado=1144
+2026-02-22 18:16:21,170 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:21,170 [INFO]    Hoteles en subgrafo: [3620, 880, 5360, 1144, 2109]
+2026-02-22 18:16:22,233 [INFO]    Nodos: 84, Relaciones: 113
+2026-02-22 18:16:22,246 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_1144.json (1.08s)
+
+2026-02-22 18:16:22,247 [INFO] ▶️  Procesando user=339, hotel_recomendado=5241
+2026-02-22 18:16:22,256 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:22,256 [INFO]    Hoteles en subgrafo: [3620, 880, 5360, 5241, 2109]
+2026-02-22 18:16:23,210 [INFO]    Nodos: 77, Relaciones: 103
+2026-02-22 18:16:23,214 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_5241.json (0.97s)
+
+2026-02-22 18:16:23,214 [INFO] ▶️  Procesando user=339, hotel_recomendado=4254
+2026-02-22 18:16:23,220 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:23,220 [INFO]    Hoteles en subgrafo: [3620, 880, 5360, 2109, 4254]
+2026-02-22 18:16:24,384 [INFO]    Nodos: 92, Relaciones: 132
+2026-02-22 18:16:24,394 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_4254.json (1.18s)
+
+2026-02-22 18:16:24,394 [INFO] ▶️  Procesando user=339, hotel_recomendado=686
+2026-02-22 18:16:24,400 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:24,400 [INFO]    Hoteles en subgrafo: [3620, 686, 880, 5360, 2109]
+2026-02-22 18:16:25,370 [INFO]    Nodos: 76, Relaciones: 107
+2026-02-22 18:16:25,379 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_686.json (0.98s)
+
+2026-02-22 18:16:25,379 [INFO] ▶️  Procesando user=339, hotel_recomendado=9
+2026-02-22 18:16:25,385 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:25,385 [INFO]    Hoteles en subgrafo: [3620, 9, 880, 5360, 2109]
+2026-02-22 18:16:26,377 [INFO]    Nodos: 77, Relaciones: 106
+2026-02-22 18:16:26,386 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_9.json (1.01s)
+
+2026-02-22 18:16:26,386 [INFO] ▶️  Procesando user=339, hotel_recomendado=1442
+2026-02-22 18:16:26,391 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:26,392 [INFO]    Hoteles en subgrafo: [1442, 3620, 880, 5360, 2109]
+2026-02-22 18:16:27,366 [INFO]    Nodos: 82, Relaciones: 110
+2026-02-22 18:16:27,370 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_1442.json (0.98s)
+
+2026-02-22 18:16:27,371 [INFO] ▶️  Procesando user=339, hotel_recomendado=4525
+2026-02-22 18:16:27,377 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:27,377 [INFO]    Hoteles en subgrafo: [3620, 4525, 880, 5360, 2109]
+2026-02-22 18:16:28,460 [INFO]    Nodos: 89, Relaciones: 124
+2026-02-22 18:16:28,471 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_4525.json (1.10s)
+
+2026-02-22 18:16:28,471 [INFO] ▶️  Procesando user=339, hotel_recomendado=3732
+2026-02-22 18:16:28,478 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:28,478 [INFO]    Hoteles en subgrafo: [3620, 880, 5360, 3732, 2109]
+2026-02-22 18:16:29,537 [INFO]    Nodos: 86, Relaciones: 113
+2026-02-22 18:16:29,541 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_3732.json (1.07s)
+
+2026-02-22 18:16:29,542 [INFO] ▶️  Procesando user=339, hotel_recomendado=2612
+2026-02-22 18:16:29,547 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:29,547 [INFO]    Hoteles en subgrafo: [3620, 880, 5360, 2612, 2109]
+2026-02-22 18:16:30,541 [INFO]    Nodos: 76, Relaciones: 105
+2026-02-22 18:16:30,546 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_2612.json (1.00s)
+
+2026-02-22 18:16:30,547 [INFO] ▶️  Procesando user=339, hotel_recomendado=2417
+2026-02-22 18:16:30,554 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:30,554 [INFO]    Hoteles en subgrafo: [3620, 880, 2417, 5360, 2109]
+2026-02-22 18:16:31,508 [INFO]    Nodos: 77, Relaciones: 105
+2026-02-22 18:16:31,511 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_2417.json (0.96s)
+
+2026-02-22 18:16:31,512 [INFO] ▶️  Procesando user=339, hotel_recomendado=4427
+2026-02-22 18:16:31,519 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:31,519 [INFO]    Hoteles en subgrafo: [3620, 4427, 880, 5360, 2109]
+2026-02-22 18:16:32,456 [INFO]    Nodos: 77, Relaciones: 103
+2026-02-22 18:16:32,459 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_4427.json (0.95s)
+
+2026-02-22 18:16:32,459 [INFO] ▶️  Procesando user=339, hotel_recomendado=1396
+2026-02-22 18:16:32,465 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:32,466 [INFO]    Hoteles en subgrafo: [3620, 880, 5360, 1396, 2109]
+2026-02-22 18:16:33,566 [INFO]    Nodos: 87, Relaciones: 122
+2026-02-22 18:16:33,574 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_1396.json (1.11s)
+
+2026-02-22 18:16:33,574 [INFO] ▶️  Procesando user=339, hotel_recomendado=5571
+2026-02-22 18:16:33,581 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:33,581 [INFO]    Hoteles en subgrafo: [5571, 3620, 880, 5360, 2109]
+2026-02-22 18:16:34,681 [INFO]    Nodos: 85, Relaciones: 123
+2026-02-22 18:16:34,685 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_5571.json (1.11s)
+
+2026-02-22 18:16:34,685 [INFO] ▶️  Procesando user=339, hotel_recomendado=25
+2026-02-22 18:16:34,692 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:34,692 [INFO]    Hoteles en subgrafo: [3620, 880, 5360, 25, 2109]
+2026-02-22 18:16:35,649 [INFO]    Nodos: 82, Relaciones: 107
+2026-02-22 18:16:35,657 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_25.json (0.97s)
+
+2026-02-22 18:16:35,658 [INFO] ▶️  Procesando user=339, hotel_recomendado=2191
+2026-02-22 18:16:35,663 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:35,663 [INFO]    Hoteles en subgrafo: [3620, 2191, 880, 5360, 2109]
+2026-02-22 18:16:36,602 [INFO]    Nodos: 82, Relaciones: 108
+2026-02-22 18:16:36,612 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_2191.json (0.95s)
+
+2026-02-22 18:16:36,612 [INFO] ▶️  Procesando user=339, hotel_recomendado=180
+2026-02-22 18:16:36,618 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:36,618 [INFO]    Hoteles en subgrafo: [3620, 880, 5360, 180, 2109]
+2026-02-22 18:16:37,528 [INFO]    Nodos: 79, Relaciones: 104
+2026-02-22 18:16:37,536 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_180.json (0.92s)
+
+2026-02-22 18:16:37,536 [INFO] ▶️  Procesando user=339, hotel_recomendado=4194
+2026-02-22 18:16:37,542 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:37,542 [INFO]    Hoteles en subgrafo: [4194, 3620, 880, 5360, 2109]
+2026-02-22 18:16:38,493 [INFO]    Nodos: 77, Relaciones: 109
+2026-02-22 18:16:38,502 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_4194.json (0.97s)
+
+2026-02-22 18:16:38,502 [INFO] ▶️  Procesando user=339, hotel_recomendado=1840
+2026-02-22 18:16:38,508 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:38,508 [INFO]    Hoteles en subgrafo: [3620, 1840, 880, 5360, 2109]
+2026-02-22 18:16:39,415 [INFO]    Nodos: 78, Relaciones: 106
+2026-02-22 18:16:39,422 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_1840.json (0.92s)
+
+2026-02-22 18:16:39,423 [INFO] ▶️  Procesando user=339, hotel_recomendado=522
+2026-02-22 18:16:39,428 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:39,428 [INFO]    Hoteles en subgrafo: [3620, 522, 880, 5360, 2109]
+2026-02-22 18:16:40,373 [INFO]    Nodos: 81, Relaciones: 110
+2026-02-22 18:16:40,381 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_522.json (0.96s)
+
+2026-02-22 18:16:40,382 [INFO] ▶️  Procesando user=339, hotel_recomendado=4656
+2026-02-22 18:16:40,388 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:40,388 [INFO]    Hoteles en subgrafo: [3620, 4656, 880, 5360, 2109]
+2026-02-22 18:16:41,425 [INFO]    Nodos: 88, Relaciones: 122
+2026-02-22 18:16:41,429 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_4656.json (1.05s)
+
+2026-02-22 18:16:41,429 [INFO] ▶️  Procesando user=339, hotel_recomendado=2344
+2026-02-22 18:16:41,434 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:41,435 [INFO]    Hoteles en subgrafo: [3620, 2344, 880, 5360, 2109]
+2026-02-22 18:16:42,689 [INFO]    Nodos: 103, Relaciones: 144
+2026-02-22 18:16:42,698 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_2344.json (1.27s)
+
+2026-02-22 18:16:42,699 [INFO] ▶️  Procesando user=339, hotel_recomendado=5035
+2026-02-22 18:16:42,706 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:42,706 [INFO]    Hoteles en subgrafo: [3620, 5035, 880, 5360, 2109]
+2026-02-22 18:16:43,663 [INFO]    Nodos: 76, Relaciones: 109
+2026-02-22 18:16:43,668 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_5035.json (0.97s)
+
+2026-02-22 18:16:43,668 [INFO] ▶️  Procesando user=339, hotel_recomendado=5341
+2026-02-22 18:16:43,674 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:43,675 [INFO]    Hoteles en subgrafo: [3620, 880, 5360, 5341, 2109]
+2026-02-22 18:16:44,636 [INFO]    Nodos: 77, Relaciones: 105
+2026-02-22 18:16:44,645 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_5341.json (0.98s)
+
+2026-02-22 18:16:44,645 [INFO] ▶️  Procesando user=339, hotel_recomendado=558
+2026-02-22 18:16:44,651 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:44,652 [INFO]    Hoteles en subgrafo: [3620, 558, 880, 5360, 2109]
+2026-02-22 18:16:45,579 [INFO]    Nodos: 78, Relaciones: 105
+2026-02-22 18:16:45,583 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_558.json (0.94s)
+
+2026-02-22 18:16:45,583 [INFO] ▶️  Procesando user=339, hotel_recomendado=3117
+2026-02-22 18:16:45,590 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:45,590 [INFO]    Hoteles en subgrafo: [3620, 3117, 880, 5360, 2109]
+2026-02-22 18:16:46,523 [INFO]    Nodos: 78, Relaciones: 106
+2026-02-22 18:16:46,526 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_3117.json (0.94s)
+
+2026-02-22 18:16:46,527 [INFO] ▶️  Procesando user=339, hotel_recomendado=581
+2026-02-22 18:16:46,533 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:46,534 [INFO]    Hoteles en subgrafo: [3620, 581, 880, 5360, 2109]
+2026-02-22 18:16:47,598 [INFO]    Nodos: 82, Relaciones: 116
+2026-02-22 18:16:47,607 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_581.json (1.08s)
+
+2026-02-22 18:16:47,607 [INFO] ▶️  Procesando user=339, hotel_recomendado=3165
+2026-02-22 18:16:47,613 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:47,613 [INFO]    Hoteles en subgrafo: [3620, 880, 5360, 3165, 2109]
+2026-02-22 18:16:48,612 [INFO]    Nodos: 79, Relaciones: 113
+2026-02-22 18:16:48,621 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_3165.json (1.01s)
+
+2026-02-22 18:16:48,622 [INFO] ▶️  Procesando user=339, hotel_recomendado=4294
+2026-02-22 18:16:48,627 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:48,628 [INFO]    Hoteles en subgrafo: [3620, 4294, 880, 5360, 2109]
+2026-02-22 18:16:49,795 [INFO]    Nodos: 81, Relaciones: 119
+2026-02-22 18:16:49,800 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_4294.json (1.18s)
+
+2026-02-22 18:16:49,801 [INFO] ▶️  Procesando user=339, hotel_recomendado=478
+2026-02-22 18:16:49,807 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:49,807 [INFO]    Hoteles en subgrafo: [3620, 880, 5360, 2109, 478]
+2026-02-22 18:16:50,922 [INFO]    Nodos: 86, Relaciones: 119
+2026-02-22 18:16:50,926 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_478.json (1.13s)
+
+2026-02-22 18:16:50,926 [INFO] ▶️  Procesando user=339, hotel_recomendado=1798
+2026-02-22 18:16:50,934 [INFO]    Hoteles previos: [880, 3620, 5360, 2109]
+2026-02-22 18:16:50,934 [INFO]    Hoteles en subgrafo: [3620, 1798, 880, 5360, 2109]
+2026-02-22 18:16:51,935 [INFO]    Nodos: 78, Relaciones: 108
+2026-02-22 18:16:51,939 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_339_hotel_1798.json (1.01s)
+
+2026-02-22 18:16:51,939 [INFO] ▶️  Procesando user=376, hotel_recomendado=473
+2026-02-22 18:16:51,946 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:16:51,946 [INFO]    Hoteles en subgrafo: [2083, 1260, 473, 2589, 3806]
+2026-02-22 18:16:53,573 [INFO]    Nodos: 99, Relaciones: 173
+2026-02-22 18:16:53,583 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_473.json (1.64s)
+
+2026-02-22 18:16:53,584 [INFO] ▶️  Procesando user=376, hotel_recomendado=522
+2026-02-22 18:16:53,590 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:16:53,590 [INFO]    Hoteles en subgrafo: [2083, 522, 1260, 2589, 3806]
+2026-02-22 18:16:54,949 [INFO]    Nodos: 94, Relaciones: 151
+2026-02-22 18:16:54,953 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_522.json (1.37s)
+
+2026-02-22 18:16:54,953 [INFO] ▶️  Procesando user=376, hotel_recomendado=5083
+2026-02-22 18:16:54,959 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:16:54,959 [INFO]    Hoteles en subgrafo: [2083, 1260, 5083, 2589, 3806]
+2026-02-22 18:16:56,443 [INFO]    Nodos: 95, Relaciones: 156
+2026-02-22 18:16:56,448 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_5083.json (1.49s)
+
+2026-02-22 18:16:56,448 [INFO] ▶️  Procesando user=376, hotel_recomendado=3398
+2026-02-22 18:16:56,454 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:16:56,455 [INFO]    Hoteles en subgrafo: [2083, 3398, 1260, 2589, 3806]
+2026-02-22 18:16:58,048 [INFO]    Nodos: 103, Relaciones: 178
+2026-02-22 18:16:58,060 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_3398.json (1.61s)
+
+2026-02-22 18:16:58,060 [INFO] ▶️  Procesando user=376, hotel_recomendado=24
+2026-02-22 18:16:58,067 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:16:58,067 [INFO]    Hoteles en subgrafo: [2083, 1260, 24, 2589, 3806]
+2026-02-22 18:16:59,601 [INFO]    Nodos: 97, Relaciones: 172
+2026-02-22 18:16:59,607 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_24.json (1.55s)
+
+2026-02-22 18:16:59,607 [INFO] ▶️  Procesando user=376, hotel_recomendado=4359
+2026-02-22 18:16:59,613 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:16:59,613 [INFO]    Hoteles en subgrafo: [2083, 4359, 1260, 2589, 3806]
+2026-02-22 18:17:01,015 [INFO]    Nodos: 93, Relaciones: 157
+2026-02-22 18:17:01,019 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_4359.json (1.41s)
+
+2026-02-22 18:17:01,019 [INFO] ▶️  Procesando user=376, hotel_recomendado=3101
+2026-02-22 18:17:01,026 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:01,026 [INFO]    Hoteles en subgrafo: [2083, 1260, 3101, 2589, 3806]
+2026-02-22 18:17:02,359 [INFO]    Nodos: 93, Relaciones: 151
+2026-02-22 18:17:02,363 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_3101.json (1.34s)
+
+2026-02-22 18:17:02,364 [INFO] ▶️  Procesando user=376, hotel_recomendado=1914
+2026-02-22 18:17:02,369 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:02,369 [INFO]    Hoteles en subgrafo: [2083, 1260, 1914, 2589, 3806]
+2026-02-22 18:17:03,903 [INFO]    Nodos: 93, Relaciones: 159
+2026-02-22 18:17:03,910 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_1914.json (1.55s)
+
+2026-02-22 18:17:03,911 [INFO] ▶️  Procesando user=376, hotel_recomendado=2344
+2026-02-22 18:17:03,918 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:03,918 [INFO]    Hoteles en subgrafo: [2083, 2344, 1260, 2589, 3806]
+2026-02-22 18:17:05,562 [INFO]    Nodos: 112, Relaciones: 185
+2026-02-22 18:17:05,567 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_2344.json (1.66s)
+
+2026-02-22 18:17:05,568 [INFO] ▶️  Procesando user=376, hotel_recomendado=5176
+2026-02-22 18:17:05,575 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:05,575 [INFO]    Hoteles en subgrafo: [2083, 1260, 5176, 2589, 3806]
+2026-02-22 18:17:07,141 [INFO]    Nodos: 96, Relaciones: 165
+2026-02-22 18:17:07,150 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_5176.json (1.58s)
+
+2026-02-22 18:17:07,150 [INFO] ▶️  Procesando user=376, hotel_recomendado=904
+2026-02-22 18:17:07,157 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:07,157 [INFO]    Hoteles en subgrafo: [2083, 904, 1260, 2589, 3806]
+2026-02-22 18:17:08,519 [INFO]    Nodos: 95, Relaciones: 159
+2026-02-22 18:17:08,528 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_904.json (1.38s)
+
+2026-02-22 18:17:08,529 [INFO] ▶️  Procesando user=376, hotel_recomendado=3764
+2026-02-22 18:17:08,534 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:08,535 [INFO]    Hoteles en subgrafo: [2083, 1260, 3764, 2589, 3806]
+2026-02-22 18:17:10,044 [INFO]    Nodos: 95, Relaciones: 170
+2026-02-22 18:17:10,048 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_3764.json (1.52s)
+
+2026-02-22 18:17:10,049 [INFO] ▶️  Procesando user=376, hotel_recomendado=45
+2026-02-22 18:17:10,056 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:10,056 [INFO]    Hoteles en subgrafo: [2083, 1260, 45, 2589, 3806]
+2026-02-22 18:17:11,449 [INFO]    Nodos: 95, Relaciones: 148
+2026-02-22 18:17:11,458 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_45.json (1.41s)
+
+2026-02-22 18:17:11,459 [INFO] ▶️  Procesando user=376, hotel_recomendado=934
+2026-02-22 18:17:11,464 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:11,465 [INFO]    Hoteles en subgrafo: [2083, 934, 1260, 2589, 3806]
+2026-02-22 18:17:12,904 [INFO]    Nodos: 91, Relaciones: 146
+2026-02-22 18:17:12,908 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_934.json (1.45s)
+
+2026-02-22 18:17:12,908 [INFO] ▶️  Procesando user=376, hotel_recomendado=2877
+2026-02-22 18:17:12,914 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:12,914 [INFO]    Hoteles en subgrafo: [2083, 2877, 1260, 2589, 3806]
+2026-02-22 18:17:14,542 [INFO]    Nodos: 102, Relaciones: 173
+2026-02-22 18:17:14,546 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_2877.json (1.64s)
+
+2026-02-22 18:17:14,546 [INFO] ▶️  Procesando user=376, hotel_recomendado=5168
+2026-02-22 18:17:14,553 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:14,553 [INFO]    Hoteles en subgrafo: [2083, 1260, 5168, 2589, 3806]
+2026-02-22 18:17:15,954 [INFO]    Nodos: 94, Relaciones: 164
+2026-02-22 18:17:15,963 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_5168.json (1.42s)
+
+2026-02-22 18:17:15,964 [INFO] ▶️  Procesando user=376, hotel_recomendado=104
+2026-02-22 18:17:15,970 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:15,971 [INFO]    Hoteles en subgrafo: [2083, 104, 1260, 2589, 3806]
+2026-02-22 18:17:17,381 [INFO]    Nodos: 106, Relaciones: 167
+2026-02-22 18:17:17,386 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_104.json (1.42s)
+
+2026-02-22 18:17:17,387 [INFO] ▶️  Procesando user=376, hotel_recomendado=2424
+2026-02-22 18:17:17,392 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:17,392 [INFO]    Hoteles en subgrafo: [2083, 1260, 2424, 2589, 3806]
+2026-02-22 18:17:18,826 [INFO]    Nodos: 92, Relaciones: 146
+2026-02-22 18:17:18,836 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_2424.json (1.45s)
+
+2026-02-22 18:17:18,837 [INFO] ▶️  Procesando user=376, hotel_recomendado=4184
+2026-02-22 18:17:18,842 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:18,843 [INFO]    Hoteles en subgrafo: [2083, 1260, 4184, 2589, 3806]
+2026-02-22 18:17:20,337 [INFO]    Nodos: 96, Relaciones: 156
+2026-02-22 18:17:20,345 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_4184.json (1.51s)
+
+2026-02-22 18:17:20,345 [INFO] ▶️  Procesando user=376, hotel_recomendado=652
+2026-02-22 18:17:20,351 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:20,351 [INFO]    Hoteles en subgrafo: [2083, 652, 1260, 2589, 3806]
+2026-02-22 18:17:22,024 [INFO]    Nodos: 97, Relaciones: 151
+2026-02-22 18:17:22,030 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_652.json (1.68s)
+
+2026-02-22 18:17:22,030 [INFO] ▶️  Procesando user=376, hotel_recomendado=880
+2026-02-22 18:17:22,038 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:22,038 [INFO]    Hoteles en subgrafo: [2083, 1260, 880, 2589, 3806]
+2026-02-22 18:17:23,491 [INFO]    Nodos: 93, Relaciones: 145
+2026-02-22 18:17:23,497 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_880.json (1.47s)
+
+2026-02-22 18:17:23,497 [INFO] ▶️  Procesando user=376, hotel_recomendado=5222
+2026-02-22 18:17:23,504 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:23,504 [INFO]    Hoteles en subgrafo: [2083, 5222, 1260, 2589, 3806]
+2026-02-22 18:17:25,034 [INFO]    Nodos: 91, Relaciones: 163
+2026-02-22 18:17:25,041 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_5222.json (1.54s)
+
+2026-02-22 18:17:25,041 [INFO] ▶️  Procesando user=376, hotel_recomendado=1442
+2026-02-22 18:17:25,049 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:25,049 [INFO]    Hoteles en subgrafo: [1442, 2083, 1260, 2589, 3806]
+2026-02-22 18:17:26,365 [INFO]    Nodos: 97, Relaciones: 151
+2026-02-22 18:17:26,375 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_1442.json (1.33s)
+
+2026-02-22 18:17:26,375 [INFO] ▶️  Procesando user=376, hotel_recomendado=4845
+2026-02-22 18:17:26,380 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:26,381 [INFO]    Hoteles en subgrafo: [2083, 1260, 4845, 2589, 3806]
+2026-02-22 18:17:27,773 [INFO]    Nodos: 93, Relaciones: 151
+2026-02-22 18:17:27,783 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_4845.json (1.41s)
+
+2026-02-22 18:17:27,783 [INFO] ▶️  Procesando user=376, hotel_recomendado=214
+2026-02-22 18:17:27,789 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:27,790 [INFO]    Hoteles en subgrafo: [2083, 1260, 214, 2589, 3806]
+2026-02-22 18:17:29,381 [INFO]    Nodos: 95, Relaciones: 157
+2026-02-22 18:17:29,385 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_214.json (1.60s)
+
+2026-02-22 18:17:29,386 [INFO] ▶️  Procesando user=376, hotel_recomendado=3457
+2026-02-22 18:17:29,394 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:29,395 [INFO]    Hoteles en subgrafo: [3457, 2083, 1260, 2589, 3806]
+2026-02-22 18:17:30,765 [INFO]    Nodos: 94, Relaciones: 147
+2026-02-22 18:17:30,769 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_3457.json (1.38s)
+
+2026-02-22 18:17:30,770 [INFO] ▶️  Procesando user=376, hotel_recomendado=774
+2026-02-22 18:17:30,776 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:30,777 [INFO]    Hoteles en subgrafo: [2083, 774, 1260, 2589, 3806]
+2026-02-22 18:17:32,289 [INFO]    Nodos: 94, Relaciones: 151
+2026-02-22 18:17:32,295 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_774.json (1.52s)
+
+2026-02-22 18:17:32,295 [INFO] ▶️  Procesando user=376, hotel_recomendado=1178
+2026-02-22 18:17:32,311 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:32,311 [INFO]    Hoteles en subgrafo: [2083, 1260, 1178, 2589, 3806]
+2026-02-22 18:17:33,653 [INFO]    Nodos: 89, Relaciones: 146
+2026-02-22 18:17:33,662 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_1178.json (1.37s)
+
+2026-02-22 18:17:33,663 [INFO] ▶️  Procesando user=376, hotel_recomendado=5656
+2026-02-22 18:17:33,668 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:33,668 [INFO]    Hoteles en subgrafo: [2083, 1260, 5656, 2589, 3806]
+2026-02-22 18:17:35,004 [INFO]    Nodos: 100, Relaciones: 157
+2026-02-22 18:17:35,011 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_5656.json (1.35s)
+
+2026-02-22 18:17:35,012 [INFO] ▶️  Procesando user=376, hotel_recomendado=4604
+2026-02-22 18:17:35,019 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:35,019 [INFO]    Hoteles en subgrafo: [2083, 1260, 4604, 2589, 3806]
+2026-02-22 18:17:36,258 [INFO]    Nodos: 90, Relaciones: 144
+2026-02-22 18:17:36,261 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_4604.json (1.25s)
+
+2026-02-22 18:17:36,262 [INFO] ▶️  Procesando user=376, hotel_recomendado=4073
+2026-02-22 18:17:36,267 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:36,268 [INFO]    Hoteles en subgrafo: [2083, 4073, 1260, 2589, 3806]
+2026-02-22 18:17:37,708 [INFO]    Nodos: 99, Relaciones: 165
+2026-02-22 18:17:37,712 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_4073.json (1.45s)
+
+2026-02-22 18:17:37,712 [INFO] ▶️  Procesando user=376, hotel_recomendado=2618
+2026-02-22 18:17:37,725 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:37,725 [INFO]    Hoteles en subgrafo: [2083, 1260, 2618, 2589, 3806]
+2026-02-22 18:17:39,184 [INFO]    Nodos: 96, Relaciones: 153
+2026-02-22 18:17:39,194 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_2618.json (1.48s)
+
+2026-02-22 18:17:39,194 [INFO] ▶️  Procesando user=376, hotel_recomendado=4634
+2026-02-22 18:17:39,201 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:39,201 [INFO]    Hoteles en subgrafo: [2083, 1260, 4634, 2589, 3806]
+2026-02-22 18:17:40,921 [INFO]    Nodos: 106, Relaciones: 180
+2026-02-22 18:17:40,926 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_4634.json (1.73s)
+
+2026-02-22 18:17:40,926 [INFO] ▶️  Procesando user=376, hotel_recomendado=1961
+2026-02-22 18:17:40,933 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:40,933 [INFO]    Hoteles en subgrafo: [2083, 1961, 1260, 2589, 3806]
+2026-02-22 18:17:42,271 [INFO]    Nodos: 92, Relaciones: 147
+2026-02-22 18:17:42,278 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_1961.json (1.35s)
+
+2026-02-22 18:17:42,279 [INFO] ▶️  Procesando user=376, hotel_recomendado=4567
+2026-02-22 18:17:42,286 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:42,287 [INFO]    Hoteles en subgrafo: [2083, 1260, 4567, 2589, 3806]
+2026-02-22 18:17:44,333 [INFO]    Nodos: 99, Relaciones: 162
+2026-02-22 18:17:44,341 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_4567.json (2.06s)
+
+2026-02-22 18:17:44,341 [INFO] ▶️  Procesando user=376, hotel_recomendado=5169
+2026-02-22 18:17:44,352 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:44,352 [INFO]    Hoteles en subgrafo: [2083, 1260, 5169, 2589, 3806]
+2026-02-22 18:17:46,038 [INFO]    Nodos: 101, Relaciones: 163
+2026-02-22 18:17:46,042 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_5169.json (1.70s)
+
+2026-02-22 18:17:46,042 [INFO] ▶️  Procesando user=376, hotel_recomendado=798
+2026-02-22 18:17:46,049 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:46,049 [INFO]    Hoteles en subgrafo: [2083, 1260, 798, 2589, 3806]
+2026-02-22 18:17:47,523 [INFO]    Nodos: 103, Relaciones: 169
+2026-02-22 18:17:47,533 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_798.json (1.49s)
+
+2026-02-22 18:17:47,534 [INFO] ▶️  Procesando user=376, hotel_recomendado=2406
+2026-02-22 18:17:47,539 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:47,540 [INFO]    Hoteles en subgrafo: [2083, 2406, 1260, 2589, 3806]
+2026-02-22 18:17:48,918 [INFO]    Nodos: 92, Relaciones: 149
+2026-02-22 18:17:48,923 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_2406.json (1.39s)
+
+2026-02-22 18:17:48,923 [INFO] ▶️  Procesando user=376, hotel_recomendado=4088
+2026-02-22 18:17:48,930 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:48,930 [INFO]    Hoteles en subgrafo: [2083, 1260, 4088, 2589, 3806]
+2026-02-22 18:17:50,340 [INFO]    Nodos: 95, Relaciones: 151
+2026-02-22 18:17:50,346 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_4088.json (1.42s)
+
+2026-02-22 18:17:50,347 [INFO] ▶️  Procesando user=376, hotel_recomendado=1201
+2026-02-22 18:17:50,352 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:50,352 [INFO]    Hoteles en subgrafo: [2083, 1260, 1201, 2589, 3806]
+2026-02-22 18:17:51,976 [INFO]    Nodos: 100, Relaciones: 174
+2026-02-22 18:17:51,981 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_1201.json (1.63s)
+
+2026-02-22 18:17:51,982 [INFO] ▶️  Procesando user=376, hotel_recomendado=4875
+2026-02-22 18:17:51,987 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:51,988 [INFO]    Hoteles en subgrafo: [2083, 4875, 1260, 2589, 3806]
+2026-02-22 18:17:53,398 [INFO]    Nodos: 90, Relaciones: 147
+2026-02-22 18:17:53,401 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_4875.json (1.42s)
+
+2026-02-22 18:17:53,402 [INFO] ▶️  Procesando user=376, hotel_recomendado=3480
+2026-02-22 18:17:53,416 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:53,416 [INFO]    Hoteles en subgrafo: [2083, 1260, 3480, 2589, 3806]
+2026-02-22 18:17:54,871 [INFO]    Nodos: 101, Relaciones: 167
+2026-02-22 18:17:54,877 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_3480.json (1.48s)
+
+2026-02-22 18:17:54,877 [INFO] ▶️  Procesando user=376, hotel_recomendado=3966
+2026-02-22 18:17:54,884 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:54,885 [INFO]    Hoteles en subgrafo: [2083, 1260, 3966, 2589, 3806]
+2026-02-22 18:17:56,242 [INFO]    Nodos: 96, Relaciones: 154
+2026-02-22 18:17:56,246 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_3966.json (1.37s)
+
+2026-02-22 18:17:56,246 [INFO] ▶️  Procesando user=376, hotel_recomendado=5336
+2026-02-22 18:17:56,251 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:56,252 [INFO]    Hoteles en subgrafo: [2083, 1260, 5336, 2589, 3806]
+2026-02-22 18:17:57,665 [INFO]    Nodos: 98, Relaciones: 167
+2026-02-22 18:17:57,669 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_5336.json (1.42s)
+
+2026-02-22 18:17:57,670 [INFO] ▶️  Procesando user=376, hotel_recomendado=3651
+2026-02-22 18:17:57,679 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:57,679 [INFO]    Hoteles en subgrafo: [2083, 3651, 1260, 2589, 3806]
+2026-02-22 18:17:58,905 [INFO]    Nodos: 93, Relaciones: 148
+2026-02-22 18:17:58,909 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_3651.json (1.24s)
+
+2026-02-22 18:17:58,910 [INFO] ▶️  Procesando user=376, hotel_recomendado=2617
+2026-02-22 18:17:58,916 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:17:58,916 [INFO]    Hoteles en subgrafo: [2083, 1260, 2617, 2589, 3806]
+2026-02-22 18:18:00,180 [INFO]    Nodos: 88, Relaciones: 147
+2026-02-22 18:18:00,185 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_2617.json (1.27s)
+
+2026-02-22 18:18:00,185 [INFO] ▶️  Procesando user=376, hotel_recomendado=4566
+2026-02-22 18:18:00,192 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:18:00,192 [INFO]    Hoteles en subgrafo: [2083, 1260, 4566, 2589, 3806]
+2026-02-22 18:18:01,440 [INFO]    Nodos: 91, Relaciones: 149
+2026-02-22 18:18:01,444 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_4566.json (1.26s)
+
+2026-02-22 18:18:01,444 [INFO] ▶️  Procesando user=376, hotel_recomendado=1924
+2026-02-22 18:18:01,449 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:18:01,449 [INFO]    Hoteles en subgrafo: [2083, 1924, 1260, 2589, 3806]
+2026-02-22 18:18:02,692 [INFO]    Nodos: 93, Relaciones: 143
+2026-02-22 18:18:02,696 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_1924.json (1.25s)
+
+2026-02-22 18:18:02,696 [INFO] ▶️  Procesando user=376, hotel_recomendado=210
+2026-02-22 18:18:02,701 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:18:02,701 [INFO]    Hoteles en subgrafo: [2083, 1260, 210, 2589, 3806]
+2026-02-22 18:18:04,015 [INFO]    Nodos: 92, Relaciones: 151
+2026-02-22 18:18:04,019 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_210.json (1.32s)
+
+2026-02-22 18:18:04,020 [INFO] ▶️  Procesando user=376, hotel_recomendado=3700
+2026-02-22 18:18:04,026 [INFO]    Hoteles previos: [2589, 3806, 1260, 2083]
+2026-02-22 18:18:04,026 [INFO]    Hoteles en subgrafo: [2083, 1260, 3700, 2589, 3806]
+2026-02-22 18:18:05,312 [INFO]    Nodos: 93, Relaciones: 148
+2026-02-22 18:18:05,317 [INFO] ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra\user_376_hotel_3700.json (1.30s)
+
+2026-02-22 18:18:05,317 [INFO] ======================================================================
+2026-02-22 18:18:05,317 [INFO] PROCESO COMPLETADO — Errores: 0
+2026-02-22 18:18:05,317 [INFO] ======================================================================

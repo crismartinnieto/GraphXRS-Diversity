@@ -1,0 +1,153 @@
+2026-02-22 18:59:59,644 [INFO] ======================================================================
+2026-02-22 18:59:59,645 [INFO] CÁLCULO MÉTRICAS INTERACCIÓN — MODE=muestra
+2026-02-22 18:59:59,645 [INFO] Timestamp: 20260222_185959
+2026-02-22 18:59:59,645 [INFO] ======================================================================
+2026-02-22 18:59:59,645 [INFO] 📂 Subgrafos: C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra
+2026-02-22 18:59:59,646 [INFO] 💾 Salida:    C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\output\metricas_grafo_interaccion_muestra
+2026-02-22 18:59:59,699 [INFO] 
+👥 Usuarios a procesar: 5 → [3, 35, 276, 339, 376]
+
+2026-02-22 18:59:59,699 [INFO] 📐 Métricas registradas (5): ['degree_hotel', 'ratio_usuarios_compartidos', 'num_usuarios_compartidos', 'rating_medio_hotel', 'norm_degree_hotel']
+
+2026-02-22 18:59:59,699 [INFO] 
+============================================================
+2026-02-22 18:59:59,699 [INFO] Usuario 3
+2026-02-22 18:59:59,700 [INFO] ============================================================
+2026-02-22 18:59:59,701 [INFO]   50 subgrafos para usuario 3
+2026-02-22 18:59:59,843 [INFO]   Combinaciones calculadas: 1607
+2026-02-22 18:59:59,855 [INFO]   💾 cf_usuario_3_degree_hotel_20260222_185959.csv  (1607 filas)
+2026-02-22 18:59:59,860 [INFO]   💾 cf_usuario_3_ratio_usuarios_compartidos_20260222_185959.csv  (1607 filas)
+2026-02-22 18:59:59,863 [INFO]   💾 cf_usuario_3_num_usuarios_compartidos_20260222_185959.csv  (1607 filas)
+2026-02-22 18:59:59,867 [INFO]   💾 cf_usuario_3_rating_medio_hotel_20260222_185959.csv  (1607 filas)
+2026-02-22 18:59:59,872 [INFO]   💾 cf_usuario_3_norm_degree_hotel_20260222_185959.csv  (1607 filas)
+2026-02-22 18:59:59,872 [INFO] ✅ Usuario 3: 5 ficheros guardados
+2026-02-22 18:59:59,872 [INFO] 
+============================================================
+2026-02-22 18:59:59,873 [INFO] Usuario 35
+2026-02-22 18:59:59,873 [INFO] ============================================================
+2026-02-22 18:59:59,874 [INFO]   50 subgrafos para usuario 35
+2026-02-22 19:00:00,003 [INFO]   Combinaciones calculadas: 1598
+2026-02-22 19:00:00,006 [INFO]   💾 cf_usuario_35_degree_hotel_20260222_185959.csv  (1598 filas)
+2026-02-22 19:00:00,013 [INFO]   💾 cf_usuario_35_ratio_usuarios_compartidos_20260222_185959.csv  (1598 filas)
+2026-02-22 19:00:00,018 [INFO]   💾 cf_usuario_35_num_usuarios_compartidos_20260222_185959.csv  (1598 filas)
+2026-02-22 19:00:00,022 [INFO]   💾 cf_usuario_35_rating_medio_hotel_20260222_185959.csv  (1598 filas)
+2026-02-22 19:00:00,026 [INFO]   💾 cf_usuario_35_norm_degree_hotel_20260222_185959.csv  (1598 filas)
+2026-02-22 19:00:00,026 [INFO] ✅ Usuario 35: 5 ficheros guardados
+2026-02-22 19:00:00,027 [INFO] 
+============================================================
+2026-02-22 19:00:00,027 [INFO] Usuario 276
+2026-02-22 19:00:00,027 [INFO] ============================================================
+2026-02-22 19:00:00,028 [INFO]   50 subgrafos para usuario 276
+2026-02-22 19:00:00,171 [INFO]   Combinaciones calculadas: 2227
+2026-02-22 19:00:00,176 [INFO]   💾 cf_usuario_276_degree_hotel_20260222_185959.csv  (2227 filas)
+2026-02-22 19:00:00,182 [INFO]   💾 cf_usuario_276_ratio_usuarios_compartidos_20260222_185959.csv  (2227 filas)
+2026-02-22 19:00:00,186 [INFO]   💾 cf_usuario_276_num_usuarios_compartidos_20260222_185959.csv  (2227 filas)
+2026-02-22 19:00:00,191 [INFO]   💾 cf_usuario_276_rating_medio_hotel_20260222_185959.csv  (2227 filas)
+2026-02-22 19:00:00,196 [INFO]   💾 cf_usuario_276_norm_degree_hotel_20260222_185959.csv  (2227 filas)
+2026-02-22 19:00:00,196 [INFO] ✅ Usuario 276: 5 ficheros guardados
+2026-02-22 19:00:00,197 [INFO] 
+============================================================
+2026-02-22 19:00:00,197 [INFO] Usuario 339
+2026-02-22 19:00:00,197 [INFO] ============================================================
+2026-02-22 19:00:00,199 [INFO]   50 subgrafos para usuario 339
+2026-02-22 19:00:00,348 [INFO]   Combinaciones calculadas: 2209
+2026-02-22 19:00:00,353 [INFO]   💾 cf_usuario_339_degree_hotel_20260222_185959.csv  (2209 filas)
+2026-02-22 19:00:00,358 [INFO]   💾 cf_usuario_339_ratio_usuarios_compartidos_20260222_185959.csv  (2209 filas)
+2026-02-22 19:00:00,361 [INFO]   💾 cf_usuario_339_num_usuarios_compartidos_20260222_185959.csv  (2209 filas)
+2026-02-22 19:00:00,366 [INFO]   💾 cf_usuario_339_rating_medio_hotel_20260222_185959.csv  (2209 filas)
+2026-02-22 19:00:00,373 [INFO]   💾 cf_usuario_339_norm_degree_hotel_20260222_185959.csv  (2209 filas)
+2026-02-22 19:00:00,373 [INFO] ✅ Usuario 339: 5 ficheros guardados
+2026-02-22 19:00:00,374 [INFO] 
+============================================================
+2026-02-22 19:00:00,374 [INFO] Usuario 376
+2026-02-22 19:00:00,374 [INFO] ============================================================
+2026-02-22 19:00:00,375 [INFO]   50 subgrafos para usuario 376
+2026-02-22 19:00:00,515 [INFO]   Combinaciones calculadas: 1835
+2026-02-22 19:00:00,519 [INFO]   💾 cf_usuario_376_degree_hotel_20260222_185959.csv  (1835 filas)
+2026-02-22 19:00:00,523 [INFO]   💾 cf_usuario_376_ratio_usuarios_compartidos_20260222_185959.csv  (1835 filas)
+2026-02-22 19:00:00,527 [INFO]   💾 cf_usuario_376_num_usuarios_compartidos_20260222_185959.csv  (1835 filas)
+2026-02-22 19:00:00,531 [INFO]   💾 cf_usuario_376_rating_medio_hotel_20260222_185959.csv  (1835 filas)
+2026-02-22 19:00:00,535 [INFO]   💾 cf_usuario_376_norm_degree_hotel_20260222_185959.csv  (1835 filas)
+2026-02-22 19:00:00,536 [INFO] ✅ Usuario 376: 5 ficheros guardados
+2026-02-22 19:00:00,536 [INFO] 
+======================================================================
+2026-02-22 19:00:00,536 [INFO] 🎉 COMPLETADO
+2026-02-22 19:00:00,536 [INFO]    Usuarios:         5
+2026-02-22 19:00:00,536 [INFO]    Métricas:         5
+2026-02-22 19:00:00,537 [INFO]    Ficheros totales: 25
+2026-02-22 19:00:00,537 [INFO]    Resultados en:    C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\output\metricas_grafo_interaccion_muestra
+2026-02-22 19:00:00,537 [INFO] ======================================================================
+2026-02-24 18:19:27,703 [INFO] ======================================================================
+2026-02-24 18:19:27,704 [INFO] CÁLCULO MÉTRICAS INTERACCION — MODE=muestra
+2026-02-24 18:19:27,705 [INFO] Timestamp: 20260224_181927
+2026-02-24 18:19:27,705 [INFO] ======================================================================
+2026-02-24 18:19:27,705 [INFO] 📂 Subgrafos: C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra
+2026-02-24 18:19:27,706 [INFO] 💾 Salida: C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\output\metricas_grafo_interaccion_muestra
+2026-02-24 18:19:27,795 [INFO] 
+👥 Usuarios a procesar: 5 → [3, 35, 276, 339, 376]
+
+2026-02-24 18:19:27,796 [INFO] 📐 Métricas registradas (5): ['degree_hotel', 'ratio_usuarios_compartidos', 'num_usuarios_compartidos', 'rating_medio_hotel', 'norm_degree_hotel']
+
+2026-02-24 18:19:27,796 [INFO] 
+============================================================
+2026-02-24 18:19:27,797 [INFO] Usuario 3
+2026-02-24 18:19:27,797 [INFO] ============================================================
+2026-02-24 18:19:28,172 [INFO]   Combinaciones calculadas: 1607
+2026-02-24 18:19:28,181 [INFO]   💾 cf_usuario_3_degree_hotel_20260224_181927.csv  (1607 filas)
+2026-02-24 18:19:28,193 [INFO]   💾 cf_usuario_3_ratio_usuarios_compartidos_20260224_181927.csv  (1607 filas)
+2026-02-24 18:19:28,204 [INFO]   💾 cf_usuario_3_num_usuarios_compartidos_20260224_181927.csv  (1607 filas)
+2026-02-24 18:19:28,213 [INFO]   💾 cf_usuario_3_rating_medio_hotel_20260224_181927.csv  (1607 filas)
+2026-02-24 18:19:28,225 [INFO]   💾 cf_usuario_3_norm_degree_hotel_20260224_181927.csv  (1607 filas)
+2026-02-24 18:19:28,226 [INFO] ✅ Usuario 3: 5 ficheros guardados
+2026-02-24 18:19:28,227 [INFO] 
+============================================================
+2026-02-24 18:19:28,227 [INFO] Usuario 35
+2026-02-24 18:19:28,228 [INFO] ============================================================
+2026-02-24 18:19:28,608 [INFO]   Combinaciones calculadas: 1598
+2026-02-24 18:19:28,617 [INFO]   💾 cf_usuario_35_degree_hotel_20260224_181927.csv  (1598 filas)
+2026-02-24 18:19:28,629 [INFO]   💾 cf_usuario_35_ratio_usuarios_compartidos_20260224_181927.csv  (1598 filas)
+2026-02-24 18:19:28,640 [INFO]   💾 cf_usuario_35_num_usuarios_compartidos_20260224_181927.csv  (1598 filas)
+2026-02-24 18:19:28,649 [INFO]   💾 cf_usuario_35_rating_medio_hotel_20260224_181927.csv  (1598 filas)
+2026-02-24 18:19:28,661 [INFO]   💾 cf_usuario_35_norm_degree_hotel_20260224_181927.csv  (1598 filas)
+2026-02-24 18:19:28,662 [INFO] ✅ Usuario 35: 5 ficheros guardados
+2026-02-24 18:19:28,663 [INFO] 
+============================================================
+2026-02-24 18:19:28,663 [INFO] Usuario 276
+2026-02-24 18:19:28,664 [INFO] ============================================================
+2026-02-24 18:19:29,001 [INFO]   Combinaciones calculadas: 2227
+2026-02-24 18:19:29,011 [INFO]   💾 cf_usuario_276_degree_hotel_20260224_181927.csv  (2227 filas)
+2026-02-24 18:19:29,024 [INFO]   💾 cf_usuario_276_ratio_usuarios_compartidos_20260224_181927.csv  (2227 filas)
+2026-02-24 18:19:29,035 [INFO]   💾 cf_usuario_276_num_usuarios_compartidos_20260224_181927.csv  (2227 filas)
+2026-02-24 18:19:29,048 [INFO]   💾 cf_usuario_276_rating_medio_hotel_20260224_181927.csv  (2227 filas)
+2026-02-24 18:19:29,061 [INFO]   💾 cf_usuario_276_norm_degree_hotel_20260224_181927.csv  (2227 filas)
+2026-02-24 18:19:29,062 [INFO] ✅ Usuario 276: 5 ficheros guardados
+2026-02-24 18:19:29,063 [INFO] 
+============================================================
+2026-02-24 18:19:29,064 [INFO] Usuario 339
+2026-02-24 18:19:29,064 [INFO] ============================================================
+2026-02-24 18:19:29,398 [INFO]   Combinaciones calculadas: 2209
+2026-02-24 18:19:29,407 [INFO]   💾 cf_usuario_339_degree_hotel_20260224_181927.csv  (2209 filas)
+2026-02-24 18:19:29,421 [INFO]   💾 cf_usuario_339_ratio_usuarios_compartidos_20260224_181927.csv  (2209 filas)
+2026-02-24 18:19:29,433 [INFO]   💾 cf_usuario_339_num_usuarios_compartidos_20260224_181927.csv  (2209 filas)
+2026-02-24 18:19:29,443 [INFO]   💾 cf_usuario_339_rating_medio_hotel_20260224_181927.csv  (2209 filas)
+2026-02-24 18:19:29,457 [INFO]   💾 cf_usuario_339_norm_degree_hotel_20260224_181927.csv  (2209 filas)
+2026-02-24 18:19:29,458 [INFO] ✅ Usuario 339: 5 ficheros guardados
+2026-02-24 18:19:29,459 [INFO] 
+============================================================
+2026-02-24 18:19:29,459 [INFO] Usuario 376
+2026-02-24 18:19:29,459 [INFO] ============================================================
+2026-02-24 18:19:29,925 [INFO]   Combinaciones calculadas: 1835
+2026-02-24 18:19:29,933 [INFO]   💾 cf_usuario_376_degree_hotel_20260224_181927.csv  (1835 filas)
+2026-02-24 18:19:29,944 [INFO]   💾 cf_usuario_376_ratio_usuarios_compartidos_20260224_181927.csv  (1835 filas)
+2026-02-24 18:19:29,952 [INFO]   💾 cf_usuario_376_num_usuarios_compartidos_20260224_181927.csv  (1835 filas)
+2026-02-24 18:19:29,960 [INFO]   💾 cf_usuario_376_rating_medio_hotel_20260224_181927.csv  (1835 filas)
+2026-02-24 18:19:29,971 [INFO]   💾 cf_usuario_376_norm_degree_hotel_20260224_181927.csv  (1835 filas)
+2026-02-24 18:19:29,972 [INFO] ✅ Usuario 376: 5 ficheros guardados
+2026-02-24 18:19:29,973 [INFO] 
+======================================================================
+2026-02-24 18:19:29,973 [INFO] 🎉 COMPLETADO
+2026-02-24 18:19:29,973 [INFO]    Usuarios procesados:  5/5
+2026-02-24 18:19:29,974 [INFO]    Métricas:             5
+2026-02-24 18:19:29,974 [INFO]    Ficheros generados:   25
+2026-02-24 18:19:29,974 [INFO]    Resultados en:        C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\output\metricas_grafo_interaccion_muestra
+2026-02-24 18:19:29,975 [INFO] ======================================================================

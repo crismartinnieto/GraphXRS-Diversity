@@ -1,0 +1,559 @@
+2026-02-22 18:30:12,959 [INFO] ======================================================================
+2026-02-22 18:30:12,959 [INFO] CÁLCULO MÉTRICAS CONOCIMIENTO — MODE=muestra
+2026-02-22 18:30:12,960 [INFO] Timestamp: 20260222_183012
+2026-02-22 18:30:12,960 [INFO] ======================================================================
+2026-02-22 18:30:12,960 [INFO] 📂 Explicaciones his+rec: C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\explicaciones_historico_y_recomendacion_muestra
+2026-02-22 18:30:12,961 [INFO] 📂 Explicaciones hist:    C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\explicaciones_historico_muestra
+2026-02-22 18:30:12,961 [INFO] 💾 Salida:                C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\output\metricas_grafo_conocimiento_muestra
+2026-02-22 18:30:13,099 [INFO] 
+👥 Usuarios con explicaciones: 5 → [3, 35, 276, 339, 376]
+
+2026-02-22 18:30:13,100 [INFO] 📐 Métricas registradas (18): ['num_propiedades_compartidas', 'ratio_propiedades_compartidas', 'cobertura_tipos_propiedades', 'precision_at_5', 'recall_at_5', 'f1_at_5', 'ndcg_at_5', 'mrr', 'hit_rate', 'map', 'diversidad_tipos_shannon', 'novedad_threshold_2', 'serendipia', 'consistencia_tipos', 'peso_ponderado_perfil', 'jaccard_similarity', 'balance_tipos_gini', 'riqueza_explicativa']
+
+2026-02-22 18:30:13,100 [INFO] 
+============================================================
+2026-02-22 18:30:13,100 [INFO] Usuario 3
+2026-02-22 18:30:13,100 [INFO] ============================================================
+2026-02-22 18:30:16,365 [INFO]   Combinaciones calculadas: 200
+2026-02-22 18:30:16,368 [INFO]   💾 kg_usuario_3_num_propiedades_compartidas_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:16,372 [INFO]   💾 kg_usuario_3_ratio_propiedades_compartidas_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:16,374 [INFO]   💾 kg_usuario_3_cobertura_tipos_propiedades_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:16,376 [INFO]   💾 kg_usuario_3_precision_at_5_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:16,378 [INFO]   💾 kg_usuario_3_recall_at_5_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:16,380 [INFO]   💾 kg_usuario_3_f1_at_5_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:16,383 [INFO]   💾 kg_usuario_3_ndcg_at_5_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:16,385 [INFO]   💾 kg_usuario_3_mrr_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:16,387 [INFO]   💾 kg_usuario_3_hit_rate_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:16,389 [INFO]   💾 kg_usuario_3_map_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:16,390 [INFO]   💾 kg_usuario_3_diversidad_tipos_shannon_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:16,392 [INFO]   💾 kg_usuario_3_novedad_threshold_2_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:16,393 [INFO]   💾 kg_usuario_3_serendipia_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:16,395 [INFO]   💾 kg_usuario_3_consistencia_tipos_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:16,397 [INFO]   💾 kg_usuario_3_peso_ponderado_perfil_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:16,400 [INFO]   💾 kg_usuario_3_jaccard_similarity_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:16,401 [INFO]   💾 kg_usuario_3_balance_tipos_gini_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:16,403 [INFO]   💾 kg_usuario_3_riqueza_explicativa_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:16,403 [INFO] ✅ Usuario 3: 18 ficheros guardados
+2026-02-22 18:30:16,404 [INFO] 
+============================================================
+2026-02-22 18:30:16,404 [INFO] Usuario 35
+2026-02-22 18:30:16,404 [INFO] ============================================================
+2026-02-22 18:30:20,220 [INFO]   Combinaciones calculadas: 200
+2026-02-22 18:30:20,222 [INFO]   💾 kg_usuario_35_num_propiedades_compartidas_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:20,225 [INFO]   💾 kg_usuario_35_ratio_propiedades_compartidas_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:20,227 [INFO]   💾 kg_usuario_35_cobertura_tipos_propiedades_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:20,234 [INFO]   💾 kg_usuario_35_precision_at_5_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:20,236 [INFO]   💾 kg_usuario_35_recall_at_5_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:20,238 [INFO]   💾 kg_usuario_35_f1_at_5_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:20,240 [INFO]   💾 kg_usuario_35_ndcg_at_5_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:20,242 [INFO]   💾 kg_usuario_35_mrr_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:20,244 [INFO]   💾 kg_usuario_35_hit_rate_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:20,247 [INFO]   💾 kg_usuario_35_map_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:20,249 [INFO]   💾 kg_usuario_35_diversidad_tipos_shannon_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:20,250 [INFO]   💾 kg_usuario_35_novedad_threshold_2_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:20,252 [INFO]   💾 kg_usuario_35_serendipia_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:20,253 [INFO]   💾 kg_usuario_35_consistencia_tipos_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:20,255 [INFO]   💾 kg_usuario_35_peso_ponderado_perfil_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:20,257 [INFO]   💾 kg_usuario_35_jaccard_similarity_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:20,259 [INFO]   💾 kg_usuario_35_balance_tipos_gini_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:20,260 [INFO]   💾 kg_usuario_35_riqueza_explicativa_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:20,260 [INFO] ✅ Usuario 35: 18 ficheros guardados
+2026-02-22 18:30:20,261 [INFO] 
+============================================================
+2026-02-22 18:30:20,261 [INFO] Usuario 276
+2026-02-22 18:30:20,261 [INFO] ============================================================
+2026-02-22 18:30:38,551 [INFO]   Combinaciones calculadas: 600
+2026-02-22 18:30:38,555 [INFO]   💾 kg_usuario_276_num_propiedades_compartidas_20260222_183012.csv  (600 filas)
+2026-02-22 18:30:38,558 [INFO]   💾 kg_usuario_276_ratio_propiedades_compartidas_20260222_183012.csv  (600 filas)
+2026-02-22 18:30:38,560 [INFO]   💾 kg_usuario_276_cobertura_tipos_propiedades_20260222_183012.csv  (600 filas)
+2026-02-22 18:30:38,562 [INFO]   💾 kg_usuario_276_precision_at_5_20260222_183012.csv  (600 filas)
+2026-02-22 18:30:38,564 [INFO]   💾 kg_usuario_276_recall_at_5_20260222_183012.csv  (600 filas)
+2026-02-22 18:30:38,567 [INFO]   💾 kg_usuario_276_f1_at_5_20260222_183012.csv  (600 filas)
+2026-02-22 18:30:38,570 [INFO]   💾 kg_usuario_276_ndcg_at_5_20260222_183012.csv  (600 filas)
+2026-02-22 18:30:38,574 [INFO]   💾 kg_usuario_276_mrr_20260222_183012.csv  (600 filas)
+2026-02-22 18:30:38,578 [INFO]   💾 kg_usuario_276_hit_rate_20260222_183012.csv  (600 filas)
+2026-02-22 18:30:38,580 [INFO]   💾 kg_usuario_276_map_20260222_183012.csv  (600 filas)
+2026-02-22 18:30:38,583 [INFO]   💾 kg_usuario_276_diversidad_tipos_shannon_20260222_183012.csv  (600 filas)
+2026-02-22 18:30:38,587 [INFO]   💾 kg_usuario_276_novedad_threshold_2_20260222_183012.csv  (600 filas)
+2026-02-22 18:30:38,589 [INFO]   💾 kg_usuario_276_serendipia_20260222_183012.csv  (600 filas)
+2026-02-22 18:30:38,592 [INFO]   💾 kg_usuario_276_consistencia_tipos_20260222_183012.csv  (600 filas)
+2026-02-22 18:30:38,594 [INFO]   💾 kg_usuario_276_peso_ponderado_perfil_20260222_183012.csv  (600 filas)
+2026-02-22 18:30:38,597 [INFO]   💾 kg_usuario_276_jaccard_similarity_20260222_183012.csv  (600 filas)
+2026-02-22 18:30:38,600 [INFO]   💾 kg_usuario_276_balance_tipos_gini_20260222_183012.csv  (600 filas)
+2026-02-22 18:30:38,603 [INFO]   💾 kg_usuario_276_riqueza_explicativa_20260222_183012.csv  (600 filas)
+2026-02-22 18:30:38,604 [INFO] ✅ Usuario 276: 18 ficheros guardados
+2026-02-22 18:30:38,604 [INFO] 
+============================================================
+2026-02-22 18:30:38,604 [INFO] Usuario 339
+2026-02-22 18:30:38,604 [INFO] ============================================================
+2026-02-22 18:30:42,621 [INFO]   Combinaciones calculadas: 200
+2026-02-22 18:30:42,623 [INFO]   💾 kg_usuario_339_num_propiedades_compartidas_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:42,625 [INFO]   💾 kg_usuario_339_ratio_propiedades_compartidas_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:42,627 [INFO]   💾 kg_usuario_339_cobertura_tipos_propiedades_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:42,629 [INFO]   💾 kg_usuario_339_precision_at_5_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:42,630 [INFO]   💾 kg_usuario_339_recall_at_5_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:42,634 [INFO]   💾 kg_usuario_339_f1_at_5_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:42,636 [INFO]   💾 kg_usuario_339_ndcg_at_5_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:42,638 [INFO]   💾 kg_usuario_339_mrr_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:42,640 [INFO]   💾 kg_usuario_339_hit_rate_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:42,642 [INFO]   💾 kg_usuario_339_map_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:42,644 [INFO]   💾 kg_usuario_339_diversidad_tipos_shannon_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:42,646 [INFO]   💾 kg_usuario_339_novedad_threshold_2_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:42,648 [INFO]   💾 kg_usuario_339_serendipia_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:42,651 [INFO]   💾 kg_usuario_339_consistencia_tipos_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:42,653 [INFO]   💾 kg_usuario_339_peso_ponderado_perfil_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:42,656 [INFO]   💾 kg_usuario_339_jaccard_similarity_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:42,658 [INFO]   💾 kg_usuario_339_balance_tipos_gini_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:42,660 [INFO]   💾 kg_usuario_339_riqueza_explicativa_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:42,660 [INFO] ✅ Usuario 339: 18 ficheros guardados
+2026-02-22 18:30:42,661 [INFO] 
+============================================================
+2026-02-22 18:30:42,661 [INFO] Usuario 376
+2026-02-22 18:30:42,661 [INFO] ============================================================
+2026-02-22 18:30:47,580 [INFO]   Combinaciones calculadas: 200
+2026-02-22 18:30:47,582 [INFO]   💾 kg_usuario_376_num_propiedades_compartidas_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:47,584 [INFO]   💾 kg_usuario_376_ratio_propiedades_compartidas_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:47,586 [INFO]   💾 kg_usuario_376_cobertura_tipos_propiedades_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:47,588 [INFO]   💾 kg_usuario_376_precision_at_5_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:47,589 [INFO]   💾 kg_usuario_376_recall_at_5_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:47,591 [INFO]   💾 kg_usuario_376_f1_at_5_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:47,593 [INFO]   💾 kg_usuario_376_ndcg_at_5_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:47,595 [INFO]   💾 kg_usuario_376_mrr_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:47,597 [INFO]   💾 kg_usuario_376_hit_rate_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:47,599 [INFO]   💾 kg_usuario_376_map_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:47,602 [INFO]   💾 kg_usuario_376_diversidad_tipos_shannon_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:47,604 [INFO]   💾 kg_usuario_376_novedad_threshold_2_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:47,606 [INFO]   💾 kg_usuario_376_serendipia_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:47,608 [INFO]   💾 kg_usuario_376_consistencia_tipos_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:47,610 [INFO]   💾 kg_usuario_376_peso_ponderado_perfil_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:47,612 [INFO]   💾 kg_usuario_376_jaccard_similarity_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:47,614 [INFO]   💾 kg_usuario_376_balance_tipos_gini_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:47,617 [INFO]   💾 kg_usuario_376_riqueza_explicativa_20260222_183012.csv  (200 filas)
+2026-02-22 18:30:47,617 [INFO] ✅ Usuario 376: 18 ficheros guardados
+2026-02-22 18:30:47,617 [INFO] 
+======================================================================
+2026-02-22 18:30:47,617 [INFO] 🎉 COMPLETADO
+2026-02-22 18:30:47,618 [INFO]    Usuarios:         5
+2026-02-22 18:30:47,618 [INFO]    Métricas:         18
+2026-02-22 18:30:47,618 [INFO]    Ficheros totales: 90
+2026-02-22 18:30:47,618 [INFO]    Resultados en:    C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\output\metricas_grafo_conocimiento_muestra
+2026-02-22 18:30:47,618 [INFO] ======================================================================
+2026-02-22 18:33:17,287 [INFO] ======================================================================
+2026-02-22 18:33:17,287 [INFO] CÁLCULO MÉTRICAS CONOCIMIENTO — MODE=muestra
+2026-02-22 18:33:17,288 [INFO] Timestamp: 20260222_183317
+2026-02-22 18:33:17,288 [INFO] ======================================================================
+2026-02-22 18:33:17,288 [INFO] 📂 Explicaciones his+rec: C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\explicaciones_historico_y_recomendacion_muestra
+2026-02-22 18:33:17,288 [INFO] 📂 Explicaciones hist:    C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\explicaciones_historico_muestra
+2026-02-22 18:33:17,288 [INFO] 💾 Salida:                C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\output\metricas_grafo_conocimiento_muestra
+2026-02-22 18:33:17,457 [INFO] 
+👥 Usuarios con explicaciones: 5 → [3, 35, 276, 339, 376]
+
+2026-02-22 18:33:17,458 [INFO] 📐 Métricas registradas (18): ['num_propiedades_compartidas', 'ratio_propiedades_compartidas', 'cobertura_tipos_propiedades', 'precision_at_5', 'recall_at_5', 'f1_at_5', 'ndcg_at_5', 'mrr', 'hit_rate', 'map', 'diversidad_tipos_shannon', 'novedad_threshold_2', 'serendipia', 'consistencia_tipos', 'peso_ponderado_perfil', 'jaccard_similarity', 'balance_tipos_gini', 'riqueza_explicativa']
+
+2026-02-22 18:33:17,458 [INFO] 
+============================================================
+2026-02-22 18:33:17,458 [INFO] Usuario 3
+2026-02-22 18:33:17,459 [INFO] ============================================================
+2026-02-22 18:33:20,695 [INFO]   Combinaciones calculadas: 200
+2026-02-22 18:33:20,698 [INFO]   💾 kg_usuario_3_num_propiedades_compartidas_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:20,701 [INFO]   💾 kg_usuario_3_ratio_propiedades_compartidas_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:20,702 [INFO]   💾 kg_usuario_3_cobertura_tipos_propiedades_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:20,705 [INFO]   💾 kg_usuario_3_precision_at_5_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:20,707 [INFO]   💾 kg_usuario_3_recall_at_5_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:20,709 [INFO]   💾 kg_usuario_3_f1_at_5_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:20,711 [INFO]   💾 kg_usuario_3_ndcg_at_5_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:20,713 [INFO]   💾 kg_usuario_3_mrr_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:20,715 [INFO]   💾 kg_usuario_3_hit_rate_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:20,716 [INFO]   💾 kg_usuario_3_map_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:20,718 [INFO]   💾 kg_usuario_3_diversidad_tipos_shannon_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:20,719 [INFO]   💾 kg_usuario_3_novedad_threshold_2_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:20,724 [INFO]   💾 kg_usuario_3_serendipia_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:20,728 [INFO]   💾 kg_usuario_3_consistencia_tipos_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:20,730 [INFO]   💾 kg_usuario_3_peso_ponderado_perfil_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:20,733 [INFO]   💾 kg_usuario_3_jaccard_similarity_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:20,735 [INFO]   💾 kg_usuario_3_balance_tipos_gini_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:20,738 [INFO]   💾 kg_usuario_3_riqueza_explicativa_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:20,738 [INFO] ✅ Usuario 3: 18 ficheros guardados
+2026-02-22 18:33:20,738 [INFO] 
+============================================================
+2026-02-22 18:33:20,739 [INFO] Usuario 35
+2026-02-22 18:33:20,739 [INFO] ============================================================
+2026-02-22 18:33:24,665 [INFO]   Combinaciones calculadas: 200
+2026-02-22 18:33:24,667 [INFO]   💾 kg_usuario_35_num_propiedades_compartidas_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:24,670 [INFO]   💾 kg_usuario_35_ratio_propiedades_compartidas_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:24,673 [INFO]   💾 kg_usuario_35_cobertura_tipos_propiedades_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:24,675 [INFO]   💾 kg_usuario_35_precision_at_5_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:24,678 [INFO]   💾 kg_usuario_35_recall_at_5_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:24,680 [INFO]   💾 kg_usuario_35_f1_at_5_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:24,682 [INFO]   💾 kg_usuario_35_ndcg_at_5_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:24,684 [INFO]   💾 kg_usuario_35_mrr_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:24,687 [INFO]   💾 kg_usuario_35_hit_rate_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:24,689 [INFO]   💾 kg_usuario_35_map_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:24,692 [INFO]   💾 kg_usuario_35_diversidad_tipos_shannon_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:24,695 [INFO]   💾 kg_usuario_35_novedad_threshold_2_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:24,697 [INFO]   💾 kg_usuario_35_serendipia_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:24,700 [INFO]   💾 kg_usuario_35_consistencia_tipos_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:24,703 [INFO]   💾 kg_usuario_35_peso_ponderado_perfil_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:24,705 [INFO]   💾 kg_usuario_35_jaccard_similarity_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:24,708 [INFO]   💾 kg_usuario_35_balance_tipos_gini_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:24,710 [INFO]   💾 kg_usuario_35_riqueza_explicativa_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:24,711 [INFO] ✅ Usuario 35: 18 ficheros guardados
+2026-02-22 18:33:24,711 [INFO] 
+============================================================
+2026-02-22 18:33:24,711 [INFO] Usuario 276
+2026-02-22 18:33:24,711 [INFO] ============================================================
+2026-02-22 18:33:44,965 [INFO]   Combinaciones calculadas: 600
+2026-02-22 18:33:44,968 [INFO]   💾 kg_usuario_276_num_propiedades_compartidas_20260222_183317.csv  (600 filas)
+2026-02-22 18:33:44,971 [INFO]   💾 kg_usuario_276_ratio_propiedades_compartidas_20260222_183317.csv  (600 filas)
+2026-02-22 18:33:44,974 [INFO]   💾 kg_usuario_276_cobertura_tipos_propiedades_20260222_183317.csv  (600 filas)
+2026-02-22 18:33:44,978 [INFO]   💾 kg_usuario_276_precision_at_5_20260222_183317.csv  (600 filas)
+2026-02-22 18:33:44,982 [INFO]   💾 kg_usuario_276_recall_at_5_20260222_183317.csv  (600 filas)
+2026-02-22 18:33:44,984 [INFO]   💾 kg_usuario_276_f1_at_5_20260222_183317.csv  (600 filas)
+2026-02-22 18:33:44,987 [INFO]   💾 kg_usuario_276_ndcg_at_5_20260222_183317.csv  (600 filas)
+2026-02-22 18:33:44,989 [INFO]   💾 kg_usuario_276_mrr_20260222_183317.csv  (600 filas)
+2026-02-22 18:33:44,992 [INFO]   💾 kg_usuario_276_hit_rate_20260222_183317.csv  (600 filas)
+2026-02-22 18:33:44,995 [INFO]   💾 kg_usuario_276_map_20260222_183317.csv  (600 filas)
+2026-02-22 18:33:44,997 [INFO]   💾 kg_usuario_276_diversidad_tipos_shannon_20260222_183317.csv  (600 filas)
+2026-02-22 18:33:45,000 [INFO]   💾 kg_usuario_276_novedad_threshold_2_20260222_183317.csv  (600 filas)
+2026-02-22 18:33:45,002 [INFO]   💾 kg_usuario_276_serendipia_20260222_183317.csv  (600 filas)
+2026-02-22 18:33:45,004 [INFO]   💾 kg_usuario_276_consistencia_tipos_20260222_183317.csv  (600 filas)
+2026-02-22 18:33:45,008 [INFO]   💾 kg_usuario_276_peso_ponderado_perfil_20260222_183317.csv  (600 filas)
+2026-02-22 18:33:45,013 [INFO]   💾 kg_usuario_276_jaccard_similarity_20260222_183317.csv  (600 filas)
+2026-02-22 18:33:45,016 [INFO]   💾 kg_usuario_276_balance_tipos_gini_20260222_183317.csv  (600 filas)
+2026-02-22 18:33:45,019 [INFO]   💾 kg_usuario_276_riqueza_explicativa_20260222_183317.csv  (600 filas)
+2026-02-22 18:33:45,020 [INFO] ✅ Usuario 276: 18 ficheros guardados
+2026-02-22 18:33:45,020 [INFO] 
+============================================================
+2026-02-22 18:33:45,020 [INFO] Usuario 339
+2026-02-22 18:33:45,020 [INFO] ============================================================
+2026-02-22 18:33:49,465 [INFO]   Combinaciones calculadas: 200
+2026-02-22 18:33:49,468 [INFO]   💾 kg_usuario_339_num_propiedades_compartidas_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:49,471 [INFO]   💾 kg_usuario_339_ratio_propiedades_compartidas_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:49,475 [INFO]   💾 kg_usuario_339_cobertura_tipos_propiedades_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:49,476 [INFO]   💾 kg_usuario_339_precision_at_5_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:49,478 [INFO]   💾 kg_usuario_339_recall_at_5_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:49,481 [INFO]   💾 kg_usuario_339_f1_at_5_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:49,483 [INFO]   💾 kg_usuario_339_ndcg_at_5_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:49,485 [INFO]   💾 kg_usuario_339_mrr_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:49,488 [INFO]   💾 kg_usuario_339_hit_rate_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:49,491 [INFO]   💾 kg_usuario_339_map_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:49,494 [INFO]   💾 kg_usuario_339_diversidad_tipos_shannon_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:49,497 [INFO]   💾 kg_usuario_339_novedad_threshold_2_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:49,499 [INFO]   💾 kg_usuario_339_serendipia_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:49,501 [INFO]   💾 kg_usuario_339_consistencia_tipos_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:49,503 [INFO]   💾 kg_usuario_339_peso_ponderado_perfil_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:49,506 [INFO]   💾 kg_usuario_339_jaccard_similarity_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:49,508 [INFO]   💾 kg_usuario_339_balance_tipos_gini_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:49,511 [INFO]   💾 kg_usuario_339_riqueza_explicativa_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:49,511 [INFO] ✅ Usuario 339: 18 ficheros guardados
+2026-02-22 18:33:49,511 [INFO] 
+============================================================
+2026-02-22 18:33:49,511 [INFO] Usuario 376
+2026-02-22 18:33:49,511 [INFO] ============================================================
+2026-02-22 18:33:54,660 [INFO]   Combinaciones calculadas: 200
+2026-02-22 18:33:54,663 [INFO]   💾 kg_usuario_376_num_propiedades_compartidas_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:54,665 [INFO]   💾 kg_usuario_376_ratio_propiedades_compartidas_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:54,667 [INFO]   💾 kg_usuario_376_cobertura_tipos_propiedades_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:54,670 [INFO]   💾 kg_usuario_376_precision_at_5_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:54,672 [INFO]   💾 kg_usuario_376_recall_at_5_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:54,674 [INFO]   💾 kg_usuario_376_f1_at_5_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:54,676 [INFO]   💾 kg_usuario_376_ndcg_at_5_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:54,678 [INFO]   💾 kg_usuario_376_mrr_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:54,680 [INFO]   💾 kg_usuario_376_hit_rate_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:54,682 [INFO]   💾 kg_usuario_376_map_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:54,685 [INFO]   💾 kg_usuario_376_diversidad_tipos_shannon_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:54,688 [INFO]   💾 kg_usuario_376_novedad_threshold_2_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:54,691 [INFO]   💾 kg_usuario_376_serendipia_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:54,694 [INFO]   💾 kg_usuario_376_consistencia_tipos_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:54,696 [INFO]   💾 kg_usuario_376_peso_ponderado_perfil_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:54,698 [INFO]   💾 kg_usuario_376_jaccard_similarity_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:54,701 [INFO]   💾 kg_usuario_376_balance_tipos_gini_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:54,705 [INFO]   💾 kg_usuario_376_riqueza_explicativa_20260222_183317.csv  (200 filas)
+2026-02-22 18:33:54,705 [INFO] ✅ Usuario 376: 18 ficheros guardados
+2026-02-22 18:33:54,705 [INFO] 
+======================================================================
+2026-02-22 18:33:54,705 [INFO] 🎉 COMPLETADO
+2026-02-22 18:33:54,705 [INFO]    Usuarios:         5
+2026-02-22 18:33:54,706 [INFO]    Métricas:         18
+2026-02-22 18:33:54,706 [INFO]    Ficheros totales: 90
+2026-02-22 18:33:54,706 [INFO]    Resultados en:    C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\output\metricas_grafo_conocimiento_muestra
+2026-02-22 18:33:54,706 [INFO] ======================================================================
+2026-02-22 18:39:29,125 [INFO] ======================================================================
+2026-02-22 18:39:29,126 [INFO] CÁLCULO MÉTRICAS CONOCIMIENTO — MODE=muestra
+2026-02-22 18:39:29,126 [INFO] Timestamp: 20260222_183929
+2026-02-22 18:39:29,126 [INFO] ======================================================================
+2026-02-22 18:39:29,126 [INFO] 📂 Explicaciones his+rec: C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\explicaciones_historico_y_recomendacion_muestra
+2026-02-22 18:39:29,126 [INFO] 📂 Explicaciones hist:    C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\explicaciones_historico_muestra
+2026-02-22 18:39:29,127 [INFO] 💾 Salida:                C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\output\metricas_grafo_conocimiento_muestra
+2026-02-22 18:39:29,274 [INFO] 
+👥 Usuarios con explicaciones: 5 → [3, 35, 276, 339, 376]
+
+2026-02-22 18:39:29,275 [INFO] 📐 Métricas registradas (18): ['num_propiedades_compartidas', 'ratio_propiedades_compartidas', 'cobertura_tipos_propiedades', 'precision_at_5', 'recall_at_5', 'f1_at_5', 'ndcg_at_5', 'mrr', 'hit_rate', 'map', 'diversidad_tipos_shannon', 'novedad_threshold_2', 'serendipia', 'consistencia_tipos', 'peso_ponderado_perfil', 'jaccard_similarity', 'balance_tipos_gini', 'riqueza_explicativa']
+
+2026-02-22 18:39:29,275 [INFO] 
+============================================================
+2026-02-22 18:39:29,275 [INFO] Usuario 3
+2026-02-22 18:39:29,276 [INFO] ============================================================
+2026-02-22 18:39:32,615 [INFO]   Combinaciones calculadas: 200
+2026-02-22 18:39:32,668 [INFO]   💾 kg_usuario_3_num_propiedades_compartidas_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:32,691 [INFO]   💾 kg_usuario_3_ratio_propiedades_compartidas_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:32,695 [INFO]   💾 kg_usuario_3_cobertura_tipos_propiedades_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:32,698 [INFO]   💾 kg_usuario_3_precision_at_5_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:32,703 [INFO]   💾 kg_usuario_3_recall_at_5_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:32,705 [INFO]   💾 kg_usuario_3_f1_at_5_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:32,706 [INFO]   💾 kg_usuario_3_ndcg_at_5_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:32,709 [INFO]   💾 kg_usuario_3_mrr_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:32,711 [INFO]   💾 kg_usuario_3_hit_rate_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:32,713 [INFO]   💾 kg_usuario_3_map_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:32,717 [INFO]   💾 kg_usuario_3_diversidad_tipos_shannon_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:32,719 [INFO]   💾 kg_usuario_3_novedad_threshold_2_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:32,723 [INFO]   💾 kg_usuario_3_serendipia_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:32,724 [INFO]   💾 kg_usuario_3_consistencia_tipos_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:32,726 [INFO]   💾 kg_usuario_3_peso_ponderado_perfil_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:32,728 [INFO]   💾 kg_usuario_3_jaccard_similarity_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:32,731 [INFO]   💾 kg_usuario_3_balance_tipos_gini_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:32,733 [INFO]   💾 kg_usuario_3_riqueza_explicativa_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:32,733 [INFO] ✅ Usuario 3: 18 ficheros guardados
+2026-02-22 18:39:32,733 [INFO] 
+============================================================
+2026-02-22 18:39:32,733 [INFO] Usuario 35
+2026-02-22 18:39:32,734 [INFO] ============================================================
+2026-02-22 18:39:36,367 [INFO]   Combinaciones calculadas: 200
+2026-02-22 18:39:36,373 [INFO]   💾 kg_usuario_35_num_propiedades_compartidas_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:36,376 [INFO]   💾 kg_usuario_35_ratio_propiedades_compartidas_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:36,377 [INFO]   💾 kg_usuario_35_cobertura_tipos_propiedades_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:36,383 [INFO]   💾 kg_usuario_35_precision_at_5_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:36,386 [INFO]   💾 kg_usuario_35_recall_at_5_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:36,390 [INFO]   💾 kg_usuario_35_f1_at_5_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:36,392 [INFO]   💾 kg_usuario_35_ndcg_at_5_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:36,401 [INFO]   💾 kg_usuario_35_mrr_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:36,403 [INFO]   💾 kg_usuario_35_hit_rate_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:36,414 [INFO]   💾 kg_usuario_35_map_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:36,416 [INFO]   💾 kg_usuario_35_diversidad_tipos_shannon_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:36,421 [INFO]   💾 kg_usuario_35_novedad_threshold_2_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:36,431 [INFO]   💾 kg_usuario_35_serendipia_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:36,445 [INFO]   💾 kg_usuario_35_consistencia_tipos_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:36,447 [INFO]   💾 kg_usuario_35_peso_ponderado_perfil_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:36,480 [INFO]   💾 kg_usuario_35_jaccard_similarity_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:36,494 [INFO]   💾 kg_usuario_35_balance_tipos_gini_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:36,531 [INFO]   💾 kg_usuario_35_riqueza_explicativa_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:36,532 [INFO] ✅ Usuario 35: 18 ficheros guardados
+2026-02-22 18:39:36,532 [INFO] 
+============================================================
+2026-02-22 18:39:36,533 [INFO] Usuario 276
+2026-02-22 18:39:36,533 [INFO] ============================================================
+2026-02-22 18:39:53,741 [INFO]   Combinaciones calculadas: 600
+2026-02-22 18:39:53,744 [INFO]   💾 kg_usuario_276_num_propiedades_compartidas_20260222_183929.csv  (600 filas)
+2026-02-22 18:39:53,748 [INFO]   💾 kg_usuario_276_ratio_propiedades_compartidas_20260222_183929.csv  (600 filas)
+2026-02-22 18:39:53,750 [INFO]   💾 kg_usuario_276_cobertura_tipos_propiedades_20260222_183929.csv  (600 filas)
+2026-02-22 18:39:53,753 [INFO]   💾 kg_usuario_276_precision_at_5_20260222_183929.csv  (600 filas)
+2026-02-22 18:39:53,756 [INFO]   💾 kg_usuario_276_recall_at_5_20260222_183929.csv  (600 filas)
+2026-02-22 18:39:53,759 [INFO]   💾 kg_usuario_276_f1_at_5_20260222_183929.csv  (600 filas)
+2026-02-22 18:39:53,762 [INFO]   💾 kg_usuario_276_ndcg_at_5_20260222_183929.csv  (600 filas)
+2026-02-22 18:39:53,770 [INFO]   💾 kg_usuario_276_mrr_20260222_183929.csv  (600 filas)
+2026-02-22 18:39:53,772 [INFO]   💾 kg_usuario_276_hit_rate_20260222_183929.csv  (600 filas)
+2026-02-22 18:39:53,793 [INFO]   💾 kg_usuario_276_map_20260222_183929.csv  (600 filas)
+2026-02-22 18:39:53,798 [INFO]   💾 kg_usuario_276_diversidad_tipos_shannon_20260222_183929.csv  (600 filas)
+2026-02-22 18:39:53,800 [INFO]   💾 kg_usuario_276_novedad_threshold_2_20260222_183929.csv  (600 filas)
+2026-02-22 18:39:53,802 [INFO]   💾 kg_usuario_276_serendipia_20260222_183929.csv  (600 filas)
+2026-02-22 18:39:53,805 [INFO]   💾 kg_usuario_276_consistencia_tipos_20260222_183929.csv  (600 filas)
+2026-02-22 18:39:53,807 [INFO]   💾 kg_usuario_276_peso_ponderado_perfil_20260222_183929.csv  (600 filas)
+2026-02-22 18:39:53,810 [INFO]   💾 kg_usuario_276_jaccard_similarity_20260222_183929.csv  (600 filas)
+2026-02-22 18:39:53,812 [INFO]   💾 kg_usuario_276_balance_tipos_gini_20260222_183929.csv  (600 filas)
+2026-02-22 18:39:53,815 [INFO]   💾 kg_usuario_276_riqueza_explicativa_20260222_183929.csv  (600 filas)
+2026-02-22 18:39:53,815 [INFO] ✅ Usuario 276: 18 ficheros guardados
+2026-02-22 18:39:53,815 [INFO] 
+============================================================
+2026-02-22 18:39:53,815 [INFO] Usuario 339
+2026-02-22 18:39:53,816 [INFO] ============================================================
+2026-02-22 18:39:57,564 [INFO]   Combinaciones calculadas: 200
+2026-02-22 18:39:57,566 [INFO]   💾 kg_usuario_339_num_propiedades_compartidas_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:57,568 [INFO]   💾 kg_usuario_339_ratio_propiedades_compartidas_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:57,570 [INFO]   💾 kg_usuario_339_cobertura_tipos_propiedades_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:57,572 [INFO]   💾 kg_usuario_339_precision_at_5_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:57,574 [INFO]   💾 kg_usuario_339_recall_at_5_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:57,576 [INFO]   💾 kg_usuario_339_f1_at_5_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:57,578 [INFO]   💾 kg_usuario_339_ndcg_at_5_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:57,580 [INFO]   💾 kg_usuario_339_mrr_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:57,581 [INFO]   💾 kg_usuario_339_hit_rate_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:57,583 [INFO]   💾 kg_usuario_339_map_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:57,585 [INFO]   💾 kg_usuario_339_diversidad_tipos_shannon_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:57,587 [INFO]   💾 kg_usuario_339_novedad_threshold_2_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:57,589 [INFO]   💾 kg_usuario_339_serendipia_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:57,591 [INFO]   💾 kg_usuario_339_consistencia_tipos_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:57,594 [INFO]   💾 kg_usuario_339_peso_ponderado_perfil_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:57,596 [INFO]   💾 kg_usuario_339_jaccard_similarity_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:57,598 [INFO]   💾 kg_usuario_339_balance_tipos_gini_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:57,600 [INFO]   💾 kg_usuario_339_riqueza_explicativa_20260222_183929.csv  (200 filas)
+2026-02-22 18:39:57,600 [INFO] ✅ Usuario 339: 18 ficheros guardados
+2026-02-22 18:39:57,600 [INFO] 
+============================================================
+2026-02-22 18:39:57,600 [INFO] Usuario 376
+2026-02-22 18:39:57,600 [INFO] ============================================================
+2026-02-22 18:40:01,958 [INFO]   Combinaciones calculadas: 200
+2026-02-22 18:40:01,960 [INFO]   💾 kg_usuario_376_num_propiedades_compartidas_20260222_183929.csv  (200 filas)
+2026-02-22 18:40:01,962 [INFO]   💾 kg_usuario_376_ratio_propiedades_compartidas_20260222_183929.csv  (200 filas)
+2026-02-22 18:40:01,963 [INFO]   💾 kg_usuario_376_cobertura_tipos_propiedades_20260222_183929.csv  (200 filas)
+2026-02-22 18:40:01,965 [INFO]   💾 kg_usuario_376_precision_at_5_20260222_183929.csv  (200 filas)
+2026-02-22 18:40:01,968 [INFO]   💾 kg_usuario_376_recall_at_5_20260222_183929.csv  (200 filas)
+2026-02-22 18:40:01,970 [INFO]   💾 kg_usuario_376_f1_at_5_20260222_183929.csv  (200 filas)
+2026-02-22 18:40:01,971 [INFO]   💾 kg_usuario_376_ndcg_at_5_20260222_183929.csv  (200 filas)
+2026-02-22 18:40:01,973 [INFO]   💾 kg_usuario_376_mrr_20260222_183929.csv  (200 filas)
+2026-02-22 18:40:01,975 [INFO]   💾 kg_usuario_376_hit_rate_20260222_183929.csv  (200 filas)
+2026-02-22 18:40:01,977 [INFO]   💾 kg_usuario_376_map_20260222_183929.csv  (200 filas)
+2026-02-22 18:40:01,980 [INFO]   💾 kg_usuario_376_diversidad_tipos_shannon_20260222_183929.csv  (200 filas)
+2026-02-22 18:40:01,982 [INFO]   💾 kg_usuario_376_novedad_threshold_2_20260222_183929.csv  (200 filas)
+2026-02-22 18:40:01,984 [INFO]   💾 kg_usuario_376_serendipia_20260222_183929.csv  (200 filas)
+2026-02-22 18:40:01,986 [INFO]   💾 kg_usuario_376_consistencia_tipos_20260222_183929.csv  (200 filas)
+2026-02-22 18:40:01,988 [INFO]   💾 kg_usuario_376_peso_ponderado_perfil_20260222_183929.csv  (200 filas)
+2026-02-22 18:40:01,990 [INFO]   💾 kg_usuario_376_jaccard_similarity_20260222_183929.csv  (200 filas)
+2026-02-22 18:40:01,992 [INFO]   💾 kg_usuario_376_balance_tipos_gini_20260222_183929.csv  (200 filas)
+2026-02-22 18:40:01,994 [INFO]   💾 kg_usuario_376_riqueza_explicativa_20260222_183929.csv  (200 filas)
+2026-02-22 18:40:01,994 [INFO] ✅ Usuario 376: 18 ficheros guardados
+2026-02-22 18:40:01,994 [INFO] 
+======================================================================
+2026-02-22 18:40:01,994 [INFO] 🎉 COMPLETADO
+2026-02-22 18:40:01,994 [INFO]    Usuarios:         5
+2026-02-22 18:40:01,994 [INFO]    Métricas:         18
+2026-02-22 18:40:01,994 [INFO]    Ficheros totales: 90
+2026-02-22 18:40:01,995 [INFO]    Resultados en:    C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\output\metricas_grafo_conocimiento_muestra
+2026-02-22 18:40:01,995 [INFO] ======================================================================
+2026-02-24 18:18:39,506 [INFO] ======================================================================
+2026-02-24 18:18:39,508 [INFO] CÁLCULO MÉTRICAS CONOCIMIENTO — MODE=muestra
+2026-02-24 18:18:39,508 [INFO] Timestamp: 20260224_181839
+2026-02-24 18:18:39,509 [INFO] ======================================================================
+2026-02-24 18:18:39,509 [INFO] 📂 Explicaciones his+rec: C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\explicaciones_historico_y_recomendacion_muestra
+2026-02-24 18:18:39,510 [INFO] 💾 Salida: C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\output\metricas_grafo_conocimiento_muestra
+2026-02-24 18:18:39,839 [INFO] 
+👥 Usuarios a procesar: 5 → [3, 35, 276, 339, 376]
+
+2026-02-24 18:18:39,840 [INFO] 📐 Métricas registradas (18): ['num_propiedades_compartidas', 'ratio_propiedades_compartidas', 'cobertura_tipos_propiedades', 'precision_at_5', 'recall_at_5', 'f1_at_5', 'ndcg_at_5', 'mrr', 'hit_rate', 'map', 'diversidad_tipos_shannon', 'novedad_threshold_2', 'serendipia', 'consistencia_tipos', 'peso_ponderado_perfil', 'jaccard_similarity', 'balance_tipos_gini', 'riqueza_explicativa']
+
+2026-02-24 18:18:39,840 [INFO] 
+============================================================
+2026-02-24 18:18:39,840 [INFO] Usuario 3
+2026-02-24 18:18:39,841 [INFO] ============================================================
+2026-02-24 18:18:45,152 [INFO]   Combinaciones calculadas: 200
+2026-02-24 18:18:45,166 [INFO]   💾 kg_usuario_3_num_propiedades_compartidas_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:45,171 [INFO]   💾 kg_usuario_3_ratio_propiedades_compartidas_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:45,176 [INFO]   💾 kg_usuario_3_cobertura_tipos_propiedades_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:45,180 [INFO]   💾 kg_usuario_3_precision_at_5_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:45,185 [INFO]   💾 kg_usuario_3_recall_at_5_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:45,190 [INFO]   💾 kg_usuario_3_f1_at_5_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:45,196 [INFO]   💾 kg_usuario_3_ndcg_at_5_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:45,201 [INFO]   💾 kg_usuario_3_mrr_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:45,206 [INFO]   💾 kg_usuario_3_hit_rate_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:45,211 [INFO]   💾 kg_usuario_3_map_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:45,215 [INFO]   💾 kg_usuario_3_diversidad_tipos_shannon_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:45,220 [INFO]   💾 kg_usuario_3_novedad_threshold_2_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:45,225 [INFO]   💾 kg_usuario_3_serendipia_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:45,230 [INFO]   💾 kg_usuario_3_consistencia_tipos_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:45,235 [INFO]   💾 kg_usuario_3_peso_ponderado_perfil_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:45,240 [INFO]   💾 kg_usuario_3_jaccard_similarity_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:45,244 [INFO]   💾 kg_usuario_3_balance_tipos_gini_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:45,249 [INFO]   💾 kg_usuario_3_riqueza_explicativa_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:45,250 [INFO] ✅ Usuario 3: 18 ficheros guardados
+2026-02-24 18:18:45,251 [INFO] 
+============================================================
+2026-02-24 18:18:45,251 [INFO] Usuario 35
+2026-02-24 18:18:45,252 [INFO] ============================================================
+2026-02-24 18:18:51,654 [INFO]   Combinaciones calculadas: 200
+2026-02-24 18:18:51,663 [INFO]   💾 kg_usuario_35_num_propiedades_compartidas_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:51,666 [INFO]   💾 kg_usuario_35_ratio_propiedades_compartidas_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:51,670 [INFO]   💾 kg_usuario_35_cobertura_tipos_propiedades_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:51,672 [INFO]   💾 kg_usuario_35_precision_at_5_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:51,675 [INFO]   💾 kg_usuario_35_recall_at_5_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:51,679 [INFO]   💾 kg_usuario_35_f1_at_5_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:51,682 [INFO]   💾 kg_usuario_35_ndcg_at_5_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:51,686 [INFO]   💾 kg_usuario_35_mrr_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:51,689 [INFO]   💾 kg_usuario_35_hit_rate_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:51,691 [INFO]   💾 kg_usuario_35_map_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:51,694 [INFO]   💾 kg_usuario_35_diversidad_tipos_shannon_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:51,697 [INFO]   💾 kg_usuario_35_novedad_threshold_2_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:51,700 [INFO]   💾 kg_usuario_35_serendipia_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:51,704 [INFO]   💾 kg_usuario_35_consistencia_tipos_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:51,707 [INFO]   💾 kg_usuario_35_peso_ponderado_perfil_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:51,711 [INFO]   💾 kg_usuario_35_jaccard_similarity_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:51,715 [INFO]   💾 kg_usuario_35_balance_tipos_gini_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:51,719 [INFO]   💾 kg_usuario_35_riqueza_explicativa_20260224_181839.csv  (200 filas)
+2026-02-24 18:18:51,719 [INFO] ✅ Usuario 35: 18 ficheros guardados
+2026-02-24 18:18:51,720 [INFO] 
+============================================================
+2026-02-24 18:18:51,720 [INFO] Usuario 276
+2026-02-24 18:18:51,720 [INFO] ============================================================
+2026-02-24 18:19:15,609 [INFO]   Combinaciones calculadas: 600
+2026-02-24 18:19:15,614 [INFO]   💾 kg_usuario_276_num_propiedades_compartidas_20260224_181839.csv  (600 filas)
+2026-02-24 18:19:15,619 [INFO]   💾 kg_usuario_276_ratio_propiedades_compartidas_20260224_181839.csv  (600 filas)
+2026-02-24 18:19:15,624 [INFO]   💾 kg_usuario_276_cobertura_tipos_propiedades_20260224_181839.csv  (600 filas)
+2026-02-24 18:19:15,629 [INFO]   💾 kg_usuario_276_precision_at_5_20260224_181839.csv  (600 filas)
+2026-02-24 18:19:15,636 [INFO]   💾 kg_usuario_276_recall_at_5_20260224_181839.csv  (600 filas)
+2026-02-24 18:19:15,643 [INFO]   💾 kg_usuario_276_f1_at_5_20260224_181839.csv  (600 filas)
+2026-02-24 18:19:15,649 [INFO]   💾 kg_usuario_276_ndcg_at_5_20260224_181839.csv  (600 filas)
+2026-02-24 18:19:15,657 [INFO]   💾 kg_usuario_276_mrr_20260224_181839.csv  (600 filas)
+2026-02-24 18:19:15,662 [INFO]   💾 kg_usuario_276_hit_rate_20260224_181839.csv  (600 filas)
+2026-02-24 18:19:15,668 [INFO]   💾 kg_usuario_276_map_20260224_181839.csv  (600 filas)
+2026-02-24 18:19:15,674 [INFO]   💾 kg_usuario_276_diversidad_tipos_shannon_20260224_181839.csv  (600 filas)
+2026-02-24 18:19:15,679 [INFO]   💾 kg_usuario_276_novedad_threshold_2_20260224_181839.csv  (600 filas)
+2026-02-24 18:19:15,685 [INFO]   💾 kg_usuario_276_serendipia_20260224_181839.csv  (600 filas)
+2026-02-24 18:19:15,691 [INFO]   💾 kg_usuario_276_consistencia_tipos_20260224_181839.csv  (600 filas)
+2026-02-24 18:19:15,698 [INFO]   💾 kg_usuario_276_peso_ponderado_perfil_20260224_181839.csv  (600 filas)
+2026-02-24 18:19:15,705 [INFO]   💾 kg_usuario_276_jaccard_similarity_20260224_181839.csv  (600 filas)
+2026-02-24 18:19:15,710 [INFO]   💾 kg_usuario_276_balance_tipos_gini_20260224_181839.csv  (600 filas)
+2026-02-24 18:19:15,717 [INFO]   💾 kg_usuario_276_riqueza_explicativa_20260224_181839.csv  (600 filas)
+2026-02-24 18:19:15,717 [INFO] ✅ Usuario 276: 18 ficheros guardados
+2026-02-24 18:19:15,718 [INFO] 
+============================================================
+2026-02-24 18:19:15,719 [INFO] Usuario 339
+2026-02-24 18:19:15,719 [INFO] ============================================================
+2026-02-24 18:19:21,387 [INFO]   Combinaciones calculadas: 200
+2026-02-24 18:19:21,390 [INFO]   💾 kg_usuario_339_num_propiedades_compartidas_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:21,393 [INFO]   💾 kg_usuario_339_ratio_propiedades_compartidas_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:21,402 [INFO]   💾 kg_usuario_339_cobertura_tipos_propiedades_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:21,406 [INFO]   💾 kg_usuario_339_precision_at_5_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:21,410 [INFO]   💾 kg_usuario_339_recall_at_5_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:21,415 [INFO]   💾 kg_usuario_339_f1_at_5_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:21,420 [INFO]   💾 kg_usuario_339_ndcg_at_5_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:21,424 [INFO]   💾 kg_usuario_339_mrr_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:21,428 [INFO]   💾 kg_usuario_339_hit_rate_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:21,432 [INFO]   💾 kg_usuario_339_map_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:21,437 [INFO]   💾 kg_usuario_339_diversidad_tipos_shannon_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:21,442 [INFO]   💾 kg_usuario_339_novedad_threshold_2_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:21,445 [INFO]   💾 kg_usuario_339_serendipia_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:21,449 [INFO]   💾 kg_usuario_339_consistencia_tipos_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:21,454 [INFO]   💾 kg_usuario_339_peso_ponderado_perfil_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:21,459 [INFO]   💾 kg_usuario_339_jaccard_similarity_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:21,463 [INFO]   💾 kg_usuario_339_balance_tipos_gini_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:21,467 [INFO]   💾 kg_usuario_339_riqueza_explicativa_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:21,468 [INFO] ✅ Usuario 339: 18 ficheros guardados
+2026-02-24 18:19:21,469 [INFO] 
+============================================================
+2026-02-24 18:19:21,469 [INFO] Usuario 376
+2026-02-24 18:19:21,470 [INFO] ============================================================
+2026-02-24 18:19:27,612 [INFO]   Combinaciones calculadas: 200
+2026-02-24 18:19:27,615 [INFO]   💾 kg_usuario_376_num_propiedades_compartidas_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:27,624 [INFO]   💾 kg_usuario_376_ratio_propiedades_compartidas_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:27,628 [INFO]   💾 kg_usuario_376_cobertura_tipos_propiedades_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:27,632 [INFO]   💾 kg_usuario_376_precision_at_5_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:27,636 [INFO]   💾 kg_usuario_376_recall_at_5_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:27,642 [INFO]   💾 kg_usuario_376_f1_at_5_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:27,648 [INFO]   💾 kg_usuario_376_ndcg_at_5_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:27,653 [INFO]   💾 kg_usuario_376_mrr_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:27,657 [INFO]   💾 kg_usuario_376_hit_rate_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:27,662 [INFO]   💾 kg_usuario_376_map_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:27,666 [INFO]   💾 kg_usuario_376_diversidad_tipos_shannon_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:27,671 [INFO]   💾 kg_usuario_376_novedad_threshold_2_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:27,675 [INFO]   💾 kg_usuario_376_serendipia_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:27,680 [INFO]   💾 kg_usuario_376_consistencia_tipos_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:27,684 [INFO]   💾 kg_usuario_376_peso_ponderado_perfil_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:27,689 [INFO]   💾 kg_usuario_376_jaccard_similarity_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:27,694 [INFO]   💾 kg_usuario_376_balance_tipos_gini_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:27,699 [INFO]   💾 kg_usuario_376_riqueza_explicativa_20260224_181839.csv  (200 filas)
+2026-02-24 18:19:27,699 [INFO] ✅ Usuario 376: 18 ficheros guardados
+2026-02-24 18:19:27,700 [INFO] 
+======================================================================
+2026-02-24 18:19:27,700 [INFO] 🎉 COMPLETADO
+2026-02-24 18:19:27,701 [INFO]    Usuarios procesados:  5/5
+2026-02-24 18:19:27,701 [INFO]    Métricas:             18
+2026-02-24 18:19:27,701 [INFO]    Ficheros generados:   90
+2026-02-24 18:19:27,702 [INFO]    Resultados en:        C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\output\metricas_grafo_conocimiento_muestra
+2026-02-24 18:19:27,702 [INFO] ======================================================================

@@ -1,0 +1,292 @@
+2026-02-22 18:25:50,744 [INFO] ======================================================================
+2026-02-22 18:25:50,744 [INFO] GENERACIÓN DE EXPLICACIONES — MODE=muestra
+2026-02-22 18:25:50,744 [INFO] ======================================================================
+2026-02-22 18:25:50,745 [INFO] 📂 Entrada (subgrafos): C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_conocimiento_muestra
+2026-02-22 18:25:50,745 [INFO] 💾 Salida históricos:   C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\explicaciones_historico_muestra
+2026-02-22 18:25:50,745 [INFO] 💾 Salida his+rec:      C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\explicaciones_historico_y_recomendacion_muestra
+2026-02-22 18:25:50,747 [INFO] 
+📊 JSONs encontrados: 250
+2026-02-22 18:25:50,749 [INFO]   ✓ user_276_hotel_1093.json → usuario 276
+2026-02-22 18:25:50,751 [INFO]   ✓ user_276_hotel_1144.json → usuario 276
+2026-02-22 18:25:50,753 [INFO]   ✓ user_276_hotel_1164.json → usuario 276
+2026-02-22 18:25:50,755 [INFO]   ✓ user_276_hotel_1195.json → usuario 276
+2026-02-22 18:25:50,757 [INFO]   ✓ user_276_hotel_1298.json → usuario 276
+2026-02-22 18:25:50,759 [INFO]   ✓ user_276_hotel_150.json → usuario 276
+2026-02-22 18:25:50,761 [INFO]   ✓ user_276_hotel_1542.json → usuario 276
+2026-02-22 18:25:50,763 [INFO]   ✓ user_276_hotel_1840.json → usuario 276
+2026-02-22 18:25:50,765 [INFO]   ✓ user_276_hotel_2085.json → usuario 276
+2026-02-22 18:25:50,767 [INFO]   ✓ user_276_hotel_2109.json → usuario 276
+2026-02-22 18:25:50,769 [INFO]   ✓ user_276_hotel_2417.json → usuario 276
+2026-02-22 18:25:50,771 [INFO]   ✓ user_276_hotel_25.json → usuario 276
+2026-02-22 18:25:50,772 [INFO]   ✓ user_276_hotel_2557.json → usuario 276
+2026-02-22 18:25:50,774 [INFO]   ✓ user_276_hotel_2781.json → usuario 276
+2026-02-22 18:25:50,776 [INFO]   ✓ user_276_hotel_3136.json → usuario 276
+2026-02-22 18:25:50,778 [INFO]   ✓ user_276_hotel_3165.json → usuario 276
+2026-02-22 18:25:50,780 [INFO]   ✓ user_276_hotel_345.json → usuario 276
+2026-02-22 18:25:50,782 [INFO]   ✓ user_276_hotel_3620.json → usuario 276
+2026-02-22 18:25:50,784 [INFO]   ✓ user_276_hotel_3705.json → usuario 276
+2026-02-22 18:25:50,786 [INFO]   ✓ user_276_hotel_3732.json → usuario 276
+2026-02-22 18:25:50,787 [INFO]   ✓ user_276_hotel_4031.json → usuario 276
+2026-02-22 18:25:50,789 [INFO]   ✓ user_276_hotel_41.json → usuario 276
+2026-02-22 18:25:50,791 [INFO]   ✓ user_276_hotel_4143.json → usuario 276
+2026-02-22 18:25:50,793 [INFO]   ✓ user_276_hotel_4184.json → usuario 276
+2026-02-22 18:25:50,796 [INFO]   ✓ user_276_hotel_4254.json → usuario 276
+2026-02-22 18:25:50,798 [INFO]   ✓ user_276_hotel_4294.json → usuario 276
+2026-02-22 18:25:50,800 [INFO]   ✓ user_276_hotel_4314.json → usuario 276
+2026-02-22 18:25:50,801 [INFO]   ✓ user_276_hotel_4427.json → usuario 276
+2026-02-22 18:25:50,803 [INFO]   ✓ user_276_hotel_45.json → usuario 276
+2026-02-22 18:25:50,805 [INFO]   ✓ user_276_hotel_4525.json → usuario 276
+2026-02-22 18:25:50,808 [INFO]   ✓ user_276_hotel_4673.json → usuario 276
+2026-02-22 18:25:50,810 [INFO]   ✓ user_276_hotel_4749.json → usuario 276
+2026-02-22 18:25:50,812 [INFO]   ✓ user_276_hotel_4783.json → usuario 276
+2026-02-22 18:25:50,814 [INFO]   ✓ user_276_hotel_5068.json → usuario 276
+2026-02-22 18:25:50,816 [INFO]   ✓ user_276_hotel_5111.json → usuario 276
+2026-02-22 18:25:50,818 [INFO]   ✓ user_276_hotel_5176.json → usuario 276
+2026-02-22 18:25:50,820 [INFO]   ✓ user_276_hotel_5201.json → usuario 276
+2026-02-22 18:25:50,822 [INFO]   ✓ user_276_hotel_522.json → usuario 276
+2026-02-22 18:25:50,824 [INFO]   ✓ user_276_hotel_5241.json → usuario 276
+2026-02-22 18:25:50,826 [INFO]   ✓ user_276_hotel_5341.json → usuario 276
+2026-02-22 18:25:50,828 [INFO]   ✓ user_276_hotel_5571.json → usuario 276
+2026-02-22 18:25:50,830 [INFO]   ✓ user_276_hotel_5605.json → usuario 276
+2026-02-22 18:25:50,833 [INFO]   ✓ user_276_hotel_566.json → usuario 276
+2026-02-22 18:25:50,835 [INFO]   ✓ user_276_hotel_5746.json → usuario 276
+2026-02-22 18:25:50,837 [INFO]   ✓ user_276_hotel_581.json → usuario 276
+2026-02-22 18:25:50,839 [INFO]   ✓ user_276_hotel_686.json → usuario 276
+2026-02-22 18:25:50,841 [INFO]   ✓ user_276_hotel_725.json → usuario 276
+2026-02-22 18:25:50,843 [INFO]   ✓ user_276_hotel_774.json → usuario 276
+2026-02-22 18:25:50,845 [INFO]   ✓ user_276_hotel_9.json → usuario 276
+2026-02-22 18:25:50,847 [INFO]   ✓ user_276_hotel_904.json → usuario 276
+2026-02-22 18:25:50,848 [INFO]   ✓ user_339_hotel_1144.json → usuario 339
+2026-02-22 18:25:50,849 [INFO]   ✓ user_339_hotel_1195.json → usuario 339
+2026-02-22 18:25:50,850 [INFO]   ✓ user_339_hotel_1298.json → usuario 339
+2026-02-22 18:25:50,851 [INFO]   ✓ user_339_hotel_1356.json → usuario 339
+2026-02-22 18:25:50,852 [INFO]   ✓ user_339_hotel_1396.json → usuario 339
+2026-02-22 18:25:50,853 [INFO]   ✓ user_339_hotel_1442.json → usuario 339
+2026-02-22 18:25:50,854 [INFO]   ✓ user_339_hotel_150.json → usuario 339
+2026-02-22 18:25:50,854 [INFO]   ✓ user_339_hotel_1798.json → usuario 339
+2026-02-22 18:25:50,855 [INFO]   ✓ user_339_hotel_180.json → usuario 339
+2026-02-22 18:25:50,856 [INFO]   ✓ user_339_hotel_1840.json → usuario 339
+2026-02-22 18:25:50,857 [INFO]   ✓ user_339_hotel_2085.json → usuario 339
+2026-02-22 18:25:50,858 [INFO]   ✓ user_339_hotel_2191.json → usuario 339
+2026-02-22 18:25:50,859 [INFO]   ✓ user_339_hotel_2344.json → usuario 339
+2026-02-22 18:25:50,860 [INFO]   ✓ user_339_hotel_2417.json → usuario 339
+2026-02-22 18:25:50,861 [INFO]   ✓ user_339_hotel_25.json → usuario 339
+2026-02-22 18:25:50,862 [INFO]   ✓ user_339_hotel_2557.json → usuario 339
+2026-02-22 18:25:50,863 [INFO]   ✓ user_339_hotel_2612.json → usuario 339
+2026-02-22 18:25:50,864 [INFO]   ✓ user_339_hotel_2781.json → usuario 339
+2026-02-22 18:25:50,864 [INFO]   ✓ user_339_hotel_3117.json → usuario 339
+2026-02-22 18:25:50,865 [INFO]   ✓ user_339_hotel_3143.json → usuario 339
+2026-02-22 18:25:50,866 [INFO]   ✓ user_339_hotel_3165.json → usuario 339
+2026-02-22 18:25:50,867 [INFO]   ✓ user_339_hotel_3705.json → usuario 339
+2026-02-22 18:25:50,868 [INFO]   ✓ user_339_hotel_3732.json → usuario 339
+2026-02-22 18:25:50,868 [INFO]   ✓ user_339_hotel_4088.json → usuario 339
+2026-02-22 18:25:50,869 [INFO]   ✓ user_339_hotel_4194.json → usuario 339
+2026-02-22 18:25:50,870 [INFO]   ✓ user_339_hotel_4254.json → usuario 339
+2026-02-22 18:25:50,871 [INFO]   ✓ user_339_hotel_4294.json → usuario 339
+2026-02-22 18:25:50,872 [INFO]   ✓ user_339_hotel_4314.json → usuario 339
+2026-02-22 18:25:50,873 [INFO]   ✓ user_339_hotel_4427.json → usuario 339
+2026-02-22 18:25:50,873 [INFO]   ✓ user_339_hotel_45.json → usuario 339
+2026-02-22 18:25:50,874 [INFO]   ✓ user_339_hotel_4525.json → usuario 339
+2026-02-22 18:25:50,875 [INFO]   ✓ user_339_hotel_4656.json → usuario 339
+2026-02-22 18:25:50,876 [INFO]   ✓ user_339_hotel_4673.json → usuario 339
+2026-02-22 18:25:50,877 [INFO]   ✓ user_339_hotel_4749.json → usuario 339
+2026-02-22 18:25:50,878 [INFO]   ✓ user_339_hotel_478.json → usuario 339
+2026-02-22 18:25:50,879 [INFO]   ✓ user_339_hotel_4783.json → usuario 339
+2026-02-22 18:25:50,879 [INFO]   ✓ user_339_hotel_5035.json → usuario 339
+2026-02-22 18:25:50,880 [INFO]   ✓ user_339_hotel_5111.json → usuario 339
+2026-02-22 18:25:50,881 [INFO]   ✓ user_339_hotel_5201.json → usuario 339
+2026-02-22 18:25:50,882 [INFO]   ✓ user_339_hotel_522.json → usuario 339
+2026-02-22 18:25:50,883 [INFO]   ✓ user_339_hotel_5241.json → usuario 339
+2026-02-22 18:25:50,883 [INFO]   ✓ user_339_hotel_5341.json → usuario 339
+2026-02-22 18:25:50,884 [INFO]   ✓ user_339_hotel_5571.json → usuario 339
+2026-02-22 18:25:50,885 [INFO]   ✓ user_339_hotel_558.json → usuario 339
+2026-02-22 18:25:50,886 [INFO]   ✓ user_339_hotel_566.json → usuario 339
+2026-02-22 18:25:50,887 [INFO]   ✓ user_339_hotel_581.json → usuario 339
+2026-02-22 18:25:50,887 [INFO]   ✓ user_339_hotel_686.json → usuario 339
+2026-02-22 18:25:50,888 [INFO]   ✓ user_339_hotel_725.json → usuario 339
+2026-02-22 18:25:50,889 [INFO]   ✓ user_339_hotel_9.json → usuario 339
+2026-02-22 18:25:50,890 [INFO]   ✓ user_339_hotel_904.json → usuario 339
+2026-02-22 18:25:50,891 [INFO]   ✓ user_35_hotel_104.json → usuario 35
+2026-02-22 18:25:50,892 [INFO]   ✓ user_35_hotel_1093.json → usuario 35
+2026-02-22 18:25:50,893 [INFO]   ✓ user_35_hotel_1152.json → usuario 35
+2026-02-22 18:25:50,894 [INFO]   ✓ user_35_hotel_1361.json → usuario 35
+2026-02-22 18:25:50,894 [INFO]   ✓ user_35_hotel_1404.json → usuario 35
+2026-02-22 18:25:50,895 [INFO]   ✓ user_35_hotel_1411.json → usuario 35
+2026-02-22 18:25:50,896 [INFO]   ✓ user_35_hotel_1436.json → usuario 35
+2026-02-22 18:25:50,897 [INFO]   ✓ user_35_hotel_1442.json → usuario 35
+2026-02-22 18:25:50,898 [INFO]   ✓ user_35_hotel_1489.json → usuario 35
+2026-02-22 18:25:50,898 [INFO]   ✓ user_35_hotel_1702.json → usuario 35
+2026-02-22 18:25:50,899 [INFO]   ✓ user_35_hotel_1940.json → usuario 35
+2026-02-22 18:25:50,900 [INFO]   ✓ user_35_hotel_1960.json → usuario 35
+2026-02-22 18:25:50,901 [INFO]   ✓ user_35_hotel_1963.json → usuario 35
+2026-02-22 18:25:50,902 [INFO]   ✓ user_35_hotel_24.json → usuario 35
+2026-02-22 18:25:50,903 [INFO]   ✓ user_35_hotel_2557.json → usuario 35
+2026-02-22 18:25:50,904 [INFO]   ✓ user_35_hotel_2612.json → usuario 35
+2026-02-22 18:25:50,905 [INFO]   ✓ user_35_hotel_2723.json → usuario 35
+2026-02-22 18:25:50,906 [INFO]   ✓ user_35_hotel_2933.json → usuario 35
+2026-02-22 18:25:50,907 [INFO]   ✓ user_35_hotel_3081.json → usuario 35
+2026-02-22 18:25:50,908 [INFO]   ✓ user_35_hotel_3086.json → usuario 35
+2026-02-22 18:25:50,909 [INFO]   ✓ user_35_hotel_3136.json → usuario 35
+2026-02-22 18:25:50,910 [INFO]   ✓ user_35_hotel_3398.json → usuario 35
+2026-02-22 18:25:50,911 [INFO]   ✓ user_35_hotel_3474.json → usuario 35
+2026-02-22 18:25:50,911 [INFO]   ✓ user_35_hotel_3999.json → usuario 35
+2026-02-22 18:25:50,912 [INFO]   ✓ user_35_hotel_4073.json → usuario 35
+2026-02-22 18:25:50,913 [INFO]   ✓ user_35_hotel_4088.json → usuario 35
+2026-02-22 18:25:50,914 [INFO]   ✓ user_35_hotel_4143.json → usuario 35
+2026-02-22 18:25:50,915 [INFO]   ✓ user_35_hotel_4251.json → usuario 35
+2026-02-22 18:25:50,916 [INFO]   ✓ user_35_hotel_4432.json → usuario 35
+2026-02-22 18:25:50,917 [INFO]   ✓ user_35_hotel_4463.json → usuario 35
+2026-02-22 18:25:50,917 [INFO]   ✓ user_35_hotel_4610.json → usuario 35
+2026-02-22 18:25:50,919 [INFO]   ✓ user_35_hotel_4634.json → usuario 35
+2026-02-22 18:25:50,919 [INFO]   ✓ user_35_hotel_4683.json → usuario 35
+2026-02-22 18:25:50,920 [INFO]   ✓ user_35_hotel_473.json → usuario 35
+2026-02-22 18:25:50,921 [INFO]   ✓ user_35_hotel_5083.json → usuario 35
+2026-02-22 18:25:50,922 [INFO]   ✓ user_35_hotel_5175.json → usuario 35
+2026-02-22 18:25:50,923 [INFO]   ✓ user_35_hotel_5176.json → usuario 35
+2026-02-22 18:25:50,924 [INFO]   ✓ user_35_hotel_522.json → usuario 35
+2026-02-22 18:25:50,925 [INFO]   ✓ user_35_hotel_5226.json → usuario 35
+2026-02-22 18:25:50,926 [INFO]   ✓ user_35_hotel_5292.json → usuario 35
+2026-02-22 18:25:50,927 [INFO]   ✓ user_35_hotel_5499.json → usuario 35
+2026-02-22 18:25:50,928 [INFO]   ✓ user_35_hotel_558.json → usuario 35
+2026-02-22 18:25:50,928 [INFO]   ✓ user_35_hotel_5623.json → usuario 35
+2026-02-22 18:25:50,929 [INFO]   ✓ user_35_hotel_5747.json → usuario 35
+2026-02-22 18:25:50,930 [INFO]   ✓ user_35_hotel_774.json → usuario 35
+2026-02-22 18:25:50,931 [INFO]   ✓ user_35_hotel_798.json → usuario 35
+2026-02-22 18:25:50,932 [INFO]   ✓ user_35_hotel_817.json → usuario 35
+2026-02-22 18:25:50,933 [INFO]   ✓ user_35_hotel_837.json → usuario 35
+2026-02-22 18:25:50,933 [INFO]   ✓ user_35_hotel_880.json → usuario 35
+2026-02-22 18:25:50,934 [INFO]   ✓ user_35_hotel_958.json → usuario 35
+2026-02-22 18:25:50,935 [INFO]   ✓ user_376_hotel_104.json → usuario 376
+2026-02-22 18:25:50,936 [INFO]   ✓ user_376_hotel_1178.json → usuario 376
+2026-02-22 18:25:50,938 [INFO]   ✓ user_376_hotel_1201.json → usuario 376
+2026-02-22 18:25:50,939 [INFO]   ✓ user_376_hotel_1442.json → usuario 376
+2026-02-22 18:25:50,940 [INFO]   ✓ user_376_hotel_1914.json → usuario 376
+2026-02-22 18:25:50,941 [INFO]   ✓ user_376_hotel_1924.json → usuario 376
+2026-02-22 18:25:50,942 [INFO]   ✓ user_376_hotel_1961.json → usuario 376
+2026-02-22 18:25:50,943 [INFO]   ✓ user_376_hotel_210.json → usuario 376
+2026-02-22 18:25:50,944 [INFO]   ✓ user_376_hotel_214.json → usuario 376
+2026-02-22 18:25:50,945 [INFO]   ✓ user_376_hotel_2344.json → usuario 376
+2026-02-22 18:25:50,946 [INFO]   ✓ user_376_hotel_24.json → usuario 376
+2026-02-22 18:25:50,947 [INFO]   ✓ user_376_hotel_2406.json → usuario 376
+2026-02-22 18:25:50,949 [INFO]   ✓ user_376_hotel_2424.json → usuario 376
+2026-02-22 18:25:50,950 [INFO]   ✓ user_376_hotel_2617.json → usuario 376
+2026-02-22 18:25:50,951 [INFO]   ✓ user_376_hotel_2618.json → usuario 376
+2026-02-22 18:25:50,952 [INFO]   ✓ user_376_hotel_2877.json → usuario 376
+2026-02-22 18:25:50,953 [INFO]   ✓ user_376_hotel_3101.json → usuario 376
+2026-02-22 18:25:50,954 [INFO]   ✓ user_376_hotel_3398.json → usuario 376
+2026-02-22 18:25:50,955 [INFO]   ✓ user_376_hotel_3457.json → usuario 376
+2026-02-22 18:25:50,957 [INFO]   ✓ user_376_hotel_3480.json → usuario 376
+2026-02-22 18:25:50,958 [INFO]   ✓ user_376_hotel_3651.json → usuario 376
+2026-02-22 18:25:50,959 [INFO]   ✓ user_376_hotel_3700.json → usuario 376
+2026-02-22 18:25:50,960 [INFO]   ✓ user_376_hotel_3764.json → usuario 376
+2026-02-22 18:25:50,961 [INFO]   ✓ user_376_hotel_3966.json → usuario 376
+2026-02-22 18:25:50,962 [INFO]   ✓ user_376_hotel_4073.json → usuario 376
+2026-02-22 18:25:50,963 [INFO]   ✓ user_376_hotel_4088.json → usuario 376
+2026-02-22 18:25:50,964 [INFO]   ✓ user_376_hotel_4184.json → usuario 376
+2026-02-22 18:25:50,965 [INFO]   ✓ user_376_hotel_4359.json → usuario 376
+2026-02-22 18:25:50,966 [INFO]   ✓ user_376_hotel_45.json → usuario 376
+2026-02-22 18:25:50,967 [INFO]   ✓ user_376_hotel_4566.json → usuario 376
+2026-02-22 18:25:50,968 [INFO]   ✓ user_376_hotel_4567.json → usuario 376
+2026-02-22 18:25:50,969 [INFO]   ✓ user_376_hotel_4604.json → usuario 376
+2026-02-22 18:25:50,970 [INFO]   ✓ user_376_hotel_4634.json → usuario 376
+2026-02-22 18:25:50,972 [INFO]   ✓ user_376_hotel_473.json → usuario 376
+2026-02-22 18:25:50,973 [INFO]   ✓ user_376_hotel_4845.json → usuario 376
+2026-02-22 18:25:50,974 [INFO]   ✓ user_376_hotel_4875.json → usuario 376
+2026-02-22 18:25:50,975 [INFO]   ✓ user_376_hotel_5083.json → usuario 376
+2026-02-22 18:25:50,976 [INFO]   ✓ user_376_hotel_5168.json → usuario 376
+2026-02-22 18:25:50,977 [INFO]   ✓ user_376_hotel_5169.json → usuario 376
+2026-02-22 18:25:50,978 [INFO]   ✓ user_376_hotel_5176.json → usuario 376
+2026-02-22 18:25:50,979 [INFO]   ✓ user_376_hotel_522.json → usuario 376
+2026-02-22 18:25:50,980 [INFO]   ✓ user_376_hotel_5222.json → usuario 376
+2026-02-22 18:25:50,981 [INFO]   ✓ user_376_hotel_5336.json → usuario 376
+2026-02-22 18:25:50,982 [INFO]   ✓ user_376_hotel_5656.json → usuario 376
+2026-02-22 18:25:50,983 [INFO]   ✓ user_376_hotel_652.json → usuario 376
+2026-02-22 18:25:50,984 [INFO]   ✓ user_376_hotel_774.json → usuario 376
+2026-02-22 18:25:50,985 [INFO]   ✓ user_376_hotel_798.json → usuario 376
+2026-02-22 18:25:50,986 [INFO]   ✓ user_376_hotel_880.json → usuario 376
+2026-02-22 18:25:50,987 [INFO]   ✓ user_376_hotel_904.json → usuario 376
+2026-02-22 18:25:50,988 [INFO]   ✓ user_376_hotel_934.json → usuario 376
+2026-02-22 18:25:50,989 [INFO]   ✓ user_3_hotel_104.json → usuario 3
+2026-02-22 18:25:50,990 [INFO]   ✓ user_3_hotel_1054.json → usuario 3
+2026-02-22 18:25:50,990 [INFO]   ✓ user_3_hotel_1093.json → usuario 3
+2026-02-22 18:25:50,991 [INFO]   ✓ user_3_hotel_1164.json → usuario 3
+2026-02-22 18:25:50,992 [INFO]   ✓ user_3_hotel_1442.json → usuario 3
+2026-02-22 18:25:50,993 [INFO]   ✓ user_3_hotel_1487.json → usuario 3
+2026-02-22 18:25:50,993 [INFO]   ✓ user_3_hotel_1608.json → usuario 3
+2026-02-22 18:25:50,994 [INFO]   ✓ user_3_hotel_163.json → usuario 3
+2026-02-22 18:25:50,995 [INFO]   ✓ user_3_hotel_1693.json → usuario 3
+2026-02-22 18:25:50,995 [INFO]   ✓ user_3_hotel_1729.json → usuario 3
+2026-02-22 18:25:50,996 [INFO]   ✓ user_3_hotel_2085.json → usuario 3
+2026-02-22 18:25:50,997 [INFO]   ✓ user_3_hotel_2101.json → usuario 3
+2026-02-22 18:25:50,997 [INFO]   ✓ user_3_hotel_2109.json → usuario 3
+2026-02-22 18:25:50,998 [INFO]   ✓ user_3_hotel_2290.json → usuario 3
+2026-02-22 18:25:50,999 [INFO]   ✓ user_3_hotel_2344.json → usuario 3
+2026-02-22 18:25:51,000 [INFO]   ✓ user_3_hotel_25.json → usuario 3
+2026-02-22 18:25:51,000 [INFO]   ✓ user_3_hotel_2557.json → usuario 3
+2026-02-22 18:25:51,001 [INFO]   ✓ user_3_hotel_2617.json → usuario 3
+2026-02-22 18:25:51,001 [INFO]   ✓ user_3_hotel_2963.json → usuario 3
+2026-02-22 18:25:51,002 [INFO]   ✓ user_3_hotel_2972.json → usuario 3
+2026-02-22 18:25:51,003 [INFO]   ✓ user_3_hotel_3069.json → usuario 3
+2026-02-22 18:25:51,003 [INFO]   ✓ user_3_hotel_3119.json → usuario 3
+2026-02-22 18:25:51,004 [INFO]   ✓ user_3_hotel_3136.json → usuario 3
+2026-02-22 18:25:51,005 [INFO]   ✓ user_3_hotel_3165.json → usuario 3
+2026-02-22 18:25:51,005 [INFO]   ✓ user_3_hotel_3178.json → usuario 3
+2026-02-22 18:25:51,006 [INFO]   ✓ user_3_hotel_3209.json → usuario 3
+2026-02-22 18:25:51,007 [INFO]   ✓ user_3_hotel_3237.json → usuario 3
+2026-02-22 18:25:51,007 [INFO]   ✓ user_3_hotel_3484.json → usuario 3
+2026-02-22 18:25:51,008 [INFO]   ✓ user_3_hotel_3732.json → usuario 3
+2026-02-22 18:25:51,008 [INFO]   ✓ user_3_hotel_3737.json → usuario 3
+2026-02-22 18:25:51,009 [INFO]   ✓ user_3_hotel_393.json → usuario 3
+2026-02-22 18:25:51,010 [INFO]   ✓ user_3_hotel_4088.json → usuario 3
+2026-02-22 18:25:51,010 [INFO]   ✓ user_3_hotel_4122.json → usuario 3
+2026-02-22 18:25:51,011 [INFO]   ✓ user_3_hotel_4183.json → usuario 3
+2026-02-22 18:25:51,011 [INFO]   ✓ user_3_hotel_4359.json → usuario 3
+2026-02-22 18:25:51,012 [INFO]   ✓ user_3_hotel_4464.json → usuario 3
+2026-02-22 18:25:51,013 [INFO]   ✓ user_3_hotel_45.json → usuario 3
+2026-02-22 18:25:51,013 [INFO]   ✓ user_3_hotel_473.json → usuario 3
+2026-02-22 18:25:51,014 [INFO]   ✓ user_3_hotel_4825.json → usuario 3
+2026-02-22 18:25:51,014 [INFO]   ✓ user_3_hotel_4830.json → usuario 3
+2026-02-22 18:25:51,015 [INFO]   ✓ user_3_hotel_4942.json → usuario 3
+2026-02-22 18:25:51,016 [INFO]   ✓ user_3_hotel_4990.json → usuario 3
+2026-02-22 18:25:51,016 [INFO]   ✓ user_3_hotel_5061.json → usuario 3
+2026-02-22 18:25:51,017 [INFO]   ✓ user_3_hotel_522.json → usuario 3
+2026-02-22 18:25:51,018 [INFO]   ✓ user_3_hotel_5605.json → usuario 3
+2026-02-22 18:25:51,018 [INFO]   ✓ user_3_hotel_5855.json → usuario 3
+2026-02-22 18:25:51,019 [INFO]   ✓ user_3_hotel_774.json → usuario 3
+2026-02-22 18:25:51,019 [INFO]   ✓ user_3_hotel_888.json → usuario 3
+2026-02-22 18:25:51,020 [INFO]   ✓ user_3_hotel_901.json → usuario 3
+2026-02-22 18:25:51,021 [INFO]   ✓ user_3_hotel_907.json → usuario 3
+2026-02-22 18:25:51,021 [INFO] 
+📈 Procesados: 250 | Errores: 0
+2026-02-22 18:25:51,021 [INFO] 👥 Usuarios únicos: 5
+2026-02-22 18:25:51,021 [INFO] 
+======================================================================
+2026-02-22 18:25:51,021 [INFO] GENERANDO CSVs...
+2026-02-22 18:25:51,021 [INFO] ======================================================================
+2026-02-22 18:25:51,021 [INFO] 
+👤 Usuario 276:
+2026-02-22 18:25:51,032 [INFO]   ✓ CSV comparación: explicaciones_usuario_276_hotel_his_y_rec.csv (600 registros)
+2026-02-22 18:25:51,034 [INFO]   ✓ CSV históricos:  explicaciones_usuario_276_hotel_his.csv (12 registros)
+2026-02-22 18:25:51,034 [INFO] 
+👤 Usuario 339:
+2026-02-22 18:25:51,038 [INFO]   ✓ CSV comparación: explicaciones_usuario_339_hotel_his_y_rec.csv (200 registros)
+2026-02-22 18:25:51,039 [INFO]   ✓ CSV históricos:  explicaciones_usuario_339_hotel_his.csv (4 registros)
+2026-02-22 18:25:51,039 [INFO] 
+👤 Usuario 35:
+2026-02-22 18:25:51,043 [INFO]   ✓ CSV comparación: explicaciones_usuario_35_hotel_his_y_rec.csv (200 registros)
+2026-02-22 18:25:51,044 [INFO]   ✓ CSV históricos:  explicaciones_usuario_35_hotel_his.csv (4 registros)
+2026-02-22 18:25:51,045 [INFO] 
+👤 Usuario 376:
+2026-02-22 18:25:51,048 [INFO]   ✓ CSV comparación: explicaciones_usuario_376_hotel_his_y_rec.csv (200 registros)
+2026-02-22 18:25:51,050 [INFO]   ✓ CSV históricos:  explicaciones_usuario_376_hotel_his.csv (4 registros)
+2026-02-22 18:25:51,050 [INFO] 
+👤 Usuario 3:
+2026-02-22 18:25:51,053 [INFO]   ✓ CSV comparación: explicaciones_usuario_3_hotel_his_y_rec.csv (200 registros)
+2026-02-22 18:25:51,054 [INFO]   ✓ CSV históricos:  explicaciones_usuario_3_hotel_his.csv (4 registros)
+2026-02-22 18:25:51,054 [INFO] 
+======================================================================
+2026-02-22 18:25:51,055 [INFO] ✅ PROCESO COMPLETADO
+2026-02-22 18:25:51,055 [INFO]    Registros comparación: 1400
+2026-02-22 18:25:51,055 [INFO]    Registros históricos:  28
+2026-02-22 18:25:51,055 [INFO]    Usuarios procesados:   5
+2026-02-22 18:25:51,055 [INFO] ======================================================================

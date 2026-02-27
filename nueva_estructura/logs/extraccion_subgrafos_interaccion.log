@@ -1,0 +1,758 @@
+2026-02-22 18:45:49,952 [INFO] ======================================================================
+2026-02-22 18:45:49,953 [INFO] EXTRACCIÓN SUBGRAFOS INTERACCIÓN — MODE=muestra
+2026-02-22 18:45:49,953 [INFO] ======================================================================
+2026-02-22 18:45:50,014 [INFO] 📂 CSV cargado: 179200 filas
+2026-02-22 18:45:50,028 [INFO] 🔍 Modo MUESTRA: 250 filas para usuarios [3, 35, 276, 339, 376]
+2026-02-22 18:45:50,029 [INFO] ▶️  user=3, hotel_recomendado=45
+2026-02-22 18:45:54,877 [INFO]   Nodos: 3234 | Relaciones: 300
+2026-02-22 18:45:54,918 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_45_interactions.json (4.89s)
+2026-02-22 18:45:54,919 [INFO] ▶️  user=3, hotel_recomendado=3209
+2026-02-22 18:45:57,935 [INFO]   Nodos: 1445 | Relaciones: 300
+2026-02-22 18:45:57,960 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_3209_interactions.json (3.04s)
+2026-02-22 18:45:57,961 [INFO] ▶️  user=3, hotel_recomendado=1442
+2026-02-22 18:46:01,258 [INFO]   Nodos: 3234 | Relaciones: 300
+2026-02-22 18:46:01,308 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_1442_interactions.json (3.35s)
+2026-02-22 18:46:01,309 [INFO] ▶️  user=3, hotel_recomendado=907
+2026-02-22 18:46:04,057 [INFO]   Nodos: 676 | Relaciones: 300
+2026-02-22 18:46:04,070 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_907_interactions.json (2.76s)
+2026-02-22 18:46:04,070 [INFO] ▶️  user=3, hotel_recomendado=2963
+2026-02-22 18:46:06,921 [INFO]   Nodos: 318 | Relaciones: 300
+2026-02-22 18:46:06,930 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_2963_interactions.json (2.86s)
+2026-02-22 18:46:06,930 [INFO] ▶️  user=3, hotel_recomendado=3732
+2026-02-22 18:46:09,794 [INFO]   Nodos: 2848 | Relaciones: 300
+2026-02-22 18:46:09,839 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_3732_interactions.json (2.91s)
+2026-02-22 18:46:09,841 [INFO] ▶️  user=3, hotel_recomendado=774
+2026-02-22 18:46:12,898 [INFO]   Nodos: 2479 | Relaciones: 300
+2026-02-22 18:46:12,937 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_774_interactions.json (3.10s)
+2026-02-22 18:46:12,938 [INFO] ▶️  user=3, hotel_recomendado=104
+2026-02-22 18:46:15,740 [INFO]   Nodos: 2112 | Relaciones: 300
+2026-02-22 18:46:15,769 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_104_interactions.json (2.83s)
+2026-02-22 18:46:15,770 [INFO] ▶️  user=3, hotel_recomendado=522
+2026-02-22 18:46:18,558 [INFO]   Nodos: 2920 | Relaciones: 300
+2026-02-22 18:46:18,602 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_522_interactions.json (2.83s)
+2026-02-22 18:46:18,603 [INFO] ▶️  user=3, hotel_recomendado=2557
+2026-02-22 18:46:21,372 [INFO]   Nodos: 2324 | Relaciones: 300
+2026-02-22 18:46:21,408 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_2557_interactions.json (2.81s)
+2026-02-22 18:46:21,409 [INFO] ▶️  user=3, hotel_recomendado=3165
+2026-02-22 18:46:24,284 [INFO]   Nodos: 2130 | Relaciones: 300
+2026-02-22 18:46:24,312 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_3165_interactions.json (2.90s)
+2026-02-22 18:46:24,313 [INFO] ▶️  user=3, hotel_recomendado=4088
+2026-02-22 18:46:27,012 [INFO]   Nodos: 1604 | Relaciones: 300
+2026-02-22 18:46:27,035 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_4088_interactions.json (2.72s)
+2026-02-22 18:46:27,036 [INFO] ▶️  user=3, hotel_recomendado=3237
+2026-02-22 18:46:29,771 [INFO]   Nodos: 119 | Relaciones: 300
+2026-02-22 18:46:29,777 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_3237_interactions.json (2.74s)
+2026-02-22 18:46:29,778 [INFO] ▶️  user=3, hotel_recomendado=3737
+2026-02-22 18:46:32,465 [INFO]   Nodos: 435 | Relaciones: 300
+2026-02-22 18:46:32,474 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_3737_interactions.json (2.70s)
+2026-02-22 18:46:32,475 [INFO] ▶️  user=3, hotel_recomendado=25
+2026-02-22 18:46:35,182 [INFO]   Nodos: 1782 | Relaciones: 300
+2026-02-22 18:46:35,206 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_25_interactions.json (2.73s)
+2026-02-22 18:46:35,207 [INFO] ▶️  user=3, hotel_recomendado=4830
+2026-02-22 18:46:37,829 [INFO]   Nodos: 405 | Relaciones: 300
+2026-02-22 18:46:37,839 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_4830_interactions.json (2.63s)
+2026-02-22 18:46:37,839 [INFO] ▶️  user=3, hotel_recomendado=4359
+2026-02-22 18:46:40,581 [INFO]   Nodos: 980 | Relaciones: 300
+2026-02-22 18:46:40,598 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_4359_interactions.json (2.76s)
+2026-02-22 18:46:40,598 [INFO] ▶️  user=3, hotel_recomendado=473
+2026-02-22 18:46:43,265 [INFO]   Nodos: 1239 | Relaciones: 300
+2026-02-22 18:46:43,283 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_473_interactions.json (2.69s)
+2026-02-22 18:46:43,284 [INFO] ▶️  user=3, hotel_recomendado=1164
+2026-02-22 18:46:45,971 [INFO]   Nodos: 1435 | Relaciones: 300
+2026-02-22 18:46:45,993 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_1164_interactions.json (2.71s)
+2026-02-22 18:46:45,993 [INFO] ▶️  user=3, hotel_recomendado=3484
+2026-02-22 18:46:48,676 [INFO]   Nodos: 112 | Relaciones: 300
+2026-02-22 18:46:48,682 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_3484_interactions.json (2.69s)
+2026-02-22 18:46:48,682 [INFO] ▶️  user=3, hotel_recomendado=1693
+2026-02-22 18:46:51,349 [INFO]   Nodos: 377 | Relaciones: 300
+2026-02-22 18:46:51,360 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_1693_interactions.json (2.68s)
+2026-02-22 18:46:51,360 [INFO] ▶️  user=3, hotel_recomendado=4825
+2026-02-22 18:46:54,007 [INFO]   Nodos: 293 | Relaciones: 300
+2026-02-22 18:46:54,017 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_4825_interactions.json (2.66s)
+2026-02-22 18:46:54,018 [INFO] ▶️  user=3, hotel_recomendado=3178
+2026-02-22 18:46:56,687 [INFO]   Nodos: 470 | Relaciones: 300
+2026-02-22 18:46:56,699 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_3178_interactions.json (2.68s)
+2026-02-22 18:46:56,700 [INFO] ▶️  user=3, hotel_recomendado=2344
+2026-02-22 18:46:59,324 [INFO]   Nodos: 2482 | Relaciones: 300
+2026-02-22 18:46:59,357 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_2344_interactions.json (2.66s)
+2026-02-22 18:46:59,358 [INFO] ▶️  user=3, hotel_recomendado=1729
+2026-02-22 18:47:02,077 [INFO]   Nodos: 310 | Relaciones: 300
+2026-02-22 18:47:02,085 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_1729_interactions.json (2.73s)
+2026-02-22 18:47:02,085 [INFO] ▶️  user=3, hotel_recomendado=3119
+2026-02-22 18:47:04,704 [INFO]   Nodos: 1166 | Relaciones: 300
+2026-02-22 18:47:04,722 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_3119_interactions.json (2.64s)
+2026-02-22 18:47:04,722 [INFO] ▶️  user=3, hotel_recomendado=1093
+2026-02-22 18:47:07,458 [INFO]   Nodos: 945 | Relaciones: 300
+2026-02-22 18:47:07,474 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_1093_interactions.json (2.75s)
+2026-02-22 18:47:07,475 [INFO] ▶️  user=3, hotel_recomendado=4122
+2026-02-22 18:47:10,089 [INFO]   Nodos: 312 | Relaciones: 300
+2026-02-22 18:47:10,098 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_4122_interactions.json (2.62s)
+2026-02-22 18:47:10,099 [INFO] ▶️  user=3, hotel_recomendado=5061
+2026-02-22 18:47:12,812 [INFO]   Nodos: 565 | Relaciones: 300
+2026-02-22 18:47:12,824 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_5061_interactions.json (2.72s)
+2026-02-22 18:47:12,824 [INFO] ▶️  user=3, hotel_recomendado=4942
+2026-02-22 18:47:15,475 [INFO]   Nodos: 104 | Relaciones: 300
+2026-02-22 18:47:15,480 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_4942_interactions.json (2.66s)
+2026-02-22 18:47:15,481 [INFO] ▶️  user=3, hotel_recomendado=4183
+2026-02-22 18:47:18,127 [INFO]   Nodos: 863 | Relaciones: 300
+2026-02-22 18:47:18,144 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_4183_interactions.json (2.66s)
+2026-02-22 18:47:18,144 [INFO] ▶️  user=3, hotel_recomendado=4464
+2026-02-22 18:47:20,727 [INFO]   Nodos: 646 | Relaciones: 300
+2026-02-22 18:47:20,739 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_4464_interactions.json (2.59s)
+2026-02-22 18:47:20,739 [INFO] ▶️  user=3, hotel_recomendado=5855
+2026-02-22 18:47:23,272 [INFO]   Nodos: 567 | Relaciones: 300
+2026-02-22 18:47:23,283 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_5855_interactions.json (2.54s)
+2026-02-22 18:47:23,284 [INFO] ▶️  user=3, hotel_recomendado=2972
+2026-02-22 18:47:25,790 [INFO]   Nodos: 137 | Relaciones: 300
+2026-02-22 18:47:25,796 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_2972_interactions.json (2.51s)
+2026-02-22 18:47:25,796 [INFO] ▶️  user=3, hotel_recomendado=1054
+2026-02-22 18:47:28,417 [INFO]   Nodos: 468 | Relaciones: 300
+2026-02-22 18:47:28,430 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_1054_interactions.json (2.63s)
+2026-02-22 18:47:28,430 [INFO] ▶️  user=3, hotel_recomendado=2085
+2026-02-22 18:47:31,079 [INFO]   Nodos: 945 | Relaciones: 300
+2026-02-22 18:47:31,094 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_2085_interactions.json (2.66s)
+2026-02-22 18:47:31,095 [INFO] ▶️  user=3, hotel_recomendado=2617
+2026-02-22 18:47:33,671 [INFO]   Nodos: 440 | Relaciones: 300
+2026-02-22 18:47:33,681 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_2617_interactions.json (2.59s)
+2026-02-22 18:47:33,681 [INFO] ▶️  user=3, hotel_recomendado=163
+2026-02-22 18:47:36,250 [INFO]   Nodos: 235 | Relaciones: 300
+2026-02-22 18:47:36,257 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_163_interactions.json (2.58s)
+2026-02-22 18:47:36,258 [INFO] ▶️  user=3, hotel_recomendado=5605
+2026-02-22 18:47:38,890 [INFO]   Nodos: 1412 | Relaciones: 300
+2026-02-22 18:47:38,911 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_5605_interactions.json (2.65s)
+2026-02-22 18:47:38,912 [INFO] ▶️  user=3, hotel_recomendado=1608
+2026-02-22 18:47:41,558 [INFO]   Nodos: 199 | Relaciones: 300
+2026-02-22 18:47:41,565 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_1608_interactions.json (2.65s)
+2026-02-22 18:47:41,565 [INFO] ▶️  user=3, hotel_recomendado=1487
+2026-02-22 18:47:44,187 [INFO]   Nodos: 236 | Relaciones: 300
+2026-02-22 18:47:44,194 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_1487_interactions.json (2.63s)
+2026-02-22 18:47:44,195 [INFO] ▶️  user=3, hotel_recomendado=901
+2026-02-22 18:47:46,790 [INFO]   Nodos: 59 | Relaciones: 300
+2026-02-22 18:47:46,795 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_901_interactions.json (2.60s)
+2026-02-22 18:47:46,795 [INFO] ▶️  user=3, hotel_recomendado=3069
+2026-02-22 18:47:49,443 [INFO]   Nodos: 107 | Relaciones: 300
+2026-02-22 18:47:49,449 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_3069_interactions.json (2.65s)
+2026-02-22 18:47:49,450 [INFO] ▶️  user=3, hotel_recomendado=2101
+2026-02-22 18:47:52,041 [INFO]   Nodos: 309 | Relaciones: 300
+2026-02-22 18:47:52,049 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_2101_interactions.json (2.60s)
+2026-02-22 18:47:52,049 [INFO] ▶️  user=3, hotel_recomendado=3136
+2026-02-22 18:47:54,677 [INFO]   Nodos: 1524 | Relaciones: 300
+2026-02-22 18:47:54,699 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_3136_interactions.json (2.65s)
+2026-02-22 18:47:54,700 [INFO] ▶️  user=3, hotel_recomendado=4990
+2026-02-22 18:47:57,407 [INFO]   Nodos: 420 | Relaciones: 300
+2026-02-22 18:47:57,419 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_4990_interactions.json (2.72s)
+2026-02-22 18:47:57,419 [INFO] ▶️  user=3, hotel_recomendado=2109
+2026-02-22 18:47:59,987 [INFO]   Nodos: 768 | Relaciones: 300
+2026-02-22 18:48:00,001 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_2109_interactions.json (2.58s)
+2026-02-22 18:48:00,002 [INFO] ▶️  user=3, hotel_recomendado=2290
+2026-02-22 18:48:02,618 [INFO]   Nodos: 69 | Relaciones: 300
+2026-02-22 18:48:02,623 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_2290_interactions.json (2.62s)
+2026-02-22 18:48:02,624 [INFO] ▶️  user=3, hotel_recomendado=393
+2026-02-22 18:48:05,157 [INFO]   Nodos: 494 | Relaciones: 300
+2026-02-22 18:48:05,170 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_393_interactions.json (2.55s)
+2026-02-22 18:48:05,170 [INFO] ▶️  user=3, hotel_recomendado=888
+2026-02-22 18:48:07,733 [INFO]   Nodos: 131 | Relaciones: 300
+2026-02-22 18:48:07,739 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_3_hotel_888_interactions.json (2.57s)
+2026-02-22 18:48:07,739 [INFO] ▶️  user=35, hotel_recomendado=24
+2026-02-22 18:48:10,453 [INFO]   Nodos: 1749 | Relaciones: 300
+2026-02-22 18:48:10,477 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_24_interactions.json (2.74s)
+2026-02-22 18:48:10,478 [INFO] ▶️  user=35, hotel_recomendado=1489
+2026-02-22 18:48:13,121 [INFO]   Nodos: 334 | Relaciones: 300
+2026-02-22 18:48:13,129 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_1489_interactions.json (2.65s)
+2026-02-22 18:48:13,130 [INFO] ▶️  user=35, hotel_recomendado=473
+2026-02-22 18:48:15,793 [INFO]   Nodos: 1239 | Relaciones: 300
+2026-02-22 18:48:15,813 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_473_interactions.json (2.68s)
+2026-02-22 18:48:15,814 [INFO] ▶️  user=35, hotel_recomendado=5176
+2026-02-22 18:48:18,410 [INFO]   Nodos: 822 | Relaciones: 300
+2026-02-22 18:48:18,426 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_5176_interactions.json (2.61s)
+2026-02-22 18:48:18,426 [INFO] ▶️  user=35, hotel_recomendado=4610
+2026-02-22 18:48:21,004 [INFO]   Nodos: 320 | Relaciones: 300
+2026-02-22 18:48:21,012 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_4610_interactions.json (2.59s)
+2026-02-22 18:48:21,012 [INFO] ▶️  user=35, hotel_recomendado=1093
+2026-02-22 18:48:23,651 [INFO]   Nodos: 945 | Relaciones: 300
+2026-02-22 18:48:23,667 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_1093_interactions.json (2.65s)
+2026-02-22 18:48:23,668 [INFO] ▶️  user=35, hotel_recomendado=774
+2026-02-22 18:48:26,482 [INFO]   Nodos: 2479 | Relaciones: 300
+2026-02-22 18:48:26,521 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_774_interactions.json (2.85s)
+2026-02-22 18:48:26,522 [INFO] ▶️  user=35, hotel_recomendado=5747
+2026-02-22 18:48:29,123 [INFO]   Nodos: 354 | Relaciones: 300
+2026-02-22 18:48:29,131 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_5747_interactions.json (2.61s)
+2026-02-22 18:48:29,131 [INFO] ▶️  user=35, hotel_recomendado=5623
+2026-02-22 18:48:31,879 [INFO]   Nodos: 111 | Relaciones: 300
+2026-02-22 18:48:31,885 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_5623_interactions.json (2.75s)
+2026-02-22 18:48:31,885 [INFO] ▶️  user=35, hotel_recomendado=1436
+2026-02-22 18:48:34,430 [INFO]   Nodos: 383 | Relaciones: 300
+2026-02-22 18:48:34,439 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_1436_interactions.json (2.55s)
+2026-02-22 18:48:34,440 [INFO] ▶️  user=35, hotel_recomendado=3136
+2026-02-22 18:48:37,063 [INFO]   Nodos: 1524 | Relaciones: 300
+2026-02-22 18:48:37,089 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_3136_interactions.json (2.65s)
+2026-02-22 18:48:37,090 [INFO] ▶️  user=35, hotel_recomendado=5175
+2026-02-22 18:48:39,705 [INFO]   Nodos: 149 | Relaciones: 300
+2026-02-22 18:48:39,712 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_5175_interactions.json (2.62s)
+2026-02-22 18:48:39,713 [INFO] ▶️  user=35, hotel_recomendado=880
+2026-02-22 18:48:42,469 [INFO]   Nodos: 2466 | Relaciones: 300
+2026-02-22 18:48:42,505 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_880_interactions.json (2.79s)
+2026-02-22 18:48:42,506 [INFO] ▶️  user=35, hotel_recomendado=4143
+2026-02-22 18:48:45,166 [INFO]   Nodos: 1239 | Relaciones: 300
+2026-02-22 18:48:45,186 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_4143_interactions.json (2.68s)
+2026-02-22 18:48:45,187 [INFO] ▶️  user=35, hotel_recomendado=3398
+2026-02-22 18:48:47,828 [INFO]   Nodos: 1116 | Relaciones: 300
+2026-02-22 18:48:47,846 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_3398_interactions.json (2.66s)
+2026-02-22 18:48:47,846 [INFO] ▶️  user=35, hotel_recomendado=3474
+2026-02-22 18:48:50,578 [INFO]   Nodos: 236 | Relaciones: 300
+2026-02-22 18:48:50,585 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_3474_interactions.json (2.74s)
+2026-02-22 18:48:50,586 [INFO] ▶️  user=35, hotel_recomendado=4251
+2026-02-22 18:48:53,266 [INFO]   Nodos: 287 | Relaciones: 300
+2026-02-22 18:48:53,275 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_4251_interactions.json (2.69s)
+2026-02-22 18:48:53,275 [INFO] ▶️  user=35, hotel_recomendado=1404
+2026-02-22 18:48:55,915 [INFO]   Nodos: 696 | Relaciones: 300
+2026-02-22 18:48:55,930 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_1404_interactions.json (2.65s)
+2026-02-22 18:48:55,931 [INFO] ▶️  user=35, hotel_recomendado=1361
+2026-02-22 18:48:58,635 [INFO]   Nodos: 150 | Relaciones: 300
+2026-02-22 18:48:58,641 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_1361_interactions.json (2.71s)
+2026-02-22 18:48:58,642 [INFO] ▶️  user=35, hotel_recomendado=4073
+2026-02-22 18:49:01,332 [INFO]   Nodos: 633 | Relaciones: 300
+2026-02-22 18:49:01,346 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_4073_interactions.json (2.70s)
+2026-02-22 18:49:01,346 [INFO] ▶️  user=35, hotel_recomendado=4088
+2026-02-22 18:49:04,152 [INFO]   Nodos: 1604 | Relaciones: 300
+2026-02-22 18:49:04,174 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_4088_interactions.json (2.83s)
+2026-02-22 18:49:04,175 [INFO] ▶️  user=35, hotel_recomendado=1152
+2026-02-22 18:49:06,848 [INFO]   Nodos: 722 | Relaciones: 300
+2026-02-22 18:49:06,861 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_1152_interactions.json (2.69s)
+2026-02-22 18:49:06,862 [INFO] ▶️  user=35, hotel_recomendado=1442
+2026-02-22 18:49:09,433 [INFO]   Nodos: 3229 | Relaciones: 300
+2026-02-22 18:49:09,473 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_1442_interactions.json (2.61s)
+2026-02-22 18:49:09,474 [INFO] ▶️  user=35, hotel_recomendado=5083
+2026-02-22 18:49:12,004 [INFO]   Nodos: 740 | Relaciones: 300
+2026-02-22 18:49:12,019 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_5083_interactions.json (2.54s)
+2026-02-22 18:49:12,019 [INFO] ▶️  user=35, hotel_recomendado=798
+2026-02-22 18:49:14,465 [INFO]   Nodos: 495 | Relaciones: 300
+2026-02-22 18:49:14,474 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_798_interactions.json (2.46s)
+2026-02-22 18:49:14,475 [INFO] ▶️  user=35, hotel_recomendado=4634
+2026-02-22 18:49:17,078 [INFO]   Nodos: 587 | Relaciones: 300
+2026-02-22 18:49:17,092 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_4634_interactions.json (2.62s)
+2026-02-22 18:49:17,092 [INFO] ▶️  user=35, hotel_recomendado=104
+2026-02-22 18:49:19,839 [INFO]   Nodos: 2109 | Relaciones: 300
+2026-02-22 18:49:19,867 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_104_interactions.json (2.77s)
+2026-02-22 18:49:19,868 [INFO] ▶️  user=35, hotel_recomendado=3086
+2026-02-22 18:49:22,477 [INFO]   Nodos: 75 | Relaciones: 300
+2026-02-22 18:49:22,482 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_3086_interactions.json (2.61s)
+2026-02-22 18:49:22,482 [INFO] ▶️  user=35, hotel_recomendado=3999
+2026-02-22 18:49:25,182 [INFO]   Nodos: 576 | Relaciones: 300
+2026-02-22 18:49:25,193 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_3999_interactions.json (2.71s)
+2026-02-22 18:49:25,193 [INFO] ▶️  user=35, hotel_recomendado=4463
+2026-02-22 18:49:27,841 [INFO]   Nodos: 191 | Relaciones: 300
+2026-02-22 18:49:27,848 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_4463_interactions.json (2.65s)
+2026-02-22 18:49:27,848 [INFO] ▶️  user=35, hotel_recomendado=1963
+2026-02-22 18:49:30,506 [INFO]   Nodos: 139 | Relaciones: 300
+2026-02-22 18:49:30,512 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_1963_interactions.json (2.66s)
+2026-02-22 18:49:30,513 [INFO] ▶️  user=35, hotel_recomendado=2612
+2026-02-22 18:49:33,254 [INFO]   Nodos: 448 | Relaciones: 300
+2026-02-22 18:49:33,265 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_2612_interactions.json (2.75s)
+2026-02-22 18:49:33,265 [INFO] ▶️  user=35, hotel_recomendado=2933
+2026-02-22 18:49:36,060 [INFO]   Nodos: 869 | Relaciones: 300
+2026-02-22 18:49:36,076 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_2933_interactions.json (2.81s)
+2026-02-22 18:49:36,076 [INFO] ▶️  user=35, hotel_recomendado=5226
+2026-02-22 18:49:38,766 [INFO]   Nodos: 90 | Relaciones: 300
+2026-02-22 18:49:38,772 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_5226_interactions.json (2.70s)
+2026-02-22 18:49:38,773 [INFO] ▶️  user=35, hotel_recomendado=4683
+2026-02-22 18:49:41,395 [INFO]   Nodos: 705 | Relaciones: 300
+2026-02-22 18:49:41,408 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_4683_interactions.json (2.64s)
+2026-02-22 18:49:41,409 [INFO] ▶️  user=35, hotel_recomendado=522
+2026-02-22 18:49:44,232 [INFO]   Nodos: 2919 | Relaciones: 300
+2026-02-22 18:49:44,270 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_522_interactions.json (2.86s)
+2026-02-22 18:49:44,271 [INFO] ▶️  user=35, hotel_recomendado=1702
+2026-02-22 18:49:46,850 [INFO]   Nodos: 204 | Relaciones: 300
+2026-02-22 18:49:46,857 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_1702_interactions.json (2.59s)
+2026-02-22 18:49:46,857 [INFO] ▶️  user=35, hotel_recomendado=3081
+2026-02-22 18:49:49,557 [INFO]   Nodos: 241 | Relaciones: 300
+2026-02-22 18:49:49,568 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_3081_interactions.json (2.71s)
+2026-02-22 18:49:49,569 [INFO] ▶️  user=35, hotel_recomendado=5292
+2026-02-22 18:49:52,558 [INFO]   Nodos: 1027 | Relaciones: 300
+2026-02-22 18:49:52,578 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_5292_interactions.json (3.01s)
+2026-02-22 18:49:52,579 [INFO] ▶️  user=35, hotel_recomendado=558
+2026-02-22 18:49:55,271 [INFO]   Nodos: 199 | Relaciones: 300
+2026-02-22 18:49:55,278 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_558_interactions.json (2.70s)
+2026-02-22 18:49:55,279 [INFO] ▶️  user=35, hotel_recomendado=4432
+2026-02-22 18:49:58,012 [INFO]   Nodos: 137 | Relaciones: 300
+2026-02-22 18:49:58,018 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_4432_interactions.json (2.74s)
+2026-02-22 18:49:58,018 [INFO] ▶️  user=35, hotel_recomendado=958
+2026-02-22 18:50:00,773 [INFO]   Nodos: 191 | Relaciones: 300
+2026-02-22 18:50:00,780 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_958_interactions.json (2.76s)
+2026-02-22 18:50:00,780 [INFO] ▶️  user=35, hotel_recomendado=1940
+2026-02-22 18:50:03,582 [INFO]   Nodos: 1178 | Relaciones: 300
+2026-02-22 18:50:03,601 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_1940_interactions.json (2.82s)
+2026-02-22 18:50:03,602 [INFO] ▶️  user=35, hotel_recomendado=2557
+2026-02-22 18:50:06,455 [INFO]   Nodos: 2323 | Relaciones: 300
+2026-02-22 18:50:06,486 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_2557_interactions.json (2.88s)
+2026-02-22 18:50:06,487 [INFO] ▶️  user=35, hotel_recomendado=2723
+2026-02-22 18:50:09,200 [INFO]   Nodos: 74 | Relaciones: 300
+2026-02-22 18:50:09,206 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_2723_interactions.json (2.72s)
+2026-02-22 18:50:09,206 [INFO] ▶️  user=35, hotel_recomendado=817
+2026-02-22 18:50:12,000 [INFO]   Nodos: 272 | Relaciones: 300
+2026-02-22 18:50:12,008 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_817_interactions.json (2.80s)
+2026-02-22 18:50:12,008 [INFO] ▶️  user=35, hotel_recomendado=1411
+2026-02-22 18:50:14,873 [INFO]   Nodos: 620 | Relaciones: 300
+2026-02-22 18:50:14,886 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_1411_interactions.json (2.88s)
+2026-02-22 18:50:14,887 [INFO] ▶️  user=35, hotel_recomendado=837
+2026-02-22 18:50:17,770 [INFO]   Nodos: 256 | Relaciones: 300
+2026-02-22 18:50:17,778 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_837_interactions.json (2.89s)
+2026-02-22 18:50:17,779 [INFO] ▶️  user=35, hotel_recomendado=1960
+2026-02-22 18:50:20,575 [INFO]   Nodos: 124 | Relaciones: 300
+2026-02-22 18:50:20,581 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_1960_interactions.json (2.80s)
+2026-02-22 18:50:20,582 [INFO] ▶️  user=35, hotel_recomendado=5499
+2026-02-22 18:50:23,353 [INFO]   Nodos: 195 | Relaciones: 300
+2026-02-22 18:50:23,360 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_35_hotel_5499_interactions.json (2.78s)
+2026-02-22 18:50:23,360 [INFO] ▶️  user=276, hotel_recomendado=904
+2026-02-22 18:50:26,139 [INFO]   Nodos: 1318 | Relaciones: 300
+2026-02-22 18:50:26,161 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_904_interactions.json (2.80s)
+2026-02-22 18:50:26,162 [INFO] ▶️  user=276, hotel_recomendado=2085
+2026-02-22 18:50:28,925 [INFO]   Nodos: 954 | Relaciones: 300
+2026-02-22 18:50:28,940 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_2085_interactions.json (2.78s)
+2026-02-22 18:50:28,941 [INFO] ▶️  user=276, hotel_recomendado=5111
+2026-02-22 18:50:31,811 [INFO]   Nodos: 1057 | Relaciones: 300
+2026-02-22 18:50:31,828 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_5111_interactions.json (2.89s)
+2026-02-22 18:50:31,829 [INFO] ▶️  user=276, hotel_recomendado=2781
+2026-02-22 18:50:34,589 [INFO]   Nodos: 663 | Relaciones: 300
+2026-02-22 18:50:34,601 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_2781_interactions.json (2.77s)
+2026-02-22 18:50:34,602 [INFO] ▶️  user=276, hotel_recomendado=25
+2026-02-22 18:50:37,168 [INFO]   Nodos: 1789 | Relaciones: 300
+2026-02-22 18:50:37,193 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_25_interactions.json (2.59s)
+2026-02-22 18:50:37,194 [INFO] ▶️  user=276, hotel_recomendado=566
+2026-02-22 18:50:39,697 [INFO]   Nodos: 873 | Relaciones: 300
+2026-02-22 18:50:39,713 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_566_interactions.json (2.52s)
+2026-02-22 18:50:39,713 [INFO] ▶️  user=276, hotel_recomendado=774
+2026-02-22 18:50:42,312 [INFO]   Nodos: 2486 | Relaciones: 300
+2026-02-22 18:50:42,349 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_774_interactions.json (2.64s)
+2026-02-22 18:50:42,350 [INFO] ▶️  user=276, hotel_recomendado=3620
+2026-02-22 18:50:44,774 [INFO]   Nodos: 413 | Relaciones: 300
+2026-02-22 18:50:44,783 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_3620_interactions.json (2.43s)
+2026-02-22 18:50:44,784 [INFO] ▶️  user=276, hotel_recomendado=45
+2026-02-22 18:50:47,262 [INFO]   Nodos: 3242 | Relaciones: 300
+2026-02-22 18:50:47,305 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_45_interactions.json (2.52s)
+2026-02-22 18:50:47,306 [INFO] ▶️  user=276, hotel_recomendado=5201
+2026-02-22 18:50:49,748 [INFO]   Nodos: 459 | Relaciones: 300
+2026-02-22 18:50:49,758 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_5201_interactions.json (2.45s)
+2026-02-22 18:50:49,758 [INFO] ▶️  user=276, hotel_recomendado=3705
+2026-02-22 18:50:52,157 [INFO]   Nodos: 610 | Relaciones: 300
+2026-02-22 18:50:52,169 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_3705_interactions.json (2.41s)
+2026-02-22 18:50:52,170 [INFO] ▶️  user=276, hotel_recomendado=2109
+2026-02-22 18:50:54,607 [INFO]   Nodos: 777 | Relaciones: 300
+2026-02-22 18:50:54,621 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_2109_interactions.json (2.45s)
+2026-02-22 18:50:54,622 [INFO] ▶️  user=276, hotel_recomendado=4673
+2026-02-22 18:50:57,194 [INFO]   Nodos: 543 | Relaciones: 300
+2026-02-22 18:50:57,205 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_4673_interactions.json (2.58s)
+2026-02-22 18:50:57,205 [INFO] ▶️  user=276, hotel_recomendado=1195
+2026-02-22 18:50:59,680 [INFO]   Nodos: 441 | Relaciones: 300
+2026-02-22 18:50:59,690 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_1195_interactions.json (2.48s)
+2026-02-22 18:50:59,690 [INFO] ▶️  user=276, hotel_recomendado=9
+2026-02-22 18:51:02,130 [INFO]   Nodos: 472 | Relaciones: 300
+2026-02-22 18:51:02,144 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_9_interactions.json (2.45s)
+2026-02-22 18:51:02,145 [INFO] ▶️  user=276, hotel_recomendado=1144
+2026-02-22 18:51:04,609 [INFO]   Nodos: 394 | Relaciones: 300
+2026-02-22 18:51:04,619 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_1144_interactions.json (2.47s)
+2026-02-22 18:51:04,620 [INFO] ▶️  user=276, hotel_recomendado=4254
+2026-02-22 18:51:07,076 [INFO]   Nodos: 481 | Relaciones: 300
+2026-02-22 18:51:07,086 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_4254_interactions.json (2.47s)
+2026-02-22 18:51:07,087 [INFO] ▶️  user=276, hotel_recomendado=4314
+2026-02-22 18:51:09,418 [INFO]   Nodos: 434 | Relaciones: 300
+2026-02-22 18:51:09,428 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_4314_interactions.json (2.34s)
+2026-02-22 18:51:09,428 [INFO] ▶️  user=276, hotel_recomendado=5605
+2026-02-22 18:51:11,672 [INFO]   Nodos: 1420 | Relaciones: 300
+2026-02-22 18:51:11,693 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_5605_interactions.json (2.26s)
+2026-02-22 18:51:11,693 [INFO] ▶️  user=276, hotel_recomendado=4783
+2026-02-22 18:51:13,987 [INFO]   Nodos: 521 | Relaciones: 300
+2026-02-22 18:51:13,997 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_4783_interactions.json (2.30s)
+2026-02-22 18:51:13,998 [INFO] ▶️  user=276, hotel_recomendado=1298
+2026-02-22 18:51:16,471 [INFO]   Nodos: 355 | Relaciones: 300
+2026-02-22 18:51:16,609 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_1298_interactions.json (2.61s)
+2026-02-22 18:51:16,609 [INFO] ▶️  user=276, hotel_recomendado=5571
+2026-02-22 18:51:18,881 [INFO]   Nodos: 455 | Relaciones: 300
+2026-02-22 18:51:18,897 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_5571_interactions.json (2.29s)
+2026-02-22 18:51:18,897 [INFO] ▶️  user=276, hotel_recomendado=3136
+2026-02-22 18:51:21,274 [INFO]   Nodos: 1532 | Relaciones: 300
+2026-02-22 18:51:21,300 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_3136_interactions.json (2.40s)
+2026-02-22 18:51:21,301 [INFO] ▶️  user=276, hotel_recomendado=2417
+2026-02-22 18:51:23,721 [INFO]   Nodos: 560 | Relaciones: 300
+2026-02-22 18:51:23,746 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_2417_interactions.json (2.44s)
+2026-02-22 18:51:23,746 [INFO] ▶️  user=276, hotel_recomendado=686
+2026-02-22 18:51:26,011 [INFO]   Nodos: 573 | Relaciones: 300
+2026-02-22 18:51:26,036 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_686_interactions.json (2.29s)
+2026-02-22 18:51:26,036 [INFO] ▶️  user=276, hotel_recomendado=3165
+2026-02-22 18:51:28,316 [INFO]   Nodos: 2138 | Relaciones: 300
+2026-02-22 18:51:28,345 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_3165_interactions.json (2.31s)
+2026-02-22 18:51:28,346 [INFO] ▶️  user=276, hotel_recomendado=3732
+2026-02-22 18:51:30,746 [INFO]   Nodos: 2856 | Relaciones: 300
+2026-02-22 18:51:30,782 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_3732_interactions.json (2.44s)
+2026-02-22 18:51:30,783 [INFO] ▶️  user=276, hotel_recomendado=725
+2026-02-22 18:51:33,044 [INFO]   Nodos: 496 | Relaciones: 300
+2026-02-22 18:51:33,055 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_725_interactions.json (2.27s)
+2026-02-22 18:51:33,055 [INFO] ▶️  user=276, hotel_recomendado=5241
+2026-02-22 18:51:35,251 [INFO]   Nodos: 447 | Relaciones: 300
+2026-02-22 18:51:35,266 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_5241_interactions.json (2.21s)
+2026-02-22 18:51:35,266 [INFO] ▶️  user=276, hotel_recomendado=4184
+2026-02-22 18:51:37,481 [INFO]   Nodos: 1673 | Relaciones: 300
+2026-02-22 18:51:37,508 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_4184_interactions.json (2.24s)
+2026-02-22 18:51:37,509 [INFO] ▶️  user=276, hotel_recomendado=1164
+2026-02-22 18:51:39,762 [INFO]   Nodos: 1442 | Relaciones: 300
+2026-02-22 18:51:39,784 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_1164_interactions.json (2.28s)
+2026-02-22 18:51:39,785 [INFO] ▶️  user=276, hotel_recomendado=4143
+2026-02-22 18:51:42,000 [INFO]   Nodos: 1248 | Relaciones: 300
+2026-02-22 18:51:42,018 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_4143_interactions.json (2.23s)
+2026-02-22 18:51:42,019 [INFO] ▶️  user=276, hotel_recomendado=4749
+2026-02-22 18:51:44,431 [INFO]   Nodos: 423 | Relaciones: 300
+2026-02-22 18:51:44,440 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_4749_interactions.json (2.42s)
+2026-02-22 18:51:44,440 [INFO] ▶️  user=276, hotel_recomendado=1093
+2026-02-22 18:51:46,667 [INFO]   Nodos: 952 | Relaciones: 300
+2026-02-22 18:51:46,687 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_1093_interactions.json (2.25s)
+2026-02-22 18:51:46,688 [INFO] ▶️  user=276, hotel_recomendado=1840
+2026-02-22 18:51:48,914 [INFO]   Nodos: 256 | Relaciones: 300
+2026-02-22 18:51:48,921 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_1840_interactions.json (2.23s)
+2026-02-22 18:51:48,922 [INFO] ▶️  user=276, hotel_recomendado=1542
+2026-02-22 18:51:51,368 [INFO]   Nodos: 271 | Relaciones: 300
+2026-02-22 18:51:51,376 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_1542_interactions.json (2.45s)
+2026-02-22 18:51:51,376 [INFO] ▶️  user=276, hotel_recomendado=4427
+2026-02-22 18:51:53,583 [INFO]   Nodos: 328 | Relaciones: 300
+2026-02-22 18:51:53,591 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_4427_interactions.json (2.22s)
+2026-02-22 18:51:53,592 [INFO] ▶️  user=276, hotel_recomendado=4294
+2026-02-22 18:51:55,771 [INFO]   Nodos: 136 | Relaciones: 300
+2026-02-22 18:51:55,777 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_4294_interactions.json (2.19s)
+2026-02-22 18:51:55,778 [INFO] ▶️  user=276, hotel_recomendado=41
+2026-02-22 18:51:58,001 [INFO]   Nodos: 309 | Relaciones: 300
+2026-02-22 18:51:58,009 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_41_interactions.json (2.23s)
+2026-02-22 18:51:58,010 [INFO] ▶️  user=276, hotel_recomendado=4031
+2026-02-22 18:52:00,251 [INFO]   Nodos: 297 | Relaciones: 300
+2026-02-22 18:52:00,259 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_4031_interactions.json (2.25s)
+2026-02-22 18:52:00,259 [INFO] ▶️  user=276, hotel_recomendado=4525
+2026-02-22 18:52:02,432 [INFO]   Nodos: 210 | Relaciones: 300
+2026-02-22 18:52:02,439 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_4525_interactions.json (2.18s)
+2026-02-22 18:52:02,439 [INFO] ▶️  user=276, hotel_recomendado=2557
+2026-02-22 18:52:04,711 [INFO]   Nodos: 2331 | Relaciones: 300
+2026-02-22 18:52:04,742 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_2557_interactions.json (2.30s)
+2026-02-22 18:52:04,743 [INFO] ▶️  user=276, hotel_recomendado=5176
+2026-02-22 18:52:06,961 [INFO]   Nodos: 829 | Relaciones: 300
+2026-02-22 18:52:06,977 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_5176_interactions.json (2.23s)
+2026-02-22 18:52:06,978 [INFO] ▶️  user=276, hotel_recomendado=522
+2026-02-22 18:52:09,611 [INFO]   Nodos: 2927 | Relaciones: 300
+2026-02-22 18:52:09,650 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_522_interactions.json (2.67s)
+2026-02-22 18:52:09,652 [INFO] ▶️  user=276, hotel_recomendado=5068
+2026-02-22 18:52:11,907 [INFO]   Nodos: 238 | Relaciones: 300
+2026-02-22 18:52:11,915 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_5068_interactions.json (2.26s)
+2026-02-22 18:52:11,915 [INFO] ▶️  user=276, hotel_recomendado=150
+2026-02-22 18:52:14,218 [INFO]   Nodos: 223 | Relaciones: 300
+2026-02-22 18:52:14,225 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_150_interactions.json (2.31s)
+2026-02-22 18:52:14,225 [INFO] ▶️  user=276, hotel_recomendado=345
+2026-02-22 18:52:16,440 [INFO]   Nodos: 290 | Relaciones: 300
+2026-02-22 18:52:16,450 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_345_interactions.json (2.22s)
+2026-02-22 18:52:16,450 [INFO] ▶️  user=276, hotel_recomendado=5746
+2026-02-22 18:52:18,697 [INFO]   Nodos: 618 | Relaciones: 300
+2026-02-22 18:52:18,711 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_5746_interactions.json (2.26s)
+2026-02-22 18:52:18,711 [INFO] ▶️  user=276, hotel_recomendado=581
+2026-02-22 18:52:20,899 [INFO]   Nodos: 120 | Relaciones: 300
+2026-02-22 18:52:20,904 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_581_interactions.json (2.19s)
+2026-02-22 18:52:20,905 [INFO] ▶️  user=276, hotel_recomendado=5341
+2026-02-22 18:52:23,125 [INFO]   Nodos: 182 | Relaciones: 300
+2026-02-22 18:52:23,132 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_276_hotel_5341_interactions.json (2.23s)
+2026-02-22 18:52:23,133 [INFO] ▶️  user=339, hotel_recomendado=3143
+2026-02-22 18:52:25,387 [INFO]   Nodos: 1440 | Relaciones: 300
+2026-02-22 18:52:25,408 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_3143_interactions.json (2.28s)
+2026-02-22 18:52:25,409 [INFO] ▶️  user=339, hotel_recomendado=2085
+2026-02-22 18:52:27,706 [INFO]   Nodos: 946 | Relaciones: 300
+2026-02-22 18:52:27,724 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_2085_interactions.json (2.32s)
+2026-02-22 18:52:27,725 [INFO] ▶️  user=339, hotel_recomendado=904
+2026-02-22 18:52:29,927 [INFO]   Nodos: 1310 | Relaciones: 300
+2026-02-22 18:52:29,947 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_904_interactions.json (2.22s)
+2026-02-22 18:52:29,947 [INFO] ▶️  user=339, hotel_recomendado=2781
+2026-02-22 18:52:32,167 [INFO]   Nodos: 655 | Relaciones: 300
+2026-02-22 18:52:32,180 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_2781_interactions.json (2.23s)
+2026-02-22 18:52:32,181 [INFO] ▶️  user=339, hotel_recomendado=5111
+2026-02-22 18:52:34,473 [INFO]   Nodos: 1049 | Relaciones: 300
+2026-02-22 18:52:34,491 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_5111_interactions.json (2.31s)
+2026-02-22 18:52:34,492 [INFO] ▶️  user=339, hotel_recomendado=4088
+2026-02-22 18:52:36,759 [INFO]   Nodos: 1602 | Relaciones: 300
+2026-02-22 18:52:36,784 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_4088_interactions.json (2.29s)
+2026-02-22 18:52:36,785 [INFO] ▶️  user=339, hotel_recomendado=4673
+2026-02-22 18:52:38,951 [INFO]   Nodos: 535 | Relaciones: 300
+2026-02-22 18:52:38,963 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_4673_interactions.json (2.18s)
+2026-02-22 18:52:38,964 [INFO] ▶️  user=339, hotel_recomendado=4749
+2026-02-22 18:52:41,204 [INFO]   Nodos: 415 | Relaciones: 300
+2026-02-22 18:52:41,216 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_4749_interactions.json (2.25s)
+2026-02-22 18:52:41,216 [INFO] ▶️  user=339, hotel_recomendado=45
+2026-02-22 18:52:43,590 [INFO]   Nodos: 3227 | Relaciones: 300
+2026-02-22 18:52:43,632 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_45_interactions.json (2.42s)
+2026-02-22 18:52:43,633 [INFO] ▶️  user=339, hotel_recomendado=1195
+2026-02-22 18:52:45,841 [INFO]   Nodos: 433 | Relaciones: 300
+2026-02-22 18:52:45,852 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_1195_interactions.json (2.22s)
+2026-02-22 18:52:45,852 [INFO] ▶️  user=339, hotel_recomendado=3705
+2026-02-22 18:52:48,114 [INFO]   Nodos: 602 | Relaciones: 300
+2026-02-22 18:52:48,126 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_3705_interactions.json (2.27s)
+2026-02-22 18:52:48,127 [INFO] ▶️  user=339, hotel_recomendado=566
+2026-02-22 18:52:50,462 [INFO]   Nodos: 865 | Relaciones: 300
+2026-02-22 18:52:50,477 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_566_interactions.json (2.35s)
+2026-02-22 18:52:50,477 [INFO] ▶️  user=339, hotel_recomendado=4314
+2026-02-22 18:52:52,649 [INFO]   Nodos: 426 | Relaciones: 300
+2026-02-22 18:52:52,659 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_4314_interactions.json (2.18s)
+2026-02-22 18:52:52,659 [INFO] ▶️  user=339, hotel_recomendado=4783
+2026-02-22 18:52:54,933 [INFO]   Nodos: 514 | Relaciones: 300
+2026-02-22 18:52:54,943 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_4783_interactions.json (2.28s)
+2026-02-22 18:52:54,943 [INFO] ▶️  user=339, hotel_recomendado=725
+2026-02-22 18:52:57,158 [INFO]   Nodos: 488 | Relaciones: 300
+2026-02-22 18:52:57,171 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_725_interactions.json (2.23s)
+2026-02-22 18:52:57,172 [INFO] ▶️  user=339, hotel_recomendado=1298
+2026-02-22 18:52:59,433 [INFO]   Nodos: 347 | Relaciones: 300
+2026-02-22 18:52:59,443 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_1298_interactions.json (2.27s)
+2026-02-22 18:52:59,444 [INFO] ▶️  user=339, hotel_recomendado=2557
+2026-02-22 18:53:01,738 [INFO]   Nodos: 2321 | Relaciones: 300
+2026-02-22 18:53:01,769 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_2557_interactions.json (2.33s)
+2026-02-22 18:53:01,770 [INFO] ▶️  user=339, hotel_recomendado=5201
+2026-02-22 18:53:04,029 [INFO]   Nodos: 451 | Relaciones: 300
+2026-02-22 18:53:04,041 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_5201_interactions.json (2.27s)
+2026-02-22 18:53:04,041 [INFO] ▶️  user=339, hotel_recomendado=150
+2026-02-22 18:53:06,262 [INFO]   Nodos: 216 | Relaciones: 300
+2026-02-22 18:53:06,268 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_150_interactions.json (2.23s)
+2026-02-22 18:53:06,269 [INFO] ▶️  user=339, hotel_recomendado=1356
+2026-02-22 18:53:08,623 [INFO]   Nodos: 499 | Relaciones: 300
+2026-02-22 18:53:08,636 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_1356_interactions.json (2.37s)
+2026-02-22 18:53:08,637 [INFO] ▶️  user=339, hotel_recomendado=1144
+2026-02-22 18:53:10,895 [INFO]   Nodos: 386 | Relaciones: 300
+2026-02-22 18:53:10,906 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_1144_interactions.json (2.27s)
+2026-02-22 18:53:10,907 [INFO] ▶️  user=339, hotel_recomendado=5241
+2026-02-22 18:53:13,130 [INFO]   Nodos: 439 | Relaciones: 300
+2026-02-22 18:53:13,142 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_5241_interactions.json (2.24s)
+2026-02-22 18:53:13,142 [INFO] ▶️  user=339, hotel_recomendado=4254
+2026-02-22 18:53:15,403 [INFO]   Nodos: 473 | Relaciones: 300
+2026-02-22 18:53:15,413 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_4254_interactions.json (2.27s)
+2026-02-22 18:53:15,414 [INFO] ▶️  user=339, hotel_recomendado=686
+2026-02-22 18:53:17,622 [INFO]   Nodos: 565 | Relaciones: 300
+2026-02-22 18:53:17,636 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_686_interactions.json (2.22s)
+2026-02-22 18:53:17,636 [INFO] ▶️  user=339, hotel_recomendado=9
+2026-02-22 18:53:19,855 [INFO]   Nodos: 464 | Relaciones: 300
+2026-02-22 18:53:19,867 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_9_interactions.json (2.23s)
+2026-02-22 18:53:19,867 [INFO] ▶️  user=339, hotel_recomendado=1442
+2026-02-22 18:53:22,185 [INFO]   Nodos: 3231 | Relaciones: 300
+2026-02-22 18:53:22,226 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_1442_interactions.json (2.36s)
+2026-02-22 18:53:22,227 [INFO] ▶️  user=339, hotel_recomendado=4525
+2026-02-22 18:53:24,423 [INFO]   Nodos: 202 | Relaciones: 300
+2026-02-22 18:53:24,430 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_4525_interactions.json (2.20s)
+2026-02-22 18:53:24,431 [INFO] ▶️  user=339, hotel_recomendado=3732
+2026-02-22 18:53:26,732 [INFO]   Nodos: 2846 | Relaciones: 300
+2026-02-22 18:53:26,770 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_3732_interactions.json (2.34s)
+2026-02-22 18:53:26,772 [INFO] ▶️  user=339, hotel_recomendado=2612
+2026-02-22 18:53:28,984 [INFO]   Nodos: 448 | Relaciones: 300
+2026-02-22 18:53:28,996 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_2612_interactions.json (2.22s)
+2026-02-22 18:53:28,996 [INFO] ▶️  user=339, hotel_recomendado=2417
+2026-02-22 18:53:31,204 [INFO]   Nodos: 552 | Relaciones: 300
+2026-02-22 18:53:31,216 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_2417_interactions.json (2.22s)
+2026-02-22 18:53:31,221 [INFO] ▶️  user=339, hotel_recomendado=4427
+2026-02-22 18:53:33,476 [INFO]   Nodos: 320 | Relaciones: 300
+2026-02-22 18:53:33,487 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_4427_interactions.json (2.27s)
+2026-02-22 18:53:33,488 [INFO] ▶️  user=339, hotel_recomendado=1396
+2026-02-22 18:53:35,801 [INFO]   Nodos: 137 | Relaciones: 300
+2026-02-22 18:53:35,807 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_1396_interactions.json (2.32s)
+2026-02-22 18:53:35,807 [INFO] ▶️  user=339, hotel_recomendado=5571
+2026-02-22 18:53:38,026 [INFO]   Nodos: 447 | Relaciones: 300
+2026-02-22 18:53:38,039 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_5571_interactions.json (2.23s)
+2026-02-22 18:53:38,039 [INFO] ▶️  user=339, hotel_recomendado=25
+2026-02-22 18:53:40,277 [INFO]   Nodos: 1781 | Relaciones: 300
+2026-02-22 18:53:40,302 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_25_interactions.json (2.26s)
+2026-02-22 18:53:40,303 [INFO] ▶️  user=339, hotel_recomendado=2191
+2026-02-22 18:53:42,541 [INFO]   Nodos: 133 | Relaciones: 300
+2026-02-22 18:53:42,547 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_2191_interactions.json (2.24s)
+2026-02-22 18:53:42,547 [INFO] ▶️  user=339, hotel_recomendado=180
+2026-02-22 18:53:44,768 [INFO]   Nodos: 261 | Relaciones: 300
+2026-02-22 18:53:44,776 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_180_interactions.json (2.23s)
+2026-02-22 18:53:44,776 [INFO] ▶️  user=339, hotel_recomendado=4194
+2026-02-22 18:53:47,011 [INFO]   Nodos: 293 | Relaciones: 300
+2026-02-22 18:53:47,018 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_4194_interactions.json (2.24s)
+2026-02-22 18:53:47,018 [INFO] ▶️  user=339, hotel_recomendado=1840
+2026-02-22 18:53:49,265 [INFO]   Nodos: 250 | Relaciones: 300
+2026-02-22 18:53:49,273 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_1840_interactions.json (2.25s)
+2026-02-22 18:53:49,273 [INFO] ▶️  user=339, hotel_recomendado=522
+2026-02-22 18:53:51,579 [INFO]   Nodos: 2918 | Relaciones: 300
+2026-02-22 18:53:51,618 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_522_interactions.json (2.34s)
+2026-02-22 18:53:51,619 [INFO] ▶️  user=339, hotel_recomendado=4656
+2026-02-22 18:53:53,812 [INFO]   Nodos: 113 | Relaciones: 300
+2026-02-22 18:53:53,818 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_4656_interactions.json (2.20s)
+2026-02-22 18:53:53,819 [INFO] ▶️  user=339, hotel_recomendado=2344
+2026-02-22 18:53:56,102 [INFO]   Nodos: 2482 | Relaciones: 300
+2026-02-22 18:53:56,135 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_2344_interactions.json (2.32s)
+2026-02-22 18:53:56,136 [INFO] ▶️  user=339, hotel_recomendado=5035
+2026-02-22 18:53:58,312 [INFO]   Nodos: 461 | Relaciones: 300
+2026-02-22 18:53:58,324 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_5035_interactions.json (2.19s)
+2026-02-22 18:53:58,324 [INFO] ▶️  user=339, hotel_recomendado=5341
+2026-02-22 18:54:00,577 [INFO]   Nodos: 176 | Relaciones: 300
+2026-02-22 18:54:00,584 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_5341_interactions.json (2.26s)
+2026-02-22 18:54:00,584 [INFO] ▶️  user=339, hotel_recomendado=558
+2026-02-22 18:54:02,761 [INFO]   Nodos: 199 | Relaciones: 300
+2026-02-22 18:54:02,767 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_558_interactions.json (2.18s)
+2026-02-22 18:54:02,768 [INFO] ▶️  user=339, hotel_recomendado=3117
+2026-02-22 18:54:04,957 [INFO]   Nodos: 106 | Relaciones: 300
+2026-02-22 18:54:04,963 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_3117_interactions.json (2.20s)
+2026-02-22 18:54:04,963 [INFO] ▶️  user=339, hotel_recomendado=581
+2026-02-22 18:54:07,199 [INFO]   Nodos: 115 | Relaciones: 300
+2026-02-22 18:54:07,204 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_581_interactions.json (2.24s)
+2026-02-22 18:54:07,205 [INFO] ▶️  user=339, hotel_recomendado=3165
+2026-02-22 18:54:09,492 [INFO]   Nodos: 2130 | Relaciones: 300
+2026-02-22 18:54:09,520 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_3165_interactions.json (2.32s)
+2026-02-22 18:54:09,521 [INFO] ▶️  user=339, hotel_recomendado=4294
+2026-02-22 18:54:11,714 [INFO]   Nodos: 131 | Relaciones: 300
+2026-02-22 18:54:11,720 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_4294_interactions.json (2.20s)
+2026-02-22 18:54:11,720 [INFO] ▶️  user=339, hotel_recomendado=478
+2026-02-22 18:54:14,508 [INFO]   Nodos: 112 | Relaciones: 300
+2026-02-22 18:54:14,514 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_478_interactions.json (2.79s)
+2026-02-22 18:54:14,514 [INFO] ▶️  user=339, hotel_recomendado=1798
+2026-02-22 18:54:16,786 [INFO]   Nodos: 150 | Relaciones: 300
+2026-02-22 18:54:16,792 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_339_hotel_1798_interactions.json (2.28s)
+2026-02-22 18:54:16,792 [INFO] ▶️  user=376, hotel_recomendado=473
+2026-02-22 18:54:19,061 [INFO]   Nodos: 1239 | Relaciones: 300
+2026-02-22 18:54:19,080 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_473_interactions.json (2.29s)
+2026-02-22 18:54:19,080 [INFO] ▶️  user=376, hotel_recomendado=522
+2026-02-22 18:54:21,396 [INFO]   Nodos: 2917 | Relaciones: 300
+2026-02-22 18:54:21,433 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_522_interactions.json (2.35s)
+2026-02-22 18:54:21,434 [INFO] ▶️  user=376, hotel_recomendado=5083
+2026-02-22 18:54:23,790 [INFO]   Nodos: 741 | Relaciones: 300
+2026-02-22 18:54:23,803 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_5083_interactions.json (2.37s)
+2026-02-22 18:54:23,804 [INFO] ▶️  user=376, hotel_recomendado=3398
+2026-02-22 18:54:26,007 [INFO]   Nodos: 1119 | Relaciones: 300
+2026-02-22 18:54:26,023 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_3398_interactions.json (2.22s)
+2026-02-22 18:54:26,024 [INFO] ▶️  user=376, hotel_recomendado=24
+2026-02-22 18:54:28,324 [INFO]   Nodos: 1749 | Relaciones: 300
+2026-02-22 18:54:28,348 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_24_interactions.json (2.32s)
+2026-02-22 18:54:28,349 [INFO] ▶️  user=376, hotel_recomendado=4359
+2026-02-22 18:54:30,560 [INFO]   Nodos: 980 | Relaciones: 300
+2026-02-22 18:54:30,575 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_4359_interactions.json (2.23s)
+2026-02-22 18:54:30,576 [INFO] ▶️  user=376, hotel_recomendado=3101
+2026-02-22 18:54:32,831 [INFO]   Nodos: 461 | Relaciones: 300
+2026-02-22 18:54:32,845 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_3101_interactions.json (2.27s)
+2026-02-22 18:54:32,845 [INFO] ▶️  user=376, hotel_recomendado=1914
+2026-02-22 18:54:35,210 [INFO]   Nodos: 380 | Relaciones: 300
+2026-02-22 18:54:35,219 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_1914_interactions.json (2.37s)
+2026-02-22 18:54:35,219 [INFO] ▶️  user=376, hotel_recomendado=2344
+2026-02-22 18:54:37,704 [INFO]   Nodos: 2482 | Relaciones: 300
+2026-02-22 18:54:37,739 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_2344_interactions.json (2.52s)
+2026-02-22 18:54:37,740 [INFO] ▶️  user=376, hotel_recomendado=5176
+2026-02-22 18:54:40,918 [INFO]   Nodos: 822 | Relaciones: 300
+2026-02-22 18:54:40,933 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_5176_interactions.json (3.19s)
+2026-02-22 18:54:40,933 [INFO] ▶️  user=376, hotel_recomendado=904
+2026-02-22 18:54:43,328 [INFO]   Nodos: 1310 | Relaciones: 300
+2026-02-22 18:54:43,347 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_904_interactions.json (2.41s)
+2026-02-22 18:54:43,348 [INFO] ▶️  user=376, hotel_recomendado=3764
+2026-02-22 18:54:45,648 [INFO]   Nodos: 507 | Relaciones: 300
+2026-02-22 18:54:45,658 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_3764_interactions.json (2.31s)
+2026-02-22 18:54:45,659 [INFO] ▶️  user=376, hotel_recomendado=45
+2026-02-22 18:54:48,207 [INFO]   Nodos: 3225 | Relaciones: 300
+2026-02-22 18:54:48,258 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_45_interactions.json (2.60s)
+2026-02-22 18:54:48,259 [INFO] ▶️  user=376, hotel_recomendado=934
+2026-02-22 18:54:50,697 [INFO]   Nodos: 378 | Relaciones: 300
+2026-02-22 18:54:50,706 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_934_interactions.json (2.45s)
+2026-02-22 18:54:50,706 [INFO] ▶️  user=376, hotel_recomendado=2877
+2026-02-22 18:54:53,289 [INFO]   Nodos: 96 | Relaciones: 300
+2026-02-22 18:54:53,294 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_2877_interactions.json (2.59s)
+2026-02-22 18:54:53,294 [INFO] ▶️  user=376, hotel_recomendado=5168
+2026-02-22 18:54:56,044 [INFO]   Nodos: 1077 | Relaciones: 300
+2026-02-22 18:54:56,069 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_5168_interactions.json (2.77s)
+2026-02-22 18:54:56,070 [INFO] ▶️  user=376, hotel_recomendado=104
+2026-02-22 18:54:58,458 [INFO]   Nodos: 2112 | Relaciones: 300
+2026-02-22 18:54:58,491 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_104_interactions.json (2.42s)
+2026-02-22 18:54:58,492 [INFO] ▶️  user=376, hotel_recomendado=2424
+2026-02-22 18:55:00,875 [INFO]   Nodos: 353 | Relaciones: 300
+2026-02-22 18:55:00,885 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_2424_interactions.json (2.39s)
+2026-02-22 18:55:00,885 [INFO] ▶️  user=376, hotel_recomendado=4184
+2026-02-22 18:55:03,770 [INFO]   Nodos: 1666 | Relaciones: 300
+2026-02-22 18:55:03,799 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_4184_interactions.json (2.91s)
+2026-02-22 18:55:03,800 [INFO] ▶️  user=376, hotel_recomendado=652
+2026-02-22 18:55:06,182 [INFO]   Nodos: 98 | Relaciones: 300
+2026-02-22 18:55:06,188 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_652_interactions.json (2.39s)
+2026-02-22 18:55:06,188 [INFO] ▶️  user=376, hotel_recomendado=880
+2026-02-22 18:55:08,648 [INFO]   Nodos: 2467 | Relaciones: 300
+2026-02-22 18:55:08,684 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_880_interactions.json (2.50s)
+2026-02-22 18:55:08,685 [INFO] ▶️  user=376, hotel_recomendado=5222
+2026-02-22 18:55:10,963 [INFO]   Nodos: 60 | Relaciones: 300
+2026-02-22 18:55:10,968 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_5222_interactions.json (2.28s)
+2026-02-22 18:55:10,968 [INFO] ▶️  user=376, hotel_recomendado=1442
+2026-02-22 18:55:13,447 [INFO]   Nodos: 3234 | Relaciones: 300
+2026-02-22 18:55:13,496 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_1442_interactions.json (2.53s)
+2026-02-22 18:55:13,497 [INFO] ▶️  user=376, hotel_recomendado=4845
+2026-02-22 18:55:15,805 [INFO]   Nodos: 377 | Relaciones: 300
+2026-02-22 18:55:15,814 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_4845_interactions.json (2.32s)
+2026-02-22 18:55:15,814 [INFO] ▶️  user=376, hotel_recomendado=214
+2026-02-22 18:55:18,104 [INFO]   Nodos: 324 | Relaciones: 300
+2026-02-22 18:55:18,112 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_214_interactions.json (2.30s)
+2026-02-22 18:55:18,113 [INFO] ▶️  user=376, hotel_recomendado=3457
+2026-02-22 18:55:20,313 [INFO]   Nodos: 111 | Relaciones: 300
+2026-02-22 18:55:20,319 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_3457_interactions.json (2.21s)
+2026-02-22 18:55:20,319 [INFO] ▶️  user=376, hotel_recomendado=774
+2026-02-22 18:55:22,584 [INFO]   Nodos: 2477 | Relaciones: 300
+2026-02-22 18:55:22,616 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_774_interactions.json (2.30s)
+2026-02-22 18:55:22,617 [INFO] ▶️  user=376, hotel_recomendado=1178
+2026-02-22 18:55:25,100 [INFO]   Nodos: 651 | Relaciones: 300
+2026-02-22 18:55:25,121 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_1178_interactions.json (2.50s)
+2026-02-22 18:55:25,122 [INFO] ▶️  user=376, hotel_recomendado=5656
+2026-02-22 18:55:27,629 [INFO]   Nodos: 153 | Relaciones: 300
+2026-02-22 18:55:27,635 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_5656_interactions.json (2.51s)
+2026-02-22 18:55:27,635 [INFO] ▶️  user=376, hotel_recomendado=4604
+2026-02-22 18:55:29,960 [INFO]   Nodos: 198 | Relaciones: 300
+2026-02-22 18:55:29,966 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_4604_interactions.json (2.33s)
+2026-02-22 18:55:29,967 [INFO] ▶️  user=376, hotel_recomendado=4073
+2026-02-22 18:55:32,333 [INFO]   Nodos: 633 | Relaciones: 300
+2026-02-22 18:55:32,346 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_4073_interactions.json (2.38s)
+2026-02-22 18:55:32,347 [INFO] ▶️  user=376, hotel_recomendado=2618
+2026-02-22 18:55:34,608 [INFO]   Nodos: 151 | Relaciones: 300
+2026-02-22 18:55:34,614 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_2618_interactions.json (2.27s)
+2026-02-22 18:55:34,614 [INFO] ▶️  user=376, hotel_recomendado=4634
+2026-02-22 18:55:37,040 [INFO]   Nodos: 589 | Relaciones: 300
+2026-02-22 18:55:37,052 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_4634_interactions.json (2.44s)
+2026-02-22 18:55:37,052 [INFO] ▶️  user=376, hotel_recomendado=1961
+2026-02-22 18:55:39,302 [INFO]   Nodos: 193 | Relaciones: 300
+2026-02-22 18:55:39,309 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_1961_interactions.json (2.26s)
+2026-02-22 18:55:39,309 [INFO] ▶️  user=376, hotel_recomendado=4567
+2026-02-22 18:55:41,675 [INFO]   Nodos: 871 | Relaciones: 300
+2026-02-22 18:55:41,692 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_4567_interactions.json (2.38s)
+2026-02-22 18:55:41,692 [INFO] ▶️  user=376, hotel_recomendado=5169
+2026-02-22 18:55:43,978 [INFO]   Nodos: 1023 | Relaciones: 300
+2026-02-22 18:55:43,994 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_5169_interactions.json (2.30s)
+2026-02-22 18:55:43,994 [INFO] ▶️  user=376, hotel_recomendado=798
+2026-02-22 18:55:46,361 [INFO]   Nodos: 496 | Relaciones: 300
+2026-02-22 18:55:46,372 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_798_interactions.json (2.38s)
+2026-02-22 18:55:46,372 [INFO] ▶️  user=376, hotel_recomendado=2406
+2026-02-22 18:55:48,588 [INFO]   Nodos: 189 | Relaciones: 300
+2026-02-22 18:55:48,600 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_2406_interactions.json (2.23s)
+2026-02-22 18:55:48,601 [INFO] ▶️  user=376, hotel_recomendado=4088
+2026-02-22 18:55:50,950 [INFO]   Nodos: 1604 | Relaciones: 300
+2026-02-22 18:55:50,976 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_4088_interactions.json (2.38s)
+2026-02-22 18:55:50,977 [INFO] ▶️  user=376, hotel_recomendado=1201
+2026-02-22 18:55:53,192 [INFO]   Nodos: 103 | Relaciones: 300
+2026-02-22 18:55:53,198 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_1201_interactions.json (2.22s)
+2026-02-22 18:55:53,198 [INFO] ▶️  user=376, hotel_recomendado=4875
+2026-02-22 18:55:55,434 [INFO]   Nodos: 99 | Relaciones: 300
+2026-02-22 18:55:55,439 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_4875_interactions.json (2.24s)
+2026-02-22 18:55:55,440 [INFO] ▶️  user=376, hotel_recomendado=3480
+2026-02-22 18:55:57,631 [INFO]   Nodos: 67 | Relaciones: 300
+2026-02-22 18:55:57,636 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_3480_interactions.json (2.20s)
+2026-02-22 18:55:57,636 [INFO] ▶️  user=376, hotel_recomendado=3966
+2026-02-22 18:56:00,163 [INFO]   Nodos: 104 | Relaciones: 300
+2026-02-22 18:56:00,168 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_3966_interactions.json (2.53s)
+2026-02-22 18:56:00,169 [INFO] ▶️  user=376, hotel_recomendado=5336
+2026-02-22 18:56:02,817 [INFO]   Nodos: 212 | Relaciones: 300
+2026-02-22 18:56:02,824 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_5336_interactions.json (2.66s)
+2026-02-22 18:56:02,825 [INFO] ▶️  user=376, hotel_recomendado=3651
+2026-02-22 18:56:05,140 [INFO]   Nodos: 72 | Relaciones: 300
+2026-02-22 18:56:05,145 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_3651_interactions.json (2.32s)
+2026-02-22 18:56:05,145 [INFO] ▶️  user=376, hotel_recomendado=2617
+2026-02-22 18:56:07,391 [INFO]   Nodos: 441 | Relaciones: 300
+2026-02-22 18:56:07,400 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_2617_interactions.json (2.25s)
+2026-02-22 18:56:07,400 [INFO] ▶️  user=376, hotel_recomendado=4566
+2026-02-22 18:56:10,021 [INFO]   Nodos: 83 | Relaciones: 300
+2026-02-22 18:56:10,028 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_4566_interactions.json (2.63s)
+2026-02-22 18:56:10,028 [INFO] ▶️  user=376, hotel_recomendado=1924
+2026-02-22 18:56:12,327 [INFO]   Nodos: 101 | Relaciones: 300
+2026-02-22 18:56:12,333 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_1924_interactions.json (2.30s)
+2026-02-22 18:56:12,333 [INFO] ▶️  user=376, hotel_recomendado=210
+2026-02-22 18:56:14,661 [INFO]   Nodos: 126 | Relaciones: 300
+2026-02-22 18:56:14,667 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_210_interactions.json (2.33s)
+2026-02-22 18:56:14,668 [INFO] ▶️  user=376, hotel_recomendado=3700
+2026-02-22 18:56:16,894 [INFO]   Nodos: 133 | Relaciones: 300
+2026-02-22 18:56:16,900 [INFO]   ✅ Guardado en C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\subgrafos_interacciones_muestra\user_376_hotel_3700_interactions.json (2.23s)
+2026-02-22 18:56:16,901 [INFO] ======================================================================
+2026-02-22 18:56:16,901 [INFO] COMPLETADO — Exitosos: 250 | Fallidos: 0
+2026-02-22 18:56:16,901 [INFO] ======================================================================

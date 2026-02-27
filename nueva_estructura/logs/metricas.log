@@ -1,0 +1,11 @@
+2026-02-22 18:28:28,357 [INFO] ======================================================================
+2026-02-22 18:28:28,358 [INFO] CÁLCULO DE MÉTRICAS — MODE=muestra
+2026-02-22 18:28:28,358 [INFO] ======================================================================
+2026-02-22 18:28:28,358 [INFO] 📂 Explicaciones his+rec: C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\explicaciones_historico_y_recomendacion_muestra
+2026-02-22 18:28:28,358 [INFO] 📂 Explicaciones hist:    C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\data\explicaciones_historico_muestra
+2026-02-22 18:28:28,359 [INFO] 💾 Salida métricas:       C:\Users\cris\Desktop\MUSII\TFM\nueva_estructura\output\metricas_grafo_conocimiento_muestra
+2026-02-22 18:28:28,404 [INFO] 
+📊 Recomendaciones cargadas: 179200 filas
+2026-02-22 18:28:28,407 [INFO]    Usuarios totales en CSV: 3584
+2026-02-22 18:28:28,499 [INFO]    Usuarios con explicaciones: 5 → [3, 35, 276, 339, 376]
+
