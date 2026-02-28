@@ -31,28 +31,21 @@ MODE = "muestra"  # Cambiar a "completo" para procesar todos los usuarios
 USUARIOS_MUESTRA = [3, 35, 276, 339, 376]  # Usuarios para modo muestra
 
 # ============================================================
-# DEFINICIÓN DE RUTAS RELATIVAS (desde la ubicación de este script)
+# RUTAS RELATIVAS AL DIRECTORIO DE TRABAJO (raíz del proyecto)
+# Ejecutar siempre desde: Sistema_recomendacion_xai_TFM_MUSII_CMN/
 # ============================================================
-# Este script está en: src/extraccion_metricas_conjunto/xaigraph.py
-SCRIPT_DIR = Path(__file__).parent  # .../extraccion_metricas_conjunto/
+PROJECT_ROOT = Path(".")  # Directorio de trabajo = raíz del proyecto
 
-# Subir niveles hasta llegar a la raíz
-# ../  → src/
-# ../../  → raíz del proyecto
-PROJECT_ROOT = SCRIPT_DIR / ".." / ".."
-
-# Definir rutas relativas desde la raíz
-DATA_DIR = PROJECT_ROOT / "data"
-RAW_DIR  = DATA_DIR / "raw"
+DATA_DIR   = PROJECT_ROOT / "data"
+RAW_DIR    = DATA_DIR / "raw"
 OUTPUT_DIR = PROJECT_ROOT / "output"
 LOGS_DIR   = PROJECT_ROOT / "logs"
 
-CSV_USUARIO_RATING_RECOMEND     = RAW_DIR / "relacion_usuario_rating_recomendador.csv"
-EXPLICACIONES_HISTORICO_Y_REC   = DATA_DIR / f"explicaciones_historico_y_recomendacion_{MODE}"
-SUBGRAFOS_INTERACCIONES         = DATA_DIR / f"subgrafos_interacciones_{MODE}"
-METRICAS_CONOCIMIENTO           = OUTPUT_DIR / f"metricas_grafo_conocimiento_{MODE}"
-METRICAS_INTERACCION            = OUTPUT_DIR / f"metricas_grafo_interaccion_{MODE}"
-
+CSV_USUARIO_RATING_RECOMEND   = RAW_DIR / "relacion_usuario_rating_recomendador.csv"
+EXPLICACIONES_HISTORICO_Y_REC = DATA_DIR / f"explicaciones_historico_y_recomendacion_{MODE}"
+SUBGRAFOS_INTERACCIONES       = DATA_DIR / f"subgrafos_interacciones_{MODE}"
+METRICAS_CONOCIMIENTO         = OUTPUT_DIR / f"metricas_grafo_conocimiento_{MODE}"
+METRICAS_INTERACCION          = OUTPUT_DIR / f"metricas_grafo_interaccion_{MODE}"
 
 # Crear carpetas si no existen
 for _dir in [METRICAS_CONOCIMIENTO, METRICAS_INTERACCION, LOGS_DIR]:

@@ -28,17 +28,11 @@ import sys
 MODE = "muestra"  # Cambiar a "completo" para procesar todos los usuarios
 
 # ============================================================
-# DEFINICIÓN DE RUTAS RELATIVAS (desde la ubicación de este script)
+# RUTAS RELATIVAS AL DIRECTORIO DE TRABAJO (raíz del proyecto)
+# Ejecutar siempre desde: Sistema_recomendacion_xai_TFM_MUSII_CMN/
 # ============================================================
-# Este script está en: src/extraccion_metricas_interaccion/métricas.py
-SCRIPT_DIR = Path(__file__).parent  # .../extraccion_metricas_interaccion/
+PROJECT_ROOT = Path(".")  # Directorio de trabajo = raíz del proyecto
 
-# Subir niveles hasta llegar a la raíz
-# ../  → src/
-# ../../  → raíz del proyecto
-PROJECT_ROOT = SCRIPT_DIR / ".." / ".."
-
-# Definir rutas relativas desde la raíz
 DATA_DIR = PROJECT_ROOT / "data"
 SUBGRAFOS_INTERACCIONES = DATA_DIR / f"subgrafos_interacciones_{MODE}"
 

@@ -18,18 +18,11 @@ MODE = "muestra"  # Cambiar a "completo" para procesar todos los usuarios
 USUARIOS_MUESTRA = [3, 35, 276, 339, 376]  # Usuarios para modo muestra
 
 # ============================================================
-# DEFINICIÓN DE RUTAS RELATIVAS (desde la ubicación de este script)
+# RUTAS RELATIVAS AL DIRECTORIO DE TRABAJO (raíz del proyecto)
+# Ejecutar siempre desde: Sistema_recomendacion_xai_TFM_MUSII_CMN/
 # ============================================================
-# Este script está en: src/extraccion_subgrafos/subgrafo_interaccion/extract_interaction_subgraphs.py
-SCRIPT_DIR = Path(__file__).parent  # .../subgrafo_interaccion/
+PROJECT_ROOT = Path(".")  # Directorio de trabajo = raíz del proyecto
 
-# Subir niveles hasta llegar a la raíz
-# ../  → extraccion_subgrafos/
-# ../../  → src/
-# ../../../  → raíz del proyecto
-PROJECT_ROOT = SCRIPT_DIR / ".." / ".." / ".."
-
-# Definir rutas relativas desde la raíz
 DATA_DIR = PROJECT_ROOT / "data"
 RAW_DIR  = DATA_DIR / "raw"
 CSV_USUARIO_RATING_RECOMEND = RAW_DIR / "relacion_usuario_rating_recomendador.csv"
@@ -38,7 +31,8 @@ LOGS_DIR = PROJECT_ROOT / "logs"
 # Crear carpetas si no existen
 LOGS_DIR.mkdir(parents=True, exist_ok=True)
 
-# Añadir directorio actual al path para importar utils locales (mismo directorio)
+# Añadir directorio del script al path para importar utils locales
+SCRIPT_DIR = Path(__file__).parent
 sys.path.insert(0, str(SCRIPT_DIR))
 
 import pandas as pd

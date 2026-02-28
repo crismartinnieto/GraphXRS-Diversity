@@ -21,17 +21,11 @@ from pathlib import Path
 MODE = "muestra"  # Cambiar a "completo" para procesar todos los usuarios
 
 # ============================================================
-# DEFINICIÓN DE RUTAS RELATIVAS (desde la ubicación de este script)
+# RUTAS RELATIVAS AL DIRECTORIO DE TRABAJO (raíz del proyecto)
+# Ejecutar siempre desde: Sistema_recomendacion_xai_TFM_MUSII_CMN/
 # ============================================================
-# Este script está en: src/extraccion_explicaciones_conocimiento/crear_explicaciones.py
-SCRIPT_DIR = Path(__file__).parent  # SIN .resolve() para mantener ruta relativa
+PROJECT_ROOT = Path(".")  # Directorio de trabajo = raíz del proyecto
 
-# Subir niveles hasta llegar a la raíz
-# ../  → src/
-# ../../  → raíz del proyecto
-PROJECT_ROOT = SCRIPT_DIR / ".." / ".."
-
-# Definir rutas relativas desde la raíz
 DATA_DIR = PROJECT_ROOT / "data"
 SUBGRAFOS_CONOCIMIENTO        = DATA_DIR / f"subgrafos_conocimiento_{MODE}"
 EXPLICACIONES_HISTORICO       = DATA_DIR / f"explicaciones_historico_{MODE}"

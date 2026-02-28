@@ -21,13 +21,11 @@ SCRIPT_DIR = Path(__file__).parent  # .../extraccion_metricas_conocimiento/
 # Subir niveles hasta llegar a la raíz
 # ../  → src/
 # ../../  → raíz del proyecto
-PROJECT_ROOT = SCRIPT_DIR / ".." / ".."
+PROJECT_ROOT = Path(".")  # Directorio de trabajo = raíz del proyecto
 
 # Definir rutas relativas desde la raíz
 DATA_DIR = PROJECT_ROOT / "data"
 EXPLICACIONES_HISTORICO_Y_REC = DATA_DIR / f"explicaciones_historico_y_recomendacion_{MODE}"
-
-
 
 
 # ============================================================================
