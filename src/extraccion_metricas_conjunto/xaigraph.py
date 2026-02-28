@@ -34,12 +34,12 @@ USUARIOS_MUESTRA = [3, 35, 276, 339, 376]  # Usuarios para modo muestra
 # DEFINICIÓN DE RUTAS RELATIVAS (desde la ubicación de este script)
 # ============================================================
 # Este script está en: src/extraccion_metricas_conjunto/xaigraph.py
-SCRIPT_DIR = Path(__file__).resolve().parent  # .../extraccion_metricas_conjunto/
+SCRIPT_DIR = Path(__file__).parent  # .../extraccion_metricas_conjunto/
 
 # Subir niveles hasta llegar a la raíz
 # ../  → src/
 # ../../  → raíz del proyecto
-PROJECT_ROOT = SCRIPT_DIR.parent.parent
+PROJECT_ROOT = SCRIPT_DIR / ".." / ".."
 
 # Definir rutas relativas desde la raíz
 DATA_DIR = PROJECT_ROOT / "data"
@@ -52,6 +52,7 @@ EXPLICACIONES_HISTORICO_Y_REC   = DATA_DIR / f"explicaciones_historico_y_recomen
 SUBGRAFOS_INTERACCIONES         = DATA_DIR / f"subgrafos_interacciones_{MODE}"
 METRICAS_CONOCIMIENTO           = OUTPUT_DIR / f"metricas_grafo_conocimiento_{MODE}"
 METRICAS_INTERACCION            = OUTPUT_DIR / f"metricas_grafo_interaccion_{MODE}"
+
 
 # Crear carpetas si no existen
 for _dir in [METRICAS_CONOCIMIENTO, METRICAS_INTERACCION, LOGS_DIR]:

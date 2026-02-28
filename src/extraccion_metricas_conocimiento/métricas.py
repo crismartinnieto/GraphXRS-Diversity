@@ -16,12 +16,12 @@ MODE = "muestra"  # Cambiar a "completo" para procesar todos los usuarios
 # DEFINICIÓN DE RUTAS RELATIVAS (desde la ubicación de este script)
 # ============================================================
 # Este script está en: src/extraccion_metricas_conocimiento/métricas.py
-SCRIPT_DIR = Path(__file__).resolve().parent  # .../extraccion_metricas_conocimiento/
+SCRIPT_DIR = Path(__file__).parent  # .../extraccion_metricas_conocimiento/
 
 # Subir niveles hasta llegar a la raíz
 # ../  → src/
 # ../../  → raíz del proyecto
-PROJECT_ROOT = SCRIPT_DIR.parent.parent
+PROJECT_ROOT = SCRIPT_DIR / ".." / ".."
 
 # Definir rutas relativas desde la raíz
 DATA_DIR = PROJECT_ROOT / "data"

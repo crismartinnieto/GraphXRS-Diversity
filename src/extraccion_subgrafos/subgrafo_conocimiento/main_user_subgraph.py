@@ -21,13 +21,13 @@ USUARIOS_MUESTRA = [3, 35, 276, 339, 376]  # Usuarios para modo muestra
 # DEFINICIÓN DE RUTAS RELATIVAS (desde la ubicación de este script)
 # ============================================================
 # Este script está en: src/extraccion_subgrafos/subgrafo_conocimiento/main_user_subgraph.py
-SCRIPT_DIR = Path(__file__).resolve().parent  # .../subgrafo_conocimiento/
+SCRIPT_DIR = Path(__file__).parent  # SIN .resolve() para mantener ruta relativa
 
 # Subir niveles hasta llegar a la raíz
 # ../  → extraccion_subgrafos/
 # ../../  → src/
 # ../../../  → raíz del proyecto
-PROJECT_ROOT = SCRIPT_DIR.parent.parent.parent
+PROJECT_ROOT = SCRIPT_DIR / ".." / ".." / ".."
 
 # Definir rutas relativas desde la raíz
 DATA_DIR = PROJECT_ROOT / "data"
