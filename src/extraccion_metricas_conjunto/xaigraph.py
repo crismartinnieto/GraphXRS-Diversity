@@ -66,7 +66,6 @@ try:
         USUARIOS_MUESTRA,
     )
 except ImportError:
-    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
     from config_mode import (
         CSV_USUARIO_RATING_RECOMEND,
         EXPLICACIONES_HISTORICO_Y_REC,
@@ -114,7 +113,6 @@ try:
         NormDegreeCentralidadHotelStrategy,
     )
 except ImportError:
-    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
     from extraccion_metricas_conocimiento.métricas import (
         CalculadorMetricas,
         PropiedadesCompartidasStrategy,
