@@ -26,7 +26,7 @@ PROJECT_ROOT = Path(".")  # Directorio de trabajo = raíz del proyecto
 # Definir rutas relativas desde la raíz
 DATA_DIR = PROJECT_ROOT / "data"
 EXPLICACIONES_HISTORICO_Y_REC = DATA_DIR / f"explicaciones_historico_y_recomendacion_{MODE}"
-
+EXPLICACIONES_HISTORICO = DATA_DIR / f"explicaciones_historico_{MODE}"
 
 # ============================================================================
 # ESTRATEGIA BASE (Interfaz comun)
