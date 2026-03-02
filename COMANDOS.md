@@ -14,19 +14,13 @@ docker-compose up --build
 
 cd .\\Desktop\\MUSII\\TFM\\nueva\_estructura\\src\\extraccion\_subgrafos\\subgrafo\_conocimiento
 
-python main\_user\_subgraph.py
+python src/extraccion\_subgrafos/subgrafo\_conocimiento/main\_user\_subgraph.py
 
 
 
 cd .\\Desktop\\MUSII\\TFM\\nueva\_estructura\\src\\extraccion\_explicaciones\_conocimiento
 
-python crear\_explicaciones.py
-
-
-
-cd .\\Desktop\\MUSII\\TFM\\nueva\_estructura\\src\\extraccion\_metricas\_conocimiento
-
-python calcular.py
+python src/extraccion\_explicaciones\_conocimiento/crear\_explicaciones.py
 
 
 
@@ -34,13 +28,15 @@ python calcular.py
 
 cd .\\Desktop\\MUSII\\TFM\\nueva\_estructura\\src\\extraccion\_subgrafos\\subgrafo\_interaccion
 
-python .\\extract\_interaction\_subgraphs.py
+python src/extraccion\_subgrafos/subgrafo\_interaccion/extract\_interaction\_subgraphs.py
 
 
 
-cd .\\Desktop\\MUSII\\TFM\\nueva\_estructura\\src\\extraccion\_metricas\_interaccion
+\# 
 
-python .\\calcular.py
+cd .\\Desktop\\MUSII\\TFM\\nueva\_estructura\\src\\extraccion\_metricas\_conocimiento
+
+python src/extraccion\_metricas\_conjunto/xaigraph.py
 
 
 
