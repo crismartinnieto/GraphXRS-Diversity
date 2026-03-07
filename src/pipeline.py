@@ -76,8 +76,8 @@ from extraccion_subgrafos.subgrafo_conocimiento.utils_interactions import get_us
 from extraccion_subgrafos.subgrafo_conocimiento.utils_knowledge    import get_subgraph_for_hotels
 from extraccion_subgrafos.subgrafo_interaccion.utils_interaction_patterns import get_subgraph_for_user_and_hotel
 
-from extraccion_metricas_conocimiento.metricas import calcular_metricas_kg, NOMBRES_METRICAS_KG
-from extraccion_metricas_interaccion.metricas  import calcular_metricas_cf, NOMBRES_METRICAS_CF
+from extraccion_metricas_conocimiento.métricas import calcular_metricas_kg, NOMBRES_METRICAS_KG
+from extraccion_metricas_interaccion.métricas  import calcular_metricas_cf, NOMBRES_METRICAS_CF
 
 
 # ============================================================
