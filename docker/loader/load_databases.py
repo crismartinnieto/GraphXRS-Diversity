@@ -124,37 +124,10 @@ MERGE (b)-[r:RELATION {type: row.rel}]->(n)
 logger.info(f"✅ 'knowledge': {len(records_knowledge)} relaciones insertadas")
 
 # ============================================================
-# CARGAR BASE 'expanded-recommendations'
-# ============================================================
-logger.info("\n📦 === CARGANDO BASE 'expanded-recommendations' ===")
-graph_expanded = Graph(uri, auth=(user, password), name="expanded-recommendations")
-graph_expanded.run("MATCH (n) DETACH DELETE n")
-
-logger.info(f"📂 Leyendo: {CSV_RECOMEND}")
-df_expanded = pd.read_csv(CSV_RECOMEND)
-logger.info(f"🔹 Filas: {len(df_expanded)}")
-
-graph_expanded.run("CREATE CONSTRAINT user_id IF NOT EXISTS FOR (u:User) REQUIRE u.id IS UNIQUE;")
-graph_expanded.run("CREATE CONSTRAINT business_id IF NOT EXISTS FOR (b:Business) REQUIRE b.id IS UNIQUE;")
-
-records_expanded = [
-    {"user_id": int(r["user_id"]), "business_id": int(r["business_id"]), "rating": float(r["rating"])}
-    for _, r in df_expanded.iterrows()
-]
-graph_expanded.run("""
-UNWIND $rows AS row
-MERGE (u:User {id: row.user_id})
-MERGE (b:Business {id: row.business_id})
-MERGE (u)-[r:RATED]->(b)
-SET r.rating = row.rating
-""", rows=records_expanded)
-logger.info(f"✅ 'expanded-recommendations': {len(records_expanded)} relaciones insertadas")
-
-# ============================================================
 # RESUMEN FINAL
 # ============================================================
 logger.info("\n📊 === RESUMEN FINAL ===")
-for nombre, g in [("interactions", graph_interactions), ("knowledge", graph_knowledge), ("expanded-recommendations", graph_expanded)]:
+for nombre, g in [("interactions", graph_interactions), ("knowledge", graph_knowledge)]:
     logger.info(f"\n🔹 Base '{nombre}':")
     for row in g.run("MATCH (n) RETURN labels(n)[0] AS tipo, count(*) AS cantidad").data():
         logger.info(f"  {row['tipo']}: {row['cantidad']}")
