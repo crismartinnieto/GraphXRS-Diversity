@@ -65,8 +65,8 @@ from extraccion_metricas_conocimiento.métricas import (
     CalculadorMetricas,
     PropiedadesCompartidasStrategy,
     RatioPropiedadesCompartidasStrategy,
-    ConsistenciaTiposStrategy,
     PesoPonderadoPerfilStrategy,
+    SimilaridadJaccardStrategy,
 )
 
 from extraccion_metricas_interaccion.métricas import (
@@ -129,8 +129,8 @@ class XAIGraphMetrics:
             return [
                 PropiedadesCompartidasStrategy(),
                 RatioPropiedadesCompartidasStrategy(),
-                ConsistenciaTiposStrategy(),
                 PesoPonderadoPerfilStrategy(),
+                SimilaridadJaccardStrategy(),
             ]
         else:
             return [

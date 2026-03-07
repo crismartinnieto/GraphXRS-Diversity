@@ -79,39 +79,6 @@ class RatioPropiedadesCompartidasStrategy(MetricaStrategy):
     def nombre(self): return 'ratio_propiedades_compartidas'
 
 
-class ConsistenciaTiposStrategy(MetricaStrategy):
-    """Los tipos de la explicacion coinciden con los tipos frecuentes del perfil?"""
-    def _obtener_perfil_tipos_usuario(self, df_historicos, usuario):
-        rows = df_historicos[df_historicos['usuario'] == usuario]
-        contador = Counter()
-        for props in rows['propiedades'].values:
-            if isinstance(props, str):
-                props = ast.literal_eval(props)
-            tipos = [tipo for _, tipo in props]
-            contador.update(tipos)
-        return dict(contador)
-    def calcular(self, df_comparacion, df_historicos, usuario, hotel_rec, hotel_hist):
-        row = df_comparacion[
-            (df_comparacion['usuario'] == usuario) &
-            (df_comparacion['hotel_recomendado'] == hotel_rec) &
-            (df_comparacion['hotel_historico'] == hotel_hist)
-        ]
-        if len(row) == 0:
-            return 0.0
-        props = row['propiedades_compartidas'].values[0]
-        if isinstance(props, str):
-            props = ast.literal_eval(props)
-        if len(props) == 0:
-            return 0.0
-        perfil_tipos = self._obtener_perfil_tipos_usuario(df_historicos, usuario)
-        if len(perfil_tipos) == 0:
-            return 0.0
-        tipos_explicacion = [tipo for _, tipo in props]
-        tipos_consistentes = sum(1 for t in tipos_explicacion if t in perfil_tipos)
-        return tipos_consistentes / len(tipos_explicacion)
-    def nombre(self): return 'consistencia_tipos'
-
-
 class PesoPonderadoPerfilStrategy(MetricaStrategy):
     """Suma de frecuencias del perfil para las propiedades de la explicacion, normalizada."""
     def _obtener_perfil_usuario(self, df_historicos, usuario):
@@ -150,6 +117,40 @@ class PesoPonderadoPerfilStrategy(MetricaStrategy):
     def nombre(self): return 'peso_ponderado_perfil'
 
 
+class SimilaridadJaccardStrategy(MetricaStrategy):
+    """Jaccard = |A interseccion B| / |A union B| entre propiedades y perfil."""
+    def _obtener_perfil_usuario(self, df_historicos, usuario):
+        rows = df_historicos[df_historicos['usuario'] == usuario]
+        propiedades_set = set()
+        for props in rows['propiedades'].values:
+            if isinstance(props, str):
+                props = ast.literal_eval(props)
+            propiedades_solo = [p[0] if isinstance(p, tuple) else p for p in props]
+            propiedades_set.update(propiedades_solo)
+        return propiedades_set
+    def _obtener_propiedades_explicacion(self, df_comparacion, usuario, hotel_rec, hotel_hist):
+        row = df_comparacion[
+            (df_comparacion['usuario'] == usuario) &
+            (df_comparacion['hotel_recomendado'] == hotel_rec) &
+            (df_comparacion['hotel_historico'] == hotel_hist)
+        ]
+        if len(row) == 0:
+            return set()
+        props = row['propiedades_compartidas'].values[0]
+        if isinstance(props, str):
+            props = ast.literal_eval(props)
+        return set([p[0] if isinstance(p, tuple) else p for p in props])
+    def calcular(self, df_comparacion, df_historicos, usuario, hotel_rec, hotel_hist):
+        perfil = self._obtener_perfil_usuario(df_historicos, usuario)
+        propiedades_explicacion = self._obtener_propiedades_explicacion(df_comparacion, usuario, hotel_rec, hotel_hist)
+        if len(perfil) == 0 or len(propiedades_explicacion) == 0:
+            return 0.0
+        interseccion = len(perfil & propiedades_explicacion)
+        union = len(perfil | propiedades_explicacion)
+        if union == 0:
+            return 0.0
+        return interseccion / union
+    def nombre(self): return 'jaccard_similarity'
 
 
 # ============================================================================
