@@ -72,12 +72,19 @@ LOGS_DIR.mkdir(parents=True, exist_ok=True)
 SRC_DIR = Path(__file__).parent
 sys.path.insert(0, str(SRC_DIR))
 
-from extraccion_subgrafos.subgrafo_conocimiento.utils_interactions import get_user_interacted_hotels
-from extraccion_subgrafos.subgrafo_conocimiento.utils_knowledge    import get_subgraph_for_hotels
-from extraccion_subgrafos.subgrafo_interaccion.utils_interaction_patterns import get_subgraph_for_user_and_hotel
+from extraccion_subgrafos.subgrafo_conocimiento.utils_interactions        import get_user_interacted_hotels
+from extraccion_subgrafos.subgrafo_conocimiento.utils_knowledge            import get_subgraph_for_hotels
+from extraccion_subgrafos.subgrafo_interaccion.utils_interaction_patterns  import get_subgraph_for_user_and_hotel
 
-from extraccion_metricas_conocimiento.métricas import calcular_metricas_kg, NOMBRES_METRICAS_KG
-from extraccion_metricas_interaccion.métricas  import calcular_metricas_cf, NOMBRES_METRICAS_CF
+# Nota: los ficheros se llaman 'métricas.py' (con tilde) — importamos via importlib
+import importlib
+_mod_kg = importlib.import_module("extraccion_metricas_conocimiento.métricas")
+_mod_cf = importlib.import_module("extraccion_metricas_interaccion.métricas")
+
+calcular_metricas_kg  = _mod_kg.calcular_metricas_kg
+NOMBRES_METRICAS_KG   = _mod_kg.NOMBRES_METRICAS_KG
+calcular_metricas_cf  = _mod_cf.calcular_metricas_cf
+NOMBRES_METRICAS_CF   = _mod_cf.NOMBRES_METRICAS_CF
 
 
 # ============================================================

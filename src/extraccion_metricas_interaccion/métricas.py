@@ -2,19 +2,19 @@
 src/extraccion_metricas_interaccion/metricas.py
 
 Métricas XAI sobre el grafo de interacción (CF).
-Opera directamente sobre el subgrafo JSON temporal.
-Solo considera relaciones con rating real (IS NOT NULL),
-ya filtradas desde utils_interaction_patterns.py.
+
+Constantes exportadas:
+    NOMBRES_METRICAS_CF  — lista de nombres de métricas, usada por pipeline.py
 
 Función pública principal:
     calcular_metricas_cf(json_path, user_id, hotel_rec)
-    → lista de dicts con métricas CF por hotel compartido (explicador)
+    → lista de dicts, una fila por hotel_explicador (compartido)
 """
 import json
 from abc import ABC, abstractmethod
 from collections import defaultdict
 from pathlib import Path
-from typing import Dict, List, Any, Tuple, Optional
+from typing import Dict, List, Any
 
 
 # ============================================================
@@ -22,20 +22,10 @@ from typing import Dict, List, Any, Tuple, Optional
 # ============================================================
 
 def _build_index(nodes: list, relationships: list) -> dict:
-    """
-    Construye índices rápidos del subgrafo CF.
-    Devuelve dict con:
-      - node_info: {node_id: {degree, labels, properties}}
-      - rels_por_fin: {node_id: {vecino_id: rating}}
-      - usuario_objetivo: (node_id, info) | None
-      - hotel_recomendado: (node_id, info) | None
-      - usuarios_intermedios: {node_id: info}
-      - hoteles_compartidos: {node_id: info}
-    """
-    degree_count     = defaultdict(int)
-    node_info        = {}
-    rels_por_inicio  = defaultdict(dict)
-    rels_por_fin     = defaultdict(dict)
+    degree_count    = defaultdict(int)
+    node_info       = {}
+    rels_por_inicio = defaultdict(dict)
+    rels_por_fin    = defaultdict(dict)
 
     for node in nodes:
         nid = node['id']
@@ -88,43 +78,36 @@ def _build_index(nodes: list, relationships: list) -> dict:
 
 
 # ============================================================
-# ESTRATEGIAS CF (patrón Strategy)
+# ESTRATEGIAS
 # ============================================================
 
 class MetricaCFStrategy(ABC):
     @abstractmethod
     def calcular(self, node_id: str, node_info: dict, index: dict) -> float:
         pass
-
     @abstractmethod
     def nombre(self) -> str:
         pass
 
 
 class DegreeCentralidadHotelStrategy(MetricaCFStrategy):
-    """Degree bruto del hotel compartido en el subgrafo."""
     def calcular(self, node_id, node_info, index):
         return float(node_info['degree'])
     def nombre(self): return 'cf_degree_hotel'
 
 
 class RatioUsuariosCompartidosStrategy(MetricaCFStrategy):
-    """Fracción de usuarios intermedios que valoraron este hotel. Rango [0,1]."""
     def calcular(self, node_id, node_info, index):
         usuarios_intermedios = index['usuarios_intermedios']
         if not usuarios_intermedios:
             return 0.0
-        rels_por_fin = index['rels_por_fin']
-        n_valoraron  = sum(
-            1 for uid in rels_por_fin.get(node_id, {})
-            if uid in usuarios_intermedios
-        )
-        return n_valoraron / len(usuarios_intermedios)
+        n = sum(1 for uid in index['rels_por_fin'].get(node_id, {})
+                if uid in usuarios_intermedios)
+        return n / len(usuarios_intermedios)
     def nombre(self): return 'cf_ratio_usuarios_compartidos'
 
 
 class NormDegreeCentralidadHotelStrategy(MetricaCFStrategy):
-    """Degree normalizado por (nodos del subgrafo - 1). Comparable entre subgrafos."""
     def calcular(self, node_id, node_info, index):
         n = len(index['node_info'])
         return float(node_info['degree']) / (n - 1) if n > 1 else 0.0
@@ -132,18 +115,20 @@ class NormDegreeCentralidadHotelStrategy(MetricaCFStrategy):
 
 
 # ============================================================
-# FUNCIÓN PÚBLICA PRINCIPAL
+# INSTANCIAS Y CONSTANTE EXPORTADA
 # ============================================================
 
-ESTRATEGIAS_CF = [
+ESTRATEGIAS_CF      = [
     DegreeCentralidadHotelStrategy(),
     RatioUsuariosCompartidosStrategy(),
     NormDegreeCentralidadHotelStrategy(),
 ]
-
-# Nombres exportables para que pipeline.py sepa qué columnas generar
 NOMBRES_METRICAS_CF = [e.nombre() for e in ESTRATEGIAS_CF]
 
+
+# ============================================================
+# FUNCIÓN PÚBLICA PRINCIPAL
+# ============================================================
 
 def calcular_metricas_cf(
     json_path: Path,
@@ -152,35 +137,22 @@ def calcular_metricas_cf(
 ) -> List[Dict[str, Any]]:
     """
     Calcula todas las métricas CF para un par (user, hotel_rec).
-
-    Devuelve lista de dicts, uno por hotel compartido (explicador):
-      [
-        {
-          'hotel_explicador': '457',
-          'cf_degree_hotel': 4.0,
-          'cf_ratio_usuarios_compartidos': 0.8,
-          'cf_norm_degree_hotel': 0.33,
-        },
-        ...
-      ]
+    Devuelve lista de dicts, una fila por hotel compartido (explicador).
     """
     with open(json_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
-    nodes         = data.get('nodes', [])
-    relationships = data.get('relationships', [])
-    index         = _build_index(nodes, relationships)
+    index = _build_index(data.get('nodes', []), data.get('relationships', []))
 
     if index['usuario_objetivo'] is None:
-        print(f"  ⚠️ [CF] Sin usuario objetivo en subgrafo user={user_id}")
+        print(f"  [CF] Sin usuario objetivo en subgrafo user={user_id}")
         return []
 
-    filas            = []
-    rels_por_fin     = index['rels_por_fin']
-    usuarios_interm  = index['usuarios_intermedios']
+    rels_por_fin    = index['rels_por_fin']
+    usuarios_interm = index['usuarios_intermedios']
+    filas           = []
 
     for h_id, h_info in index['hoteles_compartidos'].items():
-        # Filtrar hoteles compartidos que no tienen valoraciones reales de usuarios intermedios
         n_valoraron = sum(
             1 for uid in rels_por_fin.get(h_id, {})
             if uid in usuarios_interm
@@ -189,13 +161,13 @@ def calcular_metricas_cf(
             continue
 
         hotel_real_id = h_info['properties'].get('id', h_id)
-        fila = {'hotel_explicador': hotel_real_id}
+        fila          = {'hotel_explicador': hotel_real_id}
 
         for estrategia in ESTRATEGIAS_CF:
             try:
                 fila[estrategia.nombre()] = estrategia.calcular(h_id, h_info, index)
             except Exception as e:
-                print(f"  ⚠️ [{estrategia.nombre()}] Error: {e}")
+                print(f"  [CF] Error en {estrategia.nombre()}: {e}")
                 fila[estrategia.nombre()] = None
 
         filas.append(fila)
