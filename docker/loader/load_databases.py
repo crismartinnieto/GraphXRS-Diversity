@@ -35,7 +35,6 @@ password = os.getenv("NEO4J_PASSWORD", "test12345")
 DATA_DIR = "/data"
 CSV_TRAIN        = f"{DATA_DIR}/grafo_interaccion_datos_train.csv"
 CSV_HOTELES      = f"{DATA_DIR}/grafo_conocimiento_datos_hoteles.csv"
-CSV_RECOMEND     = f"{DATA_DIR}/grafo_interaccion_con_recomendaciones.csv"
 
 # ============================================================
 # CREAR BASES DE DATOS
@@ -43,7 +42,7 @@ CSV_RECOMEND     = f"{DATA_DIR}/grafo_interaccion_con_recomendaciones.csv"
 logger.info("🔧 Conectando al sistema para crear bases de datos...")
 system_graph = SystemGraph(uri, auth=(user, password))
 
-for db_name in ["interactions", "knowledge", "expanded-recommendations"]:
+for db_name in ["interactions", "knowledge"]:
     try:
         system_graph.run(f"CREATE DATABASE `{db_name}` IF NOT EXISTS")
         logger.info(f"✅ Base '{db_name}' creada/verificada")

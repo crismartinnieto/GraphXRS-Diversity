@@ -1,0 +1,4 @@
+py2neo==2021.2.4
+networkx
+matplotlib
+pandas
