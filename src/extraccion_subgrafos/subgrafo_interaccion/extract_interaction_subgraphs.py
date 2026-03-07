@@ -15,8 +15,8 @@ from pathlib import Path
 # MODE: 'muestra' o 'completo'
 # ============================================================
 MODE = "muestra"  # Cambiar a "completo" para procesar todos los usuarios
-USUARIOS_MUESTRA = [3, 35, 276, 339, 376]  # Usuarios para modo muestra
-
+USUARIOS_MUESTRA = [3, 35]  # Usuarios para modo muestra
+# USUARIOS_MUESTRA = [3, 35, 276, 339, 376]
 # ============================================================
 # RUTAS RELATIVAS AL DIRECTORIO DE TRABAJO (raíz del proyecto)
 # Ejecutar siempre desde: Sistema_recomendacion_xai_TFM_MUSII_CMN/
