@@ -190,42 +190,6 @@ class RatioUsuariosCompartidosStrategy(CentralidadStrategy):
         return 'ratio_usuarios_compartidos'
 
 
-class NumUsuariosCompartidosStrategy(CentralidadStrategy):
-    """
-    Número absoluto de usuarios intermedios que valoraron este hotel.
-    Complementa RatioUsuariosCompartidosStrategy con el valor bruto.
-    """
-    def calcular(self, node_id, node_info, index):
-        (_, _inicio, relaciones_por_fin,
-         _uobj, _hrec, usuarios_intermedios, _hcomp) = index
-
-        return float(sum(
-            1 for uid in relaciones_por_fin.get(node_id, {})
-            if uid in usuarios_intermedios
-        ))
-
-    def nombre(self):
-        return 'num_usuarios_compartidos'
-
-
-class PesoMedioRatingHotelStrategy(CentralidadStrategy):
-    """
-    Rating medio de todas las valoraciones que recibió este hotel compartido.
-    Mide la calidad percibida por los usuarios intermedios.
-    """
-    def calcular(self, node_id, node_info, index):
-        (_, _inicio, relaciones_por_fin, *_) = index
-
-        ratings = [
-            r for r in relaciones_por_fin.get(node_id, {}).values()
-            if r is not None
-        ]
-        return sum(ratings) / len(ratings) if ratings else 0.0
-
-    def nombre(self):
-        return 'rating_medio_hotel'
-
-
 class NormDegreeCentralidadHotelStrategy(CentralidadStrategy):
     """
     Degree del hotel normalizado por (total de nodos del subgrafo - 1).

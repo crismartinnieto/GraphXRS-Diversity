@@ -65,30 +65,14 @@ from extraccion_metricas_conocimiento.métricas import (
     CalculadorMetricas,
     PropiedadesCompartidasStrategy,
     RatioPropiedadesCompartidasStrategy,
-    CoberturaTiposPropiedadesStrategy,
-    PrecisionAtKStrategy,
-    RecallAtKStrategy,
-    F1AtKStrategy,
-    NDCGStrategy,
-    MRRStrategy,
-    HitRateStrategy,
-    MAPStrategy,
-    DiversidadTiposStrategy,
-    NovedadPropiedadesStrategy,
-    SerendipiaStrategy,
     ConsistenciaTiposStrategy,
     PesoPonderadoPerfilStrategy,
-    SimilaridadJaccardStrategy,
-    BalanceTiposPropiedadesStrategy,
-    RiquezaExplicativaStrategy,
 )
 
 from extraccion_metricas_interaccion.métricas import (
     CalculadorCentralidades,
     DegreeCentralidadHotelStrategy,
     RatioUsuariosCompartidosStrategy,
-    NumUsuariosCompartidosStrategy,
-    PesoMedioRatingHotelStrategy,
     NormDegreeCentralidadHotelStrategy,
 )
 
@@ -145,29 +129,13 @@ class XAIGraphMetrics:
             return [
                 PropiedadesCompartidasStrategy(),
                 RatioPropiedadesCompartidasStrategy(),
-                CoberturaTiposPropiedadesStrategy(),
-                PrecisionAtKStrategy(k=5),
-                RecallAtKStrategy(k=5),
-                F1AtKStrategy(k=5),
-                NDCGStrategy(k=5),
-                MRRStrategy(),
-                HitRateStrategy(),
-                MAPStrategy(),
-                DiversidadTiposStrategy(),
-                NovedadPropiedadesStrategy(threshold=2),
-                SerendipiaStrategy(),
                 ConsistenciaTiposStrategy(),
                 PesoPonderadoPerfilStrategy(),
-                SimilaridadJaccardStrategy(),
-                BalanceTiposPropiedadesStrategy(),
-                RiquezaExplicativaStrategy(),
             ]
         else:
             return [
                 DegreeCentralidadHotelStrategy(),
                 RatioUsuariosCompartidosStrategy(),
-                NumUsuariosCompartidosStrategy(),
-                PesoMedioRatingHotelStrategy(),
                 NormDegreeCentralidadHotelStrategy(),
             ]
 
