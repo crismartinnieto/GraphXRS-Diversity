@@ -384,15 +384,49 @@ def guardar_csvs_usuario(
             logger.warning(f"  ⚠️  '{metrica}' no encontrada, se omite")
             continue
 
-        df_metrica = (
+        # Base: ordenar descendente por valor dentro de cada par (usuario, hotel_recomendado)
+        df_sorted = (
             df[['usuario', 'hotel_recomendado', 'hotel_explicador', metrica]]
             .copy()
             .rename(columns={metrica: 'valor_metrica'})
+            .sort_values(
+                ['usuario', 'hotel_recomendado', 'valor_metrica'],
+                ascending=[True, True, False]
+            )
         )
 
-        nombre_fichero = f"{prefijo}_usuario_{usuario}_{metrica}_{timestamp}.csv"
-        df_metrica.to_csv(output_dir / nombre_fichero, index=False, encoding='utf-8')
-        logger.info(f"  💾 {nombre_fichero}  ({len(df_metrica)} filas)")
+        # Top-5 completo
+        df_top5 = (
+            df_sorted
+            .groupby(['usuario', 'hotel_recomendado'], group_keys=False)
+            .head(5)
+            .reset_index(drop=True)
+        )
+        nombre = f"{prefijo}_usuario_{usuario}_{metrica}_{timestamp}.csv"
+        df_top5.to_csv(output_dir / nombre, index=False, encoding='utf-8')
+        logger.info(f"  💾 {nombre}  ({len(df_top5)} filas)")
+
+        # @1 — mejor explicador por recomendación
+        df_at1 = (
+            df_sorted
+            .groupby(['usuario', 'hotel_recomendado'], group_keys=False)
+            .head(1)
+            .reset_index(drop=True)
+        )
+        nombre_at1 = f"{prefijo}_usuario_{usuario}_{metrica}_at1_{timestamp}.csv"
+        df_at1.to_csv(output_dir / nombre_at1, index=False, encoding='utf-8')
+        logger.info(f"  💾 {nombre_at1}  ({len(df_at1)} filas)")
+
+        # @3 — top-3 explicadores por recomendación
+        df_at3 = (
+            df_sorted
+            .groupby(['usuario', 'hotel_recomendado'], group_keys=False)
+            .head(3)
+            .reset_index(drop=True)
+        )
+        nombre_at3 = f"{prefijo}_usuario_{usuario}_{metrica}_at3_{timestamp}.csv"
+        df_at3.to_csv(output_dir / nombre_at3, index=False, encoding='utf-8')
+        logger.info(f"  💾 {nombre_at3}  ({len(df_at3)} filas)")
 
 
 # ============================================================
