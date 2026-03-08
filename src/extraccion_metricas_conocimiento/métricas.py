@@ -143,7 +143,9 @@ def calcular_metricas_kg(
     perfil_usuario: Dict[str, int] = Counter()
     for props in props_por_hist.values():
         perfil_usuario.update(p[0] for p in props)
-
+    # DEBUG TEMPORAL — borrar después
+    print(f"\n[PERFIL user={user_id}] {dict(sorted(perfil_usuario.items(), key=lambda x: -x[1]))}")
+    
     filas = []
     for hotel_hist_id, props_hist in props_por_hist.items():
         fila = {'hotel_explicador': hotel_hist_id}
