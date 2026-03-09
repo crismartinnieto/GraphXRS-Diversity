@@ -11,6 +11,7 @@ Función pública principal:
     → lista de dicts, una fila por hotel_explicador (compartido)
 """
 import json
+import networkx as nx
 from abc import ABC, abstractmethod
 from collections import defaultdict
 from pathlib import Path
@@ -112,6 +113,32 @@ class NormDegreeCentralidadHotelStrategy(MetricaCFStrategy):
         n = len(index['node_info'])
         return float(node_info['degree']) / (n - 1) if n > 1 else 0.0
     def nombre(self): return 'cf_norm_degree_hotel'
+
+class BetweennessHotelStrategy(MetricaCFStrategy):
+    """
+    Betweenness centrality dirigida del hotel compartido en el subgrafo CF.
+    Se construye un DiGraph con networkx usando todos los nodos y relaciones
+    del subgrafo, se calcula betweenness normalizada sobre el grafo completo,
+    y se devuelve solo el score del hotel compartido (nodo Business).
+
+    Interpretación: valor alto → el hotel es un puente obligado en muchos
+    caminos mínimos del subgrafo, lo que refuerza su rol explicador.
+    """
+    def _build_digraph(self, index: dict) -> nx.DiGraph:
+        G = nx.DiGraph()
+        for nid in index['node_info']:
+            G.add_node(nid)
+        for start, ends in index['rels_por_inicio'].items():
+            for end in ends:
+                G.add_edge(start, end)
+        return G
+
+    def calcular(self, node_id, node_info, index):
+        G = self._build_digraph(index)
+        betweenness = nx.betweenness_centrality(G, normalized=True)
+        return betweenness.get(node_id, 0.0)
+
+    def nombre(self): return 'cf_betweenness_hotel'
 
 
 # ============================================================

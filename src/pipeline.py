@@ -406,6 +406,7 @@ def guardar_csvs_usuario(
         df_top5.to_csv(output_dir / nombre, index=False, encoding='utf-8')
         logger.info(f"  💾 {nombre}  ({len(df_top5)} filas)")
 
+        '''
         # @1 — mejor explicador por recomendación
         df_at1 = (
             df_sorted
@@ -427,7 +428,7 @@ def guardar_csvs_usuario(
         nombre_at3 = f"{prefijo}_usuario_{usuario}_{metrica}_at3_{timestamp}.csv"
         df_at3.to_csv(output_dir / nombre_at3, index=False, encoding='utf-8')
         logger.info(f"  💾 {nombre_at3}  ({len(df_at3)} filas)")
-
+        '''
 
 # ============================================================
 # MAIN
