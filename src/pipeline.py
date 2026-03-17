@@ -34,12 +34,12 @@ import pandas as pd
 # ============================================================
 PROJECT_ROOT = Path(".")
 DATA_DIR     = PROJECT_ROOT / "data"
-RAW_DIR      = DATA_DIR / "raw_2"
+RAW_DIR      = DATA_DIR / "raw"
 OUTPUT_DIR   = PROJECT_ROOT / "output"
 LOGS_DIR     = PROJECT_ROOT / "logs"
 DEBUG_DIR    = OUTPUT_DIR / "debug"
 
-CSV_RECOMENDACIONES = RAW_DIR / "relacion_usuario_rating_recomendador.csv"
+CSV_RECOMENDACIONES = DATA_DIR / "recomendaciones_del_modelo" / "relacion_usuario_rating_recomendador.csv"
 
 LOGS_DIR.mkdir(parents=True, exist_ok=True)
 DEBUG_DIR.mkdir(parents=True, exist_ok=True)
