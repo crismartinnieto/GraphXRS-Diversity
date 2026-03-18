@@ -200,4 +200,13 @@ def calcular_metricas_cf(
 
         filas.append(fila)
 
+    # Filtrar filas donde TODAS las métricas son 0 o None
+    filas = [
+        fila for fila in filas
+        if any(
+            fila.get(e.nombre()) not in (0, 0.0, None)
+            for e in ESTRATEGIAS_CF
+        )
+    ]
+
     return filas
