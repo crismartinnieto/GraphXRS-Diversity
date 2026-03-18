@@ -126,7 +126,7 @@ class BetweennessHotelStrategy(MetricaCFStrategy):
     caminos mínimos del subgrafo, lo que refuerza su rol explicador.
     """
     def _build_digraph(self, index: dict) -> nx.DiGraph:
-        G = nx.DiGraph()
+        G = nx.Graph()
         for nid in index['node_info']:
             G.add_node(nid)
         for start, ends in index['rels_por_inicio'].items():
@@ -150,6 +150,7 @@ ESTRATEGIAS_CF      = [
     DegreeCentralidadHotelStrategy(),
     RatioUsuariosCompartidosStrategy(),
     NormDegreeCentralidadHotelStrategy(),
+    BetweennessHotelStrategy(),
 ]
 NOMBRES_METRICAS_CF = [e.nombre() for e in ESTRATEGIAS_CF]
 
