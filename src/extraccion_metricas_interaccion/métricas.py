@@ -182,6 +182,12 @@ def calcular_metricas_cf(
     filas           = []
 
     for h_id, h_info in index['hoteles_compartidos'].items():
+        # DEBUG TEMPORAL
+        print(f"  [DEBUG] h_id={h_id}")
+        print(f"  [DEBUG] rels_por_fin keys: {list(rels_por_fin.keys())[:5]}")
+        print(f"  [DEBUG] usuarios_interm keys: {list(usuarios_interm.keys())[:5]}")
+        print(f"  [DEBUG] rels_por_fin.get(h_id): {rels_por_fin.get(h_id, {})}")
+        print(f"  [DEBUG] n_valoraron check: {[uid for uid in rels_por_fin.get(h_id, {}) if uid in usuarios_interm]}")
         n_valoraron = sum(
             1 for uid in rels_por_fin.get(h_id, {})
             if uid in usuarios_interm
