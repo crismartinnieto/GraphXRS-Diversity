@@ -53,7 +53,7 @@ def _parsear_subgrafo_kg(json_path: Path, hotel_rec_id: int, hoteles_historicos:
             continue
         node_hotel_id = str(node['properties'].get('id', ''))
         props         = _extraer_propiedades_hotel(nodes, relationships, node['id'])
-        
+
         # DEBUG TEMPORAL
         print(f"  [KG-PROPS] hotel={node_hotel_id}, node_id={node['id']}, props={props}")
         
@@ -170,12 +170,13 @@ def calcular_metricas_kg(
         filas.append(fila)
 
     # Filtrar filas donde TODAS las métricas son 0 o None
+    '''
     filas = [
-        fila for fila in filas
+       fila for fila in filas
         if any(
             fila.get(e.nombre()) not in (0, 0.0, None)
             for e in ESTRATEGIAS_KG
         )
     ]
-
+    '''
     return filas
