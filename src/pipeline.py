@@ -6,7 +6,8 @@ EJECUTAR:
     python src/pipeline.py --modo muestra --usuarios 3 35
     python src/pipeline.py --modo muestra --usuarios 3 --debug --hotel 45
     python src/pipeline.py --modo completo
-
+    python src/pipeline.py --modo semi
+    
 MODO DEBUG:
     Añade --debug para guardar los JSONs de subgrafos y un informe de validación.
     Añade --hotel X para limitar el debug a un único par (usuario, hotel).
@@ -447,10 +448,11 @@ def guardar_csvs_usuario(
 # ============================================================
 
 def main():
+    t_inicio = time.time()
     parser = argparse.ArgumentParser(description="Pipeline XAI atómico KG + CF")
     parser.add_argument(
-        "--modo", choices=["muestra", "completo"], default="muestra",
-        help="'muestra' filtra por --usuarios, 'completo' procesa todos"
+        "--modo", choices=["muestra", "semi", "completo"], default="muestra",
+        help="'muestra' filtra por --usuarios, 'semi' top-5 rec x usuario, 'completo' procesa todos"
     )
     parser.add_argument(
         "--usuarios", nargs="+", type=int, default=[3, 35],
@@ -493,6 +495,14 @@ def main():
     if args.modo == "muestra":
         df = df[df['usuario'].isin(args.usuarios)]
         logger.info(f"🔍 Usuarios: {args.usuarios} → {len(df)} pares")
+
+    if args.modo == "semi":
+        df = (
+            df.groupby('usuario', group_keys=False)
+            .head(5)
+            .reset_index(drop=True)
+        )
+        logger.info(f"🔍 Semi: 5 recomendaciones por usuario → {len(df)} pares totales")
 
     acumulador: Dict[int, Dict] = defaultdict(lambda: {'kg': [], 'cf': []})
     errores = 0
@@ -537,12 +547,18 @@ def main():
     n_kg = len(list(dir_kg.glob("*.csv"))) if dir_kg.exists() else 0
     n_cf = len(list(dir_cf.glob("*.csv"))) if dir_cf.exists() else 0
 
+    tiempo_total = time.time() - t_inicio
+    horas   = int(tiempo_total // 3600)
+    minutos = int((tiempo_total % 3600) // 60)
+    segundos = tiempo_total % 60
+
     logger.info(f"\n{'='*70}")
     logger.info("✅ PIPELINE COMPLETADO")
     logger.info(f"   Usuarios  : {len(acumulador)}")
     logger.info(f"   Errores   : {errores}")
     logger.info(f"   CSVs KG   : {n_kg}  →  {dir_kg}")
     logger.info(f"   CSVs CF   : {n_cf}  →  {dir_cf}")
+    logger.info(f"   Tiempo total: {horas:02d}h {minutos:02d}m {segundos:05.2f}s")
     if args.debug:
         n_debug = len(list(DEBUG_DIR.glob("*"))) if DEBUG_DIR.exists() else 0
         logger.info(f"   Ficheros debug: {n_debug}  →  {DEBUG_DIR}")
