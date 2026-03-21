@@ -38,10 +38,13 @@ def _build_index(nodes: list, relationships: list) -> dict:
 
     adjacency = defaultdict(set)
     for rel in relationships:
-        s = rel['start_node_id']
-        e = rel['end_node_id']
+        s      = rel['start_node_id']
+        e      = rel['end_node_id']
+        rating = rel.get('properties', {}).get('rating')
         adjacency[s].add(e)
         adjacency[e].add(s)
+        rels_por_inicio[s][e] = rating
+        rels_por_fin[e][s]    = rating  
 
     for nid in node_info:
         degree_count[nid] = len(adjacency[nid])
