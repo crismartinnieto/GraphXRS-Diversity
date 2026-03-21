@@ -313,7 +313,9 @@ def procesar_par_kg(
             tmp_path.unlink(missing_ok=True)
 
     except Exception as e:
+        import traceback
         logger.error(f"  [KG] Error: {e}")
+        logger.error(traceback.format_exc())
         return []
 
 
