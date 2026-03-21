@@ -57,6 +57,12 @@ def _parsear_subgrafo_kg(json_path: Path, hotel_rec_id: int, hoteles_historicos:
             props_recomendado = props
         elif node_hotel_id in hist_strs:
             props_por_historico[node_hotel_id] = props
+    
+    # DEBUG TEMPORAL
+    print(f"  [KG-PARSE] hotel_rec_str={hotel_rec_str}")
+    print(f"  [KG-PARSE] hist_strs={hist_strs}")
+    print(f"  [KG-PARSE] Business nodes encontrados: {[str(n['properties'].get('id','')) for n in nodes if 'Business' in n.get('labels',[])]}")
+    print(f"  [KG-PARSE] props_por_historico keys: {list(props_por_historico.keys())}")
 
     return props_recomendado, props_por_historico
 
