@@ -335,6 +335,10 @@ def procesar_par_cf(
         nodes_cf, rels_cf = result_cf
         logger.info(f"  [CF] Subgrafo: {len(nodes_cf)} nodos, {len(rels_cf)} relaciones")
 
+        # TEMPORAL: contar cuántas relaciones tienen rating
+        con_rating = sum(1 for r in rels_cf if r.get('properties', {}).get('rating') is not None)
+        logger.info(f"  [CF] Relaciones con rating: {con_rating}/{len(rels_cf)}")
+
         with tempfile.NamedTemporaryFile(
             mode='w', suffix='.json', delete=False, encoding='utf-8'
         ) as tmp:
