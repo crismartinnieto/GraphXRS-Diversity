@@ -282,6 +282,7 @@ def procesar_par_kg(
 ) -> List[Dict]:
     try:
         hoteles_historicos = get_user_interacted_hotels(user_id)
+        logger.info(f"  [KG] Histórico user={user_id}: {hoteles_historicos}")
         if not hoteles_historicos:
             logger.warning(f"  [KG] Sin histórico para user={user_id}")
             return []
