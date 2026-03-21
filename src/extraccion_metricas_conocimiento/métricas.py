@@ -170,7 +170,6 @@ def calcular_metricas_kg(
         filas.append(fila)
 
     # Filtrar filas donde TODAS las métricas son 0 o None
-    '''
     filas = [
        fila for fila in filas
         if any(
@@ -178,5 +177,5 @@ def calcular_metricas_kg(
             for e in ESTRATEGIAS_KG
         )
     ]
-    '''
+    
     return filas
