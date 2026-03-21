@@ -53,6 +53,10 @@ def _parsear_subgrafo_kg(json_path: Path, hotel_rec_id: int, hoteles_historicos:
             continue
         node_hotel_id = str(node['properties'].get('id', ''))
         props         = _extraer_propiedades_hotel(nodes, relationships, node['id'])
+        
+        # DEBUG TEMPORAL
+        print(f"  [KG-PROPS] hotel={node_hotel_id}, node_id={node['id']}, props={props}")
+        
         if node_hotel_id == hotel_rec_str:
             props_recomendado = props
         elif node_hotel_id in hist_strs:
