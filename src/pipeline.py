@@ -148,10 +148,13 @@ def guardar_debug_kg(
                 marker = " ✓" if p in interseccion else ""
                 f.write(f"    {p}{marker}\n")
 
+            ratio = len(interseccion)/len(props_hist) if props_hist else 0.0
+            jaccard = len(interseccion)/len(union) if union else 0.0
+            
             f.write(f"\n  → Propiedades compartidas ({len(interseccion)}): {sorted(interseccion)}\n")
             f.write(f"  → kg_num_propiedades_compartidas : {float(len(interseccion))}\n")
-            f.write(f"  → kg_ratio_propiedades_compartidas: {len(interseccion)/len(props_hist):.4f}  ({len(interseccion)}/{len(props_hist)})\n")
-            f.write(f"  → kg_jaccard_similarity          : {len(interseccion)/len(union):.4f}  ({len(interseccion)}/{len(union)})\n")
+            f.write(f"  → kg_ratio_propiedades_compartidas: {ratio:.4f}  ({len(interseccion)}/{len(props_hist)})\n")
+            f.write(f"  → kg_jaccard_similarity          : {jaccard:.4f}  ({len(interseccion)}/{len(union)})\n")
             f.write("\n")
 
         # Resultado real del código
