@@ -16,6 +16,7 @@ MODO DEBUG:
         cf_user{U}_hotel{H}_subgrafo.json     ← nodos y relaciones del CF
         validacion_user{U}_hotel{H}.txt       ← cálculo paso a paso legible
 """
+from asyncio.log import logger
 import sys
 import json
 import logging
@@ -332,6 +333,7 @@ def procesar_par_cf(
             return []
 
         nodes_cf, rels_cf = result_cf
+        logger.info(f"  [CF] Subgrafo: {len(nodes_cf)} nodos, {len(rels_cf)} relaciones")
 
         with tempfile.NamedTemporaryFile(
             mode='w', suffix='.json', delete=False, encoding='utf-8'
