@@ -31,7 +31,14 @@ def get_subgraph_for_hotels(hotel_ids):
     rels  = []
 
     for h in hotel_ids:
-        for record in graph.run(query, hotel_id=h):
+        results = list(graph.run(query, hotel_id=h))
+        print(f"  [KG-QUERY] hotel_id='{h}' (str) → {len(results)} registros")
+        
+        if len(results) == 0:
+            results = list(graph.run(query, hotel_id=int(h)))
+            print(f"  [KG-QUERY] hotel_id={int(h)} (int) → {len(results)} registros")
+
+        for record in results:
             hnode = record["h"]
             rel   = record["r"]
             nnode = record["n"]
