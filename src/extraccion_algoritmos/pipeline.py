@@ -1,12 +1,12 @@
 """
-src/pipeline.py
+src/extraccion_algoritmos/pipeline.py
 
 EJECUTAR:
-    python src/pipeline.py --modo muestra
-    python src/pipeline.py --modo muestra --usuarios 3 35
-    python src/pipeline.py --modo muestra --usuarios 3 --debug --hotel 45
-    python src/pipeline.py --modo completo
-    python src/pipeline.py --modo semi
+    python src/extraccion_algoritmos/pipeline.py --modo muestra
+    python src/extraccion_algoritmos/pipeline.py --modo muestra --usuarios 3 35
+    python src/extraccion_algoritmos/pipeline.py --modo muestra --usuarios 3 --debug --hotel 45
+    python src/extraccion_algoritmos/pipeline.py --modo completo
+    python src/extraccion_algoritmos/pipeline.py --modo semi
     
 MODO DEBUG:
     Añade --debug para guardar los JSONs de subgrafos y un informe de validación.
@@ -48,7 +48,7 @@ DEBUG_DIR.mkdir(parents=True, exist_ok=True)
 # ============================================================
 # AÑADIR src/ AL PATH
 # ============================================================
-SRC_DIR = Path(__file__).parent
+SRC_DIR = Path(__file__).parent.parent
 sys.path.insert(0, str(SRC_DIR))
 
 from extraccion_subgrafos.subgrafo_conocimiento.utils_interactions        import get_user_interacted_hotels
