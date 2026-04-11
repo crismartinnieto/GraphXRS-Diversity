@@ -56,11 +56,14 @@ CARPETAS_ALGORITMOS = {
     ("kg",  "completo"): PROJECT_ROOT / "output" / "metricas_grafo_conocimiento_completo",
     ("cf",  "muestra"):  PROJECT_ROOT / "output" / "metricas_grafo_interaccion_muestra",
     ("cf",  "completo"): PROJECT_ROOT / "output" / "metricas_grafo_interaccion_completo",
+    ("cf",  "semi"):  PROJECT_ROOT / "output" / "metricas_grafo_interaccion_semi",
+    ("kg",  "semi"): PROJECT_ROOT / "output" / "metricas_grafo_conocimiento_semi",
 }
 
 OUTPUT_EVAL_DIRS = {
     "muestra":  PROJECT_ROOT / "output" / "metricas_evaluacion_muestra",
     "completo": PROJECT_ROOT / "output" / "metricas_evaluacion_completo",
+    "semi": PROJECT_ROOT / "output" / "metricas_evaluacion_semi",
 }
 
 LOGS_DIR = PROJECT_ROOT / "logs"
@@ -162,7 +165,7 @@ def main():
     parser = argparse.ArgumentParser(
         description="Pipeline de evaluación XAI — AggDiv + IXD + MIL"
     )
-    parser.add_argument("--modo", choices=["muestra", "completo"], default="muestra")
+    parser.add_argument("--modo", choices=["muestra", "completo", "semi"], default="muestra")
     parser.add_argument("--fuente", nargs="+", choices=["kg", "cf"], default=["kg", "cf"])
     parser.add_argument("--ks", nargs="+", type=int, default=[1, 3, 5])
     args = parser.parse_args()
