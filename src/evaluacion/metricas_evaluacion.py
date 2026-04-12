@@ -79,6 +79,12 @@ class MetricaEvaluacionStrategy(ABC):
 
 class AggDivStrategy(MetricaEvaluacionStrategy):
 
+    def nombre(self) -> str:
+        return "AggDiv"
+
+    def granularidad(self) -> str:
+        return "usuario"
+
     def columnas_salida(self, ks: List[int]) -> List[str]:
         cols = ["AggDiv", "AggDiv_norm"]
         for k in ks:
