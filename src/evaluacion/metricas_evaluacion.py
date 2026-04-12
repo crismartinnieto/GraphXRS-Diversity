@@ -78,23 +78,12 @@ class MetricaEvaluacionStrategy(ABC):
 # ============================================================
 
 class AggDivStrategy(MetricaEvaluacionStrategy):
-    """
-    AggDiv' — Diversidad Agregada de Explicaciones (nivel usuario).
-
-    AggDiv'   = |⋃_{r∈R} X_r|
-    AggDiv'@k = |⋃_{r∈R} X_r@k|
-
-    Una fila por usuario. Sin hotel_recomendado (agrega sobre todos).
-    """
-
-    def nombre(self) -> str:
-        return "AggDiv"
-
-    def granularidad(self) -> str:
-        return "usuario"
 
     def columnas_salida(self, ks: List[int]) -> List[str]:
-        return ["AggDiv"] + [f"AggDiv@{k}" for k in ks]
+        cols = ["AggDiv", "AggDiv_norm"]
+        for k in ks:
+            cols += [f"AggDiv@{k}", f"AggDiv@{k}_norm"]
+        return cols
 
     def calcular_usuario(
         self,
@@ -103,6 +92,8 @@ class AggDivStrategy(MetricaEvaluacionStrategy):
         ks: List[int],
         contexto_global: Dict[str, Any] = None,
     ) -> Dict[str, Any]:
+
+        n_hist = len(historico_usuario)
 
         union_total: Set[int] = set()
         union_k: Dict[int, Set[int]] = {k: set() for k in ks}
@@ -114,14 +105,24 @@ class AggDivStrategy(MetricaEvaluacionStrategy):
                 top_k = set(int(x) for x in df_par.head(k)["hotel_explicador"])
                 union_k[k] |= top_k
 
-        resultado: Dict[str, Any] = {"AggDiv": len(union_total)}
+        aggdiv = len(union_total)
+        resultado: Dict[str, Any] = {
+            "AggDiv":      aggdiv,
+            "AggDiv_norm": round(aggdiv / n_hist, 6) if n_hist > 0 else float("nan"),
+        }
         for k in ks:
-            resultado[f"AggDiv@{k}"] = len(union_k[k])
+            aggdiv_k = len(union_k[k])
+            resultado[f"AggDiv@{k}"]      = aggdiv_k
+            resultado[f"AggDiv@{k}_norm"] = round(aggdiv_k / n_hist, 6) if n_hist > 0 else float("nan")
+
         return resultado
 
     def log_fila(self, fila: pd.Series, ks: List[int]) -> str:
-        partes = [f"AggDiv={fila.get('AggDiv')}"]
-        partes += [f"AggDiv@{k}={fila.get(f'AggDiv@{k}', 'N/A')}" for k in ks]
+        partes = [f"AggDiv={fila.get('AggDiv')} (norm={fila.get('AggDiv_norm')})"]
+        partes += [
+            f"@{k}={fila.get(f'AggDiv@{k}', 'N/A')} (norm={fila.get(f'AggDiv@{k}_norm', 'N/A')})"
+            for k in ks
+        ]
         return "  ".join(partes)
 
 
