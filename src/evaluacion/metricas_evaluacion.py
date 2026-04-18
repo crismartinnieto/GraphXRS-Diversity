@@ -22,6 +22,20 @@ MÉTRICAS IMPLEMENTADAS:
                Columnas salida: algoritmo | MIL | MIL@1 | MIL@3 | MIL@5
                IMPORTANTE: debe calcularse con calcular_sistema() una vez
                acumulados TODOS los usuarios, no CSV a CSV.
+
+    - ECS      (Explanation Consistency Score)
+               Para cada hotel recomendado h_rec que recibieron ≥2 usuarios,
+               mide el solapamiento (Jaccard) entre los conjuntos de
+               explicadores que cada par de usuarios recibió para ese h_rec.
+
+               ECS(h_rec) = media Jaccard(X_u(h_rec), X_v(h_rec)) ∀ u≠v
+               ECS_global  = media de ECS(h_rec) sobre todos los h_rec con ≥2 usuarios
+
+               Granularidad: hotel_recomendado (una fila por h_rec)
+               Columnas salida: hotel_recomendado | n_usuarios | algoritmo |
+                                ECS | ECS@1 | ECS@3 | ECS@5
+               IMPORTANTE: debe calcularse con calcular_hotel() una vez
+               acumulados TODOS los usuarios, no CSV a CSV.
 """
 
 from abc import ABC, abstractmethod
@@ -43,7 +57,7 @@ class MetricaEvaluacionStrategy(ABC):
 
     @abstractmethod
     def granularidad(self) -> str:
-        """'usuario' o 'sistema'."""
+        """'usuario', 'sistema' o 'hotel'."""
         pass
 
     def calcular_usuario(
@@ -62,6 +76,18 @@ class MetricaEvaluacionStrategy(ABC):
         ks: List[int],
         contexto_global: Dict[str, Any] = None,
     ) -> Optional[Dict[str, Any]]:
+        return None
+
+    def calcular_hotel(
+        self,
+        df_algoritmo: pd.DataFrame,
+        ks: List[int],
+        contexto_global: Dict[str, Any] = None,
+    ) -> Optional[pd.DataFrame]:
+        """
+        Calcula la métrica agrupando por hotel_recomendado.
+        Devuelve un DataFrame con una fila por hotel_recomendado.
+        """
         return None
 
     def columnas_salida(self, ks: List[int]) -> List[str]:
@@ -208,7 +234,6 @@ class MILStrategy(MetricaEvaluacionStrategy):
     """
     MIL-Expl — Mean Inter-List Diversity de explicadores (nivel sistema).
 
-    
     Rango [0,1]. NaN si hay menos de 2 usuarios.
     Una sola fila por algoritmo (toda la población).
 
@@ -233,7 +258,6 @@ class MILStrategy(MetricaEvaluacionStrategy):
         contexto_global: Dict[str, Any] = None,
     ) -> Dict[str, Any]:
 
-        # Construir X_u para cada usuario
         xu_completo: Dict[int, Set[int]] = {}
         xu_k: Dict[int, Dict[int, Set[int]]] = {k: {} for k in ks}
 
@@ -268,9 +292,6 @@ class MILStrategy(MetricaEvaluacionStrategy):
         """
         MIL = 1/(|U|²-|U|) · Σ_{ua≠ub} [ 1 - q(ua,ub)/|X_ua ∪ X_ub| ]
             = 1/(|U|²-|U|) · Σ_{ua≠ub}  distancia_jaccard(X_ua, X_ub)
-
-        q   : |X_ua ∩ X_ub|  (explicadores comunes)
-        c   : |X_ua ∪ X_ub|  (unión — variable por par, no fija)
         """
         usuarios = list(xu.keys())
         U = len(usuarios)
@@ -287,9 +308,177 @@ class MILStrategy(MetricaEvaluacionStrategy):
                 if union == 0:
                     total += 0.0
                 else:
-                    total += 1.0 - (inter / union)   # distancia Jaccard
+                    total += 1.0 - (inter / union)
 
         return round(total / (U ** 2 - U), 6)
+
+
+# ============================================================
+# MÉTRICA: ECS  (Explanation Consistency Score)
+# ============================================================
+
+class ECSStrategy(MetricaEvaluacionStrategy):
+    """
+    ECS — Explanation Consistency Score (nivel hotel_recomendado).
+
+    Para cada hotel recomendado h_rec que fue recomendado a ≥2 usuarios
+    distintos, mide el solapamiento medio (Jaccard) entre los conjuntos
+    de hoteles explicadores que cada par de usuarios recibió para h_rec.
+
+    ECS(h_rec) = mean_{u≠v} Jaccard(X_u(h_rec), X_v(h_rec))
+
+    donde Jaccard(A, B) = |A ∩ B| / |A ∪ B|
+
+    Rango [0, 1]:
+        ECS = 1  →  todos los usuarios reciben exactamente los mismos
+                    explicadores para h_rec  (máxima consistencia)
+        ECS = 0  →  ningún usuario comparte ningún explicador para h_rec
+                    (máxima personalización)
+
+    Granularidad: hotel_recomendado
+    Una fila por hotel_recomendado con ≥2 usuarios.
+
+    Columnas salida:
+        hotel_recomendado | n_usuarios | algoritmo |
+        ECS | ECS@1 | ECS@3 | ECS@5
+
+    IMPORTANTE: llamar a calcular_hotel() con el DataFrame completo de
+    TODOS los usuarios ya acumulados, no CSV a CSV.
+    """
+
+    def nombre(self) -> str:
+        return "ECS"
+
+    def granularidad(self) -> str:
+        return "hotel"
+
+    def columnas_salida(self, ks: List[int]) -> List[str]:
+        return ["ECS"] + [f"ECS@{k}" for k in ks]
+
+    def calcular_hotel(
+        self,
+        df_algoritmo: pd.DataFrame,
+        ks: List[int],
+        contexto_global: Dict[str, Any] = None,
+    ) -> pd.DataFrame:
+        """
+        Calcula ECS para cada hotel_recomendado que aparece en ≥2 usuarios.
+
+        Parámetros
+        ----------
+        df_algoritmo : pd.DataFrame
+            DataFrame acumulado con TODOS los usuarios del algoritmo.
+            Columnas requeridas: usuario | hotel_recomendado | hotel_explicador
+            | valor_metrica
+        ks : List[int]
+            Cortes @k a calcular.
+        contexto_global : dict, opcional
+
+        Retorna
+        -------
+        pd.DataFrame
+            Una fila por hotel_recomendado con ≥2 usuarios.
+            Columnas: hotel_recomendado | n_usuarios | algoritmo |
+                      ECS | ECS@1 | ECS@3 | ECS@5
+        """
+        filas: List[Dict[str, Any]] = []
+
+        # Agrupar por hotel_recomendado
+        for h_rec, df_h in df_algoritmo.groupby("hotel_recomendado"):
+
+            # Para cada usuario que recibió este h_rec,
+            # construir su conjunto de explicadores (ordenados por valor_metrica desc)
+            usuarios_h = sorted(df_h["usuario"].unique())
+            n_usuarios = len(usuarios_h)
+
+            # Necesitamos al menos 2 usuarios para calcular consistencia
+            if n_usuarios < 2:
+                continue
+
+            # Conjuntos de explicadores por usuario — todos los explicadores
+            xu_completo: Dict[int, Set[int]] = {}
+            # Conjuntos de explicadores por usuario — top-k
+            xu_k: Dict[int, Dict[int, Set[int]]] = {k: {} for k in ks}
+
+            for usuario, df_u_h in df_h.groupby("usuario"):
+                u = int(usuario)
+                # Ordenar por valor_metrica descendente para respetar el ranking
+                df_u_h_sorted = df_u_h.sort_values(
+                    "valor_metrica", ascending=False
+                )
+                exp_todos = set(int(x) for x in df_u_h_sorted["hotel_explicador"])
+                xu_completo[u] = exp_todos
+
+                for k in ks:
+                    top_k = set(
+                        int(x) for x in df_u_h_sorted.head(k)["hotel_explicador"]
+                    )
+                    xu_k[k][u] = top_k
+
+            fila: Dict[str, Any] = {
+                "hotel_recomendado": int(h_rec),
+                "n_usuarios":        n_usuarios,
+                "ECS":               self._jaccard_medio(xu_completo),
+            }
+            for k in ks:
+                fila[f"ECS@{k}"] = self._jaccard_medio(xu_k[k])
+
+            filas.append(fila)
+
+        columnas = ["hotel_recomendado", "n_usuarios"] + self.columnas_salida(ks)
+        if not filas:
+            return pd.DataFrame(columns=columnas)
+
+        df_resultado = (
+            pd.DataFrame(filas, columns=columnas)
+            .sort_values("hotel_recomendado")
+            .reset_index(drop=True)
+        )
+        return df_resultado
+
+    def log_fila(self, fila: pd.Series, ks: List[int]) -> str:
+        partes = [
+            f"h_rec={fila.get('hotel_recomendado')}  "
+            f"n_usuarios={fila.get('n_usuarios')}  "
+            f"ECS={fila.get('ECS')}"
+        ]
+        partes += [f"ECS@{k}={fila.get(f'ECS@{k}', 'N/A')}" for k in ks]
+        return "  ".join(partes)
+
+    @staticmethod
+    def _jaccard_medio(xu: Dict[int, Set[int]]) -> float:
+        """
+        Calcula la media de Jaccard entre todos los pares de usuarios u≠v.
+
+        Jaccard(A, B) = |A ∩ B| / |A ∪ B|
+
+        Si todos los conjuntos están vacíos → 0.0
+        Si solo hay 1 usuario              → NaN
+        """
+        usuarios = list(xu.keys())
+        U = len(usuarios)
+        if U < 2:
+            return float("nan")
+
+        total = 0.0
+        n_pares = 0
+
+        for i in range(U):
+            for j in range(i + 1, U):  # solo pares únicos (u, v) con u < v
+                u, v = usuarios[i], usuarios[j]
+                inter = len(xu[u] & xu[v])
+                union = len(xu[u] | xu[v])
+                if union == 0:
+                    # Ambos conjuntos vacíos → consistencia perfecta (mismo vacío)
+                    total += 1.0
+                else:
+                    total += inter / union
+                n_pares += 1
+
+        if n_pares == 0:
+            return float("nan")
+
+        return round(total / n_pares, 6)
 
 
 # ============================================================
@@ -300,12 +489,13 @@ ESTRATEGIAS_EVALUACION: List[MetricaEvaluacionStrategy] = [
     AggDivStrategy(),
     IXDStrategy(),
     MILStrategy(),
+    ECSStrategy(),
 ]
 
 
 # ============================================================
 # FUNCIÓN PÚBLICA — solo para métricas de granularidad 'usuario'
-# MIL se calcula aparte en el pipeline con el df acumulado completo
+# MIL y ECS se calculan aparte en el pipeline con el df acumulado completo
 # ============================================================
 
 def calcular_evaluacion_usuario(
@@ -321,7 +511,7 @@ def calcular_evaluacion_usuario(
     Devuelve un dict por métrica. Cada DataFrame tiene UNA fila por usuario:
         usuario | historico_num | algoritmo | AggDiv | AggDiv@1 | ...
 
-    MIL NO se calcula aquí (necesita todos los usuarios acumulados).
+    MIL y ECS NO se calculan aquí (necesitan todos los usuarios acumulados).
     """
     if ks is None:
         ks = [1, 3, 5]
