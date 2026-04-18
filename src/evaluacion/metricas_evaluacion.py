@@ -24,12 +24,13 @@ MÉTRICAS IMPLEMENTADAS:
                acumulados TODOS los usuarios, no CSV a CSV.
 
     - ECS      (Explanation Consistency Score)
-               Para cada hotel recomendado h_rec que recibieron ≥2 usuarios,
-               mide el solapamiento (Jaccard) entre los conjuntos de
-               explicadores que cada par de usuarios recibió para ese h_rec.
+               Para cada hotel recomendado h_rec que recibieron ≥min_usuarios
+               usuarios distintos, mide el solapamiento (Jaccard) entre los
+               conjuntos de explicadores que cada par de usuarios recibió
+               para ese h_rec.
 
                ECS(h_rec) = media Jaccard(X_u(h_rec), X_v(h_rec)) ∀ u≠v
-               ECS_global  = media de ECS(h_rec) sobre todos los h_rec con ≥2 usuarios
+               ECS_global  = media de ECS(h_rec) sobre todos los h_rec elegibles
 
                Granularidad: hotel_recomendado (una fila por h_rec)
                Columnas salida: hotel_recomendado | n_usuarios | algoritmo |
@@ -83,6 +84,7 @@ class MetricaEvaluacionStrategy(ABC):
         df_algoritmo: pd.DataFrame,
         ks: List[int],
         contexto_global: Dict[str, Any] = None,
+        min_usuarios: int = 2,
     ) -> Optional[pd.DataFrame]:
         """
         Calcula la métrica agrupando por hotel_recomendado.
@@ -321,9 +323,10 @@ class ECSStrategy(MetricaEvaluacionStrategy):
     """
     ECS — Explanation Consistency Score (nivel hotel_recomendado).
 
-    Para cada hotel recomendado h_rec que fue recomendado a ≥2 usuarios
-    distintos, mide el solapamiento medio (Jaccard) entre los conjuntos
-    de hoteles explicadores que cada par de usuarios recibió para h_rec.
+    Para cada hotel recomendado h_rec que fue recomendado a ≥min_usuarios
+    usuarios distintos, mide el solapamiento medio (Jaccard) entre los
+    conjuntos de hoteles explicadores que cada par de usuarios recibió
+    para ese h_rec.
 
     ECS(h_rec) = mean_{u≠v} Jaccard(X_u(h_rec), X_v(h_rec))
 
@@ -335,8 +338,14 @@ class ECSStrategy(MetricaEvaluacionStrategy):
         ECS = 0  →  ningún usuario comparte ningún explicador para h_rec
                     (máxima personalización)
 
+    Nota sobre min_usuarios:
+        - En modo muestra (pocos usuarios) se puede usar min_usuarios=1
+          para que ECS genere una fila por cada h_rec aunque solo lo haya
+          recibido 1 usuario (ECS = NaN en ese caso, útil para diagnóstico).
+        - En modo completo/producción usar min_usuarios=2 (semántica real).
+
     Granularidad: hotel_recomendado
-    Una fila por hotel_recomendado con ≥2 usuarios.
+    Una fila por hotel_recomendado con ≥min_usuarios usuarios.
 
     Columnas salida:
         hotel_recomendado | n_usuarios | algoritmo |
@@ -360,9 +369,10 @@ class ECSStrategy(MetricaEvaluacionStrategy):
         df_algoritmo: pd.DataFrame,
         ks: List[int],
         contexto_global: Dict[str, Any] = None,
+        min_usuarios: int = 2,
     ) -> pd.DataFrame:
         """
-        Calcula ECS para cada hotel_recomendado que aparece en ≥2 usuarios.
+        Calcula ECS para cada hotel_recomendado que aparece en ≥min_usuarios usuarios.
 
         Parámetros
         ----------
@@ -373,39 +383,35 @@ class ECSStrategy(MetricaEvaluacionStrategy):
         ks : List[int]
             Cortes @k a calcular.
         contexto_global : dict, opcional
+        min_usuarios : int
+            Número mínimo de usuarios para incluir un hotel_recomendado.
+            Usar 1 en modo muestra (ECS=NaN si solo hay 1 usuario),
+            usar 2 en modo completo (semántica real).
 
         Retorna
         -------
         pd.DataFrame
-            Una fila por hotel_recomendado con ≥2 usuarios.
+            Una fila por hotel_recomendado con ≥min_usuarios usuarios.
             Columnas: hotel_recomendado | n_usuarios | algoritmo |
                       ECS | ECS@1 | ECS@3 | ECS@5
         """
         filas: List[Dict[str, Any]] = []
 
-        # Agrupar por hotel_recomendado
         for h_rec, df_h in df_algoritmo.groupby("hotel_recomendado"):
 
-            # Para cada usuario que recibió este h_rec,
-            # construir su conjunto de explicadores (ordenados por valor_metrica desc)
             usuarios_h = sorted(df_h["usuario"].unique())
             n_usuarios = len(usuarios_h)
 
-            # Necesitamos al menos 2 usuarios para calcular consistencia
-            if n_usuarios < 2:
+            if n_usuarios < min_usuarios:
                 continue
 
-            # Conjuntos de explicadores por usuario — todos los explicadores
+            # Conjuntos de explicadores por usuario
             xu_completo: Dict[int, Set[int]] = {}
-            # Conjuntos de explicadores por usuario — top-k
             xu_k: Dict[int, Dict[int, Set[int]]] = {k: {} for k in ks}
 
             for usuario, df_u_h in df_h.groupby("usuario"):
                 u = int(usuario)
-                # Ordenar por valor_metrica descendente para respetar el ranking
-                df_u_h_sorted = df_u_h.sort_values(
-                    "valor_metrica", ascending=False
-                )
+                df_u_h_sorted = df_u_h.sort_values("valor_metrica", ascending=False)
                 exp_todos = set(int(x) for x in df_u_h_sorted["hotel_explicador"])
                 xu_completo[u] = exp_todos
 
@@ -448,12 +454,11 @@ class ECSStrategy(MetricaEvaluacionStrategy):
     @staticmethod
     def _jaccard_medio(xu: Dict[int, Set[int]]) -> float:
         """
-        Calcula la media de Jaccard entre todos los pares de usuarios u≠v.
+        Calcula la media de Jaccard entre todos los pares únicos de usuarios u < v.
 
-        Jaccard(A, B) = |A ∩ B| / |A ∪ B|
-
-        Si todos los conjuntos están vacíos → 0.0
-        Si solo hay 1 usuario              → NaN
+        Si solo hay 1 usuario  → NaN  (no hay pares)
+        Si todos los conjuntos están vacíos → 1.0 (vacío ∩ vacío / vacío ∪ vacío,
+        se interpreta como consistencia perfecta)
         """
         usuarios = list(xu.keys())
         U = len(usuarios)
@@ -464,12 +469,11 @@ class ECSStrategy(MetricaEvaluacionStrategy):
         n_pares = 0
 
         for i in range(U):
-            for j in range(i + 1, U):  # solo pares únicos (u, v) con u < v
+            for j in range(i + 1, U):
                 u, v = usuarios[i], usuarios[j]
                 inter = len(xu[u] & xu[v])
                 union = len(xu[u] | xu[v])
                 if union == 0:
-                    # Ambos conjuntos vacíos → consistencia perfecta (mismo vacío)
                     total += 1.0
                 else:
                     total += inter / union
