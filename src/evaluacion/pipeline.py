@@ -187,12 +187,16 @@ def main():
     )
     args = parser.parse_args()
 
-    # Umbral ECS: en muestra usamos 1 (permite ver resultados aunque los 2 usuarios
-    # no compartan hoteles recomendados); en completo/semi usamos 2 (semántica real).
+    # Umbral ECS
     if args.ecs_min_usuarios is not None:
         ecs_min_usuarios = args.ecs_min_usuarios
     else:
         ecs_min_usuarios = 1 if args.modo == "muestra" else 2
+
+    parser.add_argument(
+        "--ecs-min-usuarios", type=int, default=None,
+        help="Mínimo de usuarios por hotel_recomendado para calcular ECS."
+    )
 
     logger          = setup_logging(args.modo)
     timestamp       = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -333,49 +337,51 @@ def main():
 
         # --- ECS ---
         if ecs_strategy:
-            # Diagnóstico: cuántos h_rec tienen ≥ ecs_min_usuarios usuarios
-            conteo_h_rec = (
-                df_completo.groupby("hotel_recomendado")["usuario"]
-                .nunique()
-            )
-            elegibles = (conteo_h_rec >= ecs_min_usuarios).sum()
-            logger.info(
-                f"  ECS [{nombre_algoritmo}]: {n_h_rec} hoteles recomendados distintos, "
-                f"{elegibles} con ≥{ecs_min_usuarios} usuario(s) → calculando ECS..."
-            )
-
-            if elegibles == 0:
-                logger.warning(
-                    f"  ⚠️  ECS [{nombre_algoritmo}]: ningún hotel_recomendado tiene "
-                    f"≥{ecs_min_usuarios} usuarios. No se generará CSV de ECS. "
-                    f"(En modo muestra esto es normal si los {n_usuarios} usuarios "
-                    f"no comparten hoteles recomendados; prueba con --ecs-min-usuarios 1)"
+            try:
+                # Diagnóstico: cuántos h_rec tienen ≥ ecs_min_usuarios usuarios
+                conteo_h_rec = (
+                    df_completo.groupby("hotel_recomendado")["usuario"]
+                    .nunique()
                 )
-                continue
-
-            df_ecs = ecs_strategy.calcular_hotel(
-                df_completo, args.ks, contexto_global,
-                min_usuarios=ecs_min_usuarios,
-            )
-            if df_ecs is not None and not df_ecs.empty:
-                df_ecs.insert(
-                    df_ecs.columns.get_loc("n_usuarios") + 1,
-                    "algoritmo", nombre_algoritmo
-                )
-                acumulado_hotel[nombre_algoritmo] = df_ecs
-
-                ecs_medio = df_ecs["ECS"].mean()
+                elegibles = (conteo_h_rec >= ecs_min_usuarios).sum()
                 logger.info(
-                    f"    ECS → {len(df_ecs)} hoteles recomendados con ≥{ecs_min_usuarios} "
-                    f"usuario(s)  |  ECS_medio={round(ecs_medio, 6)}"
+                    f"  ECS [{nombre_algoritmo}]: {n_h_rec} hoteles recomendados distintos, "
+                    f"{elegibles} con ≥{ecs_min_usuarios} usuario(s) → calculando ECS..."
                 )
-                for _, fila in df_ecs.head(5).iterrows():
-                    logger.info("      " + ecs_strategy.log_fila(fila, args.ks))
-            else:
-                logger.warning(
-                    f"  ⚠️  ECS [{nombre_algoritmo}]: calcular_hotel() devolvió DataFrame "
-                    f"vacío pese a {elegibles} hoteles elegibles. Revisar datos."
-                )
+
+                if elegibles == 0:
+                    logger.warning(
+                        f"  ⚠️  ECS [{nombre_algoritmo}]: ningún hotel_recomendado "
+                        f"tiene ≥{ecs_min_usuarios} usuarios. No se generará CSV de ECS."
+                    )
+                else:
+                    df_ecs = ecs_strategy.calcular_hotel(
+                        df_completo, args.ks, contexto_global,
+                        min_usuarios=ecs_min_usuarios,
+                    )
+                    if df_ecs is not None and not df_ecs.empty:
+                        df_ecs["algoritmo"] = nombre_algoritmo
+                        cols_orden = (
+                            ["hotel_recomendado", "n_usuarios", "algoritmo"] + cols_ecs
+                        )
+                        df_ecs = df_ecs[cols_orden]
+                        acumulado_hotel[nombre_algoritmo] = df_ecs
+                        ecs_medio = df_ecs["ECS"].mean()
+                        logger.info(
+                            f"    ECS → {len(df_ecs)} hoteles recomendados  |  "
+                            f"ECS_medio={round(ecs_medio, 6)}"
+                        )
+                        for _, fila in df_ecs.head(5).iterrows():
+                            logger.info("      " + ecs_strategy.log_fila(fila, args.ks))
+                    else:
+                        logger.warning(
+                            f"  ⚠️  ECS [{nombre_algoritmo}]: calcular_hotel() "
+                            f"devolvió DataFrame vacío pese a {elegibles} elegibles."
+                        )
+            except Exception as e:
+                import traceback
+                logger.error(f"    ❌ Error calculando ECS [{nombre_algoritmo}]: {e}")
+                logger.error(traceback.format_exc())
 
     # -------------------------------------------------------
     # PASO 3 — Guardar CSVs
