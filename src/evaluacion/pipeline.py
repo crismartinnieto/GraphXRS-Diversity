@@ -1,43 +1,14 @@
 """
 src/evaluacion/pipeline.py
 
-Pipeline de EVALUACIÓN XAI.
+Pipeline de EVALUACIÓN XAI — AggDiv + IXD + MIL + ECS
 
 EJECUTAR:
     python src/evaluacion/pipeline.py --modo muestra
+    python src/evaluacion/pipeline.py --modo semi
     python src/evaluacion/pipeline.py --modo completo
-    python src/evaluacion/pipeline.py --modo muestra --fuente kg
-    python src/evaluacion/pipeline.py --modo muestra --fuente cf
-    python src/evaluacion/pipeline.py --modo muestra --ks 1 3
-
-SALIDA — un CSV por métrica y por algoritmo:
-
-    output/metricas_evaluacion_muestra/
-        evaluacion_{algoritmo}_AggDiv_{timestamp}.csv
-        evaluacion_{algoritmo}_IXD_{timestamp}.csv
-        evaluacion_{algoritmo}_MIL_{timestamp}.csv
-        evaluacion_{algoritmo}_ECS_{timestamp}.csv
-
-    Columnas:
-
-        AggDiv  (granularidad usuario):
-            usuario | historico_num | algoritmo | AggDiv | AggDiv@1 | AggDiv@3 | AggDiv@5
-
-        IXD  (granularidad usuario):
-            usuario | historico_num | algoritmo | IXD | IXD@1 | IXD@3 | IXD@5
-
-        MIL  (granularidad sistema — UNA sola fila por algoritmo):
-            algoritmo | MIL | MIL@1 | MIL@3 | MIL@5
-
-        ECS  (granularidad hotel_recomendado — una fila por h_rec con ≥2 usuarios):
-            hotel_recomendado | n_usuarios | algoritmo | ECS | ECS@1 | ECS@3 | ECS@5
-
-FLUJO:
-    1. CSV a CSV → calcular AggDiv e IXD por usuario, acumular df crudo.
-    2. Tras acumular todos los CSVs de un algoritmo:
-       → calcular MIL  con el DataFrame completo (granularidad sistema).
-       → calcular ECS  con el DataFrame completo (granularidad hotel).
-    3. Guardar un CSV por algoritmo y métrica.
+    python src/evaluacion/pipeline.py --modo semi --fuente cf
+    python src/evaluacion/pipeline.py --modo semi --ecs-min-usuarios 2
 """
 
 import sys
@@ -54,15 +25,15 @@ import pandas as pd
 # ----------------------------------------------------------
 PROJECT_ROOT = Path(__file__).parent.parent.parent
 
-CSV_HISTORICO = PROJECT_ROOT / "data" / "raw" / "grafo_interaccion_datos_train.csv"
+CSV_HISTORICO = PROJECT_ROOT / "data" / "raw2" / "grafo_interaccion_datos_train.csv"
 
 CARPETAS_ALGORITMOS = {
-    ("kg",  "muestra"):  PROJECT_ROOT / "output" / "metricas_grafo_conocimiento_muestra",
-    ("kg",  "completo"): PROJECT_ROOT / "output" / "metricas_grafo_conocimiento_completo",
-    ("cf",  "muestra"):  PROJECT_ROOT / "output" / "metricas_grafo_interaccion_muestra",
-    ("cf",  "completo"): PROJECT_ROOT / "output" / "metricas_grafo_interaccion_completo",
-    ("cf",  "semi"):     PROJECT_ROOT / "output" / "metricas_grafo_interaccion_semi",
-    ("kg",  "semi"):     PROJECT_ROOT / "output" / "metricas_grafo_conocimiento_semi",
+    ("kg", "muestra"):  PROJECT_ROOT / "output" / "metricas_grafo_conocimiento_muestra",
+    ("kg", "completo"): PROJECT_ROOT / "output" / "metricas_grafo_conocimiento_completo",
+    ("kg", "semi"):     PROJECT_ROOT / "output" / "metricas_grafo_conocimiento_semi",
+    ("cf", "muestra"):  PROJECT_ROOT / "output" / "metricas_grafo_interaccion_muestra",
+    ("cf", "completo"): PROJECT_ROOT / "output" / "metricas_grafo_interaccion_completo",
+    ("cf", "semi"):     PROJECT_ROOT / "output" / "metricas_grafo_interaccion_semi",
 }
 
 OUTPUT_EVAL_DIRS = {
@@ -77,6 +48,7 @@ SRC_DIR = Path(__file__).parent.parent
 sys.path.insert(0, str(SRC_DIR))
 
 from evaluacion.metricas_evaluacion import (
+    cargar_historico,
     calcular_evaluacion_usuario,
     ESTRATEGIAS_EVALUACION,
     MILStrategy,
@@ -92,7 +64,7 @@ from evaluacion.metricas_evaluacion import (
 def setup_logging(modo: str) -> logging.Logger:
     LOGS_DIR.mkdir(parents=True, exist_ok=True)
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    log_file  = LOGS_DIR / f"pipeline_evaluacion_{modo}_{timestamp}.log"
+    log_file = LOGS_DIR / f"pipeline_evaluacion_{modo}_{timestamp}.log"
     logging.basicConfig(
         level=logging.INFO,
         format="%(asctime)s [%(levelname)s] %(message)s",
@@ -122,7 +94,6 @@ PATRONES_ALGORITMO = [
 ESTRATEGIAS_POR_NOMBRE: Dict[str, MetricaEvaluacionStrategy] = {
     e.nombre(): e for e in ESTRATEGIAS_EVALUACION
 }
-
 ESTRATEGIAS_USUARIO = [e for e in ESTRATEGIAS_EVALUACION if e.granularidad() == "usuario"]
 ESTRATEGIAS_SISTEMA = [e for e in ESTRATEGIAS_EVALUACION if e.granularidad() == "sistema"]
 ESTRATEGIAS_HOTEL   = [e for e in ESTRATEGIAS_EVALUACION if e.granularidad() == "hotel"]
@@ -152,18 +123,6 @@ def _recopilar_csvs(fuentes: list, modo: str, logger: logging.Logger) -> list:
     return csvs
 
 
-def _cargar_historico(logger: logging.Logger) -> Dict[int, List[int]]:
-    df_hist = pd.read_csv(CSV_HISTORICO)
-    df_hist.columns = [c.strip().lower() for c in df_hist.columns]
-    if "user_id" in df_hist.columns and "business_id" in df_hist.columns:
-        df_hist = df_hist.rename(columns={"user_id": "usuario", "business_id": "hotel"})
-    return (
-        df_hist.groupby("usuario")["hotel"]
-        .apply(lambda s: sorted(s.astype(int).tolist()))
-        .to_dict()
-    )
-
-
 # ============================================================
 # MAIN
 # ============================================================
@@ -175,28 +134,15 @@ def main():
     parser.add_argument("--modo", choices=["muestra", "completo", "semi"], default="muestra")
     parser.add_argument("--fuente", nargs="+", choices=["kg", "cf"], default=["kg", "cf"])
     parser.add_argument("--ks", nargs="+", type=int, default=[1, 3, 5])
-    # En modo muestra solo hay 2 usuarios → relajamos el umbral mínimo a 1
-    # para que ECS genere una fila por h_rec con ≥1 usuario (útil para debug).
-    # En modo completo se usa 2 (valor semántico real).
     parser.add_argument(
         "--ecs-min-usuarios", type=int, default=None,
-        help=(
-            "Nº mínimo de usuarios que deben haber recibido un hotel_recomendado "
-            "para que ECS lo incluya. Por defecto: 1 en modo muestra, 2 en otros modos."
-        )
+        help="Mínimo de usuarios por hotel_recomendado para calcular ECS. "
+             "Por defecto: 1 en modo muestra, 2 en completo/semi."
     )
     args = parser.parse_args()
 
-    # Umbral ECS
-    if args.ecs_min_usuarios is not None:
-        ecs_min_usuarios = args.ecs_min_usuarios
-    else:
-        ecs_min_usuarios = 1 if args.modo == "muestra" else 2
-
-    parser.add_argument(
-        "--ecs-min-usuarios", type=int, default=None,
-        help="Mínimo de usuarios por hotel_recomendado para calcular ECS."
-    )
+    ecs_min_usuarios = args.ecs_min_usuarios if args.ecs_min_usuarios is not None \
+        else (1 if args.modo == "muestra" else 2)
 
     logger          = setup_logging(args.modo)
     timestamp       = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -204,11 +150,11 @@ def main():
 
     logger.info("=" * 70)
     logger.info(f"PIPELINE EVALUACIÓN XAI — MODO={args.modo.upper()}  FUENTE={args.fuente}")
-    logger.info(f"Histórico      : {CSV_HISTORICO}")
-    logger.info(f"Cutoffs @k     : {args.ks}")
-    logger.info(f"Métricas eval  : {[e.nombre() for e in ESTRATEGIAS_EVALUACION]}")
+    logger.info(f"Histórico       : {CSV_HISTORICO}")
+    logger.info(f"Cutoffs @k      : {args.ks}")
+    logger.info(f"Métricas eval   : {[e.nombre() for e in ESTRATEGIAS_EVALUACION]}")
     logger.info(f"ECS min_usuarios: {ecs_min_usuarios}")
-    logger.info(f"Carpeta salida : {output_eval_dir}")
+    logger.info(f"Carpeta salida  : {output_eval_dir}")
     logger.info("=" * 70)
 
     if not CSV_HISTORICO.exists():
@@ -223,11 +169,11 @@ def main():
     logger.info(f"Total CSVs a evaluar: {len(csvs)}\n")
     output_eval_dir.mkdir(parents=True, exist_ok=True)
 
-    historico_por_usuario = _cargar_historico(logger)
+    # Cargar histórico UNA sola vez
+    logger.info("📖 Cargando histórico...")
+    historico_por_usuario, contexto_global = cargar_historico(CSV_HISTORICO)
+    logger.info(f"   {len(historico_por_usuario)} usuarios en histórico\n")
 
-    # ----------------------------------------------------------
-    # Estructuras de acumulación
-    # ----------------------------------------------------------
     acumulado_usuario: Dict[str, Dict[str, List[pd.DataFrame]]] = {}
     acumulado_alg_raw: Dict[str, List[pd.DataFrame]] = {}
 
@@ -239,9 +185,7 @@ def main():
         logger.info(f"[{i}/{len(csvs)}] {csv_path.name}  →  algoritmo: {nombre_algoritmo}")
 
         if nombre_algoritmo not in acumulado_usuario:
-            acumulado_usuario[nombre_algoritmo] = {
-                e.nombre(): [] for e in ESTRATEGIAS_USUARIO
-            }
+            acumulado_usuario[nombre_algoritmo] = {e.nombre(): [] for e in ESTRATEGIAS_USUARIO}
             acumulado_alg_raw[nombre_algoritmo] = []
 
         try:
@@ -253,9 +197,10 @@ def main():
             acumulado_alg_raw[nombre_algoritmo].append(df_raw)
 
             dfs_usuario = calcular_evaluacion_usuario(
-                csv_historico=CSV_HISTORICO,
                 csv_algoritmo=csv_path,
                 nombre_algoritmo=nombre_algoritmo,
+                historico_por_usuario=historico_por_usuario,
+                contexto_global=contexto_global,
                 ks=args.ks,
                 estrategias=ESTRATEGIAS_USUARIO,
             )
@@ -281,26 +226,11 @@ def main():
     # PASO 2 — Calcular MIL (sistema) y ECS (hotel)
     # -------------------------------------------------------
     logger.info(f"\n{'=' * 70}")
-    logger.info("CALCULANDO MIL (granularidad sistema)...")
+    logger.info("CALCULANDO MIL (granularidad sistema) y ECS (granularidad hotel)...")
     logger.info(f"{'=' * 70}\n")
 
-    df_hist_global = pd.read_csv(CSV_HISTORICO)
-    df_hist_global.columns = [c.strip().lower() for c in df_hist_global.columns]
-    if "user_id" in df_hist_global.columns:
-        df_hist_global = df_hist_global.rename(
-            columns={"user_id": "usuario", "business_id": "hotel"}
-        )
-    contexto_global: Dict[str, Any] = {
-        "freq_explicador":  df_hist_global.groupby("hotel")["usuario"].nunique().to_dict(),
-        "n_usuarios_total": df_hist_global["usuario"].nunique(),
-    }
-
-    mil_strategy = next(
-        (e for e in ESTRATEGIAS_SISTEMA if isinstance(e, MILStrategy)), None
-    )
-    ecs_strategy = next(
-        (e for e in ESTRATEGIAS_HOTEL if isinstance(e, ECSStrategy)), None
-    )
+    mil_strategy = next((e for e in ESTRATEGIAS_SISTEMA if isinstance(e, MILStrategy)), None)
+    ecs_strategy = next((e for e in ESTRATEGIAS_HOTEL  if isinstance(e, ECSStrategy)), None)
 
     cols_mil = mil_strategy.columnas_salida(args.ks) if mil_strategy else []
     cols_ecs = ecs_strategy.columnas_salida(args.ks) if ecs_strategy else []
@@ -316,9 +246,7 @@ def main():
         n_usuarios  = df_completo["usuario"].nunique()
         n_h_rec     = df_completo["hotel_recomendado"].nunique()
 
-        logger.info(
-            f"  MIL [{nombre_algoritmo}]: {n_usuarios} usuarios en el df acumulado"
-        )
+        logger.info(f"  MIL [{nombre_algoritmo}]: {n_usuarios} usuarios en el df acumulado")
 
         # --- MIL ---
         if mil_strategy:
@@ -331,44 +259,36 @@ def main():
                 acumulado_sistema[nombre_algoritmo] = pd.DataFrame(
                     [fila_mil], columns=["algoritmo"] + cols_mil
                 )
-                logger.info(
-                    "    " + mil_strategy.log_fila(pd.Series(fila_mil), args.ks)
-                )
+                logger.info("    " + mil_strategy.log_fila(pd.Series(fila_mil), args.ks))
 
         # --- ECS ---
         if ecs_strategy:
-            try:
-                # Diagnóstico: cuántos h_rec tienen ≥ ecs_min_usuarios usuarios
-                conteo_h_rec = (
-                    df_completo.groupby("hotel_recomendado")["usuario"]
-                    .nunique()
-                )
-                elegibles = (conteo_h_rec >= ecs_min_usuarios).sum()
-                logger.info(
-                    f"  ECS [{nombre_algoritmo}]: {n_h_rec} hoteles recomendados distintos, "
-                    f"{elegibles} con ≥{ecs_min_usuarios} usuario(s) → calculando ECS..."
-                )
+            conteo_h_rec = df_completo.groupby("hotel_recomendado")["usuario"].nunique()
+            elegibles = int((conteo_h_rec >= ecs_min_usuarios).sum())
+            logger.info(
+                f"  ECS [{nombre_algoritmo}]: {n_h_rec} hoteles distintos, "
+                f"{elegibles} con ≥{ecs_min_usuarios} usuario(s) → calculando ECS..."
+            )
 
-                if elegibles == 0:
-                    logger.warning(
-                        f"  ⚠️  ECS [{nombre_algoritmo}]: ningún hotel_recomendado "
-                        f"tiene ≥{ecs_min_usuarios} usuarios. No se generará CSV de ECS."
-                    )
-                else:
+            if elegibles == 0:
+                logger.warning(
+                    f"  ⚠️  ECS [{nombre_algoritmo}]: ningún hotel elegible. "
+                    f"No se generará CSV de ECS."
+                )
+            else:
+                try:
                     df_ecs = ecs_strategy.calcular_hotel(
                         df_completo, args.ks, contexto_global,
                         min_usuarios=ecs_min_usuarios,
                     )
                     if df_ecs is not None and not df_ecs.empty:
                         df_ecs["algoritmo"] = nombre_algoritmo
-                        cols_orden = (
-                            ["hotel_recomendado", "n_usuarios", "algoritmo"] + cols_ecs
-                        )
+                        cols_orden = ["hotel_recomendado", "n_usuarios", "algoritmo"] + cols_ecs
                         df_ecs = df_ecs[cols_orden]
                         acumulado_hotel[nombre_algoritmo] = df_ecs
                         ecs_medio = df_ecs["ECS"].mean()
                         logger.info(
-                            f"    ECS → {len(df_ecs)} hoteles recomendados  |  "
+                            f"    ECS → {len(df_ecs)} hoteles  |  "
                             f"ECS_medio={round(ecs_medio, 6)}"
                         )
                         for _, fila in df_ecs.head(5).iterrows():
@@ -378,10 +298,10 @@ def main():
                             f"  ⚠️  ECS [{nombre_algoritmo}]: calcular_hotel() "
                             f"devolvió DataFrame vacío pese a {elegibles} elegibles."
                         )
-            except Exception as e:
-                import traceback
-                logger.error(f"    ❌ Error calculando ECS [{nombre_algoritmo}]: {e}")
-                logger.error(traceback.format_exc())
+                except Exception as e:
+                    import traceback
+                    logger.error(f"    ❌ Error calculando ECS [{nombre_algoritmo}]: {e}")
+                    logger.error(traceback.format_exc())
 
     # -------------------------------------------------------
     # PASO 3 — Guardar CSVs
@@ -392,49 +312,41 @@ def main():
 
     n_guardados = 0
 
-    # Métricas de usuario (AggDiv, IXD)
+    # AggDiv, IXD (granularidad usuario)
     for nombre_algoritmo, metricas_dfs in sorted(acumulado_usuario.items()):
         for estrategia in ESTRATEGIAS_USUARIO:
             nombre_metrica = estrategia.nombre()
             lista_dfs = metricas_dfs.get(nombre_metrica, [])
             if not lista_dfs:
-                logger.warning(
-                    f"  ⚠️  Sin datos: algoritmo={nombre_algoritmo} metrica={nombre_metrica}"
-                )
+                logger.warning(f"  ⚠️  Sin datos: {nombre_algoritmo} / {nombre_metrica}")
                 continue
-
             df_final = (
                 pd.concat(lista_dfs, ignore_index=True)
                 .sort_values("usuario")
                 .reset_index(drop=True)
             )
-            nombre_salida = (
-                f"evaluacion_{nombre_algoritmo}_{nombre_metrica}_{timestamp}.csv"
-            )
+            nombre_salida = f"evaluacion_{nombre_algoritmo}_{nombre_metrica}_{timestamp}.csv"
             df_final.to_csv(output_eval_dir / nombre_salida, index=False, encoding="utf-8")
             n_guardados += 1
             logger.info(f"  💾 {nombre_salida}  ({len(df_final)} usuarios)")
 
-    # MIL (1 fila por algoritmo)
+    # MIL (granularidad sistema)
     for nombre_algoritmo, df_mil in sorted(acumulado_sistema.items()):
         nombre_salida = f"evaluacion_{nombre_algoritmo}_MIL_{timestamp}.csv"
         df_mil.to_csv(output_eval_dir / nombre_salida, index=False, encoding="utf-8")
         n_guardados += 1
         logger.info(f"  💾 {nombre_salida}  (1 fila — sistema completo)")
 
-    # ECS (1 fila por hotel_recomendado con ≥ ecs_min_usuarios)
+    # ECS (granularidad hotel)
     for nombre_algoritmo, df_ecs in sorted(acumulado_hotel.items()):
         nombre_salida = f"evaluacion_{nombre_algoritmo}_ECS_{timestamp}.csv"
         df_ecs.to_csv(output_eval_dir / nombre_salida, index=False, encoding="utf-8")
         n_guardados += 1
-        logger.info(
-            f"  💾 {nombre_salida}  ({len(df_ecs)} hoteles recomendados)"
-        )
+        logger.info(f"  💾 {nombre_salida}  ({len(df_ecs)} hoteles recomendados)")
 
-    nombres_metricas = [e.nombre() for e in ESTRATEGIAS_EVALUACION]
     logger.info(f"\n{'=' * 70}")
     logger.info("✅ EVALUACIÓN COMPLETADA")
-    logger.info(f"   Métricas calculadas  : {nombres_metricas}")
+    logger.info(f"   Métricas calculadas  : {[e.nombre() for e in ESTRATEGIAS_EVALUACION]}")
     logger.info(f"   Algoritmos procesados: {len(acumulado_usuario)}")
     logger.info(f"   CSVs generados       : {n_guardados}  →  {output_eval_dir}")
     logger.info(f"{'=' * 70}")

@@ -5,43 +5,14 @@ Módulo de EVALUACIÓN XAI — Patrón Estrategia.
 
 MÉTRICAS IMPLEMENTADAS:
     - AggDiv   (Diversidad Agregada a nivel usuario)
-               AggDiv'   = |⋃_{r∈R} X_r|
-               AggDiv'@k = |⋃_{r∈R} X_r@k|
-               Granularidad: usuario + algoritmo
-               Columnas salida: usuario | historico_num | algoritmo |
-                                AggDiv | AggDiv@1 | AggDiv@3 | AggDiv@5
-
     - IXD      (Inter-eXplanation Diversity)
-               Granularidad: usuario + algoritmo
-               Columnas salida: usuario | historico_num | algoritmo |
-                                IXD | IXD@1 | IXD@3 | IXD@5
-
     - MIL      (Mean Inter-List Diversity de explicadores)
-               MIL = 1 - (1/|U|²) · Σ_u Σ_v |X_u ∩ X_v| / |X_u ∪ X_v|
-               Granularidad: sistema (valor único por algoritmo)
-               Columnas salida: algoritmo | MIL | MIL@1 | MIL@3 | MIL@5
-               IMPORTANTE: debe calcularse con calcular_sistema() una vez
-               acumulados TODOS los usuarios, no CSV a CSV.
-
     - ECS      (Explanation Consistency Score)
-               Para cada hotel recomendado h_rec que recibieron ≥min_usuarios
-               usuarios distintos, mide el solapamiento (Jaccard) entre los
-               conjuntos de explicadores que cada par de usuarios recibió
-               para ese h_rec.
-
-               ECS(h_rec) = media Jaccard(X_u(h_rec), X_v(h_rec)) ∀ u≠v
-               ECS_global  = media de ECS(h_rec) sobre todos los h_rec elegibles
-
-               Granularidad: hotel_recomendado (una fila por h_rec)
-               Columnas salida: hotel_recomendado | n_usuarios | algoritmo |
-                                ECS | ECS@1 | ECS@3 | ECS@5
-               IMPORTANTE: debe calcularse con calcular_hotel() una vez
-               acumulados TODOS los usuarios, no CSV a CSV.
 """
 
 from abc import ABC, abstractmethod
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Set
+from typing import Any, Dict, List, Optional, Set, Tuple
 
 import pandas as pd
 
@@ -61,41 +32,19 @@ class MetricaEvaluacionStrategy(ABC):
         """'usuario', 'sistema' o 'hotel'."""
         pass
 
-    def calcular_usuario(
-        self,
-        df_usuario_algoritmo: pd.DataFrame,
-        historico_usuario: List[int],
-        ks: List[int],
-        contexto_global: Dict[str, Any] = None,
-    ) -> Optional[Dict[str, Any]]:
+    def calcular_usuario(self, df_usuario_algoritmo, historico_usuario, ks, contexto_global=None):
         return None
 
-    def calcular_sistema(
-        self,
-        df_algoritmo: pd.DataFrame,
-        historico_por_usuario: Dict[int, List[int]],
-        ks: List[int],
-        contexto_global: Dict[str, Any] = None,
-    ) -> Optional[Dict[str, Any]]:
+    def calcular_sistema(self, df_algoritmo, historico_por_usuario, ks, contexto_global=None):
         return None
 
-    def calcular_hotel(
-        self,
-        df_algoritmo: pd.DataFrame,
-        ks: List[int],
-        contexto_global: Dict[str, Any] = None,
-        min_usuarios: int = 2,
-    ) -> Optional[pd.DataFrame]:
-        """
-        Calcula la métrica agrupando por hotel_recomendado.
-        Devuelve un DataFrame con una fila por hotel_recomendado.
-        """
+    def calcular_hotel(self, df_algoritmo, ks, contexto_global=None, min_usuarios=2):
         return None
 
-    def columnas_salida(self, ks: List[int]) -> List[str]:
+    def columnas_salida(self, ks):
         return []
 
-    def log_fila(self, fila: pd.Series, ks: List[int]) -> str:
+    def log_fila(self, fila, ks):
         cols = self.columnas_salida(ks)
         partes = [f"{col}={fila.get(col, 'N/A')}" for col in cols if col in fila.index]
         return "  ".join(partes)
@@ -107,40 +56,29 @@ class MetricaEvaluacionStrategy(ABC):
 
 class AggDivStrategy(MetricaEvaluacionStrategy):
 
-    def nombre(self) -> str:
+    def nombre(self):
         return "AggDiv"
 
-    def granularidad(self) -> str:
+    def granularidad(self):
         return "usuario"
 
-    def columnas_salida(self, ks: List[int]) -> List[str]:
+    def columnas_salida(self, ks):
         cols = ["AggDiv", "AggDiv_norm"]
         for k in ks:
             cols += [f"AggDiv@{k}", f"AggDiv@{k}_norm"]
         return cols
 
-    def calcular_usuario(
-        self,
-        df_usuario_algoritmo: pd.DataFrame,
-        historico_usuario: List[int],
-        ks: List[int],
-        contexto_global: Dict[str, Any] = None,
-    ) -> Dict[str, Any]:
-
+    def calcular_usuario(self, df_usuario_algoritmo, historico_usuario, ks, contexto_global=None):
         n_hist = len(historico_usuario)
-
         union_total: Set[int] = set()
         union_k: Dict[int, Set[int]] = {k: set() for k in ks}
-
         for _, df_par in df_usuario_algoritmo.groupby("hotel_recomendado"):
             exp = set(int(x) for x in df_par["hotel_explicador"])
             union_total |= exp
             for k in ks:
-                top_k = set(int(x) for x in df_par.head(k)["hotel_explicador"])
-                union_k[k] |= top_k
-
+                union_k[k] |= set(int(x) for x in df_par.head(k)["hotel_explicador"])
         aggdiv = len(union_total)
-        resultado: Dict[str, Any] = {
+        resultado = {
             "AggDiv":      aggdiv,
             "AggDiv_norm": round(aggdiv / n_hist, 6) if n_hist > 0 else float("nan"),
         }
@@ -148,15 +86,11 @@ class AggDivStrategy(MetricaEvaluacionStrategy):
             aggdiv_k = len(union_k[k])
             resultado[f"AggDiv@{k}"]      = aggdiv_k
             resultado[f"AggDiv@{k}_norm"] = round(aggdiv_k / n_hist, 6) if n_hist > 0 else float("nan")
-
         return resultado
 
-    def log_fila(self, fila: pd.Series, ks: List[int]) -> str:
+    def log_fila(self, fila, ks):
         partes = [f"AggDiv={fila.get('AggDiv')} (norm={fila.get('AggDiv_norm')})"]
-        partes += [
-            f"@{k}={fila.get(f'AggDiv@{k}', 'N/A')} (norm={fila.get(f'AggDiv@{k}_norm', 'N/A')})"
-            for k in ks
-        ]
+        partes += [f"@{k}={fila.get(f'AggDiv@{k}', 'N/A')} (norm={fila.get(f'AggDiv@{k}_norm', 'N/A')})" for k in ks]
         return "  ".join(partes)
 
 
@@ -165,57 +99,38 @@ class AggDivStrategy(MetricaEvaluacionStrategy):
 # ============================================================
 
 class IXDStrategy(MetricaEvaluacionStrategy):
-    """
-    IXD — Diversidad Inter-Explicación (nivel usuario).
 
-    X   = ⋃_{s∈R} X_s
-    IXD = (1/|X|) · Σ_{x∈X}  |{s∈R | x∉X_s}| / (|R|−1)
-
-    Rango [0,1]. NaN si el usuario tiene una sola recomendación.
-    Una fila por usuario. Sin hotel_recomendado.
-    """
-
-    def nombre(self) -> str:
+    def nombre(self):
         return "IXD"
 
-    def granularidad(self) -> str:
+    def granularidad(self):
         return "usuario"
 
-    def columnas_salida(self, ks: List[int]) -> List[str]:
+    def columnas_salida(self, ks):
         return ["IXD"] + [f"IXD@{k}" for k in ks]
 
-    def calcular_usuario(
-        self,
-        df_usuario_algoritmo: pd.DataFrame,
-        historico_usuario: List[int],
-        ks: List[int],
-        contexto_global: Dict[str, Any] = None,
-    ) -> Dict[str, Any]:
-
-        grupos: Dict[Any, Set[int]] = {
+    def calcular_usuario(self, df_usuario_algoritmo, historico_usuario, ks, contexto_global=None):
+        grupos = {
             hotel_rec: set(int(x) for x in df_par["hotel_explicador"])
             for hotel_rec, df_par in df_usuario_algoritmo.groupby("hotel_recomendado")
         }
         R = len(grupos)
-
-        resultado: Dict[str, Any] = {"IXD": self._calcular_ixd(grupos, R)}
-
+        resultado = {"IXD": self._calcular_ixd(grupos, R)}
         for k in ks:
-            grupos_k: Dict[Any, Set[int]] = {
+            grupos_k = {
                 hotel_rec: set(int(x) for x in df_par.head(k)["hotel_explicador"])
                 for hotel_rec, df_par in df_usuario_algoritmo.groupby("hotel_recomendado")
             }
             resultado[f"IXD@{k}"] = self._calcular_ixd(grupos_k, R)
-
         return resultado
 
-    def log_fila(self, fila: pd.Series, ks: List[int]) -> str:
+    def log_fila(self, fila, ks):
         partes = [f"IXD={fila.get('IXD')}"]
         partes += [f"IXD@{k}={fila.get(f'IXD@{k}', 'N/A')}" for k in ks]
         return "  ".join(partes)
 
     @staticmethod
-    def _calcular_ixd(grupos: Dict[Any, Set[int]], R: int) -> float:
+    def _calcular_ixd(grupos, R):
         if R <= 1:
             return float("nan")
         X_global = set().union(*grupos.values())
@@ -233,73 +148,47 @@ class IXDStrategy(MetricaEvaluacionStrategy):
 # ============================================================
 
 class MILStrategy(MetricaEvaluacionStrategy):
-    """
-    MIL-Expl — Mean Inter-List Diversity de explicadores (nivel sistema).
 
-    Rango [0,1]. NaN si hay menos de 2 usuarios.
-    Una sola fila por algoritmo (toda la población).
-
-    IMPORTANTE: llamar a calcular_sistema() con el DataFrame completo de
-    TODOS los usuarios ya acumulados, no CSV a CSV.
-    """
-
-    def nombre(self) -> str:
+    def nombre(self):
         return "MIL"
 
-    def granularidad(self) -> str:
+    def granularidad(self):
         return "sistema"
 
-    def columnas_salida(self, ks: List[int]) -> List[str]:
+    def columnas_salida(self, ks):
         return ["MIL"] + [f"MIL@{k}" for k in ks]
 
-    def calcular_sistema(
-        self,
-        df_algoritmo: pd.DataFrame,
-        historico_por_usuario: Dict[int, List[int]],
-        ks: List[int],
-        contexto_global: Dict[str, Any] = None,
-    ) -> Dict[str, Any]:
-
+    def calcular_sistema(self, df_algoritmo, historico_por_usuario, ks, contexto_global=None):
         xu_completo: Dict[int, Set[int]] = {}
         xu_k: Dict[int, Dict[int, Set[int]]] = {k: {} for k in ks}
-
         for usuario, df_u in df_algoritmo.groupby("usuario"):
             u = int(usuario)
             union_total: Set[int] = set()
             union_por_k: Dict[int, Set[int]] = {k: set() for k in ks}
-
             for _, df_par in df_u.groupby("hotel_recomendado"):
                 exp = set(int(x) for x in df_par["hotel_explicador"])
                 union_total |= exp
                 for k in ks:
-                    top_k = set(int(x) for x in df_par.head(k)["hotel_explicador"])
-                    union_por_k[k] |= top_k
-
+                    union_por_k[k] |= set(int(x) for x in df_par.head(k)["hotel_explicador"])
             xu_completo[u] = union_total
             for k in ks:
                 xu_k[k][u] = union_por_k[k]
-
-        resultado: Dict[str, Any] = {"MIL": self._calcular_mil(xu_completo)}
+        resultado = {"MIL": self._calcular_mil(xu_completo)}
         for k in ks:
             resultado[f"MIL@{k}"] = self._calcular_mil(xu_k[k])
         return resultado
 
-    def log_fila(self, fila: pd.Series, ks: List[int]) -> str:
+    def log_fila(self, fila, ks):
         partes = [f"MIL={fila.get('MIL')}"]
         partes += [f"MIL@{k}={fila.get(f'MIL@{k}', 'N/A')}" for k in ks]
         return "  ".join(partes)
 
     @staticmethod
-    def _calcular_mil(xu: Dict[int, Set[int]]) -> float:
-        """
-        MIL = 1/(|U|²-|U|) · Σ_{ua≠ub} [ 1 - q(ua,ub)/|X_ua ∪ X_ub| ]
-            = 1/(|U|²-|U|) · Σ_{ua≠ub}  distancia_jaccard(X_ua, X_ub)
-        """
+    def _calcular_mil(xu):
         usuarios = list(xu.keys())
         U = len(usuarios)
         if U < 2:
             return float("nan")
-
         total = 0.0
         for u in usuarios:
             for v in usuarios:
@@ -307,142 +196,58 @@ class MILStrategy(MetricaEvaluacionStrategy):
                     continue
                 inter = len(xu[u] & xu[v])
                 union = len(xu[u] | xu[v])
-                if union == 0:
-                    total += 0.0
-                else:
-                    total += 1.0 - (inter / union)
-
+                total += 0.0 if union == 0 else 1.0 - (inter / union)
         return round(total / (U ** 2 - U), 6)
 
 
 # ============================================================
-# MÉTRICA: ECS  (Explanation Consistency Score)
+# MÉTRICA: ECS
 # ============================================================
 
 class ECSStrategy(MetricaEvaluacionStrategy):
-    """
-    ECS — Explanation Consistency Score (nivel hotel_recomendado).
 
-    Para cada hotel recomendado h_rec que fue recomendado a ≥min_usuarios
-    usuarios distintos, mide el solapamiento medio (Jaccard) entre los
-    conjuntos de hoteles explicadores que cada par de usuarios recibió
-    para ese h_rec.
-
-    ECS(h_rec) = mean_{u≠v} Jaccard(X_u(h_rec), X_v(h_rec))
-
-    donde Jaccard(A, B) = |A ∩ B| / |A ∪ B|
-
-    Rango [0, 1]:
-        ECS = 1  →  todos los usuarios reciben exactamente los mismos
-                    explicadores para h_rec  (máxima consistencia)
-        ECS = 0  →  ningún usuario comparte ningún explicador para h_rec
-                    (máxima personalización)
-
-    Nota sobre min_usuarios:
-        - En modo muestra (pocos usuarios) se puede usar min_usuarios=1
-          para que ECS genere una fila por cada h_rec aunque solo lo haya
-          recibido 1 usuario (ECS = NaN en ese caso, útil para diagnóstico).
-        - En modo completo/producción usar min_usuarios=2 (semántica real).
-
-    Granularidad: hotel_recomendado
-    Una fila por hotel_recomendado con ≥min_usuarios usuarios.
-
-    Columnas salida:
-        hotel_recomendado | n_usuarios | algoritmo |
-        ECS | ECS@1 | ECS@3 | ECS@5
-
-    IMPORTANTE: llamar a calcular_hotel() con el DataFrame completo de
-    TODOS los usuarios ya acumulados, no CSV a CSV.
-    """
-
-    def nombre(self) -> str:
+    def nombre(self):
         return "ECS"
 
-    def granularidad(self) -> str:
+    def granularidad(self):
         return "hotel"
 
-    def columnas_salida(self, ks: List[int]) -> List[str]:
+    def columnas_salida(self, ks):
         return ["ECS"] + [f"ECS@{k}" for k in ks]
 
-    def calcular_hotel(
-        self,
-        df_algoritmo: pd.DataFrame,
-        ks: List[int],
-        contexto_global: Dict[str, Any] = None,
-        min_usuarios: int = 2,
-    ) -> pd.DataFrame:
-        """
-        Calcula ECS para cada hotel_recomendado que aparece en ≥min_usuarios usuarios.
-
-        Parámetros
-        ----------
-        df_algoritmo : pd.DataFrame
-            DataFrame acumulado con TODOS los usuarios del algoritmo.
-            Columnas requeridas: usuario | hotel_recomendado | hotel_explicador
-            | valor_metrica
-        ks : List[int]
-            Cortes @k a calcular.
-        contexto_global : dict, opcional
-        min_usuarios : int
-            Número mínimo de usuarios para incluir un hotel_recomendado.
-            Usar 1 en modo muestra (ECS=NaN si solo hay 1 usuario),
-            usar 2 en modo completo (semántica real).
-
-        Retorna
-        -------
-        pd.DataFrame
-            Una fila por hotel_recomendado con ≥min_usuarios usuarios.
-            Columnas: hotel_recomendado | n_usuarios | algoritmo |
-                      ECS | ECS@1 | ECS@3 | ECS@5
-        """
-        filas: List[Dict[str, Any]] = []
-
+    def calcular_hotel(self, df_algoritmo, ks, contexto_global=None, min_usuarios=2):
+        filas = []
         for h_rec, df_h in df_algoritmo.groupby("hotel_recomendado"):
-
-            usuarios_h = sorted(df_h["usuario"].unique())
-            n_usuarios = len(usuarios_h)
-
+            n_usuarios = df_h["usuario"].nunique()
             if n_usuarios < min_usuarios:
                 continue
-
-            # Conjuntos de explicadores por usuario
             xu_completo: Dict[int, Set[int]] = {}
             xu_k: Dict[int, Dict[int, Set[int]]] = {k: {} for k in ks}
-
             for usuario, df_u_h in df_h.groupby("usuario"):
                 u = int(usuario)
-                df_u_h_sorted = df_u_h.sort_values("valor_metrica", ascending=False)
-                exp_todos = set(int(x) for x in df_u_h_sorted["hotel_explicador"])
-                xu_completo[u] = exp_todos
-
+                df_sorted = df_u_h.sort_values("valor_metrica", ascending=False)
+                xu_completo[u] = set(int(x) for x in df_sorted["hotel_explicador"])
                 for k in ks:
-                    top_k = set(
-                        int(x) for x in df_u_h_sorted.head(k)["hotel_explicador"]
-                    )
-                    xu_k[k][u] = top_k
-
-            fila: Dict[str, Any] = {
+                    xu_k[k][u] = set(int(x) for x in df_sorted.head(k)["hotel_explicador"])
+            fila = {
                 "hotel_recomendado": int(h_rec),
                 "n_usuarios":        n_usuarios,
                 "ECS":               self._jaccard_medio(xu_completo),
             }
             for k in ks:
                 fila[f"ECS@{k}"] = self._jaccard_medio(xu_k[k])
-
             filas.append(fila)
 
         columnas = ["hotel_recomendado", "n_usuarios"] + self.columnas_salida(ks)
         if not filas:
             return pd.DataFrame(columns=columnas)
-
-        df_resultado = (
+        return (
             pd.DataFrame(filas, columns=columnas)
             .sort_values("hotel_recomendado")
             .reset_index(drop=True)
         )
-        return df_resultado
 
-    def log_fila(self, fila: pd.Series, ks: List[int]) -> str:
+    def log_fila(self, fila, ks):
         partes = [
             f"h_rec={fila.get('hotel_recomendado')}  "
             f"n_usuarios={fila.get('n_usuarios')}  "
@@ -452,37 +257,21 @@ class ECSStrategy(MetricaEvaluacionStrategy):
         return "  ".join(partes)
 
     @staticmethod
-    def _jaccard_medio(xu: Dict[int, Set[int]]) -> float:
-        """
-        Calcula la media de Jaccard entre todos los pares únicos de usuarios u < v.
-
-        Si solo hay 1 usuario  → NaN  (no hay pares)
-        Si todos los conjuntos están vacíos → 1.0 (vacío ∩ vacío / vacío ∪ vacío,
-        se interpreta como consistencia perfecta)
-        """
+    def _jaccard_medio(xu):
         usuarios = list(xu.keys())
         U = len(usuarios)
         if U < 2:
             return float("nan")
-
         total = 0.0
         n_pares = 0
-
         for i in range(U):
             for j in range(i + 1, U):
                 u, v = usuarios[i], usuarios[j]
                 inter = len(xu[u] & xu[v])
                 union = len(xu[u] | xu[v])
-                if union == 0:
-                    total += 1.0
-                else:
-                    total += inter / union
+                total += 1.0 if union == 0 else inter / union
                 n_pares += 1
-
-        if n_pares == 0:
-            return float("nan")
-
-        return round(total / n_pares, 6)
+        return float("nan") if n_pares == 0 else round(total / n_pares, 6)
 
 
 # ============================================================
@@ -498,31 +287,16 @@ ESTRATEGIAS_EVALUACION: List[MetricaEvaluacionStrategy] = [
 
 
 # ============================================================
-# FUNCIÓN PÚBLICA — solo para métricas de granularidad 'usuario'
-# MIL y ECS se calculan aparte en el pipeline con el df acumulado completo
+# FUNCIONES PÚBLICAS
 # ============================================================
 
-def calcular_evaluacion_usuario(
-    csv_historico: str | Path,
-    csv_algoritmo: str | Path,
-    nombre_algoritmo: str,
-    ks: List[int] = None,
-    estrategias: List[MetricaEvaluacionStrategy] = None,
-) -> Dict[str, pd.DataFrame]:
+def cargar_historico(csv_historico: str | Path) -> Tuple[Dict[int, List[int]], Dict[str, Any]]:
     """
-    Calcula métricas de granularidad 'usuario' para un CSV de algoritmo.
+    Carga el CSV de histórico UNA sola vez.
+    Llamar una vez en el pipeline y pasar el resultado a calcular_evaluacion_usuario().
 
-    Devuelve un dict por métrica. Cada DataFrame tiene UNA fila por usuario:
-        usuario | historico_num | algoritmo | AggDiv | AggDiv@1 | ...
-
-    MIL y ECS NO se calculan aquí (necesitan todos los usuarios acumulados).
+    Retorna (historico_por_usuario, contexto_global).
     """
-    if ks is None:
-        ks = [1, 3, 5]
-    if estrategias is None:
-        estrategias = [e for e in ESTRATEGIAS_EVALUACION if e.granularidad() == "usuario"]
-
-    # Cargar histórico
     df_hist = pd.read_csv(csv_historico)
     df_hist.columns = [c.strip().lower() for c in df_hist.columns]
     if "user_id" in df_hist.columns and "business_id" in df_hist.columns:
@@ -532,20 +306,40 @@ def calcular_evaluacion_usuario(
             "El CSV de histórico debe tener columnas 'user_id'/'business_id' "
             "o 'usuario'/'hotel'."
         )
-
     historico_por_usuario: Dict[int, List[int]] = (
         df_hist.groupby("usuario")["hotel"]
         .apply(lambda s: sorted(s.astype(int).tolist()))
         .to_dict()
     )
-
-    freq_explicador = df_hist.groupby("hotel")["usuario"].nunique().to_dict()
     contexto_global = {
-        "freq_explicador":  freq_explicador,
+        "freq_explicador":  df_hist.groupby("hotel")["usuario"].nunique().to_dict(),
         "n_usuarios_total": df_hist["usuario"].nunique(),
     }
+    return historico_por_usuario, contexto_global
 
-    # Cargar CSV del algoritmo
+
+def calcular_evaluacion_usuario(
+    csv_algoritmo: str | Path,
+    nombre_algoritmo: str,
+    historico_por_usuario: Dict[int, List[int]],
+    contexto_global: Dict[str, Any],
+    ks: List[int] = None,
+    estrategias: List[MetricaEvaluacionStrategy] = None,
+) -> Dict[str, pd.DataFrame]:
+    """
+    Calcula métricas de granularidad 'usuario' para un CSV de algoritmo.
+
+    IMPORTANTE: pasar historico_por_usuario y contexto_global ya cargados
+    (via cargar_historico()) para no releer el histórico en cada llamada.
+
+    Devuelve {nombre_metrica: DataFrame} con UNA fila por usuario.
+    MIL y ECS NO se calculan aquí.
+    """
+    if ks is None:
+        ks = [1, 3, 5]
+    if estrategias is None:
+        estrategias = [e for e in ESTRATEGIAS_EVALUACION if e.granularidad() == "usuario"]
+
     df_alg = pd.read_csv(csv_algoritmo)
     df_alg = df_alg.sort_values(
         ["usuario", "hotel_recomendado", "valor_metrica"],
@@ -557,10 +351,8 @@ def calcular_evaluacion_usuario(
     for estrategia in estrategias:
         if estrategia.granularidad() != "usuario":
             continue
-
         cols_metrica = estrategia.columnas_salida(ks)
-        filas: List[Dict[str, Any]] = []
-
+        filas = []
         for usuario, df_u in df_alg.groupby("usuario"):
             u = int(usuario)
             historico = historico_por_usuario.get(u, [])
@@ -574,7 +366,6 @@ def calcular_evaluacion_usuario(
             }
             fila.update({col: valores.get(col, float("nan")) for col in cols_metrica})
             filas.append(fila)
-
         columnas_df = ["usuario", "historico_num", "algoritmo"] + cols_metrica
         resultados[estrategia.nombre()] = pd.DataFrame(filas, columns=columnas_df)
 
