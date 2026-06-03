@@ -27,7 +27,7 @@ import time
 from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
-from typing import List, Dict, Optional
+from typing import List, Dict, Optional, Tuple
 
 import pandas as pd
 
@@ -41,7 +41,9 @@ OUTPUT_DIR   = PROJECT_ROOT / "output"
 LOGS_DIR     = PROJECT_ROOT / "logs"
 DEBUG_DIR    = OUTPUT_DIR / "debug"
 
-CSV_RECOMENDACIONES = DATA_DIR / "recomendaciones_del_modelo" / "relacion_usuario_rating_recomendador.csv"
+RECOMENDACIONES_DIR = DATA_DIR / "recomendaciones_del_modelo"
+PATRON_RECOMENDACIONES = "relacion_usuario_rating_recomendador*.csv"
+PREFIJO_RECOMENDACIONES = "relacion_usuario_rating_recomendador"
 
 LOGS_DIR.mkdir(parents=True, exist_ok=True)
 DEBUG_DIR.mkdir(parents=True, exist_ok=True)
@@ -79,6 +81,38 @@ def setup_logging(modo: str) -> logging.Logger:
         ]
     )
     return logging.getLogger("pipeline")
+
+
+def extraer_nombre_algoritmo(csv_path: Path) -> str:
+    """
+    Obtiene el nombre del algoritmo desde:
+        relacion_usuario_rating_recomendador_FunkSVD.csv -> FunkSVD
+        relacion_usuario_rating_recomendador.csv         -> base
+    """
+    nombre = csv_path.stem
+    if nombre == PREFIJO_RECOMENDACIONES:
+        return "base"
+
+    prefijo_con_sep = f"{PREFIJO_RECOMENDACIONES}_"
+    if nombre.startswith(prefijo_con_sep):
+        return nombre[len(prefijo_con_sep):]
+
+    return nombre
+
+
+def descubrir_csvs_recomendaciones(
+    recomendaciones_dir: Path,
+    patron: str,
+    csv_concreto: Optional[Path] = None
+) -> List[Tuple[str, Path]]:
+    if csv_concreto is not None:
+        csv_path = csv_concreto
+        if not csv_path.is_absolute():
+            csv_path = PROJECT_ROOT / csv_path
+        return [(extraer_nombre_algoritmo(csv_path), csv_path)]
+
+    csvs = sorted(recomendaciones_dir.glob(patron))
+    return [(extraer_nombre_algoritmo(csv_path), csv_path) for csv_path in csvs]
 
 
 # ============================================================
@@ -443,6 +477,110 @@ def guardar_csvs_usuario(
         logger.info(f"  💾 {nombre_at3}  ({len(df_at3)} filas)")
         '''
 
+
+def procesar_csv_recomendaciones(
+    algoritmo: str,
+    csv_recomendaciones: Path,
+    args: argparse.Namespace,
+    timestamp: str,
+    logger: logging.Logger
+) -> Dict[str, int]:
+    logger.info(f"\n{'='*70}")
+    logger.info(f"RECOMENDADOR: {algoritmo}")
+    logger.info(f"CSV: {csv_recomendaciones}")
+    logger.info(f"{'='*70}")
+
+    if not csv_recomendaciones.exists():
+        logger.error(f"❌ No existe: {csv_recomendaciones}")
+        return {'usuarios': 0, 'errores': 1, 'csvs_kg': 0, 'csvs_cf': 0}
+
+    df = pd.read_csv(csv_recomendaciones)
+    logger.info(f"📂 Recomendaciones: {len(df)} filas")
+
+    columnas_necesarias = {'usuario', 'negocio'}
+    columnas_faltantes = columnas_necesarias - set(df.columns)
+    if columnas_faltantes:
+        logger.error(
+            f"❌ El CSV {csv_recomendaciones.name} no tiene las columnas requeridas: "
+            f"{sorted(columnas_faltantes)}"
+        )
+        return {'usuarios': 0, 'errores': 1, 'csvs_kg': 0, 'csvs_cf': 0}
+
+    if args.modo == "muestra":
+        df = df[df['usuario'].isin(args.usuarios)]
+        logger.info(f"🔍 Usuarios: {args.usuarios} → {len(df)} pares")
+
+    if args.modo == "semi":
+        df = (
+            df.groupby('usuario', group_keys=False)
+            .head(5)
+            .reset_index(drop=True)
+        )
+        logger.info(f"🔍 Semi: 5 recomendaciones por usuario → {len(df)} pares totales")
+
+    algoritmo_dir = OUTPUT_DIR / algoritmo
+    dir_kg = algoritmo_dir / f"metricas_grafo_conocimiento_{args.modo}"
+    dir_cf = algoritmo_dir / f"metricas_grafo_interaccion_{args.modo}"
+
+    acumulador: Dict[int, Dict] = defaultdict(lambda: {'kg': [], 'cf': []})
+    errores = 0
+    total = len(df)
+
+    for idx, row in df.iterrows():
+        user_id = int(row['usuario'])
+        hotel_rec = int(row['negocio'])
+
+        # En modo debug con --hotel, solo guardamos JSONs para ese hotel concreto
+        debug_este_par = args.debug and (args.hotel is None or args.hotel == hotel_rec)
+
+        logger.info(f"\n{'─'*50}")
+        logger.info(f"[{algoritmo}] Par {idx+1}/{total}: user={user_id}, hotel_rec={hotel_rec}" +
+                    (" [DEBUG]" if debug_este_par else ""))
+        t0 = time.time()
+
+        try:
+            filas_kg = procesar_par_kg(user_id, hotel_rec, logger, debug=debug_este_par)
+            filas_cf = procesar_par_cf(user_id, hotel_rec, logger, debug=debug_este_par)
+
+            acumulador[user_id]['kg'].extend(filas_kg)
+            acumulador[user_id]['cf'].extend(filas_cf)
+
+            logger.info(
+                f"  ✅ OK ({time.time()-t0:.2f}s) "
+                f"KG:{len(filas_kg)} CF:{len(filas_cf)} filas"
+            )
+        except Exception as e:
+            logger.error(f"  ❌ Error inesperado: {e}")
+            errores += 1
+
+    logger.info(f"\n{'='*70}")
+    logger.info(f"GUARDANDO CSVs POR MÉTRICA POR USUARIO [{algoritmo}]...")
+    logger.info(f"{'='*70}")
+
+    for usuario, datos in acumulador.items():
+        logger.info(f"\n👤 Usuario {usuario}:")
+        guardar_csvs_usuario(datos['kg'], usuario, NOMBRES_METRICAS_KG, 'kg', dir_kg, timestamp, logger)
+        guardar_csvs_usuario(datos['cf'], usuario, NOMBRES_METRICAS_CF, 'cf', dir_cf, timestamp, logger)
+
+    n_kg = len(list(dir_kg.glob("*.csv"))) if dir_kg.exists() else 0
+    n_cf = len(list(dir_cf.glob("*.csv"))) if dir_cf.exists() else 0
+
+    logger.info(f"\n{'='*70}")
+    logger.info(f"✅ RECOMENDADOR COMPLETADO: {algoritmo}")
+    logger.info(f"   Usuarios: {len(acumulador)}")
+    logger.info(f"   Errores : {errores}")
+    logger.info(f"   CSVs KG : {n_kg}  →  {dir_kg}")
+    logger.info(f"   CSVs CF : {n_cf}  →  {dir_cf}")
+    logger.info(f"{'='*70}")
+
+    return {
+        'usuarios': len(acumulador),
+        'errores': errores,
+        'csvs_kg': n_kg,
+        'csvs_cf': n_cf,
+    }
+
+
 # ============================================================
 # MAIN
 # ============================================================
@@ -466,86 +604,58 @@ def main():
         "--hotel", type=int, default=None,
         help="Con --debug, limitar a un único hotel recomendado concreto"
     )
+    parser.add_argument(
+        "--recomendaciones-dir", type=Path, default=RECOMENDACIONES_DIR,
+        help="Carpeta donde buscar CSVs de recomendaciones"
+    )
+    parser.add_argument(
+        "--patron-recomendaciones", default=PATRON_RECOMENDACIONES,
+        help="Patrón de CSVs a procesar dentro de --recomendaciones-dir"
+    )
+    parser.add_argument(
+        "--csv-recomendaciones", type=Path, default=None,
+        help="Procesa un único CSV concreto en vez de recorrer la carpeta"
+    )
     args = parser.parse_args()
 
     logger    = setup_logging(args.modo)
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-
-    dir_kg = OUTPUT_DIR / f"metricas_grafo_conocimiento_{args.modo}"
-    dir_cf = OUTPUT_DIR / f"metricas_grafo_interaccion_{args.modo}"
 
     logger.info("=" * 70)
     logger.info(f"PIPELINE XAI — MODO={args.modo.upper()}" + (" [DEBUG]" if args.debug else ""))
     logger.info(f"Timestamp : {timestamp}")
     logger.info(f"Métricas KG ({len(NOMBRES_METRICAS_KG)}): {NOMBRES_METRICAS_KG}")
     logger.info(f"Métricas CF ({len(NOMBRES_METRICAS_CF)}): {NOMBRES_METRICAS_CF}")
+    logger.info(f"Dir recomendaciones: {args.recomendaciones_dir}")
+    logger.info(f"Patrón CSVs        : {args.patron_recomendaciones}")
     if args.debug:
         logger.info(f"Debug dir : {DEBUG_DIR.resolve()}")
         if args.hotel:
             logger.info(f"Debug hotel filtro: {args.hotel}")
     logger.info("=" * 70)
 
-    if not CSV_RECOMENDACIONES.exists():
-        logger.error(f"❌ No existe: {CSV_RECOMENDACIONES}")
+    csvs_recomendaciones = descubrir_csvs_recomendaciones(
+        args.recomendaciones_dir,
+        args.patron_recomendaciones,
+        args.csv_recomendaciones
+    )
+
+    if not csvs_recomendaciones:
+        logger.error(
+            f"❌ No se han encontrado CSVs en {args.recomendaciones_dir} "
+            f"con el patrón {args.patron_recomendaciones}"
+        )
         sys.exit(1)
 
-    df = pd.read_csv(CSV_RECOMENDACIONES)
-    logger.info(f"📂 Recomendaciones: {len(df)} filas")
+    logger.info("CSVs detectados:")
+    for algoritmo, csv_path in csvs_recomendaciones:
+        logger.info(f"  - {algoritmo}: {csv_path}")
 
-    if args.modo == "muestra":
-        df = df[df['usuario'].isin(args.usuarios)]
-        logger.info(f"🔍 Usuarios: {args.usuarios} → {len(df)} pares")
-
-    if args.modo == "semi":
-        df = (
-            df.groupby('usuario', group_keys=False)
-            .head(5)
-            .reset_index(drop=True)
+    resumenes = []
+    for algoritmo, csv_path in csvs_recomendaciones:
+        resumenes.append(
+            (algoritmo, procesar_csv_recomendaciones(algoritmo, csv_path, args, timestamp, logger))
         )
-        logger.info(f"🔍 Semi: 5 recomendaciones por usuario → {len(df)} pares totales")
-
-    acumulador: Dict[int, Dict] = defaultdict(lambda: {'kg': [], 'cf': []})
-    errores = 0
-    total   = len(df)
-
-    for idx, row in df.iterrows():
-        user_id   = int(row['usuario'])
-        hotel_rec = int(row['negocio'])
-
-        # En modo debug con --hotel, solo guardamos JSONs para ese hotel concreto
-        debug_este_par = args.debug and (args.hotel is None or args.hotel == hotel_rec)
-
-        logger.info(f"\n{'─'*50}")
-        logger.info(f"Par {idx+1}/{total}: user={user_id}, hotel_rec={hotel_rec}" +
-                    (" [DEBUG]" if debug_este_par else ""))
-        t0 = time.time()
-
-        try:
-            filas_kg = procesar_par_kg(user_id, hotel_rec, logger, debug=debug_este_par)
-            filas_cf = procesar_par_cf(user_id, hotel_rec, logger, debug=debug_este_par)
-
-            acumulador[user_id]['kg'].extend(filas_kg)
-            acumulador[user_id]['cf'].extend(filas_cf)
-
-            logger.info(
-                f"  ✅ OK ({time.time()-t0:.2f}s) "
-                f"KG:{len(filas_kg)} CF:{len(filas_cf)} filas"
-            )
-        except Exception as e:
-            logger.error(f"  ❌ Error inesperado: {e}")
-            errores += 1
-
-    logger.info(f"\n{'='*70}")
-    logger.info("GUARDANDO CSVs POR MÉTRICA POR USUARIO...")
-    logger.info(f"{'='*70}")
-
-    for usuario, datos in acumulador.items():
-        logger.info(f"\n👤 Usuario {usuario}:")
-        guardar_csvs_usuario(datos['kg'], usuario, NOMBRES_METRICAS_KG, 'kg', dir_kg, timestamp, logger)
-        guardar_csvs_usuario(datos['cf'], usuario, NOMBRES_METRICAS_CF, 'cf', dir_cf, timestamp, logger)
-
-    n_kg = len(list(dir_kg.glob("*.csv"))) if dir_kg.exists() else 0
-    n_cf = len(list(dir_cf.glob("*.csv"))) if dir_cf.exists() else 0
 
     tiempo_total = time.time() - t_inicio
     horas   = int(tiempo_total // 3600)
@@ -554,10 +664,13 @@ def main():
 
     logger.info(f"\n{'='*70}")
     logger.info("✅ PIPELINE COMPLETADO")
-    logger.info(f"   Usuarios  : {len(acumulador)}")
-    logger.info(f"   Errores   : {errores}")
-    logger.info(f"   CSVs KG   : {n_kg}  →  {dir_kg}")
-    logger.info(f"   CSVs CF   : {n_cf}  →  {dir_cf}")
+    for algoritmo, resumen in resumenes:
+        logger.info(
+            f"   {algoritmo}: usuarios={resumen['usuarios']} "
+            f"errores={resumen['errores']} "
+            f"csvs_kg={resumen['csvs_kg']} "
+            f"csvs_cf={resumen['csvs_cf']}"
+        )
     logger.info(f"   Tiempo total: {horas:02d}h {minutos:02d}m {segundos:05.2f}s")
     if args.debug:
         n_debug = len(list(DEBUG_DIR.glob("*"))) if DEBUG_DIR.exists() else 0
