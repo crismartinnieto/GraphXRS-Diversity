@@ -97,4 +97,3 @@ El pipeline de evaluación genera los resultados en `output/<modelo>/metricas_ev
 
 - El *framework* no entrena ni modifica el recomendador base: recibe sus recomendaciones como entrada y las explica de forma post-hoc.
 - Los grafos de interacción se construyen a partir de entrenamiento para evitar filtración de información futura.
-- Los archivos `config_mode.py` y `run.sh` corresponden a una estructura anterior y no forman parte del flujo documentado.

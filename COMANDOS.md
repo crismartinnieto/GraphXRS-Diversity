@@ -85,5 +85,3 @@ python src/evaluacion/pipeline.py --modo completo --ecs-min-usuarios 2
 - Los resultados de AggDiv, IXD, MIL y ECS se guardan en `output/<modelo>/metricas_evaluacion_<modo>/`.
 - Los registros de ejecución se encuentran en `logs/`.
 - Los notebooks de `src/visualizacion/` se usan para elaborar las gráficas y tablas del análisis experimental.
-
-`config_mode.py` y `run.sh` no deben emplearse: contienen referencias a la estructura anterior del proyecto.
